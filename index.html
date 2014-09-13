@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matt Hamlin</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Matthew Hamlin">
+		<meta name="keywords" content="Personal Home Page">
+		<meta name="description" content="Matt hamlin's personal web page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/uikit.min.css">
+		<link rel="stylesheet" href="css/onepage-scroll.css">
+		<link rel="stylesheet" href="css/uikit.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<article class="main">
+			<section id="page-1">
+				<nav class="uk-navbar uk-navbar-attached">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+					<div class="uk-navbar-content uk-navbar-flip">
+						<a href="//twitter.com/panteravaca" target="_blank">@panteravaca</a> on twitter.
+					</div>
+				</nav>
+				<div id="header-page">
+					<!-- TODO: Introduction about myself. -->
+					<div class="card loc">
+						<h2>Matt Hamlin</h2>
+						<h4>Experiments in Human Nature</h4>
+						<p>This site is dedicated to showing off some of the work I have done on the web and also for representing my Resume and some of the content in my Blog. Everything here is made by me, yet through the use of a lot of technologies developed by others. Feel free to look through my work and my thoughts!</p>
+					</div>
+				</div>
+			</section>
+			<section id="page-2">
+				<div class="whole" id="yoloswag">
+					<div class="card loc">
+						<h2>#YOLOSWAG</h2>
+						<h4>Experiments in Media</h4>
+						<p><a href="https://projects.campuslist.myrpi.org/cazz" target="_blank">#YOLOSWAG</a> became a way for me to express the things I enjoyed watching/hearing around the internet in the previous days or so. It offered me a way to express some interesting link, in the form of a hashtag, to all my friends. </p>
+					</div>
+				</div>				
+			</section>
+			<section id="page-3">
+				<div class="whole" id="Currentwire">
+					<div class="card loc">
+						<h2>Currentwire</h2>
+						<h4>Tackling the News</h4>
+						<p><a href="https://n.myrpi.org" target="_blank">Currentwire</a> was one of my culminating experiences with the Twitter API in full scale and although I did not get the growth of the site as I expected or wanted, I did learn about many limitations in the API and things about Javascript that I did not know of before. I still sometimes go to Curratd to look up some trending news tweets, and was highly interested in opportunities of developing a pay to use version.</p>
+					</div>
+				</div>
+			</section>
+			<section id="page-4">
+				<div class="whole" id="whenisbetter">
+					<div class="card loc">
+						<h2>Project Shirleys-Scheduler</h2>
+						<h4>Experiments in Team Management</h4>
+						<p>(Note: This project is still in active development) Project Shirleys Scheduler (a development name, not at all going to be the final name) is a term project, turn full time development project with a group of fantastic individuals from a course at RPI. We wanted to develop some web app that would handle the hard work with setting up team meetings. We always thought that scheduling team meetings are one sided so we decided to change that. As I said at the beginning of the paragraph, many of this stuff will be changing soon, so expect developments on twitter or in my blog! </p>
+					</div>
+				</div>
+			</section>
+			<section id="page-6">
+				<footer>
+					<div class="squeeze">
+						<div class="card-footer">
+							<div class="card">
+								<h1 class="title">Footer</h1>
+								<p>This site serves as a small sample of the projects that I have developed. I have used features for this site such as <a href="https://github.com/peachananr/onepage-scroll">onepage-scroll</a>, textures for the backgrounds from <a href="http://www.transparenttextures.com/">TRANSPARENT TEXTURES</a>, and in general the semantic markup of the page is defined by <a href="http://getuikit.com">UI Kit</a>.</p>
+								<p> Feel free to look at my ramblings on my <a href="blog.html" class="nolink">blog</a> and my <a href="resume.html" class="nolink">resume</a>. </p>
+								<p>You can reach me at: <a href="http://twitter.com/panteravaca" >@panteravaca</a> on twitter, or send me an email: <a href="mailto:hamlim@outlook.com?Subject=Hey!">hamlim@outlook.com</a>.</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</article>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.onepage-scroll.js"></script>
+		<script src="js/uikit.js"></script>
+		<script src="js/uikit.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(".main").onepage_scroll({
+				sectionContainer: "section",
+				easing: "ease",
+				animationTime: 500,
+				pagination: true,
+				updateURL: false,
+				loop: true,
+				keyboard: true				
+			});
+		</script>
+	</body>
+
+</html>
