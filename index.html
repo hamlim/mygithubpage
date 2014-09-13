@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Matt Hamlin</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Matthew Hamlin">
+		<meta name="keywords" content="Personal Home Page">
+		<meta name="description" content="Matt hamlin's personal web page">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/uikit.min.css">
+		<link rel="stylesheet" href="css/onepage-scroll.css">
+		<link rel="stylesheet" href="css/uikit.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<article class="main">
+			<section id="page-1">
+				<nav class="uk-navbar uk-navbar-attached">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+					<div class="uk-navbar-content uk-navbar-flip">
+						<a href="//twitter.com/panteravaca" target="_blank">@panteravaca</a> on twitter.
+					</div>
+				</nav>
+				<div id="header-page">
+					<!-- TODO: Introduction about myself. -->
+					<div class="card loc">
+						<h2>Matt Hamlin</h2>
+						<h4>Experiments in Human Nature</h4>
+						<p>This site is dedicated to showing off some of the work I have done on the web and also for representing my Resume and some of the content in my Blog. Everything here is made by me, yet through the use of a lot of technologies developed by others. Feel free to look through my work and my thoughts!</p>
+					</div>
+				</div>
+			</section>
+			<section id="page-2">
+				<div class="whole" id="yoloswag">
+					<div class="card loc">
+						<h2>#YOLOSWAG</h2>
+						<h4>Experiments in Media</h4>
+						<p><a href="https://projects.campuslist.myrpi.org/cazz" target="_blank">#YOLOSWAG</a> became a way for me to express the things I enjoyed watching/hearing around the internet in the previous days or so. It offered me a way to express some interesting link, in the form of a hashtag, to all my friends. </p>
+					</div>
+				</div>				
+			</section>
+			<section id="page-3">
+				<div class="whole" id="Currentwire">
+					<div class="card loc">
+						<h2>Currentwire</h2>
+						<h4>Tackling the News</h4>
+						<p><a href="https://n.myrpi.org" target="_blank">Currentwire</a> was one of my culminating experiences with the Twitter API in full scale and although I did not get the growth of the site as I expected or wanted, I did learn about many limitations in the API and things about Javascript that I did not know of before. I still sometimes go to Curratd to look up some trending news tweets, and was highly interested in opportunities of developing a pay to use version.</p>
+					</div>
+				</div>
+			</section>
+			<section id="page-4">
+				<div class="whole" id="whenisbetter">
+					<div class="card loc">
+						<h2>Project Shirleys-Scheduler</h2>
+						<h4>Experiments in Team Management</h4>
+						<p>(Note: This project is still in active development) Project Shirleys Scheduler (a development name, not at all going to be the final name) is a term project, turn full time development project with a group of fantastic individuals from a course at RPI. We wanted to develop some web app that would handle the hard work with setting up team meetings. We always thought that scheduling team meetings are one sided so we decided to change that. As I said at the beginning of the paragraph, many of this stuff will be changing soon, so expect developments on twitter or in my blog! </p>
+					</div>
+				</div>
+			</section>
+			<section id="page-6">
+				<footer>
+					<div class="squeeze">
+						<div class="card-footer">
+							<div class="card">
+								<h1 class="title">Footer</h1>
+								<p>This site serves as a small sample of the projects that I have developed. I have used features for this site such as <a href="https://github.com/peachananr/onepage-scroll">onepage-scroll</a>, textures for the backgrounds from <a href="http://www.transparenttextures.com/">TRANSPARENT TEXTURES</a>, and in general the semantic markup of the page is defined by <a href="http://getuikit.com">UI Kit</a>.</p>
+								<p> Feel free to look at my ramblings on my <a href="blog.html" class="nolink">blog</a> and my <a href="resume.html" class="nolink">resume</a>. </p>
+								<p>You can reach me at: <a href="http://twitter.com/panteravaca" >@panteravaca</a> on twitter, or send me an email: <a href="mailto:hamlim@outlook.com?Subject=Hey!">hamlim@outlook.com</a>.</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</article>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.onepage-scroll.js"></script>
+		<script src="js/uikit.js"></script>
+		<script src="js/uikit.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(".main").onepage_scroll({
+				sectionContainer: "section",
+				easing: "ease",
+				animationTime: 500,
+				pagination: true,
+				updateURL: false,
+				loop: true,
+				keyboard: true				
+			});
+		</script>
+	</body>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Test : test">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Test</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/kettleio/test">View on GitHub</a>
-
-          <h1 id="project_title">Test</h1>
-          <h2 id="project_tagline">test</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/kettleio/test/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/kettleio/test/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Test maintained by <a href="https://github.com/kettleio">kettleio</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
 </html>
