@@ -2,7 +2,11 @@
 .parallax-full-bleed {
     display: block !important;
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 /* CSS main stylesheet for my personal web page: @panteravaca */
 /* Site wide styles */
 /*
