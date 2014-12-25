@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.min.css">
+        <link rel="stylesheet" href="css/materialize.css" media="screen,projection">
 		<link rel="stylesheet" href="css/onepage-scroll.css">
 <!--		<link rel="stylesheet" href="css/uikit.css">-->
 		<link rel="stylesheet" href="css/main.css">
@@ -18,6 +19,16 @@
 		</header>
 		<article class="main">
 			<section id="page-1">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="http://twitter.com/immatthamlin" class="right">@immatthamlin</a>
+                        <ul id="nav-mobile" class="left side-nav">
+                            <li><a href="http://medium.com/@panteravaca">My Blog</a></li>
+                            <li><a href="http://n.myrpi.org">My Other Work</a></li>
+                        </ul>
+                    </div>
+                </nav>
+<!--
 				<nav class="uk-navbar uk-navbar-attached">
 					<ul class="uk-navbar-nav">
 						<li class="uk-active"><a href="">Home</a></li>
@@ -28,6 +39,7 @@
 						<a href="//twitter.com/immatthamlin" target="_blank">@immatthamlin</a> on twitter.
 					</div>
 				</nav>
+-->
 				<div id="header-page">
 					<!-- TODO: Introduction about myself. -->
 					<div class="card loc">
@@ -104,6 +116,7 @@
 		<script src="js/jquery.onepage-scroll.js"></script>
 		<script src="js/uikit.js"></script>
 		<script src="js/uikit.min.js"></script>
+        <script src="js/materialize.js"></script>
 		<script src="js/main.js"></script>
 		<script>
 			$(".main").onepage_scroll({
