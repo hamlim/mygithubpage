@@ -8,6 +8,9 @@ footer {
     left: 0;
     width: 100%;
 }
+.card-panel {
+    margin-top: 10%;
+}
 body {
     background-image: url(http://unsplash.it/g/3000/3000?random);
 	background-size: cover;
