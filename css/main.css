@@ -1,5 +1,17 @@
+/* New CSS rule set with new material design */
+.parallax-full-bleed {
+    display: block !important;
+}
+
+
+
+
+
+
+
 /* CSS main stylesheet for my personal web page: @panteravaca */
 /* Site wide styles */
+/*
 body {
 	background: #dddddd;
 	height: 100%;
@@ -12,7 +24,9 @@ body {
   margin:0 1rem 1rem;
   border-radius:3px;
 }
+*/
 /* Blog styles */
+/*
 .squeeze {
     margin-top: 1%;
 	margin-left: 15%;
@@ -28,10 +42,12 @@ body {
    left: 50%;
    width: 200px;
    height: 200px;
-   margin-top: -100px; /* Half the height */
-   margin-left: -100px; /* Half the width */
+   margin-top: -100px;  Half the height 
+   margin-left: -100px;  Half the width 
 }
+*/
 
+/*
 @media screen and (min-width: 1280px){
 	.loc{
 		position: absolute;
@@ -68,9 +84,11 @@ body {
 		margin-top: -112px;
 	}
 }
+*/
 
 /* Index site styles */
 /* background images taken from www.transparenttextures.com */
+/*
 #page-1 {
 	background-color: #c0c0c0;
 	background-image: url(../resources/images/cartographer.png);
@@ -97,6 +115,7 @@ body {
 	background-color: #c0c0c0;
 	background-image: url(../resources/images/diagmonds.png);
 }
+*/
 /*
 #page-6{
 	background-color: #c0c0c0;
@@ -104,6 +123,7 @@ body {
 }
 */
 /* Handle Links */
+/*
 
 .nolink {
 	text-decoration: none;
@@ -119,4 +139,4 @@ body {
 	text-decoration: none;
 	color: black;
 	cursor: default;
-}
+}*/
