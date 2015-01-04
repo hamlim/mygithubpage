@@ -18,11 +18,14 @@
 		<header>
             <nav class="green">
                 <div class="nav-wrapper">
-                    <a href="http://twitter.com/immatthamlin" class="brand-logo center">Matt Hamlin</a>
-                    <ul id="nav-mobile" class="right side-nav">
-                        <li><a href="http://medium.com/@panteravaca">My Blog</a></li>
-                        <li><a href="http://n.myrpi.org">My Other Work</a></li>
-                    </ul>
+                    <div class="container">
+                        <a href="http://twitter.com/immatthamlin" class="brand-logo center">Matt Hamlin</a>
+                        <ul id="nav-mobile" class="right side-nav">
+                            <li><a href="http://medium.com/@panteravaca">My Blog</a></li>
+                            <li><a href="http://n.myrpi.org">My Other Work</a></li>
+                        </ul>
+                        <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+                    </div>
                 </div>
             </nav>
 		</header>
@@ -99,6 +102,7 @@
 			$(document).ready(function() {
 				$('.parallax').parallax();
                 $('ul.tabs').tabs();
+                $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
 			});
 		</script>
 	</body>
