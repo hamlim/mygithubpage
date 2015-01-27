@@ -17,23 +17,18 @@
             <div class="row">
                 <div class="col s12 m4 l3">
                     <!-- Navigation -->
-                    <div class="navbar-fixed">
-                        <nav class="blue lighten-1">
-                            <div class="nav-wrapper">
-                                <a href="#" class="brand-logo right">Matt Hamlin</a>
-                                <ul id="nav-mobile" class="side-nav fixed">
-                                    <li><a href="#about">About Me</a></li>
-                                    <li><a href="#projects">My Projects</a></li>
-                                    <li><a href="#yoloswag">#YOLOSWAG</a></li>
-                                    <li><a href="#currentwire">Currentwire</a></li>
-                                    <li><a href="#afternoon">Afternoon Coffee</a></li>
-                                    <li><a href="#pace">Pace</a></li>
-                                    <li><a href="#listenlist">Listen List</a></li>
-                                    <li><a href="#footer">More</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                    <ul id="slide-out" class="side-nav fixed">
+                        <li><a href="#" class="brand-logo">Matt Hamlin</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#yoloswag">#YOLOSWAG</a></li>
+                        <li><a href="#currentwire">Currentwire</a></li>
+                        <li><a href="#afternoon">Afternoon Coffee</a></li>
+                        <li><a href="#pace">Pace</a></li>
+                        <li><a href="#listenlist">Listen List</a></li>
+                        <li><a href="#footer">More</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>            
                 </div>
                 <div class="col s12 m8 l9">
                     <!-- content -->
@@ -162,6 +157,9 @@
 				$('.parallax').parallax();
                 $('ul.tabs').tabs();
                 $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
+                $(".button-collapse").sideNav();
+                // Initialize collapsible
+                $('.collapsible').collapsible();
 			});
 		</script>
 	</body>
