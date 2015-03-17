@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Matt Hamlin</title>
-		<meta charset="utf-8">
-		<meta name="author" content="Matthew Hamlin">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Matthew Hamlin">
         <meta name="theme-color" content="#42a5f5">
 		<meta name="keywords" content="Personal Home Page">
 		<meta name="description" content="Matt hamlin's personal web page">
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-        <!-- Twitter card stuff -->
+        <!-- Twitter card data -->
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@immatthamlin" />
         <meta name="twitter:creator" content="@immatthamlin" />
@@ -16,132 +15,133 @@
         <meta name="twitter:description" content="Check out some work by Matt Hamlin" />
         <meta name="twitter:image" content="http://n.myrpi.org/afternooncoffee/cup-of-coffee.jpg" />
         <meta name="twitter:url" content="http://matthamlin.me" />
-		<link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/materialize.css" media="screen,projection">
-		<link rel="stylesheet" href="css/main.css">
+        <!-- end of twitter card data -->
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body>
-		<header>
-            <nav class="blue lighten-1">
-                <div class="nav-wrapper">
-                    <div class="container">
-                        <a href="http://twitter.com/immatthamlin" class="brand-logo center">Matt Hamlin</a>
-                        <ul id="nav-mobile" class="right side-nav">
-                            <li><a href="http://medium.com/@matthamlin">My Blog</a></li>
-                            <li><a href="http://n.myrpi.org">Where I Work</a></li>
-                            <li><a href="./resume.html">My Resume</a></li>
-                        </ul>
-                        <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
-                    </div>
-                </div>
-            </nav>
-		</header>
-        <main class="">
-            <div class="col s12">
-                <ul class="tabs">
-                    <li class="tab col s2"><a href="#intro">About Me</a></li>
-                    <li class="tab col s2"><a href="#projects">Projects</a></li>
-                    <li class="tab col s2"><a href="#yolo">#YOLOSWAG</a></li>
-                    <li class="tab col s2"><a href="#current">Currentwire</a></li>
-                    <li class="tab col s2"><a href="#afternoon">Afternoon Coffee</a></li>
-                    <li class="tab col s2"><a href="#pace">Pace</a></li>
-                    <li class="tab col s2"><a href="#listenlist">Listen List</a></li>
-                    <li class="tab col s2"><a href="#misc">Social</a></li>
-                </ul>
-            </div>
-            <section class="container">
-                <div id="intro" class="col s12 section card-panel white">
-                    <h2 class="header">Matt Hamlin</h2>
-                    <h4>Student and Entrepreneur</h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">I am currently a Junior at <a href="http://www.rpi.edu">Rensselaer Polytechnic Institute</a> pursuing a Bachelors in Science for Information Technology and Web Science. I plan on graduating in May of 2016. I currently run my own company as well, producing a few of the projects presented here, and currently looking for more developers and makers to join me.</p>
-                </div>
-                <div id="projects" class="col s12 section card-panel white">
-                    <h2 class="header">My Projects:</h2>
-                    <h4>What I Develop</h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">The projects presented below are some of the work that I have been doing since my Sophomore year at RPI. Some of the projects are still in their infancy, I will be using badges to show the current status of the projects</p>
-                </div>
-                <div id="yolo" class="col s12 section card-panel white">
-                    <h2 class="header">#YOLOSWAG: <span class="new badge">Working</span></h2>
-                    <h4>Messing Around in Media</h4>
-                    <h4><a class="blue-text" href="http://projects.campuslist.myrpi.org/cazz">Link</a></h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">Probably one of my first projects that I finished, #YOLOSWAG was a simple single webpage application designed to be as simple as possible. Everyonce and a while when I found something interesting that I wanted to share, I would make a hashtag for it, and add it to the site and also play music in the background. For me this project taught me about using the simple <code><audio></audio></code> HTML tag. Really this project was more about the content then the actual web page.</p>
-                </div>
-                <div id="current" class="col s12 section card-panel white">
-                    <h2 class="header">Currentwire: <span class="new badge">Working</span></h2>
-                    <h4>Trending News</h4>
-                    <h4><a class="blue-text" href="http://n.myrpi.org/currentwire">Link</a></h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">Currentwire was a small spring break hacking project during Sophomore year that turned out taking almost a full year to design it and extend it to what I wanted. I have far more goals for the project that I decided to put on the backburner because of classes. This project mostly taught me about asynchronous javascript and using the twitter API. The central reason I didn't come back to working on this project ful time was because I don't see it as a significant source of value.</p>
-                </div>
-                <div id="afternoon" class="col s12 section card-panel white">
-                    <h2 class="header">Afternoon Coffee: <span class="new badge">Working</span></h2>
-                    <h4>Feedback on Ideas</h4>
-                    <h4><a class="blue-text" href="http://n.myrpi.org/afternooncoffee">Link</a></h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">Probably one of my claims to fame in a few years from now will be the fact that I had the idea to use Slack as a recreation of public IRC channels right before everyone else was jumping on the bandwagon. Sure I can't prove it, but I think I had the idea formed in some sense a few days before communities like <a href="http://hashtagstartup.co">#startup</a> started up. Afternoon Coffee is a Slack team open to anyone to get feedback on their product and startup ideas. You can think of it as a way to communicate with others to provide valuable feedback on ideas you might have.</p>
-                </div>
-                <div id="pace" class="col s12 section card-panel white">
-                    <h2 class="header">Pace: <span class="new badge">In Development</span></h2>
-                    <h4>Simple, Quick, and Visual Project Management</h4>
-                    <h4><a class="blue-text" href="http://n.myrpi.org/pace">Link</a></h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">Pace is a project I originally developed with a team, and then redesigned and added on additional features to make it a useful project management solution. Visit the launch page <a href="http://n.myrpi.org/pace">here</a> to get more information about Pace.</p>
-                </div>
-                <div id="listenlist" class="col s12 section card-panel white">
-                    <h2 class="header">Listen List: <span class="new badge">In Development</span></h2>
-                    <h4>A Podcast Sharing Community</h4>
-                    <h4><a class="blue-text" href="http://n.myrpi.org/listenlist">Link</a></h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">The idea of Listen List came about from a discussion with my dad and brother. I have written about it a few times in my personal blog, and will be writing a lot more about the project in the future. The core behind Listen List is what will be Forge Labs' future business structure. If you want to know more about that you will have to check out a future blog post. Listen List is a simple social network, sort of like a <a href="http://producthunt.com">Producthunt</a> for podcasts. I am still building it and I plan on continuing to build it through 2015 and farther.</p>
-                </div>
-                <div id="misc" class="col s12 section card-panel white">
-                    <h2 class="header">Misc. Content</h2>
-                    <h4>Find Me Elsewhere</h4>
-                    <p class="grey-text darken-3 lighten-3 flow-text">Most of the above content is only the tip of the iceberg of what I do on a day to day basis. Below is a list of links to other places you can find me, including my blog, my twitter and more. In my off time I enjoy traveling, playing, wathcing and talking about Ultimate Frisbee, and following my local sports teams since before they were good (Seahawks and Sounders).</p>
-                    <ul class="center">
-                        <li><h5>Follow me on Twitter: <a href="http://twitter.com/immatthamlin"><i class="mdi-social-person-outline"></i> @immatthamlin</a></h5></li>
-                        <li><h5><a href="http://medium.com/@panteravaca"><i class="mdi-social-public"></i> My Blog</a></h5></li>
-                        <li><h5><a href="http://n.myrpi.org"><i class="mdi-social-public"></i> Forge Labs</a></h5></li>
-                        <li><h5><a href="mailto:hamlim@outlook.com"><i class="mdi-content-markunread"></i> hamlim@outlook.com</a></h5></li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer class="page-footer blue lighten-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Bio</h5>
-                        <p class="grey-text lighten-4">This site was built using an open library <a class="orange-text lighten-3" href="http://materializecss.com">Materializecss</a>, and several other libraries.</p>
+	<body id="top">
 
+		<!-- Header -->
+			<header id="header">
+				<a href="#" class="image avatar"><img src="images/blah.jpg" alt="Me" /></a>
+				<h1><strong>Matt Hamlin</strong> a Student,<br />
+				Entrepreneur, and<br />
+				Explorer</h1>
+			</header>
 
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li><a class="orange-text lighten-3" href="http://n.myrpi.org">Forge Labs</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Connect</h5>
-                        <ul>
-                            <li><a class="orange-text lighten-3" href="http://twitter.com/immatthamlin">Twitter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    Made by <a class="orange-text lighten-3" href="http://n.myrpi.org">Matt Hamlin</a> 2015
-                </div>
-            </div>
-        </footer>
-		<script src="js/jquery.js"></script>
-        <script src="js/materialize.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('.parallax').parallax();
-                $('ul.tabs').tabs();
-                $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
-			});
-            
-		</script>
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Student and Entrepreneur</h2>
+						</header>
+						<p>I am currently a Junior at <a href="http://www.rpi.edu">Rensselaer Polytechnic Institute</a> pursuing a Bachelors in Science for Information Technology and Web Science. I plan on graduating in May of 2016. I currently run my own company as well, producing a few of the projects presented here, and currently looking for more developers and makers to join me.</p>
+<!--
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+-->
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="http://n.myrpi.org/howtohustle" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3><a href="http://n.myrpi.org/howtohustle">How to Hustle</a></h3>
+								<p>Tips for entrepreneurs learning to hustle.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="http://n.myrpi.org/listenlist" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3><a href="http://n.myrpi.org/listenlist">Listen List</a></h3>
+								<p>Discover, Discuss, and Share great podcasts.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="http://n.myrpi.org/currentwire" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3><a href="http://n.myrpi.org/currentwire">Currentwire</a></h3>
+								<p>Trending News</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="http://n.myrpi.org/pace" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3><a href="http://n.myrpi.org/pace">Pace</a></h3>
+								<p>Simple, Quick, and Visual Project Management</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="http://projects.campuslist.myrpi.org/cazz" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3><a href="http://projects.campuslist.myrpi.org/cazz">#YOLOSWAG</a></h3>
+								<p>Messing Around in Media</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="http://n.myrpi.org/afternooncoffee" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3><a href="http://n.myrpi.org/afternooncoffee">Afternoon Coffee (Now Shutdown)</a></h3>
+								<p>Feedback on Ideas</p>
+							</article>
+						</div>
+<!--
+						<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>
+-->
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Feel free to reach out to me through any of the below methods or online on twitter, email or through Snapchat (my username is immatthamlin there too).</p>
+						<div class="row">
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										17803 Robinhood Lane<br />
+										Snohomish, WA 98290<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										+1 360 447 8392
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="mailto:hamlim@outlook.com">hamlim@outlook.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Four -->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://twitter.com/immatthamlin" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="http://github.com/hamlim" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="http://medium.com/@matthamlin" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                    <li><a href="http://n.myrpi.org" class="icon fa-globe"><span class="label">Work</span></a></li>
+                    <li><a href="/resume.html" class="icon fa-file-text-o"><span class="label">Resume</span></a></li>
+					<li><a href="mailto:hamlim@outlook.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+<!--
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+-->
+			</footer>
+
 	</body>
-
 </html>
