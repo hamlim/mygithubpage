@@ -980,6 +980,26 @@
             width: 35%;
             background-image: url("images/overlay.png"), url("../images/beach.jpg");
         }
+    
+        .headerres strong, .headerres b {
+			color: #ffffff;
+		}
+
+		.headerres h2, .headerres h3, .headerres h4, .headerres h5, .headerres h6 {
+			color: #ffffff;
+		}
+
+		.headerres h1 {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1.35em;
+			line-height: 1.75em;
+			margin: 0;
+		}
+
+		.headerres .image.avatar {
+			margin: 0 0 1em 0;
+			width: 6.25em;
+		}
 
 /* Footer */
 
