@@ -38,6 +38,26 @@
 				display: inline;
 			}
 
+    .headerres {
+		background-attachment: scroll;
+		background-position: top left,	center center;
+		background-size: auto,		cover;
+		left: auto;
+		padding: 6em 4em;
+		position: relative;
+		text-align: center;
+		top: auto;
+		width: 100%;
+	}
+
+		.headerres h1 {
+			font-size: 1.75em;
+		}
+
+			.headerres h1 br {
+				display: inline;
+			}
+
 /* Footer */
 
 	#footer {

@@ -48,6 +48,14 @@
 			display: none;
 		}
 
+    .headerres {
+		padding: 4.5em 1.5em;
+	}
+
+		.headerres h1 br {
+			display: none;
+		}
+
 /* Footer */
 
 	#footer .copyright li {

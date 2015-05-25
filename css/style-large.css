@@ -19,6 +19,18 @@
 				display: none;
 			}
 
+    .headerres {
+		padding: 6em 3em 3em 3em;
+		width: 30%;
+	}
+
+		.headerres h1 {
+			font-size: 1.25em;
+		}
+
+			.headerres h1 br {
+				display: none;
+			}
 /* Footer */
 
 	#footer {
