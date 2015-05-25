@@ -966,7 +966,7 @@
 			margin: 0 0 1em 0;
 			width: 6.25em;
 		}
-        #header .headerres {
+        .headerres {
             background-image: url("images/overlay.png"), url("../images/beach.jpg");
         }
 
