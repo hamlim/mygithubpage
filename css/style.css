@@ -932,7 +932,6 @@
 
 	#header {
 		background-color: #1f1815;
-/*		background-attachment: scroll,								fixed;*/
 		background-image: url("images/overlay.png"), url("../images/9-gregoire-herve-bazin.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
@@ -967,6 +966,18 @@
 			width: 6.25em;
 		}
         .headerres {
+            background-color: #1f1815;
+            background-position: top left,							top left;
+            background-repeat: repeat,								no-repeat;
+            background-size: auto,								auto 100%;
+            color: rgba(255, 255, 255, 0.5);
+            height: 100%;
+            left: 0;
+            padding: 8em 4em 0 0;
+            position: fixed;
+            text-align: right;
+            top: 0;
+            width: 35%;
             background-image: url("images/overlay.png"), url("../images/beach.jpg");
         }
 
