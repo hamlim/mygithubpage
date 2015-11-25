@@ -5,11 +5,11 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Blog
+tagline:             Matt Hamlin's Blog
+url:                 http://matthamlin.me/blog
 paginate:            1
-baseurl:             ""
+baseurl:             "/blog"
 
 # Assets
 #
