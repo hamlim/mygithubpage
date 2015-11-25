@@ -2,7 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+relative_permalinks: false
 
 # Setup
 title:               Blog
@@ -23,6 +23,10 @@ author:
   name:              Mark Otto
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
+
+# Gems
+gems: [jekyll-paginate]
+gems: [Rouge]
 
 # Custom vars
 version:             2.0.0
