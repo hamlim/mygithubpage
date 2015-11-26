@@ -15,7 +15,7 @@ baseurl:             ""
 keep_files: [index.html, CNAME, css, fonts, images, js, LICENSE.txt, README.txt, resume.html, resume.json, resume.pdf, sass]
 
 pages_list:
-  Portfolio: '/originalindex.html'
+  Portfolio: '/Portfolio.html'
   Resume: '/resume.html'
   About: '/about'
   Archive: '/archive'
