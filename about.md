@@ -4,5 +4,5 @@ title: About
 ---
 
 <p class="message">
-  Hey there! For more information about me go to my [portfolio](http://matthamlin.me/originalindex.html)!
+  Hey there! For more information about me go to my <a href="http://matthamlin.me/originalindex.html">Portfolio</a>!
 </p>
