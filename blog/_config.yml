@@ -7,9 +7,9 @@ permalink:           pretty
 highlighter: none
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Matt's Blog
+tagline:             Matt Hamlin's Blog
+url:                 http://matthamlin.me
 paginate:            1
 baseurl:             ""
 
@@ -26,9 +26,9 @@ gems: [jekyll-gist, jekyll-paginate]
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Matt Hamlin
+  url:               https://twitter.com/immatthamlin
+  email:             hamlim@outlook.com
 
 # Custom vars
 version:             2.0.0
