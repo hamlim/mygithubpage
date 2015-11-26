@@ -4,15 +4,14 @@
 permalink:           pretty
 # relative_permalinks: true
 
-highlighter: pygments
-
+highlighter: none
 
 # Setup
 title:               Poole
 tagline:             The Jekyll Butler
 url:                 http://getpoole.com
 paginate:            1
-baseurl:             "/blog"
+baseurl:             ""
 
 # Assets
 #
@@ -21,8 +20,8 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
-# Gems
-gems: [jekyll-paginate, jekyll-gist, rouge]
+#gems
+gems: [jekyll-gist, jekyll-paginate]
 
 
 # About/contact
