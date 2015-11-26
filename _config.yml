@@ -1,0 +1,45 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+highlighter: none
+
+# Setup
+title:               Matt's Blog
+tagline:             Matt Hamlin's Blog
+url:                 http://matthamlin.me
+paginate:            1
+baseurl:             ""
+keep_files: [index.html, CNAME, css, fonts, images, js, LICENSE.txt, README.txt, resume.html, resume.json, resume.pdf, sass]
+
+pages_list:
+  Portfolio: '/originalindex.html'
+  Resume: '/resume.html'
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
+
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+#gems
+gems: [jekyll-gist, jekyll-paginate]
+
+
+# About/contact
+author:
+  name:              Matt Hamlin
+  url:               https://twitter.com/immatthamlin
+  email:             hamlim@outlook.com
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole
