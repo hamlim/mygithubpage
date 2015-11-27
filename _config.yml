@@ -17,7 +17,6 @@ keep_files: [index.html, CNAME, css, fonts, images, js, LICENSE.txt, README.txt,
 pages_list:
   Portfolio: '/Portfolio.html'
   Resume: '/resume.html'
-  About: '/about'
   Archive: '/archive'
   Feed: '/atom.xml'
 
