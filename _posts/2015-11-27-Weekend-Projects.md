@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Why I am Removing all (large) Images from my Website
+title: Weekend Projects
 ---
 
-Weekend Project
----------------
+Weekend Projects
+----------------
 
 Since I came home for Thanksgiving I figured I would have enough time to get away from pesky homework assignments and projects and spend some time not only with my family but also working on some of my own projects. The first was building and launching Bundles version 1, the second was launching this blog, and the third is reworking my portfolio website.
 
