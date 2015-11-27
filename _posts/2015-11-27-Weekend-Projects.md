@@ -18,8 +18,6 @@ That above is what my current portfolio website looks like, its simple, clean an
 
 The next project I plan on finishing up this weekend is changing my resume website over to the Skeleton framework as well.
 
-<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="immatthamlin" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
  
