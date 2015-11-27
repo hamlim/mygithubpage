@@ -12,10 +12,14 @@ My old portfolio website used to load in an image from Unsplash on the left side
 
 So I decided to change that and completely change my portfolio website in the process, I dropped the slow framework I was using for a simpler one (currently using [skeleton css](http://getskeleton.com/)) I also dropped a lot of the unnecessary content that was on my portfolio website.
 
-![My current website](../images/website-screenshot.png)
+![My current website](http://matthamlin.me/images/website-screenshot.png)
 
 That above is what my current portfolio website looks like, its simple, clean and loads far quicker than my previous website.
 
 The next project I plan on finishing up this weekend is changing my resume website over to the Skeleton framework as well.
+
+<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="immatthamlin" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 
  
