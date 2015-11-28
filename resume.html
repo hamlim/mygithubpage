@@ -1,181 +1,206 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Matt Hamlin's Resume</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="author" content="Matthew Hamlin">
-        <meta name="theme-color" content="#42a5f5">
-		<meta name="keywords" content="Resume">
-		<meta name="description" content="Matt hamlin's Resume">
-        <!-- Twitter card data -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@immatthamlin" />
-        <meta name="twitter:creator" content="@immatthamlin" />
-        <meta name="twitter:title" content="Matt Hamlin's Resume" />
-        <meta name="twitter:description" content="Check out Matt Hamlin's resume" />
-        <meta name="twitter:image" content="http://matthamlin.me/images/blah.jpg" />
-        <meta name="twitter:url" content="http://matthamlin.me" />
-        <!-- end of twitter card data -->
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.poptrox.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
-        <link rel="stylesheet" href="css/mystyles.css"/>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body id="top">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
 
-		<!-- Header -->
-			<header class="headerres">
-				<a href="#" class="image avatar"><img src="images/blah.jpg" alt="Me" /></a>
-				<h1><strong>Matthew Hamlin</strong></h1>
-                <ul class="biolist">
-                    <li><a class="white" href="http://matthamlin.me"><i class="fa fa-globe"></i> matthamlin.me</a></li>
-                    <li><a class="white" href="mailto:hamlim@outlook.com"><i class="fa fa-envelope"></i> hamlim@outlook.com</a></li>
-                    <li><a class="white" href="#"><i class="fa fa-phone"></i> +1 360 447 8392</a></li>
-                    <li><a class="white" href="http://twitter.com/immatthamlin"><i class="fa fa-twitter"></i> Twitter</a></li>
-                    <li><a class="white" href="http://github.com/hamlim"><i class="icon fa-github"></i> Github</a></li>
-                    <li><a class="white" href="http://medium.com/@matthamlin"><i class="fa fa-medium"></i> Medium</a></li>
-					<li><a class="white" href="./resume.pdf"><i class="fa fa-file-text"></i> Paper Copy</a></li>
-                </ul>
-			</header>
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Matt Hamlin &#128523;</title>
+        <meta name="description" content="Matt Hamlin's Portfolio">
+        <meta name="author" content="Matt Hamlin">
 
-		<!-- Main -->
-			<div id="main">
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-				<!-- One -->
-                <section id="one">
-                    <header class="major">
-                        <h2>Biography and Objective</h2>
-                    </header>
-                    <p>I am currently in my fourth year as a student at Rensselaer Polytechnic Institute in upstate New York, and I will be graduating in May of 2016. I am highly interested in advancements in the latest web technologies and how they relate to social networking and media.</p>
-                    <p>I have experience working with front-end development, some back-end development mainly in PHP. I am looking for an opportunity that will give me experience in <strong>social media management</strong> as well as <strong>growth marketing and engineering</strong>.</p>
-                </section>
-                <!-- Two -->
-                <section id="two">
-                    <header class="major">
-                        <h2>School Experience</h2>
-                    </header>
+        <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="skel-css/normalize.css">
+        <link rel="stylesheet" href="skel-css/skeleton.css">
+        <link rel="stylesheet" href="skel-css/custom.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Favicon and related stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="/public/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/public/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/public/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/public/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/public/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/public/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/public/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/public/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/public/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/public/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/public/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/public/manifest.json">
+        <link rel="mask-icon" href="/public/safari-pinned-tab.svg" color="#3498db">
+        <meta name="apple-mobile-web-app-title" content="Matt's Blog">
+        <meta name="application-name" content="Matt's Portfolio">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="msapplication-TileImage" content="/public/mstile-144x144.png">
+        <meta name="theme-color" content="#3498db">
+        <link rel="shortcut icon" href="/public/favicon.ico">
+
+    </head>
+    <body>
+
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header id="header" class="container">
+            <section class="header">
+                <h2 class="title">Matt Hamlin</h2>
+                <p>Freelance Web Developer, Designer, and Social Media Manager</p>
+                <p>hamlim@outlook.com | Snohomish, Washington / Troy, New York | +1 (425) 210 0980</p>
+                <div class="value-props row">
+                    <div class="four columns value-prop">
+                        <img class="value-img" src="images/person-edit.svg">
+                        <a class="button button-primary" href="#objective">Objective</a>
+                    </div>
+                    <div class="four columns value-prop">
+                        <img class="value-img" src="images/work-edit.svg">
+                        <a class="button button-primary" href="#work">Experience</a>
+                    </div>
+                    <div class="four columns value-prop">
+                        <img class="value-img" src="images/skills-edit.svg">
+                        <a class="button button-primary" href="#skills">Skills</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div id="objective" class="one-full column" style="margin-top: 25%">
+                    <h4 class="center-text">Biography and Objective</h4>
                     <p>
-                        <ul>
-                            <li>
-                                <h4>Bachelor of Science in Information Technology and Web Science</h4>
-                                <ul>
-                                    <li>2012 - 2016</li>
-                                    <li><a href="http://rpi.edu">Rensselaer Polytechnic Institute</a>: Courses covering backend and frontend development, database management, structured data (SPARQL), and project development and management</li>
-                                    <li>Concentration in Physics</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </p>
-                </section>
+                        I am currently in my fourth year as a student at <a href="www.rpi.edu">Rensselaer Polytechnic Institute</a> in upstate New York, and I will be
+                         graduating in May of 2016. I am highly interested in the latest web technologies and how they affect to social networking and media.
+                     </p>
+                     <p>
+                        I have experience working with frontend development, some backend development mainly in PHP. I am looking for an
+                        opportunity that will give me experience in <strong>social media management</strong>, <strong>software engineering</strong>
+                        as well as <strong>growth marketing and engineering</strong>.
 
-                <section id="three">
-                    <header class="major">
-                        <h2>Work Experience</h2>
-                    </header>
-                    <p>
-                        <ul>
-                            <li>
-                                <h4>Information Technology Internship</h4>
-                                <ul>
-                                    <li>June 2014 - February 2015</li>
-                                    <li><a href="http://www.compotool.com">Compotool</a>: A company specializing in technologies for advanced composites</li>
-                                    <li>Introduced some new technologies for enhanced workflow and productivity</li>
-                                </ul>
-                            </li>
-                        </ul>
                     </p>
-                </section>
-
-                <section id="five">
-                    <header class="major">
-                        <h2>Skills and Knowledge Areas</h2>
-                    </header>
+                </div>
+                <div id="work" class="one-full column" style="margin-top: 25%">
+                    <h4 class="center-text">Work and School Experience</h4>
                     <ul>
-                        <li>Front-end Web Development:</li>
+                        <li>Information Technology Internship at <a href="http://www.compotool.com"><strong>Compotool</strong></a></li>
                         <ul>
-                            <li>HTMl5</li>
-                            <li>CSS3</li>
-                            <li>Javascript</li>
+                            <li>June 2014 - February 2015</li>
+                            <li>Compotool: A company specializing in technologies for advanced composites</li>
+                            <li>Introduced some new technologies for enhanced workflow and productivity</li>
                         </ul>
-                        <li>Back-end Web Development:</li>
-                        <ul>
-                            <li>PHP</li>
-                            <li>Actively learning Node.JS</li>
-                        </ul>
-                        <li>Search Engine Optimization</li>
-                        <li>Email Marketing</li>
                     </ul>
-                </section>
+                    <!-- <h4 class="center-text">School Experience</h4> -->
+                    <ul>
+                        <li>Bachelors of Science in Information Technology and Web Science</li>
+                        <ul>
+                            <li>2012 - 2016</li>
+                            <li>Courses covering backend and frontend development, database management,
+                                 structured data, and project development and management
+                            </li>
+                            <li>Concentration in Physics</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div id="skills" class="one-full column" style="margin-top: 25%">
+                    <h4 class="center-text">Skills and Capabilities</h4>
+                    <ul>
+                        <li>Frontend Web Development:</li>
+                        <ul>
+                            <li>Extensive knowledge with HTML5 standards to develop several user-friendly web applications.
+                                Building dynamic websites through the use of frameworks such as jQuery, AngularJS and raw javascript.
+                            </li>
+                            <li>Experience building websites with several frameworks such as Bootstrap, Foundation, and several other
+                                individual frameworks.
+                            </li>
+                        </ul>
+                        <li>Backend Web Development:</li>
+                        <ul>
+                            <li>Extensive expereince with plain PHP to develop several unique flat file API's for different web applications.</li>
+                        </ul>
+                        <li>Digital Content Marketing and Community Development</li>
+                        <ul>
+                            <li>Experience developing content and marketing plans for projects, as well as in-depth experience with the leading
+                                social media networks and the content that fits for each of these networks.
+                            </li>
+                            <li>Consistantly researching the latest and greatest social networks to learn what types of content and presentation do well on each
+                                breakout social network.
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 25%">
+                <div class="one-full column">
+                    <h4 class="center-text">Past Projects</h4>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Past Projects -->
+                <!-- Trends, How to Hustle, Pace, Afternoon Coffee -->
+                <div class="six columns">
+                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/Trends" target="_blank">Trends</a></h6>
+                    <p>Trends was an interesting project built to show the top 10 tweets in a specific area of news coverage. I learned a lot about developing
+                        with the Twitter API, as well as developing my own API to communicate with a flat file server.
+                    </p>
+                </div>
+                <div class="six columns">
+                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/howtohustle" target="_blank">How To Hustle</a></h6>
+                    <p>How to Hustle was a short lived side project that inspired me to write content that would allow me and other entreprenuers to focus
+                        and to hustle in their efforts to build things. I learned a lot about the difficulties writing content every week for an audience.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/pace" target="_blank">Pace</a></h6>
+                    <p>Pace was a project that I developed partially with a team of developers from school, and then continued on after the school project
+                        ended. I gained a ton of experience working with real world customers and balancing a want vs a need when developing for other people.
+                    </p>
+                </div>
+                <div class="six columns">
+                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/afternooncoffee" target="_blank">Afternoon Coffee</a></h6>
+                    <p>Afternoon Coffee was one of the original public Slack chat groups, before #startup and other large slack communities. I started Afternoon
+                        Coffee to reach out to more developers and have conversations about ideas, methodologies, and centrally feedback on my thoughts.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container box-line" style="margin-top: 25%">
+            <div class="row">
+                <div class="one-full column center-text">
+                    <h3>Get in Contact</h3>
+                    <a class="button button-tertiary" href="mailto:hamlim@outlook.com">Email Me</a>
+                </div>
+            </div>
+        </div>
+        <footer class="container" style="margin-top: 5%">
+            <!-- Social Buttons  Twitter, email, Medium, Github   -->
+            <div class="three columns center-text" id="twitter">
+                <a class="button button-secondary" href="http://twitter.com/immatthamlin"><i class="fa fa-twitter"></i> Twitter</a>
+            </div>
+            <div class="three columns center-text" id="email">
+                <a class="button button-secondary" href="mailto:hamlim@outlook.com"><i class="fa fa-envelope"></i> Email</a>
+            </div>
+            <div class="three columns center-text" id="Medium">
+                <a  class="button button-secondary" href="http://Medium.com/@matthamlin"><i class="fa fa-medium"></i> Medium</a>
+            </div>
+            <div class="three columns center-text" id="github">
+                <a class="button button-secondary" href="https://github.com/hamlim"><i class="fa fa-github"></i> Github</a>
+            </div>
+        </footer>
 
-				<!-- four -->
-				<section id="four">
-                    <header class="major">
-				        <h2>My Past Projects</h2>
-                    </header>
-					<div class="row">
-						<article class="6u 12u$(xsmall)">
-							<h3><a href="http://n.myrpi.org/howtohustle">How to Hustle</a></h3>
-							<p>Tips for entrepreneurs learning to hustle.</p>
-						</article>
-						<article class="6u$ 12u$(xsmall)">
-							<h3><a href="http://n.myrpi.org/listenlist">Listen List</a></h3>
-							<p>Discover, Discuss, and Share great podcasts.</p>
-						</article>
-						<article class="6u 12u$(xsmall)">
-							<h3><a href="http://n.myrpi.org/currentwire">Trends</a></h3>
-							<p>Trending Tweets in several subjects.</p>
-						</article>
-						<article class="6u$ 12u$(xsmall)">
-							<h3><a href="http://n.myrpi.org/pace">Pace</a></h3>
-							<p>Simple, Quick, and Visual Project Management</p>
-						</article>
-						<article class="6u 12u$(xsmall)">
-							<h3><a href="http://projects.campuslist.myrpi.org/cazz">#YOLOSWAG</a></h3>
-							<p>Messing Around in Media</p>
-						</article>
-						<article class="6u$ 12u$(xsmall)">
-							<h3><a href="http://n.myrpi.org/afternooncoffee">Afternoon Coffee</a></h3>
-							<p>Feedback on Ideas</p>
-						</article>
-					</div>
-				</section>
-
-				<!-- Five -->
-				<section id="five">
-					<header class="major">
-						<h2><a href="./resume.pdf">PDF Copy of My Resume</a></h2>
-					<header>
-				</section>
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-                    <li>Built using the Strata theme by <a href="http://html5up.net">HTML5UP</a>.</li>
-					<li><a href="http://twitter.com/immatthamlin" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="mailto:hamlim@outlook.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-			</footer>
-
-			<!-- Google analytics -->
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			  	ga('create', 'UA-64612821-1', 'auto');
-			  	ga('send', 'pageview');
-
-			</script>
-
-	</body>
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
 </html>
