@@ -6,7 +6,7 @@ title: A New Resume
 A New Resume
 ------------
 
-This weekend I set out to work on Bundles and to also work on my own website. I successfully launched Bundles v1, setup a blog on my website, redesigned my portfolio, and now I have finished redesigning my resume website also.
+This weekend I set out to work on Bundles and to also work on my own website. I successfully launched Bundles v1, setup a blog on my website, redesigned my portfolio, and now I have finished redesigning my resume website also. 
 
 The new cleaner [Resume](http://matthamlin.me/resume.html) focuses on just the key areas of my technical resume, allowing potential employers to find what they need to know about me without needing to sort through tons of unrelated content.
 
