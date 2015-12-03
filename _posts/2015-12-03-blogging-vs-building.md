@@ -10,5 +10,5 @@ From November 25th to December 1st I was posting a blog update once a day, I unf
 
 So I took yesterday off, and I focused on school work. So from here on out I only plan on writing a post when I have something I need to say or for updates about my projects. 
 
-> Blogging, at least for developers, just makes you feel like you are being productive.
+> Blogging just makes you feel like you are being productive.
 
