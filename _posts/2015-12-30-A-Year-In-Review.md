@@ -4,7 +4,7 @@ The year of a lot of changes.
 
 -----
 
-[Click to tweet this post (can edit before posting)](https://twitter.com/share?url=http://matthamlin.me&via=immatthamlin&text=2015+in+review+and+looking+forward+to+2016)
+[Click to tweet this post (can edit before posting)](https://twitter.com/share?text=2015+in+review+and+looking+forward+to+2016&url=http://matthamlin.me&via=immatthamlin)
 
 2015 was a big year for me, I changed a lot about myself internally, and also the settings around me. I began the year focusing on growing social acceptance in terms of followers, friends, and other online interactions. I changed that mindset only a few weeks ago to instead focus on building a value network around me of trusted friends and family. 
 
