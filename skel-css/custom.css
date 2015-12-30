@@ -314,3 +314,15 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: red;
 }
+.fix-height {
+    min-height: inherit;
+}
+.gray-box {
+    background-color: #dddddd;
+}
+.green-box {
+    background-color: #2ECC40;
+}
+.orange-box {
+    background-color: #FF851B;
+}

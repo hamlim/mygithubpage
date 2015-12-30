@@ -12,7 +12,12 @@ Of course there is nothing keeping me from doing this except the drive to do new
 What is this?
 -------------
 
+Here is a link to the page: [Status](http://matthamlin.me/status.html)
+
+
 Well this is simply an about post about the project, I plan on building a new page for my personal website, where I track tasks completed and to be completed each day. These simple tasks will be things such as doing some sort of exercise each day, to eating something healthy (ideally vegetables and lean meats like chicken or turkey). I also want to focus on being able to build up my coding experience, so I want to track progress working on new projects as well.
 
 Each day I will update the website with tasks that I completed that day, and with goals for the next day.
+
+
 

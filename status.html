@@ -5,7 +5,7 @@
         <!-- Basic Page Needs
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta charset="utf-8">
-        <title>Status &#2705;</title>
+        <title>Status &#9989;</title>
         <meta name="description" content="Matt Hamlin's Portfolio">
         <meta name="author" content="Matt Hamlin">
 
@@ -48,13 +48,15 @@
         <meta name="msapplication-TileImage" content="/public/mstile-144x144.png">
         <meta name="theme-color" content="#3498db">
         <link rel="shortcut icon" href="/public/favicon.ico">
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/status.js"></script>
 
     </head>
     <body>
 
         <!-- Primary Page Layout
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <progress max="366" value="1"></progress>
+        <progress id="progress-bar" max="366" value="200"></progress>
         <header id="header" class="container">
             <section class="header">
                 <h2 class="title">Status</h2>
@@ -83,51 +85,163 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="one-half column" style="margin-top: 25%">
-                    <h4>Who Am I</h4>
-                    <p>I am currently a senior studying Information Technology and Web Science at <a href="http://www.rpi.edu">Rensselaer Polytechnic Institute</a>,
-                        and plan on grauating in May of 2016. I primarily focus on frontend web development, with extending interests within community development,
-                        social media managmenet, and growth engineering.</p>
-                </div>
-                <div class="one-half column" style="margin-top: 25%">
-                    <h4>My Current Project: Bundles</h4>
-                    <p>My current project, <a href="http://www.goexploring.today">Bundles</a>, is a simple web application that allows people to share multiple pieces
-                         of content with others with one single link. To get updates about the project follow the twitter account <a href="https://twitter.com/makebundles">@makebundles</a>
-                         and also subscribe to the <a href="http://eepurl.com/bCTMe9">mailing list</a>.</p>
+                <div class="one-full column" style="margin-top: 25%">
+                    <h4>What is this?</h4>
+                    <p>This is a public status document about what I am doing day to day. You can read more about it here: <a href="http://matthamlin.me/2015/12/31/2016-Resolutions-Project/">Status Project</a></p>
+                    <hr>
+                    <p>
+                        <h5>Color Key</h5>
+                        <ul>
+                            <li>
+                                <span class="gray-box">&nbsp; &nbsp;</span> - In Progress
+                            </li>
+                            <li>
+                                <span class="green-box">&nbsp; &nbsp;</span> - Completed
+                            </li>
+                            <li>
+                                <span class="orange-box">&nbsp; &nbsp;</span> - Incomplete
+                            </li>
+                        </ul>
+
+                    </p>
                 </div>
             </div>
+            <!-- A new row for every three days -->
+            <!--
+                Notes:
+
+                <strike>    </strike>
+                <label><input type="checkbox" disabled > TASK </label>
+
+                completion classes:
+                in progress: gray-box
+                Completed: green-box
+                incompleted: orange-box
+            -->
             <div class="row" style="margin-top: 25%">
-                <!-- Past Projects -->
-                <!-- Trends, How to Hustle, Pace, Afternoon Coffee -->
-                <div class="six columns">
-                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/Trends" target="_blank">Trends</a></h6>
-                    <p>Trends was an interesting project built to show the top 10 tweets in a specific area of news coverage. I learned a lot about developing
-                        with the Twitter API, as well as developing my own API to communicate with a flat file server.
-                    </p>
+                <h4>January:</h4>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns gray-box">
+                    <h5>January 1st, 2016</h5>
+                    <label><input type="checkbox" disabled > Work on Bundles (link parsing)</label>
+                    <label><input type="checkbox" disabled > Take a walk!</label>
                 </div>
-                <div class="six columns">
-                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/howtohustle" target="_blank">How To Hustle</a></h6>
-                    <p>How to Hustle was a short lived side project that inspired me to write content that would allow me and other entreprenuers to focus
-                        and to hustle in their efforts to build things. I learned a lot about the difficulties writing content every week for an audience.
-                    </p>
+                <div class="four columns ">
+                    <h5>January 2nd, 2016</h5>
+                    <label><input type="checkbox" disabled > Take a Walk </label>
+                </div>
+                <div class="four columns">
+                    <h5>January 3rd, 2016</h5>
+
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns ">
+                    <h5>January 4th, 2016</h5>
+
+                </div>
+                <div class="four columns">
+                    <h5>January 6th, 2016</h5>
+                </div>
+                <div class="four columns ">
+                    <h5>January 7th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 8th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 9th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 10th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 11th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 12th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 13th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 14th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 15th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 16th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 17th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 18th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 19th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 20th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 21th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 22th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 23th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 24th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 25th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 26th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 27th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 28th, 2016</h5>
+                </div>
+            </div>
+            <div class="row fix-height">
+                <div class="four columns">
+                    <h5>January 29th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 30th, 2016</h5>
+                </div>
+                <div class="four columns">
+                    <h5>January 31th, 2016</h5>
                 </div>
             </div>
             <div class="row">
-                <div class="six columns">
-                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/pace" target="_blank">Pace</a></h6>
-                    <p>Pace was a project that I developed partially with a team of developers from school, and then continued on after the school project
-                        ended. I gained a ton of experience working with real world customers and balancing a want vs a need when developing for other people.
-                    </p>
-                </div>
-                <div class="six columns">
-                    <h6 class="center-text"><a class="button" href="http://n.myrpi.org/afternooncoffee" target="_blank">Afternoon Coffee</a></h6>
-                    <p>Afternoon Coffee was one of the original public Slack chat groups, before #startup and other large slack communities. I started Afternoon
-                        Coffee to reach out to more developers and have conversations about ideas, methodologies, and centrally feedback on my thoughts.
-                    </p>
-                </div>
+                <h4>February:</h4>
             </div>
+
         </div>
-        <footer class="container">
+        <footer class="container" style="margin-top: 25%">
             <!-- Social Buttons  Twitter, email, Medium, Github   -->
             <div class="three columns center-text" id="twitter">
                 <a class="button button-secondary" href="http://twitter.com/immatthamlin"><i class="fa fa-twitter"></i> Twitter</a>
