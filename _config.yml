@@ -19,6 +19,7 @@ pages_list:
   Resume: '/resume.html'
   Archive: '/archive'
   Feed: '/atom.xml'
+  Status: '/status.html'
 
 
 # Assets
