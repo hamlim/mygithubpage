@@ -1,0 +1,103 @@
+{
+    "posts": [
+        {
+            "postTitle": "2016 Goals",
+            "postID": 11,
+            "numberOfWords": 257,
+            "postSubtitle": "My 2016 resolutions project",
+            "postDate": "2015-12-31",
+            "postSynopsis": "I never stick to my goals and resolutions after New...",
+            "postLink": "./Posts/Pub/2015/December/2016.html"
+        },
+        {
+            "postTitle": "2015 in Review",
+            "postID": 10,
+            "numberOfWords": 293,
+            "postSubtitle": "Some concluding thoughts on 2015",
+            "postDate": "2015-12-30",
+            "postSynopsis": "2015 was a big year for me, I changed a...",
+            "postLink": "./Posts/Pub/2015/December/2015.html"
+        },
+        {
+            "postTitle": "Where is the Powerpoint Remake?",
+            "postID": 9,
+            "numberOfWords": 561,
+            "postSubtitle": "Making what was old, new again",
+            "postDate": "2015-12-09",
+            "postSynopsis": "If you happen to be following the startup world (which...",
+            "postLink": "./Posts/Pub/2015/December/Powerpoint.html"
+        },
+        {
+            "postTitle": "Blogging vs Working",
+            "postID": 8,
+            "numberOfWords": 134,
+            "postSubtitle": "Or: Why I can't simply do both",
+            "postDate": "2015-12-03",
+            "postSynopsis": "From November 25th to December 1st I was posting a...",
+            "postLink": "./Posts/Pub/2015/December/BloggingvsWorking.html"
+        },
+        {
+            "postTitle": "The Social Max",
+            "postID": 7,
+            "numberOfWords": 338,
+            "postSubtitle": "Some thoughts on social networks",
+            "postDate": "2015-12-01",
+            "postSynopsis": "A few days ago I tweeted about an idea I...",
+            "postLink": "./Posts/Pub/2015/December/TheSocialMax.html"
+        },
+        {
+            "postTitle": "The Message is in the Medium",
+            "postID": 6,
+            "numberOfWords": 520,
+            "postSubtitle": "Some thoughts on digital mediums",
+            "postDate": "2015-11-30",
+            "postSynopsis": "The above title is something that was taught to me...",
+            "postLink": "./Posts/Pub/2015/November/Message.html"
+        },
+        {
+            "postTitle": "A New Resume",
+            "postID": 5,
+            "numberOfWords": 161,
+            "postSubtitle": "Building a new resume",
+            "postDate": "2015-11-29",
+            "postSynopsis": "This weekend I set out to work on Bundles and...",
+            "postLink": "./Posts/Pub/2015/November/ANewResume.html"
+        },
+        {
+            "postTitle": "Family Time",
+            "postID": 4,
+            "numberOfWords": 189,
+            "postSubtitle": "Some thoughts on spending time with family",
+            "postDate": "2015-11-28",
+            "postSynopsis": "This week(end) for me has been an amazing whirlwind of...",
+            "postLink": "./Posts/Pub/2015/November/FamilyTime.html"
+        },
+        {
+            "postTitle": "Weekend Projects",
+            "postID": 3,
+            "numberOfWords": 217,
+            "postSubtitle": "Some weekend thoughts",
+            "postDate": "2015-11-27",
+            "postSynopsis": "Since I came home for Thanksgiving I figured I would...",
+            "postLink": "./Posts/Pub/2015/November/WeekendProjects.html"
+        },
+        {
+            "postTitle": "Thanksgiving",
+            "postID": 2,
+            "numberOfWords": 204,
+            "postSubtitle": "What I am Thankful For",
+            "postDate": "2015-11-26",
+            "postSynopsis": "Today is Thanksgiving day 2015 and right before I jump...",
+            "postLink": "./Posts/Pub/2015/November/Thanksgiving.html"
+        },
+        {
+            "postTitle": "A New Look",
+            "postID": 1,
+            "numberOfWords": 30,
+            "postSubtitle": "Setting up a new blog.",
+            "postDate": "2015-11-25",
+            "postSynopsis": "I just setup Poole as a blogging style with Jekyll...",
+            "postLink": "./Posts/Pub/2015/November/ANewLook.html"
+        }
+    ]
+}
