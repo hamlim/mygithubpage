@@ -1,30 +1,84 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
-      </item>
-    {% endfor %}
-  </channel>
+    <channel>
+        <title>http://matthamlin.me</title>
+        <description>Matt Hamlin's Blog</description>
+        <link>http://matthamlin.me/</link>
+        <atom:link href="http://matthamlin.me" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 01 Jan 2016 00:42:17 +0000</pubDate>
+        <lastBuildDate>Fri, 01 Jan 2016 00:42:17 +0000</lastBuildDate>
+        <generator>Matt Hamlin V1.0</generator>
+
+        <item>
+            <title>2016 Goals</title>
+            <description>I never stick to my goals and resolutions after New...</description>
+            <pubDate>2015-12-31T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/2016.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/2016.html</guid>
+        </item>
+        <item>
+            <title>2015 in Review</title>
+            <description>2015 was a big year for me, I changed a...</description>
+            <pubDate>2015-12-30T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/2015.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/2015.html</guid>
+        </item>
+        <item>
+            <title>Where is the Powerpoint Remake?</title>
+            <description>If you happen to be following the startup world (which...</description>
+            <pubDate>2015-12-09T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/Powerpoint.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/Powerpoint.html</guid>
+        </item>
+        <item>
+            <title>Blogging vs Working</title>
+            <description>From November 25th to December 1st I was posting a...</description>
+            <pubDate>2015-12-03T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/BloggingvsWorking.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/BloggingvsWorking.html</guid>
+        </item>
+        <item>
+            <title>The Social Max</title>
+            <description>A few days ago I tweeted about an idea I...</description>
+            <pubDate>2015-12-01T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/TheSocialMax.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/TheSocialMax.html</guid>
+        </item>
+        <item>
+            <title>The Message is in the Medium</title>
+            <description>The above title is something that was taught to me...</description>
+            <pubDate>2015-11-30T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/November/Message.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/Message.html</guid>
+        </item>
+        <item>
+            <title>A New Resume</title>
+            <description>This weekend I set out to work on Bundles and...</description>
+            <pubDate>2015-11-29T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/November/ANewResume.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/ANewResume.html</guid>
+        </item>
+        <item>
+            <title>Family Time</title>
+            <description>This week(end) for me has been an amazing whirlwind of...</description>
+            <pubDate>2015-11-28T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/November/FamilyTime.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/FamilyTime.html</guid>
+        </item>
+        <item>
+            <title>Weekend Projects</title>
+            <description>Since I came home for Thanksgiving I figured I would...</description>
+            <pubDate>2015-11-27T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/November/WeekendProjects.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/WeekendProjects.html</guid>
+        </item>
+        <item>
+            <title>Thanksgiving</title>
+            <description>Today is Thanksgiving day 2015 and right before I jump...</description>
+            <pubDate>2015-11-26T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/November/Thanksgiving.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/Thanksgiving.html</guid>
+        </item>
+
+    </channel>
 </rss>
