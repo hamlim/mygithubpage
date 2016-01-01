@@ -1,28 +1,115 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
- <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
- </author>
+    <title>Matt Hamlin's Blog</title>
+    <link href="http://matthamlin.me/atom.xml" rel="self"/>
+    <link href="http://matthamlin.me"/>
+    <updated>2016-01-01T00:22:35+00:00</updated>
+    <id>http://matthamlin.me</id>
+    <author>
+        <name>Matt Hamlin</name>
+        <email>hamlim@outlook.com</email>
+    </author>
 
- {% for post in site.posts %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
+    <entry>
+        <title>2016 Goals</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/December/2016.html"/>
+        <updated>2015-12-31T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/December/2016.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>2015 in Review</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/December/2015.html"/>
+        <updated>2015-12-30T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/December/2015.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>Where is the Powerpoint Remake?</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/December/Powerpoint.html"/>
+        <updated>2015-12-09T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/December/Powerpoint.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>Blogging vs Working</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/December/BloggingvsWorking.html"/>
+        <updated>2015-12-03T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/December/BloggingvsWorking.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>The Social Max</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/December/TheSocialMax.html"/>
+        <updated>2015-12-01T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/December/TheSocialMax.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>The Message is in the Medium</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/November/Message.html"/>
+        <updated>2015-11-30T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/November/Message.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>A New Resume</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/November/ANewResume.html"/>
+        <updated>2015-11-29T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/November/ANewResume.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>Family Time</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/November/FamilyTime.html"/>
+        <updated>2015-11-28T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/November/FamilyTime.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>Weekend Projects</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/November/WeekendProjects.html"/>
+        <updated>2015-11-27T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/November/WeekendProjects.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>Thanksgiving</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/November/Thanksgiving.html"/>
+        <updated>2015-11-26T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/November/Thanksgiving.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+    <entry>
+        <title>A New Look</title>
+        <link href="http://matthamlin.me/Posts/Pub/2015/November/ANewLook.html"/>
+        <updated>2015-11-25T00:00:00+00:00</updated>
+        <id>http://matthamlin.me/Posts/Pub/2015/November/CHANGE.html</id>
+        <content type="html">
+
+        </content>
+    </entry>
+
 
 </feed>
