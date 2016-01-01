@@ -364,3 +364,12 @@ span.post-link {
     color: white;
     background-color: #1EAEDB;
 }
+
+
+.light-blue {
+    background-color: #95E1D3;
+}
+
+.alert-box {
+    border-radius: 10px;
+}
