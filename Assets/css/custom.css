@@ -319,12 +319,15 @@ progress::-moz-progress-bar {
 }
 .gray-box {
     background-color: #dddddd;
+    border-radius: 10px;
 }
 .green-box {
     background-color: #2ECC40;
+    border-radius: 10px;
 }
 .orange-box {
     background-color: #FF851B;
+    border-radius: 10px;
 }
 
 
