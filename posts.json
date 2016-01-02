@@ -1,6 +1,15 @@
 {
     "posts": [
         {
+            "postTitle": "DJI vs GoPro",
+            "postID": 12,
+            "numberOfWords": 261,
+            "postSubtitle": "The most exciting tech rivalry in 2016",
+            "postDate": "2016-01-01",
+            "postSynopsis": "2016 is going to be a large year for tech...",
+            "postLink": "./Posts/Pub/2016/January/DJIvsGoPro.html"
+        },
+        {
             "postTitle": "2016 Goals",
             "postID": 11,
             "numberOfWords": 257,
