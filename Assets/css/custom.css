@@ -376,3 +376,6 @@ span.post-link {
 .alert-box {
     border-radius: 10px;
 }
+.box {
+    padding: 10px;
+}
