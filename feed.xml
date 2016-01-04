@@ -10,6 +10,14 @@
         <generator>Matt Hamlin V1.0</generator>
 
         <item>
+            <title>Building in 2016</title>
+            <descrption>I want to build complete small services that are actually useful for myself, and maybe others.</description>
+            <pubDate>2016-01-03T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2016/January/BuildingIn2016.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2016/January/BuildingIn2016.html</guid>
+        </item>
+
+        <item>
             <title>DJI vs GoPro</title>
             <description>2016 is going to be a large year for tech...</description>
             <pubDate>2016-01-01T00:00:00+00:00</pubDate>
@@ -72,13 +80,7 @@
             <link>http://matthamlin.me/Posts/Pub/2015/November/FamilyTime.html</link>
             <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/FamilyTime.html</guid>
         </item>
-        <item>
-            <title>Weekend Projects</title>
-            <description>Since I came home for Thanksgiving I figured I would...</description>
-            <pubDate>2015-11-27T00:00:00+00:00</pubDate>
-            <link>http://matthamlin.me/Posts/Pub/2015/November/WeekendProjects.html</link>
-            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/WeekendProjects.html</guid>
-        </item>
+        
 
     </channel>
 </rss>

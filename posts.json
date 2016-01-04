@@ -1,6 +1,15 @@
 {
     "posts": [
         {
+            "postTitle": "Building in 2016",
+            "postID": 13,
+            "numberOfWords": 256,
+            "postSubtitle": "My Goals Building Projects in 2016",
+            "postDate": "2016-01-03",
+            "postSynopsis": "I want to build complete small services that are actually useful for myself, and maybe others.",
+            "postLink": "./Posts/Pub/2016/January/BuildingIn2016.html"
+        },
+        {
             "postTitle": "DJI vs GoPro",
             "postID": 12,
             "numberOfWords": 261,
