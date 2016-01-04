@@ -379,3 +379,7 @@ span.post-link {
 .box {
     padding: 10px;
 }
+
+span.number-of-words {
+    float: right;
+}
