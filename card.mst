@@ -5,7 +5,7 @@
     </div>
     <div class="card-subtitle">
         <p class="subtitle margin-bottom-fix">{{postSubtitle}}</p>
-        <span class="number-of-words">Length: {{numberOfWords}} Words</span>
+        <span class="number-of-words">Length: <span class="number-text">{{numberOfWords}}</span> Words</span>
     </div>
     <hr class="margin-hotfix">
     <div class="synopsis">

@@ -379,7 +379,6 @@ span.post-link {
 .box {
     padding: 10px;
 }
-
-span.number-of-words {
-    float: right;
+.number-text {
+    color: #78BBE6;
 }
