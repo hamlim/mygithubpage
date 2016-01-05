@@ -10,6 +10,89 @@
         <name>Matt Hamlin</name>
         <email>hamlim@outlook.com</email>
     </author>
+
+    <entry>
+        <title>First Project of 2016</title>
+        <link href="http://matthamlin.me/Posts/Pub/2016/January/FirstProjectof2016.html">
+        <id>http://matthamlin.me/Posts/Pub/2016/January/FirstProjectof2016.html</id>
+        <updated>2016-01-05T00:00:00+00:00</updated>
+        <content type="html">
+            <header id="header" class="container">
+                <section class="header">
+                    <h2 class="title">First Project in 2016</h2> <!-- TITLE -->
+                    <p>Building a Financial Tracker</p> <!-- SUBTITLE -->
+                    <hr>
+                </section>
+            </header>
+            <article class="container " style="margin-top: 5%" id="blog-content">
+                <!-- CONTENT -->
+                <p>As I mentioned in my <a href="http://matthamlin.me/Posts/Pub/2016/January/BuildingIn2016.html">Building in 2016</a> post, I want to make sure I am building things in 2016 primarily for me. So my first project for 2016 is going to be focused just on one of my own pain points. First, before I jump into the full project breakdown, I want to talk a bit about the background.</p>
+                <p>As you can read in the subtitle, this project is going to be a simple transaction manager. I just got my first credit card this summer and so my parents wanted me to have a better understanding and attitude towards my finances. So I stated a Google sheet from a template to track my expenditures. I have been using that sheet even to this day and it is completely slow, especially on my phone. It takes a only up to around a minute to add in all the various bits I have been tracking but those minutes add up, just like the balance on the credit card. And the user interface of Google Sheets isn't all that efficient yet.</p>
+                <p>So I decided that I would try to build a really simple online form where I can quickly add in some recent expenditures. I have been tinkering around with a few new small CSS and JS libraries so I figured why not combine this project with what I am learning right now. I plan on building an extremely simple website with two pages, the first is simply a form to add transactions, and the second is going to be for showing in depth analysis on my expenditures.</p>
+                <p>For the people interested I plan on building this with:</p>
+                <ul>
+                    <li><a href="http://milligram.github.io/">Milligram</a></li>
+                    <ul>
+                        <li>Which I might change to <a href="http://getskeleton.com">Skeleton</a></li>
+                    </ul>
+                    <li><a href="http://vuejs.org/">Vue.JS</a></li>
+                    <li><a href="https://airtable.com/">Airtable (for the database)</a></li>
+                </ul>
+                <p>I plan on hosting the entire project on Github so others can use the code for their own expense tracking, and also to allow other contributors to the project as well.</p>
+                <p>I currently am also working on <a href="http://goexploring.today">Bundles</a> which I plan to launch in the coming 30 days or so.</p>
+                <p>
+                    If you enjoyed this post, make sure to <mark>share</mark> it below. Also if you want to reach out to me about this project or anything else, feel free to either email me or tweet at me:</p>
+                </p>
+                <div class="u-cf u-full-width" style="margin-bottom: 5%">
+                    <div class="u-pull-left">
+                        <a class="button" href="mailto:hamlim@outlook.com"><i class="fa fa-envelope"></i> hamlim@outlook.com</a>
+                    </div>
+                    <div class="u-pull-right">
+                        <a class="button" href="https://twitter.com/immatthamlin"><i class="fa fa-twitter"></i> @immatthamlin</a>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="container">
+                <!-- We want a back to blog button, a facebook share button, a twitter share button -->
+                <div class="four columns center-text" id="back-to-blog">
+                    <a class="button button-secondary" href="/../../index.html"><i class="fa fa-home"></i> Back Home</a>
+                </div>
+                <div class="four columns center-text" id="share-to-facebook">
+                    <div id="fb-root"></div>
+                	<script>
+                        (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                	        if (d.getElementById(id)) return;
+                	        js = d.createElement(s); js.id = id;
+                	        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                	        fjs.parentNode.insertBefore(js, fjs);
+                	   }(document, 'script', 'facebook-jssdk'));
+                    </script>
+
+                	<!-- Your share button code --> <!-- LINK -->
+                	<div class="fb-share-button"
+                		data-href="http://matthamlin.me/Posts/Pub/2016/January/FirstProjectof2016.html"
+                		data-layout="button_count">
+                	</div>
+                </div>
+                <div class="four columns center-text" id="share-to-twitter"> <!-- SHARE CONTENT -->
+                    <a href="https://twitter.com/intent/tweet?text=My+First+Project+in+2016&url=http://matthamlin.me/Posts/Pub/2016/January/FirstProjectof2016.html&via=immatthamlin" class="twitter-share-button" rel="nofollow" data-size="large" target="_blank">Tweet</a>
+                    <script>
+                        !function(d,s,id){
+                            var js,fjs=d.getElementsByTagName(s)[0],
+                              p=/^http:/.test(d.location)?'http':'https';
+                            if(!d.getElementById(id)){js=d.createElement(s);
+                                js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js,fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+            </footer>
+        </content>
+    </entry>
+
     <entry>
         <title>Building in 2016</title>
         <link href="http://matthamlin.me/Posts/Pub/2016/January/BuildingIn2016.html"/>
