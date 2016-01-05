@@ -346,8 +346,11 @@ progress::-moz-progress-bar {
 .card {
     padding: 10px;
     background-color: #fff;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+
     margin-bottom: 2em;
+}
+.card:hover {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 span.post-link {
     float: right;
