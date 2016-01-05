@@ -381,7 +381,7 @@ span.post-link {
 }
 .box {
     padding: 10px;
-
+    margin-bottom: 10px;
 }
 .number-text {
     color: #78BBE6;
@@ -406,6 +406,6 @@ span.post-link {
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        margin-bottom: 10px;
+
     }
 }
