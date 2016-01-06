@@ -5,9 +5,19 @@
         <description>Matt Hamlin's Blog</description>
         <link>http://matthamlin.me/</link>
         <atom:link href="http://matthamlin.me" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 01 Jan 2016 00:42:17 +0000</pubDate>
-        <lastBuildDate>Fri, 01 Jan 2016 00:42:17 +0000</lastBuildDate>
+        <pubDate>Tue, 06 Jan 2016 00:42:17 +0000</pubDate>
+        <lastBuildDate>Tue, 06 Jan 2016 00:42:17 +0000</lastBuildDate>
         <generator>Matt Hamlin V1.0</generator>
+
+
+
+        <item>
+            <title>10,000 Characters</title>
+            <description>How Twitter Should Handle 10,000 Character Tweets.</description>
+            <pubDate>2016-01-06T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2016/January/WhatTwitterShouldDo.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2016/January/WhatTwitterShouldDo.html</guid>
+        </item>
 
         <item>
             <title>First Project of 2016</title>
@@ -74,15 +84,5 @@
             <link>http://matthamlin.me/Posts/Pub/2015/November/Message.html</link>
             <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/Message.html</guid>
         </item>
-        <item>
-            <title>A New Resume</title>
-            <description>This weekend I set out to work on Bundles and...</description>
-            <pubDate>2015-11-29T00:00:00+00:00</pubDate>
-            <link>http://matthamlin.me/Posts/Pub/2015/November/ANewResume.html</link>
-            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/ANewResume.html</guid>
-        </item>
-        
-
-
     </channel>
 </rss>

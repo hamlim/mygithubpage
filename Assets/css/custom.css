@@ -409,3 +409,11 @@ span.post-link {
 
     }
 }
+
+.center-block {
+    text-align: center;
+}
+.center-content {
+    display: inline-block;
+    width: 50%;
+}
