@@ -74,6 +74,10 @@
         <script src="./Assets/js/jquery.min.js"></script>
         <script src="./Assets/js/status.js"></script>
 
+        <!-- Emoji
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="//cdn.jsdelivr.net/emojione/2.0.1/lib/js/emojione.min.js"></script>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.0.1/assets/css/emojione.min.css"/>
 
     </head>
     <body>
@@ -324,7 +328,10 @@
                             <strike>Drink water</strike>
                         </li>
                         <li>
-                            Work on &#128184;
+                            <strike>Work on &#128184;</strike>
+                        </li>
+                        <li>
+                            <mark class="emoji">Finished with v1 of :moneybag: index page</mark>
                         </li>
                     </ul>
                 </div>
@@ -595,6 +602,16 @@
           ga('send', 'pageview');
 
         </script>
+        <script type="text/javascript">
+		     $(document).ready(function() {
+				 $(".emoji").each(function() {
+		            var original = $(this).html();
+		            // use .shortnameToImage if only converting shortnames (for slightly better performance)
+		            var converted = emojione.toImage(original);
+		            $(this).html(converted);
+		        });
+		    });
+		</script>
 
         <!-- End Document
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
