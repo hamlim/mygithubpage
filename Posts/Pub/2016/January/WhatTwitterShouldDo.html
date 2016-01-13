@@ -69,6 +69,15 @@
         <meta name=”twitter:description” content="How Twitter Should Handle 10,000 Character Tweets."/> <!-- SUBTITLE -->
         <meta name=“twitter:image:src” content="http://matthamlin.me/Assets/images/generic/avatar.jpeg"/>
 
+        <!-- To add the hashtag on each paragraph -->
+        <script type="text/javascript" src="/../../Assets/js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/../../Assets/js/articles.js"></script>
+        <!--
+            classes:
+            id="1" class="hover-link"
+            <i class="fa fa-hashtag left-of" id="1-anchor"></i>
+        -->
 
     </head>
     <body>
@@ -84,19 +93,24 @@
         </header>
         <article class="container " style="margin-top: 5%" id="blog-content">
             <!-- CONTENT -->
-            <p>So I might be a bit late to the party to write about Twitter considering a new 10,000 character limit for tweets but I had a pretty interesting idea the other day which I expressed in this tweet:</p>
+            <p id="1" class="hover-link">So I might be a bit late to the party to write about Twitter considering a new 10,000 character limit for tweets but I had a pretty interesting idea the other day which I expressed in this tweet:</p>
+            <i class="fa fa-hashtag left-of" id="1-anchor"></i>
             <div class="center-block">
                 <div class="center-content">
                     <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">What if <a href="https://twitter.com/twitter">@twitter</a> is building "Instant Articles" that anyone can write? <a href="https://t.co/CLVcER5C6B">https://t.co/CLVcER5C6B</a></p>— Matt Hamlin (@immatthamlin) <a href="https://twitter.com/immatthamlin/status/684528854694670337">January 6, 2016</a></blockquote>
                 </div>
             </div>
 
-            <p>Facebook developed a service known as Instant Articles (written about <a href="http://www.theverge.com/2015/5/13/8595263/facebooks-instant-articles-arrive-to-speed-up-the-news-feed">here</a>) where publishers can partner with Facebook to upload their content to Facebook's servers in a lightweight format. Then this content can be loaded quickly within Facebook's applications. As I expressed in the tweet above, a great way for Twitter to implement longer tweets would be in the form of simple "Instant Article"-like pages.</p>
-            <p>Lets say that I am reading my feed on Twitter, and I find a tweet that starts off as:</p>
+            <p id="2" class="hover-link">Facebook developed a service known as Instant Articles (written about <a href="http://www.theverge.com/2015/5/13/8595263/facebooks-instant-articles-arrive-to-speed-up-the-news-feed">here</a>) where publishers can partner with Facebook to upload their content to Facebook's servers in a lightweight format. Then this content can be loaded quickly within Facebook's applications. As I expressed in the tweet above, a great way for Twitter to implement longer tweets would be in the form of simple "Instant Article"-like pages.</p>
+            <i class="fa fa-hashtag left-of" id="2-anchor"></i>
+            <p id="3" class="hover-link">Lets say that I am reading my feed on Twitter, and I find a tweet that starts off as:</p>
+            <i class="fa fa-hashtag left-of" id="3-anchor"></i>
             <blockquote>
             <p><i>Some random blog post about Twitter and Facebook...  [Read More]</i></p>
             </blockquote>
-            <p>So when I click on the Read More link, the full post slides over my feed from a side of the screen. I can then read the full post and then click back to the feed. This way these longer tweets will be hidden from the streamlined feed that everyone is used to, and if someone decides to post to these longer tweets, a simple button will be all that users will see so that these tweets don't overflow the feed like Owen Williams recently tweeted as a joke.</p>
+
+            <p id="4" class="hover-link">So when I click on the Read More link, the full post slides over my feed from a side of the screen. I can then read the full post and then click back to the feed. This way these longer tweets will be hidden from the streamlined feed that everyone is used to, and if someone decides to post to these longer tweets, a simple button will be all that users will see so that these tweets don't overflow the feed like Owen Williams recently tweeted as a joke.</p>
+            <i class="fa fa-hashtag left-of" id="4-anchor"></i>
             <div class="center-block">
                 <div class="center-content">
 
@@ -173,7 +187,9 @@
                     💁</p>— Owen Williams (@ow) <a href="https://twitter.com/ow/status/684528705561989121">January 6, 2016</a></blockquote>
                 </div>
             </div>
-            <p>A side note that probably needs to be made is that the current trend is to bash Twitter for becoming more like Facebook with now potentially longer tweets and the recent change from Favorites to Likes, however this kind of implementation feels like a natural way to handle longer posts. Since the inception of the social network, many of the features of Twitter have been "developed" by the community (hashtags and at mentions are the most significant, to recent developments like tweetstorms and screenshorts) so it would only make sense for some simple application to implement some sort of longer tweet in a popular style for Twitter to pick it up and implement that format into the service.</p>
+
+            <p id="5" class="hover-link">A side note that probably needs to be made is that the current trend is to bash Twitter for becoming more like Facebook with now potentially longer tweets and the recent change from Favorites to Likes, however this kind of implementation feels like a natural way to handle longer posts. Since the inception of the social network, many of the features of Twitter have been "developed" by the community (hashtags and at mentions are the most significant, to recent developments like tweetstorms and screenshorts) so it would only make sense for some simple application to implement some sort of longer tweet in a popular style for Twitter to pick it up and implement that format into the service.</p>
+            <i class="fa fa-hashtag left-of" id="5-anchor"></i>
             <p>
                 If you enjoyed this post, make sure to <a href="#share"><mark>share</mark></a> it below. Also if you want to reach out to me about this post or anything else, feel free to either email me or tweet at me:</p>
             </p>
