@@ -48,18 +48,24 @@ function copyTextToClipboard(text) {
     var successful = document.execCommand('copy');
     var msg = successful ? 'successful' : 'unsuccessful';
     console.log('Copying text command was ' + msg);
+    if(msg === 'successful'){
+        notie.alert(1, 'You copied the link to that paragraph! Share it wisely! :D', 3);
+    } else {
+        notie.alert(2, 'It looks like your browser won\'t let you copy the link! :( ', 3);
+    }
   } catch (err) {
     console.log('Oops, unable to copy');
+    notie.alert(2, 'It looks like your browser won\'t let you copy the link! :( ', 3);
   }
 
   document.body.removeChild(textArea);
 }
 
 $(document).ready(function() {
+    //we want to notify readers that they can click on individual paragraphs to copy a link to that paragraph
+    notie.alert(1, 'You can click on any paragraph to copy the link to it for sharing!', 5);
+    //highight the section that was shared
     $(window.location.hash).effect("highlight", {color: '#FFDC00'}, 3000);
-
-
-
 
     //ok now on hover of (.hover-link), show an anchor to it's left
     $('.hover-link').hover(function(){
