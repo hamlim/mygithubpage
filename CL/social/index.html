@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Campus Social</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../Assets/css/holy-grail.css">
+        <link rel="stylesheet" href="../Assets/css/basscss.css">
+        <link rel="stylesheet" href="../Assets/css/base.css">
+
+        <!-- General Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="The Campus Social website!">
+        <meta name="author" content="CampusLife Team">
+
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Social Meta Tags -->
+        <!-- Facebook Meta Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://matthamlin.me/CL/social/index.html" />
+        <meta property="fb:app_id" content="860045567427575" /> <!-- TODO Make new facebook app for this -->
+        <meta property="og:title" content="Campus Social" />
+        <meta property="og:description" content="The Campus Social website!" />
+        <meta property="og:image" content="http://matthamlin.me/CL/social/Assets/images/generic/avatar.jpeg" /> <!-- TODO Make new icon for this -->
+
+        <!-- Twitter Meta Tags -->
+        <meta name=”twitter:card” content=summary/>
+        <meta name="twitter:site" content="@immatthamlin"/> <!-- TODO Make new twitter handle for this -->
+        <meta name="twitter:creator" content="@immatthamlin">
+        <meta name=”twitter:title” content="Campus Social"/>
+        <meta name=”twitter:url” content="http://matthamlin.me/CL/social/index.html"/>
+        <meta name=”twitter:description” content="The Campus Social website!"/>
+        <meta name=“twitter:image:src” content="http://matthamlin.me/CL/social/Assets/images/generic/avatar.jpeg"/> <!-- TODO Make new icon for this -->
+
+        <!-- Favicons -->
+
+
+        <!-- Scripts -->
+        <script src="../../Assets/js/jquery.min.js"></script>
+        <script src="../../Assets/js/ch/base.js"></script>
+
+        <!-- Emoji -->
+        <script src="//cdn.jsdelivr.net/emojione/2.0.1/lib/js/emojione.min.js"></script>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.0.1/assets/css/emojione.min.css"/>
+
+    </head>
+    <body class="holy-grail">
+        <header class="clearfix mb2 white secondary-background-color">
+            <!-- Header -->
+            <div class="left mxn1">
+              <a href="../index.html" class="btn button-narrow py2 m0 ">CampusLife</a> /
+              <a href="#!" class="btn button-narrow py2 m0 caps">Campus Social</a> /
+            </div>
+            <div class="clearfix sm-hide"></div>
+                <div class="overflow-hidden px2 py1">
+                    <button class="right btn btn-primary" type="button" id="search-button">Find</button>
+                    <input type="text" class="right fit field primary-color quaternary-background-color" placeholder="Search Social"> <!-- bg-lighten-1 -->
+                </div>
+            </div>
+        </header>
+            <article class="HolyGrail-body">
+                <main class="HolyGrail-content">
+                    <!-- for content -->
+                    <h1>Hello!</h1>
+                </main>
+                <nav class="HolyGrail-nav">
+                    <!-- For navigation -->
+                    <h3>Hot Articles! <i class="emoji small">:fire:</i></h3>
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
+                </nav>
+                <aside class="HolyGrail-ads">
+                    <!-- For ads -->
+                </aside>
+            </article>
+        <footer class="clearfix mb2 white secondary-background-color">
+            <div class="left px2">
+                <h3>&copy; 2016 CampusLife</h3>
+            </div>
+            <div class="right px2">
+                <h3>Social</h3>
+            </div>
+            <!-- Footer -->
+        </footer>
+
+        <!-- Emoji Script -->
+        <script type="text/javascript">
+		     $(document).ready(function() {
+				 $(".emoji").each(function() {
+		            var original = $(this).html();
+		            // use .shortnameToImage if only converting shortnames (for slightly better performance)
+		            var converted = emojione.toImage(original);
+		            $(this).html(converted);
+		        });
+		    });
+		</script>
+        <!-- Google Analytics -->
+
+    </body>
+</html>
