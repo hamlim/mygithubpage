@@ -27,3 +27,6 @@
 .quaternary-background-color {
     background-color: #34495E;
 }
+.custom-list {
+    list-style: square;
+}
