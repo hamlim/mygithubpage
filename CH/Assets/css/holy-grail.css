@@ -7,48 +7,81 @@
  */
 
 .HolyGrail {
-  display: flex;
-  height: 100%; /* 1, 3 */
-  flex-direction: column;
+    display:  -webkit-box;
+    display: -webkit-flex;
+    display:  -ms-flexbox;
+    display:         flex;
+    height: 100%; /* 1, 3 */
+        -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .HolyGrail-header,
 .HolyGrail-footer {
-  flex: none; /* 2 */
+    -webkit-box-flex: 0;
+        -webkit-flex: none;
+            -ms-flex: none;
+                flex: none; /* 2 */
 }
 
 .HolyGrail-body {
-  display: flex;
-  flex: 1 0 auto; /* 2 */
-  flex-direction: column;
-  padding: var(--space);
+    display:  -webkit-box;
+    display: -webkit-flex;
+    display:     -ms-flexbox;
+    display:         flex;
+    -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto; /* 2 */
+         -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+         -ms-flex-direction: column;
+             flex-direction: column;
+    padding: 1.5em;
 }
 
 .HolyGrail-content {
-  margin-top: var(--space);
+    margin-top: 1.5em;
 }
 
 .HolyGrail-nav {
-  order: -1;
+    -webkit-box-ordinal-group: 0;
+                -webkit-order: -1;
+               -ms-flex-order: -1;
+                        order: -1;
 }
 
 .HolyGrail-nav,
 .HolyGrail-ads {
-  padding: 1em;
-  border-radius: 3px;
-  background: rgba(147, 128, 108, 0.1);
+    padding: 1em;
+    border-radius: 3px;
+    background: rgba(147, 128, 108, 0.1);
 }
 
-@media (--break-lg) {
-  .HolyGrail-body {
-    flex-direction: row;
-  }
-  .HolyGrail-content {
-    flex: 1;
-    padding: 0 var(--space-lg);
-    margin: 0;
-  }
-  .HolyGrail-nav, .HolyGrail-ads {
-    flex: 0 0 12em;
-  }
+@media (min-width: 768px) {
+    .HolyGrail-body {
+            -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .HolyGrail-content {
+        -webkit-box-flex: 1;
+            -webkit-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+        padding: 0 2em;
+        margin: 0;
+    }
+    .HolyGrail-nav, .HolyGrail-ads {
+        -webkit-box-flex: 0;
+            -webkit-flex: 0 0 12em;
+                -ms-flex: 0 0 12em;
+                    flex: 0 0 12em;
+    }
 }
