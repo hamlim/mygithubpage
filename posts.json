@@ -1,6 +1,15 @@
 {
     "posts": [
         {
+            "postTitle": "Client Side",
+            "postID": 16,
+            "numberOfWords": 858,
+            "postSubtitle": "The new trend in web development",
+            "postDate": "2016-01-19",
+            "postSynopsis": "Web development trend articles generally aren't the best, but I figured I would write a bit about what I see as the future of web development anyway.",
+            "postLink": "./Posts/Pub/2016/January/ClientSide.html"
+        },
+        {
             "postTitle": "10,000 Characters",
             "postID": 15,
             "numberOfWords": 407,
