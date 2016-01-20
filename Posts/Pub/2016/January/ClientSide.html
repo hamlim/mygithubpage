@@ -85,6 +85,10 @@
             <i class="fa fa-hashtag left-of" id="1-anchor"></i>
         -->
 
+        <!-- Emoji One -->
+		<script src="//cdn.jsdelivr.net/emojione/2.0.1/lib/js/emojione.min.js"></script>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.0.1/assets/css/emojione.min.css"/>
+
 
     </head>
     <body>
@@ -209,6 +213,16 @@
 
         </script>
         <script src="/../../Assets/js/notie.js"></script>
+        <script type="text/javascript">
+		     $(document).ready(function() {
+				 $(".emoji").each(function() {
+		            var original = $(this).html();
+		            // use .shortnameToImage if only converting shortnames (for slightly better performance)
+		            var converted = emojione.toImage(original);
+		            $(this).html(converted);
+		        });
+		    });
+		</script>
         <!-- End Document
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     </body>
