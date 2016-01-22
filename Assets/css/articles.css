@@ -49,6 +49,9 @@
     height: 0;
     overflow: visible;
 }
+/*.hover-link {
+    border-right: solid 1px #7FDBFF;
+}*/
 
 blockquote {
     border-left: solid 4px #0074D9;
