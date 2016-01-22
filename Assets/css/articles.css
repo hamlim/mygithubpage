@@ -46,4 +46,13 @@
 
 .hover-link + i {
     display: none;
+    height: 0;
+    overflow: visible;
+}
+
+blockquote {
+    border-left: solid 4px #0074D9;
+}
+blockquote p {
+    margin-left: 15px;
 }
