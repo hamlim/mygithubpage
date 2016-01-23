@@ -445,3 +445,15 @@ img.value-img {
     height: 60px;
     width: 56px;
 }
+
+
+.alert--red {
+    background-color: #FF4136;
+}
+.alert--green {
+    background-color: #2ECC40;
+}
+
+.rounded {
+    border-radius: 10px;
+}
