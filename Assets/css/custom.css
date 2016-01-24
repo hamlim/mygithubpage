@@ -314,9 +314,7 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: red;
 }
-.fix-height {
-    min-height: inherit;
-}
+
 .gray-box {
     background-color: #dddddd;
     border-radius: 10px;
@@ -391,24 +389,6 @@ span.post-link {
 
 }
 
-@media screen and (min-width: 1200px){
-    .fix-height {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -webkit-flexbox;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-    }
-    .box {
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-
-    }
-}
 
 .center-block {
     text-align: center;
@@ -433,14 +413,7 @@ a:active  {
 
 .link { text-decoration: none; }
 
-.box-accent {
-    /*border-radius: 5px;*/
-    /*margin-right: 10px;*/
-}
 
-.box-accent:hover {
-    /*background-color: #D5EEFF;*/
-}
 img.value-img {
     height: 60px;
     width: 56px;
@@ -456,4 +429,25 @@ img.value-img {
 
 .rounded {
     border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+	flex-wrap: wrap;
+	max-width: 60rem;
+}
+.box {
+    min-width: 15em;
+    margin: 10px;
+}
+
+@media screen and (min-width: 1200px){
+    .box {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+
+    }
 }
