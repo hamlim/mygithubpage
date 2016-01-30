@@ -59,3 +59,7 @@ blockquote {
 blockquote p {
     margin-left: 15px;
 }
+
+img {
+    margin-left: -50%;
+}
