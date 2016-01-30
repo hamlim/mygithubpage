@@ -1,6 +1,15 @@
 {
     "posts": [
         {
+            "postTitle": "LMS Redesign Part 1",
+            "postID": 18,
+            "numberOfWords": 549,
+            "postSubtitle": "The first post in a series of posts on redesigning a website.",
+            "postDate": "2016-01-30",
+            "postSynopsis": "I decided to tack on another web design/development project to my already long list, this post discusses why I decided to do such a thing, and what some of my methodologies were.",
+            "postLink": "./Posts/Pub/2016/January/LMSRedesignPart1.html"
+        },
+        {
             "postTitle": "The Scariest Time of My Life",
             "postID": 17,
             "numberOfWords": 547,
