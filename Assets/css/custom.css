@@ -451,3 +451,20 @@ img.value-img {
 
     }
 }
+
+.fab {
+    border-radius: 50%;
+    background-color: #0074D9;
+    padding: 15px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: #AAAAAA 0px 5px;
+    z-index: 100;
+}
+
+.fab:active {
+    background-color: #7FDBFF;
+    box-shadow: #AAAAAA 0px 0px;
+    transform: translateY(5px);
+}
