@@ -300,8 +300,11 @@ header a {
     margin: 1em 0;
     line-height: 1.6;
 }
-.status-timeline-content ul li > strike {
-    list-style: disc;
+.disc {
+    list-style: disc !important;
+}
+.square {
+    list-style: square;
 }
 .status-timeline-content .status-read-more {
   float: right;
