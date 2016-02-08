@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Status &#9989;</title>
+        <meta name="description" content="Matt Hamlin's Status Page">
+        <meta name="author" content="Matt Hamlin">
+
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="./Assets/css/normalize.css">
+        <link rel="stylesheet" href="./Assets/css/skeleton.css">
+        <link rel="stylesheet" href="./Assets/css/custom.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Favicon and related stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./Assets/icons/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="./Assets/icons/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./Assets/icons/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./Assets/icons/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./Assets/icons/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./Assets/icons/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./Assets/icons/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./Assets/icons/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./Assets/icons/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./Assets/icons/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="./Assets/icons/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./Assets/icons/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="./Assets/icons/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="./Assets/icons/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./Assets/icons/favicons/manifest.json">
+        <link rel="mask-icon" href="./Assets/icons/favicons/safari-pinned-tab.svg" color="#3498db">
+        <meta name="apple-mobile-web-app-title" content="Matt's Status">
+        <meta name="application-name" content="Matt's Status">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="msapplication-TileImage" content="./Assets/icons/favicons/mstile-144x144.png">
+        <meta name="theme-color" content="#3498db">
+        <link rel="shortcut icon" href="./Assets/icons/favicons/favicon.ico">
+
+        <!-- Social Media Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- Facebook Meta Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://matthamlin.me/status.html" />
+        <meta property="fb:app_id" content="860045567427575" />
+        <meta property="og:title" content="Matt Hamlin's Status" />
+        <meta property="og:description" content="A simple status page for Matt Hamlin" />
+        <meta property="og:image" content="http://matthamlin.me/Assets/images/generic/avatar.jpeg" />
+
+        <!-- Twitter Meta Tags -->
+        <meta name=”twitter:card” content=summary/>
+        <meta name="twitter:site" content="@immatthamlin"/>
+        <meta name="twitter:creator" content="@immatthamlin">
+        <meta name=”twitter:title” content="Matt Hamlin's Status"/>
+        <meta name=”twitter:url” content="http://matthamlin.me/status.html"/>
+        <meta name=”twitter:description” content="A simple status page for Matt Hamlin"/>
+        <meta name=“twitter:image:src” content="http://matthamlin.me/Assets/images/generic/avatar.jpeg"/>
+
+
+        <!-- Scripts
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="./Assets/js/jquery.min.js"></script>
+        <script src="./Assets/js/status.js"></script>
+
+        <!-- Emoji
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="//cdn.jsdelivr.net/emojione/2.0.1/lib/js/emojione.min.js"></script>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.0.1/assets/css/emojione.min.css"/>
+
+    </head>
+    <body>
+
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <progress id="progress-bar" max="366" value="1"></progress>
+        <a class="fab" href="#today"><i class="emoji">:calendar:</i></a>
+        <header id="header" class="container">
+            <section class="header">
+                <h2 class="title">Status</h2>
+                <p>A Quick Status Page About my Goals for 2016</p>
+                <div class="value-props row fix-height">
+                    <div class="four columns value-prop">
+                        <img class="value-img" src="./Assets/icons/page-icons/blog-edit.svg">
+                        Go to My Blog
+                        </br>
+                        <a class="button button-primary" href="./index.html">Blog</a>
+                    </div>
+                    <div class="four columns value-prop">
+                        <img class="value-img" src="./Assets/icons/page-icons/resume-edit.svg">
+                        Check out my Resume
+                        </br>
+                        <a class="button button-primary" href="./resume.html">Resume</a>
+                    </div>
+                    <div class="four columns value-prop">
+                        <img class="value-img" src="./Assets/icons/page-icons/Bundles-logo.svg">
+                        My current project Bundles
+                        </br>
+                        <a class="button button-primary" href="http://www.goexploring.today">Bundles</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="one-full column" style="margin-top: 25%">
+                    <h2>A Quick Forward</h2>
+                    <p>I never stick to my goals and resolutions after New Years Evening. The next day I wake up without changing anything about my life that
+                        I wanted to. So I decided to make something that would act as a sort of public status check. Something that I can continuously update
+                        easily, and that others can watch and give me feedback on as the year progresses. I started something like this a while ago as a private
+                        subreddit, but this will be fully public and I plan on tweeting the status of each day by the end of the day.</p>
+                    <p>Of course there is nothing keeping me from doing this except the drive to do new things everyday. In many ways I am drawing inspiration
+                        from Casey Neistat's daily  vlog. Where he started making videos daily to give him an impetus to create more things.</p>
+                    <h2>What is this?</h2>
+                    <p>Well this is a simple page for my personal website, where I will track tasks
+                        completed and to be completed each day. These simple tasks will be things such as doing some sort of exercise each day, to eating
+                        something healthy (ideally vegetables and lean meats like chicken or turkey). I also want to focus on being able to build up my coding
+                        experience, so I want to track progress working on new projects as well.</p>
+                    <p>Each day I will update this website with tasks that I completed that day, and with goals for the next day. At the top of the page you will
+                        see a yellow progress bar, this is tracking my progress through the year of 2016. Below you will find a simple color guide, and then the meat of
+                        the webpage.</p>
+                    <h2>Resolutions:</h2>
+                    <ul>
+                        <li>
+                            Get healthier by cutting out soda, and limiting fast food to once every three weeks at a maximum
+                        </li>
+                        <li>
+                            Focus on coding three times a week, with emphasis on NodeJS, and classical programming languages (PHP, python, C++)
+                        </li>
+                        <li>
+                            Focus on relationships with others, talk with people in person more often.
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>
+                        <h5>Color Key</h5>
+                        <ul>
+                            <li>
+                                <span class="gray-box">&nbsp; &nbsp;</span> - In Progress
+                            </li>
+                            <li>
+                                <span class="green-box">&nbsp; &nbsp;</span> - Completed
+                            </li>
+                            <li>
+                                <span class="orange-box">&nbsp; &nbsp;</span> - Incomplete
+                            </li>
+                            <li>
+                                <mark>Hello</mark> - Anything highlighted is an addition accomplishment that was done that day
+                            </li>
+                        </ul>
+
+                    </p>
+                </div>
+            </div>
+            <!-- A new row for every three days -->
+            <div class="row" style="margin-top: 25%">
+                <h4>January:</h4>
+            </div>
+            <div class="flex-container">
+                <div class="box green-box">
+                    <h5>January 1st, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Write a blog post</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 2nd, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 3rd, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Write a blog post</strike>
+                        </li>
+                        <li>
+                            <strike>Make Paleo bars</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 4th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Work on Bundles (link parsing)</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 5th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Make a recipe list on Quip</strike>
+                        </li>
+                        <li>
+                            <strike>Work on Financial manager blog post</strike>
+                        </li>
+                        <li>
+                            <strike>Work on setting up financial manager Airtable</strike>
+                        </li>
+                        <li>
+                            <mark>Write blog post about 10,000 character tweets on twitter</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 6th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Set up google analytics on my blog and individual posts</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 7th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Clean up the house</strike>
+                        </li>
+                        <li>
+                            <strike>Do Laundry</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 8th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 9th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 10th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 11th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike class="emoji small">Work on :money_with_wings:</strike>
+                        </li>
+                        <li>
+                            <mark class="emoji small">Finished with v1 of :moneybag: index page</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 12th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Fix gif video rendering in Bundles</strike>
+                        </li>
+                        <li>
+                            <mark>Fixed the add button positioning in Bundles app</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 13th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <mark>Added linking to paragraphs for sharing to Blog</mark>
+                        </li>
+                        <li>
+                            <mark>Added an aside on all blog posts for same month blog posts.</mark>
+                        </li>
+                        <li>
+                            <mark>Added modals for <i class="emoji small">:dollar:</i> for more info about purchases.</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 14th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Setup a user account system for Dollar <i class="emoji small">:dollar:</i></strike>
+                        </li>
+                        <li>
+                            <mark>Added a favicon to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                        <li>
+                            <mark>Applied to Airbnb</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 15th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another position</strike>
+                        </li>
+                        <li>
+                            <strike>Migrate all old bundles to the new app</strike>
+                        </li>
+                        <li>
+                            <strike>Clean up the bundle repo</strike>
+                        </li>
+                        <li>
+                            <strike>Add publish dates to old blog posts</strike>
+                        </li>
+                        <li>
+                            <strike>Fix text/buttons layout on personal page</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 16th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>College cooking hacks site on my domain (matthamlin.me)</strike>
+                        </li>
+                        <li>
+                            <strike>Add base of the ch website</strike>
+                        </li>
+                        <li>
+                            <strike>Add a gh-pages branch to Dollar</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 17th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Finish the CL landing page</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 18th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another position</strike>
+                        </li>
+                        <li>
+                            <strike>Design a hero blog post template for blog posts</strike>
+                        </li>
+                        <li>
+                            <mark>Applied to Buzzfeed</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 19th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another position (FB)</strike>
+                        </li>
+                        <li>
+                            <mark>Write a blog post about client side architecture</mark>
+                        </li>
+                        <li>
+                            <mark>Added Markdown support to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                        <li>
+                            <mark>Added future/past date support to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                        <li>
+                            <mark>Added typeahead support on locations to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                        <li>
+                            <mark>Added a chart breakdown on <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 20th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to snapchat (seattle position)</strike>
+                        </li>
+                        <li>
+                            <strike>Writeup a launch plan for Bundles and for Dollar</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 21st, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Setup a rails development environment</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to Flexport</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to Heapanalytics</strike>
+                        </li>
+                        <li>
+                            <mark>Begin blog post</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 22nd, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to Readme</strike>
+                        </li>
+                        <li>
+                            <strike>Publish blog post on FB, Medium, and Blog</strike>
+                        </li>
+                        <li>
+                            <mark>Snapchat Skit 01</mark>
+                        </li>
+                        <li>
+                            <mark>Applied to ViewLift</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 23rd, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Add RPIDelivery to projects page</strike>
+                        </li>
+                        <li>
+                            <strike>Add Dollar to projects page</strike>
+                        </li>
+                        <li>
+                            <mark>Began KYMA project</mark>
+                        </li>
+                        <li>
+                            <mark>Build a es6 playground environment</mark>
+                        </li>
+                        <li>
+                            <mark>Flex-ify this page!</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 24th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>flexbox status page redesign</strike>
+                        </li>
+                        <li>
+                            <strike>Add monthly budgets to <i class="emoji small">:dollar:</i> database</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 25th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Add section to <i class="emoji small">:dollar:</i> analysis page for budgets</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 26th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 27th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Go grocery shopping</strike>
+                        </li>
+                        <li>
+                            <strike>Setup a class file structure in OneDrive for school</strike>
+                        </li>
+                        <li>
+                            <strike>Fix date problem in <i class="emoji small">:dollar:</i></strike>
+                        </li>
+                        <li>
+                            <strike>Apply to AeroFS jobs (2)</strike>
+                        </li>
+                        <li>
+                            <mark>Went to the Gym with Will for an hour (Leg day)</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 28th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Read first chapter of Marketing textbook.</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to automattic</strike>
+                        </li>
+                        <li>
+                            <mark>Added tags to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                        <li>
+                            <mark>Adding a new account/settings page to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                        <li>
+                            <mark>Added ability to update username, password, and tags to <i class="emoji small">:dollar:</i></mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 29th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <mark>Started RPI LMS Redesign project</mark>
+                        </li>
+                        <li>
+                            <mark>Added content to the KYMA page</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 30th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Copy notes from notebook to Quip from Marketing Course</strike>
+                        </li>
+                        <li>
+                            <strike>Copy lecture slides from all three courses to Google Drive</strike>
+                        </li>
+                        <li>
+                            <strike>Copy lecture slides from all three courses to OneDrive</strike>
+                        </li>
+                        <li>
+                            <strike>Copy lecture slides from all three courses to Quip</strike>
+                        </li>
+                        <li>
+                            <strike>Add Marketing Notes to quip</strike>
+                        </li>
+                        <li>
+                            <strike>Publish Blog post to Medium and to Facebook Notes</strike>
+                        </li>
+                        <li>
+                            <strike>Setup hosting of KYMA website on new domain</strike>
+                        </li>
+                        <li>
+                            <mark>Wrote and published a blog post</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>January 31st, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Update <i class="emoji small">:dollar:</i> Launch page with updated features</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to skillshare</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <h4>February:</h4>
+                </div>
+                <div class="box green-box">
+                    <h5>February 1st, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Work on Budgets for Dollar</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Read Chapter 2 of the Marketing textbook</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>February 2nd, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to Swipes</strike>
+                        </li>
+                        <li>
+                            <strike>More work on Budgets in <i class="emoji small">:dollar:</i></strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box orange-box">
+                    <h5>February 3rd, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                             <u>Go to the Gym</u>
+                        </li>
+                        <li>
+                            <strike>Read chapter 2 of the marketing text</strike>
+                        </li>
+                        <li>
+                            <mark>Added a landing page for RPILMS-Redesign</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>February 4th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Write three more paragraphs for the Redesign project</strike>
+                        </li>
+                        <li>
+                            <strike>Budgets work in Dollar</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to the three Wayfair positions</strike>
+                        </li>
+                        <li>
+                            <strike>Go to the gym</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>February 5th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another job</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>February 6th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Start Phys HW</strike>
+                        </li>
+                        <li>
+                            <strike>Dollar Budget work</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another job</strike>
+                        </li>
+                        <li>
+                            <mark>Wrote up and published second blog post on LMS NEXT</mark>
+                        </li>
+                        <li>
+                            <mark>Redesigned Budgets page in Dollar</mark>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box green-box">
+                    <h5>February 7th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another job</strike>
+                        </li>
+                        <li>
+                            <strike>Work on Physics HW</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box gray-box" id="today">
+                    <h5>February 8th, 2016</h5>
+                    <ul>
+                        <li>
+                            <strike>Take a walk</strike>
+                        </li>
+                        <li>
+                            <strike>Drink water</strike>
+                        </li>
+                        <li>
+                            <strike>Apply to another job</strike>
+                        </li>
+                        <li>
+                            Formulate idea for Email Template site
+                        </li>
+                        <li>
+                            Download all Lecture Notes from last week
+                        </li>
+                        <li>
+                            <strike>Layout basic redesign of Status</strike>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 9th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                        <li>
+                            More work on Physics HW1
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 10th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 11th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 12th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 13th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 14th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h5>February 15th, 2016</h5>
+                    <ul>
+                        <li>
+                            Take a walk
+                        </li>
+                        <li>
+                            Drink water
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="container" style="margin-top: 25%">
+            <!-- Social Buttons  Twitter, email, Medium, Github   -->
+            <div class="three columns center-text" id="twitter">
+                <a class="button button-secondary" href="http://twitter.com/immatthamlin"><i class="fa fa-twitter"></i> Twitter</a>
+            </div>
+            <div class="three columns center-text" id="email">
+                <a class="button button-secondary" href="mailto:hamlim@outlook.com"><i class="fa fa-envelope"></i> Email</a>
+            </div>
+            <div class="three columns center-text" id="Medium">
+                <a  class="button button-secondary" href="http://Medium.com/@matthamlin"><i class="fa fa-medium"></i> Medium</a>
+            </div>
+            <div class="three columns center-text" id="github">
+                <a class="button button-secondary" href="https://github.com/hamlim"><i class="fa fa-github"></i> Github</a>
+            </div>
+        </footer>
+
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-72100715-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        <script type="text/javascript">
+		     $(document).ready(function() {
+				 $(".emoji").each(function() {
+		            var original = $(this).html();
+		            // use .shortnameToImage if only converting shortnames (for slightly better performance)
+		            var converted = emojione.toImage(original);
+		            $(this).html(converted);
+		        });
+		    });
+		</script>
+
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
+</html>
