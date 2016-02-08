@@ -519,3 +519,7 @@ header a {
     transform: translateX(0);
   }
 }
+
+img {
+    display: none !important;
+}
