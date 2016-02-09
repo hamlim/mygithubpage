@@ -523,3 +523,8 @@ header a {
 /*img {
     display: none !important;
 }*/
+
+.emoji img {
+    height: 40px !important;
+    width: 40px !important;
+}
