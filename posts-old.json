@@ -1,0 +1,148 @@
+{
+    "posts": [
+        {
+            "postTitle": "Client Side",
+            "postID": 16,
+            "numberOfWords": 858,
+            "postSubtitle": "The new trend in web development",
+            "postDate": "2016-01-19",
+            "postSynopsis": "Web development trend articles generally aren't the best, but I figured I would write a bit about what I see as the future of web development anyway.",
+            "postLink": "./Posts/Pub/2016/January/ClientSide.html"
+        },
+        {
+            "postTitle": "10,000 Characters",
+            "postID": 15,
+            "numberOfWords": 407,
+            "postSubtitle": "How Twitter Should Handle 10,000 Character Tweets.",
+            "postDate": "2016-01-06",
+            "postSynopsis": "With all the debates about whether Twitter should support 10,000 character tweets, I decided to write about how it should work.",
+            "postLink": "./Posts/Pub/2016/January/WhatTwitterShouldDo.html"
+        },
+        {
+            "postTitle": "My First Project of 2016 [UPDATED]",
+            "postID": 14,
+            "numberOfWords": 357,
+            "postSubtitle": "Building a Financial Tracker",
+            "postDate": "2016-01-05",
+            "postSynopsis": "My first project of 2016 is all about building something that I need day in and day out.",
+            "postLink": "./Posts/Pub/2016/January/FirstProjectof2016.html"
+        },
+        {
+            "postTitle": "Building in 2016",
+            "postID": 13,
+            "numberOfWords": 256,
+            "postSubtitle": "My Goals Building Projects in 2016",
+            "postDate": "2016-01-03",
+            "postSynopsis": "I want to build complete small services that are actually useful for myself, and maybe others.",
+            "postLink": "./Posts/Pub/2016/January/BuildingIn2016.html"
+        },
+        {
+            "postTitle": "DJI vs GoPro",
+            "postID": 12,
+            "numberOfWords": 261,
+            "postSubtitle": "The most exciting tech rivalry in 2016",
+            "postDate": "2016-01-01",
+            "postSynopsis": "2016 is going to be a large year for tech...",
+            "postLink": "./Posts/Pub/2016/January/DJIvsGoPro.html"
+        },
+        {
+            "postTitle": "2016 Goals",
+            "postID": 11,
+            "numberOfWords": 257,
+            "postSubtitle": "My 2016 resolutions project",
+            "postDate": "2015-12-31",
+            "postSynopsis": "I never stick to my goals and resolutions after New...",
+            "postLink": "./Posts/Pub/2015/December/2016.html"
+        },
+        {
+            "postTitle": "2015 in Review",
+            "postID": 10,
+            "numberOfWords": 293,
+            "postSubtitle": "Some concluding thoughts on 2015",
+            "postDate": "2015-12-30",
+            "postSynopsis": "2015 was a big year for me, I changed a...",
+            "postLink": "./Posts/Pub/2015/December/2015.html"
+        },
+        {
+            "postTitle": "Where is the Powerpoint Remake?",
+            "postID": 9,
+            "numberOfWords": 561,
+            "postSubtitle": "Making what was old, new again",
+            "postDate": "2015-12-09",
+            "postSynopsis": "If you happen to be following the startup world (which...",
+            "postLink": "./Posts/Pub/2015/December/Powerpoint.html"
+        },
+        {
+            "postTitle": "Blogging vs Working",
+            "postID": 8,
+            "numberOfWords": 134,
+            "postSubtitle": "Or: Why I can't simply do both",
+            "postDate": "2015-12-03",
+            "postSynopsis": "From November 25th to December 1st I was posting a...",
+            "postLink": "./Posts/Pub/2015/December/BloggingvsWorking.html"
+        },
+        {
+            "postTitle": "The Social Max",
+            "postID": 7,
+            "numberOfWords": 338,
+            "postSubtitle": "Some thoughts on social networks",
+            "postDate": "2015-12-01",
+            "postSynopsis": "A few days ago I tweeted about an idea I...",
+            "postLink": "./Posts/Pub/2015/December/TheSocialMax.html"
+        },
+        {
+            "postTitle": "The Message is in the Medium",
+            "postID": 6,
+            "numberOfWords": 520,
+            "postSubtitle": "Some thoughts on digital mediums",
+            "postDate": "2015-11-30",
+            "postSynopsis": "The above title is something that was taught to me...",
+            "postLink": "./Posts/Pub/2015/November/Message.html"
+        },
+        {
+            "postTitle": "A New Resume",
+            "postID": 5,
+            "numberOfWords": 161,
+            "postSubtitle": "Building a new resume",
+            "postDate": "2015-11-29",
+            "postSynopsis": "This weekend I set out to work on Bundles and...",
+            "postLink": "./Posts/Pub/2015/November/ANewResume.html"
+        },
+        {
+            "postTitle": "Family Time",
+            "postID": 4,
+            "numberOfWords": 189,
+            "postSubtitle": "Some thoughts on spending time with family",
+            "postDate": "2015-11-28",
+            "postSynopsis": "This week(end) for me has been an amazing whirlwind of...",
+            "postLink": "./Posts/Pub/2015/November/FamilyTime.html"
+        },
+        {
+            "postTitle": "Weekend Projects",
+            "postID": 3,
+            "numberOfWords": 217,
+            "postSubtitle": "Some weekend thoughts",
+            "postDate": "2015-11-27",
+            "postSynopsis": "Since I came home for Thanksgiving I figured I would...",
+            "postLink": "./Posts/Pub/2015/November/WeekendProjects.html"
+        },
+        {
+            "postTitle": "Thanksgiving",
+            "postID": 2,
+            "numberOfWords": 204,
+            "postSubtitle": "What I am Thankful For",
+            "postDate": "2015-11-26",
+            "postSynopsis": "Today is Thanksgiving day 2015 and right before I jump...",
+            "postLink": "./Posts/Pub/2015/November/Thanksgiving.html"
+        },
+        {
+            "postTitle": "A New Look",
+            "postID": 1,
+            "numberOfWords": 30,
+            "postSubtitle": "Setting up a new blog.",
+            "postDate": "2015-11-25",
+            "postSynopsis": "I just setup Poole as a blogging style with Jekyll...",
+            "postLink": "./Posts/Pub/2015/November/ANewLook.html"
+        }
+    ]
+}
