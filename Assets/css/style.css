@@ -181,13 +181,13 @@ header a {
   margin-left: -12px;
   margin-top: -12px;
 }
-.status-timeline-img.status-picture {
+.status-timeline-img.status-done {
   background: #75ce66;
 }
-.status-timeline-img.status-movie {
+.status-timeline-img.status-fail {
   background: #c03b44;
 }
-.status-timeline-img.status-location {
+.status-timeline-img.status-progress {
   background: #f0ca45;
 }
 @media only screen and (min-width: 1170px) {
