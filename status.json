@@ -1,90 +1,26 @@
 {
-    "updates": [
+    "status": [
         {
-            "statusDate": "January 5th, 2016",
-            "complete": false,
-            "statusList": [
+            "date": "Mar 5th, 2016",
+            "tasks": [
                 {
-                    "status": false,
-                    "task": "Take a walk"
+                    "task": "Take a walk",
+                    "status": "done"
                 },
                 {
-                    "status": false,
-                    "task": "Drink water"
-                }
-            ]
-        },
-        {
-            "statusDate": "January 4th, 2016",
-            "complete": true,
-            "statusList": [
-                {
-                    "status": true,
-                    "task": "Take a walk"
-                },
-                {
-                    "status": true,
-                    "task": "Drink water"
-                },
-                {
-                    "status": true,
-                    "task": "Update Bundles link parsing"
-                }
-            ]
-        },
-        {
-            "statusDate": "January 3rd, 2016",
-            "complete": true,
-            "statusList": [
-                {
-                    "status": true,
-                    "taks": "Take a walk"
-                },
-                {
-                    "status": true,
-                    "tasks": "Drink water"
-                },
-                {
-                    "status": true,
-                    "tasks": "Bake paleo bars"
-                },
-                {
-                    "status": true,
-                    "taks": "Write a blog post"
-                }
-            ]
-        },
-        {
-            "statusDate": "January 2nd, 2016",
-            "complete": true,
-            "statusList": [
-                {
-                    "status": true,
-                    "task": "Take a walk"
-                },
-                {
-                    "status": true,
-                    "task": "Drink water"
-                }
-            ]
-        },
-        {
-            "statusDate": "January 1st, 2016",
-            "complete": true,
-            "statusList": [
-                {
-                    "status": true,
-                    "task": "Write a blog post"
-                },
-                {
-                    "status": true,
                     "task": "Drink water",
+                    "status": "done"
                 },
                 {
-                    "status": true,
-                    "task": "Take a walk"
+                    "task": "Apply to Lowercase jobs",
+                    "status": "done"
                 }
-            ]
+            ],
+            "progress": "done",
+            "stats": {
+                "water": "0oz",
+                "steps": "0"
+            }
         }
     ]
 }
