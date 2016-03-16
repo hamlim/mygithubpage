@@ -4,8 +4,13 @@
     margin-left: 10vw;
     border: solid 4px #FF4136;
     border-radius: 10px;
+    height: 100px;
+    line-height: 40px;
+    background-color: #FF851B;
+    margin-top: 1vh;
 }
 
 .alert--danger > * {
     text-decoration: underline;
+    color: black;
 }
