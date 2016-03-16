@@ -1,4 +1,11 @@
-.emoji-center {
-    margin-left: -2rem;
-    margin-top: 2rem;
+.alert--danger {
+    text-align: center;
+    width: 80vw;
+    margin-left: 10vw;
+    border: solid 4px #FF4136;
+    border-radius: 10px;
+}
+
+.alert--danger > * {
+    text-decoration: underline;
 }
