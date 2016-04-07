@@ -1,3 +1,6 @@
+:root {
+    box-sizing: border-box;
+}
 .nds--center {
     display: flex;
     width: 100vw;
@@ -10,11 +13,25 @@
     justify-content: space-around;
     align-items: baseline;
 }
+.footer {
+    display: flex;
+    flex: 1 1 33.33%
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .nds--height-100 {
     min-height: 100vh;
 }
+.nds--height-10 {
+    min-height: 10vh;
+}
 .nds--height-95 {
     min-height: 95vh;
+}
+.nds--height-85 {
+    min-height: 85vh;
 }
 .nds--height-75 {
     min-height: 75vh;
@@ -29,13 +46,12 @@
     line-height: 5vh;
 }
 .nds--container {
-    width: 36em;
+    width: 100vw;
     margin: 0 auto;
 }
 .nds--here {
     background-color: #F4D03F;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: .4em 1em;
 }
 .nds--nostyle {
     list-style-type: none;
@@ -50,25 +66,40 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-
+    .nds--container {
+        width: 95vw;
+        margin:0 auto;
+    }
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-
+    .nds--container {
+        width: 90vw;
+        margin:0 auto;
+    }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-
+    .nds--container {
+        width: 80vw;
+        margin:0 auto;
+    }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-
+    .nds--container {
+        width: 70vw;
+        margin:0 auto;
+    }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    
+    .nds--container {
+        width: 60vw;
+        margin:0 auto;
+    }
 }

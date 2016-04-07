@@ -109,7 +109,12 @@
         blockquote (used to be 1.5em)
 
     */
-    --font-base-size:  1.5vw;
+    --font-base-desktop-hd-size:  1.5vw;
+    --font-base-desktop-size:     2vw;
+    --font-base-tablet-size:      2.5vw;
+    --font-base-phablet-size:     3vw;
+    --font-base-mobile-size:      3.5vw;
+    --font-base-size:             4vw;
     /*
     --font-h1-size:    calc((112.5% + 0.25vw) * 2.3);
     --font-h2-size:    calc((112.5% + 0.25vw) * 1.7);
@@ -133,6 +138,42 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-size: var(--font-base-size);
 }
+/* Larger than mobile */
+@media (min-width: 400px) {
+    html {
+        font-size: var(--font-base-mobile-size);
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    html {
+        font-size: var(--font-base-phablet-size);
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    html {
+        font-size: var(--font-base-tablet-size);
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    html {
+        font-size: var(--font-base-desktop-size);
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    html {
+        font-size: var(--font-base-desktop-hd-size);
+    }
+}
+
+
 
 /*
     text alignment
