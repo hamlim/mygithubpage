@@ -82,6 +82,36 @@
     text-decoration: underline;
 }
 
+.nds--btn {
+	display: inline-block; /* This helps with anchor tags that we want to look like buttons */
+	background-color: white;
+	padding: .5em 1em;
+	border-radius: 10px;
+	border: solid 3px #26A65B;
+	color: #26A65B;
+	text-decoration: none; /* Another anchor tag only needed style */
+}
+
+.nds--btn:hover {
+	background-color: #26A65B;
+	border: solid 3px #26A65B;
+	color: white;
+	transition: ease 350ms;
+}
+
+.nds--btn:active {
+	outline: none;
+	background-color: #3FC380;
+	transition: ease 100ms;
+	border: solid 3px #3FC380;
+	color: white;
+}
+.nds--btn:focus {
+	outline: none;
+}
+
+
+
 /* Larger than mobile */
 @media (min-width: 400px) {
     .nds--container {
