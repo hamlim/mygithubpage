@@ -7,6 +7,13 @@
     justify-content: space-around;
     align-items: center;
 }
+.nds--center-col {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
 .header {
     display: flex;
     width: 100vw;
