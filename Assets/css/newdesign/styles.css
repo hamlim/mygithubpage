@@ -64,6 +64,17 @@
     color: #00aced;
 }
 
+.page--content-quicklinks {
+    display: flex;
+    width: 100vw;
+    flex: 1 1 20vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.nds--underline {
+    text-decoration: underline;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {
     .nds--container {
