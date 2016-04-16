@@ -110,7 +110,9 @@
 	outline: none;
 }
 
-
+.bg--nds-white {
+    background-color: #FFFFFF;
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {
