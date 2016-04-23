@@ -20,6 +20,7 @@
     justify-content: space-around;
     align-items: baseline;
 }
+
 .footer {
     display: flex;
     flex: 1 1 33.33%
@@ -28,6 +29,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 .nds--height-100 {
     min-height: 100vh;
 }
