@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: 'Assets/js/src/*.js',
-                dest: 'build/site.min.js'
+                dest: 'Assets/js/prod/site.min.js'
             }
         },
         sass: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     style: 'compressed' //expanded for dev
                 },
                 files: {
-                    'Assets/css/dist/main.css': 'Assets/css/src/main.scss'
+                    'Assets/css/prod/main.css': 'Assets/css/src/main.scss'
                 }
             }
         },
