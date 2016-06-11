@@ -2,6 +2,25 @@
 @import "_typo.scss";
 
 
+.color--blue {
+    color: $blue;
+}
+.bg--blue {
+    background-color: $blue;
+}
+.color--yellow {
+    color: $yellow;
+}
+.bg--yellow {
+    background-color: $yellow;
+}
+.color--green {
+    color: $green;
+}
+.bg--green {
+    background-color: $green;
+}
+
 .header {
     height: 100vh;
     width: 100vw;
