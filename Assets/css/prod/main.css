@@ -166,4 +166,8 @@ blockquote {
   display: inline-flex;
 }
 
+.page--nav {
+  padding-top: 2em;
+}
+
 /*# sourceMappingURL=main.css.map */
