@@ -15,10 +15,10 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'compressed' //expanded for dev
+                    style: 'expanded' //compressed for dev
                 },
                 files: {
-                    'Assets/css/prod/main.min.css': 'Assets/css/src/main.scss'
+                    'Assets/css/prod/main.css': 'Assets/css/src/main.scss'
                 }
             }
         },
@@ -37,5 +37,4 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'sass']);
-
 };
