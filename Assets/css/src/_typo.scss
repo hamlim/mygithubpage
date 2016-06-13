@@ -47,3 +47,14 @@ blockquote {
     margin: 1em 1.414em;
     padding: 0.25em 0.5em;
 }
+
+.link {
+    color: $yellow;
+    text-decoration: none;
+    transition: color 5ms;
+    &:hover,
+    &:active {
+        color: $green;
+        text-decoration: none;
+    }
+}
