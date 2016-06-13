@@ -1,4 +1,4 @@
-@import "reset.scss";
+@import "_reset.scss";
 // @import "_normalize.scss";
 @import "_typo.scss";
 
@@ -28,6 +28,13 @@
 }
 .header--title {
     position: absolute;
-    left: calc(50vw - 50%);
-    top: calc(50vh - 50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header--siblings {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
