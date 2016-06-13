@@ -58,3 +58,34 @@ blockquote {
         text-decoration: none;
     }
 }
+
+.link--active {
+    color: $green;
+    text-decoration: none;
+    transition: color 5ms;
+    &:hover,
+    &:active {
+        color: $yellow;
+        text-decoration: none;
+    }
+}
+
+.link--special {
+    color: $blue;
+    text-decoration: none;
+    transition: color 5ms;
+    &:hover,
+    &:active {
+        color: $green;
+        text-decoration: none;
+    }
+}
+
+.highlight {
+    background-color: $yellow;
+    display: inline-block;
+}
+
+.no--margin {
+    margin: 0 0;
+}

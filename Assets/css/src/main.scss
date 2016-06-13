@@ -1,6 +1,7 @@
 @import "_reset.scss";
 // @import "_normalize.scss";
 @import "_typo.scss";
+@import "_flexgrid.scss";
 
 
 .color--blue {
@@ -37,17 +38,55 @@
     transform: translate(-50%, -50%);
 }
 .horizontal--center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    text-align: center;
 }
 .page {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 .li--inline {
-    display: inline-flex;
+    display: inline;
 }
 .page--nav {
     padding-top: 2em;
+}
+.page--content,
+.footer {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 50em) {
+        width: 75vw;
+    }
+
+    @media (min-width: 75em) {
+        width: 60vw;
+    }
+}
+.project--name {
+    display: inline-block;
+}
+
+// Resume.html
+.page--contact {
+    text-align: center;
+    padding: 1em 0;
+}
+.contact {
+    margin: 0 0;
+}
+.ul--styled {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-bottom: 0.5em;
+}
+.li--spacing {
+    padding: 0.15em 0;
+}
+
+
+
+.tm1 {
+    margin-top: 1em;
 }
