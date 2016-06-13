@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     style: 'compressed' //expanded for dev
                 },
                 files: {
-                    'Assets/css/prod/main.css': 'Assets/css/src/main.scss'
+                    'Assets/css/prod/main.min.css': 'Assets/css/src/main.scss'
                 }
             }
         },
