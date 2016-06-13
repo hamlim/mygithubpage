@@ -144,7 +144,7 @@ blockquote {
   text-align: center;
 }
 
-.header--siblings {
+.center {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -154,6 +154,10 @@ blockquote {
 .page {
   height: 100vh;
   width: 100vw;
+}
+
+.li--inline {
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=main.css.map */
