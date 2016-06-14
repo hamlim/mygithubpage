@@ -1,0 +1,56 @@
+@import "_reset.scss";
+@import "_typo.scss";
+
+.page {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 50em) {
+        width: 75vw;
+    }
+
+    @media (min-width: 75em) {
+        width: 60vw;
+    }
+}
+
+blockquote  p {
+    margin-bottom: 0;
+}
+
+.ul--styled {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-bottom: 0.5em;
+}
+.li--spacing {
+    margin-bottom: 0.15em;
+}
+
+.ul--inline {
+    text-align: center;
+}
+.li--inline {
+    display: inline-block;
+}
+
+.ol--spaced {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin-bottom: 0.5em;
+}
+
+.mb2 {
+    margin-bottom: 2em;
+}
+
+// .aside {
+//     text-align: center;
+// }
+.footer {
+    margin-top: 4em;
+}
+.align--right {
+    float: right;
+}
