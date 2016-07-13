@@ -242,13 +242,18 @@ blockquote {
 }
 
 .ul--styled {
-  list-style-type: circle;
+  list-style-type: disc;
   list-style-position: outside;
   margin-bottom: 0.5em;
 }
 
 .li--spacing {
   padding: 0.15em 0;
+}
+
+.ul--nested {
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .tm1 {
@@ -261,6 +266,10 @@ blockquote {
 
 .footer {
   text-align: center;
+}
+
+.highlight-color-only {
+  color: #4A90E2;
 }
 
 /*# sourceMappingURL=main.css.map */
