@@ -1,5 +1,14 @@
-@import "_reset.scss";
-@import "_typo.scss";
+@import 'reset';
+@import 'breakpoints';
+@import 'grid';
+@import 'typography';
+@import 'colors';
+@import 'my_colors';
+@import 'vars';
+
+
+// Include the required mixins
+@include typography();
 
 .page {
     width: 90vw;
