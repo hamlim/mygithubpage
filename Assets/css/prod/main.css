@@ -342,6 +342,11 @@ kbd, code {
   display: inline-block;
 }
 
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
 html {
   background: linear-gradient(135deg, white 0%, #fcf5f0 100%);
 }

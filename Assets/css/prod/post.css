@@ -342,6 +342,11 @@ kbd, code {
   display: inline-block;
 }
 
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
 html {
   background-color: #F7F9F9;
   color: #4d4d4d;
@@ -350,6 +355,7 @@ html {
 .bq {
   background-color: #CCD1D1;
   border-right: solid 4px #A3E4D7;
+  border-left: solid 4px #A3E4D7;
   padding: 0.5em 2em;
   margin-bottom: 1em;
 }
@@ -365,40 +371,12 @@ html {
   padding: 0.125em 0.5em 0 .5em;
 }
 
-.ul--styled {
-  list-style-type: circle;
-  list-style-position: outside;
-  margin-bottom: 0.5em;
+.figure {
+  max-width: 100%;
 }
-
-.li--spacing {
-  margin-bottom: 0.15em;
-}
-
-.ul--inline {
-  text-align: center;
-}
-
-.li--inline {
-  display: inline-block;
-}
-
-.ol--spaced {
-  list-style-type: decimal;
-  list-style-position: outside;
-  margin-bottom: 0.5em;
-}
-
-.mb2 {
-  margin-bottom: 2em;
-}
-
-.footer {
-  margin-top: 4em;
-}
-
-.align--right {
-  float: right;
+.figure .img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=post.css.map */
