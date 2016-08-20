@@ -18,8 +18,22 @@ html {
 }
 
 
-blockquote  p {
-    margin-bottom: 0;
+.bq {
+    background-color: $lgray2;
+    border-right: solid 4px $teal1;
+    padding: 0.5em 2em;
+    margin-bottom: 1em;
+}
+
+.li--spacing {
+    margin-bottom: 0.25em;
+    list-style: none;
+    background-color: $white1;
+    border-left: solid 4px $purple1;
+    padding: 0.125em 0.5em 0.125em .5em;
+    &:not(:last-child) {
+        padding: 0.125em 0.5em 0 .5em;
+    }
 }
 
 .ul--styled {

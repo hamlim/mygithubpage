@@ -1,172 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" class="bg--cararra">
+<html lang="en">
     <head>
-        <script type="text/javascript">
-		    var host = "matthamlin.me";
-		    if ((host == window.location.host) && (window.location.protocol != "https:"))
-		        window.location.protocol = "https";
-		</script>
+        <title>DJI vs GoPro</title>
 
-        <!-- Basic Page Needs
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- Generic Meta Tags -->
         <meta charset="utf-8">
-        <title>Matt Hamlin &#128523;</title>
-        <meta name="description" content="Matt Hamlin's Blog">
-        <meta name="author" content="Matt Hamlin">
-
-        <!-- Mobile Specific Metas
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="A simple portfolio website for Matt Hamlin.">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
 
-        <!-- FONT
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <!-- CSS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="/../../Assets/css/prod/post.css" />
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
 
-        <!-- Favicon and related stuff
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/../../Assets/icons/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="/../../Assets/icons/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/../../Assets/icons/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/../../Assets/icons/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/../../Assets/icons/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/../../Assets/icons/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/../../Assets/icons/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/../../Assets/icons/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/../../Assets/icons/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/../../Assets/icons/favicons/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="/../../Assets/icons/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/../../Assets/icons/favicons/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="/../../Assets/icons/favicons/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/../../Assets/icons/favicons/favicon-16x16.png" sizes="16x16">
-        <!-- <link rel="manifest" href="/../../Assets/icons/favicons/manifest.json"> -->
-        <link rel="mask-icon" href="/../../Assets/icons/favicons/safari-pinned-tab.svg" color="#3498db">
-        <meta name="apple-mobile-web-app-title" content="Matt's Blog">
-        <meta name="application-name" content="Matt's Blog">
-        <meta name="msapplication-TileColor" content="#ffc40d">
-        <meta name="msapplication-TileImage" content="/../../Assets/icons/favicons/mstile-144x144.png">
-        <meta name="theme-color" content="#3498db">
-        <link rel="shortcut icon" href="/../../Assets/icons/favicons/favicon.ico">
+        <!-- Favicons -->
+        <link rel="icon" href="/Assets/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="/Assets/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/Assets/icons/favicons/favicon-96x96.png" sizes="96x96" type="image/png">
 
-        <!-- Social Media Metas
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- Facebook Meta Tags -->
-        <meta property="og:type" content="Website" />
-        <meta property="og:url" content="http://matthamlin.me/Posts/Pub/2016/January/DJIvsGoPro.html" /> <!-- LINK -->
-        <meta property="fb:app_id" content="860045567427575" />
-        <meta property="og:title" content="DJI vs GoPro" /> <!-- TITLE -->
-        <meta property="og:description" content="The most exciting tech rivalry in 2016." /> <!-- SUBTITLE -->
-        <meta property="og:image" content="http://matthamlin.me/Assets/images/generic/avatar.jpeg" />
 
-        <!-- Twitter Meta Tags -->
-        <meta name=”twitter:card” content=”summary_large_image”/>
-        <meta name="twitter:site" content="@immatthamlin"/>
-        <meta name="twitter:creator" content="@immatthamlin">
-        <meta name=”twitter:title” content="DJI vs GoPro"/> <!-- TITLE -->
-        <meta name=”twitter:url” content="http://matthamlin.me/Posts/Pub/2016/January/DJIvsGoPro.html"/> <!-- LINK -->
-        <meta name=”twitter:description” content="The most exciting tech rivalry in 2016."/> <!-- SUBTITLE -->
-        <meta name=“twitter:image:src” content="http://matthamlin.me/Assets/images/generic/avatar.jpeg"/>
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
 
+        <!-- Styles -->
+        <link rel="stylesheet" href="/Assets/css/prod/post.css">
 
     </head>
-    <body class="page">
-
-        <!-- Primary Page Layout
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <header id="header" class="container">
-            <section class="header">
-                <h2 class="title">DJI vs GoPro</h2> <!-- TITLE -->
-                <p>The most exciting tech rivalry in 2016</p> <!-- SUBTITLE -->
-                <i>
-                    Published: 2016-01-01
-                </i>
-                <div class="align--right">
-                    <a href="https://twitter.com/intent/tweet?text=DJI+vs+GoPro:+My+most+anticipated+rivalry+in+2016&url=http://matthamlin.me/Posts/Pub/2016/January/DJIvsGoPro.html&via=immatthamlin" class="twitter-share-button" rel="nofollow" data-size="large" target="_blank">Tweet</a>
-                    <script>
-                        !function(d,s,id){
-                            var js,fjs=d.getElementsByTagName(s)[0],
-                              p=/^http:/.test(d.location)?'http':'https';
-                            if(!d.getElementById(id)){js=d.createElement(s);
-                                js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-                                fjs.parentNode.insertBefore(js,fjs);
-                            }
-                        }(document, 'script', 'twitter-wjs');
-                    </script>
-                </div>
-                <hr>
-            </section>
+    <body class="body">
+        <header class="header--menu">
+            <menu class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link">Matt Hamlin</a></h1> > <h3 class="menu--blog escape--default inline-block"><a href="/archive.html" class="link">All Posts</a></h3> > DJI vs GoPro
+            </menu>
         </header>
-        <article class="container " style="margin-top: 5%" id="blog-content">
-            <!-- CONTENT -->
-            <p id="1" class="hover-link">2016 is going to be a large year for tech, with a lot of potential shown for new products rising from nothing such as the breakout hit hoverboards that came to rise. One of the rivalries within the tech market that I am personally really excited to see play out this year is the battle between DJI and GoPro.</p>
-
-            <p id="2" class="hover-link">Some people may be scratching their heads at this rivalry because DJI is focused on drones, and GoPro is focused on making great action cameras, but these two companies are on a path that leads either to a merger or to intense competition. Both of these companies have been flirting with the other company's products.</p>
-
-            <p id="3" class="hover-link">DJI stepped into the camera market with their odd little DJI Osmo, a stabilizing video camera in a small compact form. The Osmo is built on the technology that DJI has developed for the camera systems on their drones. Meanwhile GoPro has countless rumors of them developing a <a class="link" href="http://techcrunch.com/2015/12/27/how-gopro-is-building-its-future-drone-platform-foundations/">drone platform</a> for them to build a great drone experience for customers.</p>
-
-            <p id="4" class="hover-link">These companies do currently work together in some regards, with GoPro mounts for DJI drones but, as every technology company knows, its better to build your own version than it is to outsource to another company. We have seen this play out <a class="link" href="http://www.wired.com/2015/07/like-google-facebook-twitter-designs-computer-servers/">multiple</a> <a class="link" href="http://www.wired.com/2012/03/google-miner-helmet/">times</a> <a class="link" href="http://spectrum.ieee.org/cars-that-think/transportation/self-driving/uber-could-be-first-to-test-completely-driverless-cars-in-public">with</a> other large tech companies.</p>
-
-            <p id="5" class="hover-link">I really hope that we get to see these companies compete over their own respective drones in 2016. These companies are going to be great competitors and either way the consumers will be getting great drones to use.</p>
-
-            <p>
-                If you enjoyed this post, make sure to share it above. Also if you want to reach out to me about this post or anything else, feel free to either email me or tweet at me:</p>
-            </p>
-            <ul class="ul--inline mb2">
-                <li class="li--inline">
-                    <a class="link" href="mailto:hamlim@outlook.com">hamlim@outlook.com</a>
-                </li>
-                |
-                <li class="li--inline">
-                    <a class="link" href="https://twitter.com/immatthamlin">@immatthamlin</a>
-                </li>
-            </ul>
-        </article>
-        <aside class="aside">
-            <p>
-                Check out some of my other posts:
-            </p>
-            <ul class="ul--styled">
-                <li class="li--spacing">
-                    <a class="link" href="./BuildingIn2016.html">
-                        <em>Building in 2016</em>
-                        <b>Published: 2016-01-03</b>
-                    </a>
-                </li>
-                <li class="li--spacing">
-                    <a class="link" href="./FirstProjectof2016.html">
-                        <em>First Project in 2016 [update]</em>
-                        <b>Published: 2016-01-05</b>
-                    </a>
-                </li>
-                <li class="li--spacing">
-                    <a class="link" href="./WhatTwitterShouldDo.html">
-                        <em>How Twitter Should Handle Longer Tweets</em>
-                        <b>Published: 2016-01-06</b>
-                    </a>
-                </li>
-
-			    <!-- additional links to articles -->
-	        </ul>
-            <p>
-                Or go back to my blog archive <a href="/../../archive.html" class="link">here</a>.
-            </p>
-	    </aside> <!-- .cd-read-more -->
-
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-72100715-1', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-
-        <!-- End Document
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">DJI vs GoPro</h2>
+                <p>The most exciting tech rivalry in 2016</p>
+                <p>
+                    <em>Published: 2016-01-01</em>
+                </p>
+            </header>
+            <article class="article">
+                <p>
+                    2016 is going to be a large year for tech, with a lot of potential shown for new products rising from nothing such as the breakout hit hoverboards that came to rise. One of the rivalries within the tech market that I am personally really excited to see play out this year is the battle between DJI and GoPro.
+                </p>
+                <p>
+                    Some people may be scratching their heads at this rivalry because DJI is focused on drones, and GoPro is focused on making great action cameras, but these two companies are on a path that leads either to a merger or to intense competition. Both of these companies have been flirting with the other company's products.
+                </p>
+                <p>
+                    DJI stepped into the camera market with their odd little DJI Osmo, a stabilizing video camera in a small compact form. The Osmo is built on the technology that DJI has developed for the camera systems on their drones. Meanwhile GoPro has countless rumors of them developing a <a class="link link--out" href="http://techcrunch.com/2015/12/27/how-gopro-is-building-its-future-drone-platform-foundations/">drone platform</a> for them to build a great drone experience for customers.
+                </p>
+                <p>
+                    These companies do currently work together in some regards, with GoPro mounts for DJI drones but, as every technology company knows, its better to build your own version than it is to outsource to another company. We have seen this play out <a class="link link--out" href="http://www.wired.com/2015/07/like-google-facebook-twitter-designs-computer-servers/">multiple</a> <a class="link link--out" href="http://www.wired.com/2012/03/google-miner-helmet/">times</a> <a class="link link--out" href="http://spectrum.ieee.org/cars-that-think/transportation/self-driving/uber-could-be-first-to-test-completely-driverless-cars-in-public">with</a> other large tech companies.
+                </p>
+                <p>
+                    I really hope that we get to see these companies compete over their own respective drones in 2016. These companies are going to be great competitors and either way the consumers will be getting great drones to use.
+                </p>
+            </article>
+        </main>
     </body>
 </html>
