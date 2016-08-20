@@ -42,7 +42,9 @@
 		}
 	}
 	h1 {
-		font-size: calc((112.5% + 0.25vw) * 2.3);	
+		&:not(.escape--default) {
+			font-size: calc((112.5% + 0.25vw) * 2.3);	
+		}
 	}
 	h2 {
 		font-size: calc((112.5% + 0.25vw) * 1.7);
@@ -62,8 +64,13 @@
 	small {
 		font-size: calc((112.5% + 0.25vw) * 0.4);
 	}
+	i, em {
+		font-style: italic;
+	}
 	h1, h2, h3, h4, h5, h6, small, p, ul, ol {
-		// margin: 0 0.5rem;
+		&:not(.escape--default) {
+			margin-bottom: 0.5em;
+		}
 	}
 	ul, ol {
 		list-style-position: inside;

@@ -11,59 +11,13 @@
 // Include the required mixins
 @include typography();
 
-.clr--blue {
-    color: $blue;
-}
-.bg--blue {
-    background-color: $blue;
-}
-.clr--yellow {
-    color: $yellow;
-}
-.bg--yellow {
-    background-color: $yellow;
-}
-.clr--green {
-    color: $green;
-}
-.bg--green {
-    background-color: $green;
-}
 
-.body {
+html {
     background: linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
-}
-
-.page, .footer {
-    margin: 0 auto;
-    @include phone {
-        width: 100vw;
-    }
-    @include phablet {
-        width: 90vw;
-    }
-    @include tablet {
-        width: 85vw;
-    }
-    @include desktop {
-        width: 70vw;
-    }
-    @include xl {
-        width: 60vw;
-    }
-}
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .header {
     width: 100vw;
     height: 90vh;
-}
-.horizontal--center {
-    width: 100%;
-    text-align: center;
 }
 .page--nav {
     min-height: 7vh;
@@ -75,13 +29,31 @@
     }
 }
 
+.li--spacing {
+    margin-bottom: 0.25em;
+    list-style: none;
+    background-color: $white1;
+    border-left: solid 4px $purple1;
+    padding: 0.125em 0.5em 0.125em .5em;
+    &:not(:last-child) {
+        padding: 0.125em 0.5em 0 .5em;
+    }
+}
+.ul--nested {
+    margin-left: 1em;
+}
+.content-header {
+    margin-top: 1em;
+}
 
+.page--lead {
+    padding-bottom: 0.5em;
+}
 
 .project--card {
     width: 30vw;
+    padding: 1em;
 }
-
-
 
 
 

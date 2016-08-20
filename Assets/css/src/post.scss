@@ -5,24 +5,18 @@
 @import 'colors';
 @import 'my_colors';
 @import 'vars';
+@import 'basics';
 
 
 // Include the required mixins
 @include typography();
 
-.page {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
 
-    @media (min-width: 50em) {
-        width: 75vw;
-    }
-
-    @media (min-width: 75em) {
-        width: 60vw;
-    }
+html {
+    background-color: $white1;
+    color: lighten($black, 30%); 
 }
+
 
 blockquote  p {
     margin-bottom: 0;
@@ -53,10 +47,6 @@ blockquote  p {
 .mb2 {
     margin-bottom: 2em;
 }
-
-// .aside {
-//     text-align: center;
-// }
 .footer {
     margin-top: 4em;
 }

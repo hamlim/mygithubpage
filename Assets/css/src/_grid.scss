@@ -105,3 +105,15 @@
 		align-self: stretch;
 	}
 }
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal--center {
+    width: 100%;
+    text-align: center;
+}
