@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Questrial";
+@import "https://fonts.googleapis.com/css?family=Questrial|Space+Mono";
 *,
 *:before,
 *:after {
@@ -329,6 +329,17 @@ h1:not(.escape--default), h2:not(.escape--default), h3:not(.escape--default), h4
 
 ul, ol {
   list-style-position: inside;
+}
+
+kbd, code {
+  font-family: "Space Mono", monospace;
+  background-color: #ccc;
+  border-radius: 0.25em;
+  color: #000000;
+  font-size: 90%;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  display: inline-block;
 }
 
 html {

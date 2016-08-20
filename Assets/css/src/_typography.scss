@@ -14,7 +14,7 @@
 	$line-5: 2;
 	
 	// @import 'https://fonts.googleapis.com/css?family=Montserrat';
-	@import 'https://fonts.googleapis.com/css?family=Questrial';
+	@import 'https://fonts.googleapis.com/css?family=Questrial|Space+Mono';
 
 	html {
 		font-size: $base;
@@ -74,5 +74,15 @@
 	}
 	ul, ol {
 		list-style-position: inside;
+	}
+	kbd, code {
+		font-family: "Space Mono", monospace;
+		background-color: #ccc;
+		border-radius: 0.25em;
+		color: $black;
+		font-size: 90%;
+		padding-top: 0.1em;
+		padding-bottom: 0.1em;
+		display: inline-block;
 	}
 }
