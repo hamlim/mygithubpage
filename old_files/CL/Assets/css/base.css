@@ -1,0 +1,36 @@
+html {
+    background-color: #DDDDDD;
+}
+
+.search-header-fix {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.primary-color {
+    color: #F8C957;
+}
+.primary-background-color {
+    background-color: #F8C957;
+}
+.secondary-color {
+    color: #3498DB;
+}
+.secondary-background-color {
+    background-color: #3498DB;
+}
+.tertiary-color {
+    color: #ECF0F1;
+}
+.tertiary-background-color {
+    background-color: #ECF0F1;
+}
+.quaternary-color {
+    color: #34495E;
+}
+.quaternary-background-color {
+    background-color: #34495E;
+}
+.custom-list {
+    list-style: square;
+}

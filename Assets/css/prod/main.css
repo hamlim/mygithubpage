@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Product Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #000000;
+  background-color: #ffffff;
+}
+@media (min-width: 50em) {
+  html {
+    font-size: 22px;
+  }
+}
+@media (min-width: 75em) {
+  html {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2, .h2 {
+  font-size: 2.369em;
+}
+
+h3, .h3 {
+  font-size: 1.777em;
+}
+
+h4, .h4 {
+  font-size: 1.333em;
+}
+
+small, .small {
+  font-size: 0.75em;
+}
+
+blockquote {
+  border-left: solid 4px #F4D03F;
+  margin: 1em 1.414em;
+  padding: 0.25em 0.5em;
+}
+
+.link {
+  color: #F4D03F;
+  text-decoration: none;
+  transition: color 5ms;
+}
+.link:hover, .link:active {
+  color: #2ECC71;
+  text-decoration: none;
+}
+
+.link--active {
+  color: #2ECC71;
+  text-decoration: none;
+  transition: color 5ms;
+}
+.link--active:hover, .link--active:active {
+  color: #F4D03F;
+  text-decoration: none;
+}
+
+.link--special {
+  color: #4A90E2;
+  text-decoration: none;
+  transition: color 5ms;
+}
+.link--special:hover, .link--special:active {
+  color: #2ECC71;
+  text-decoration: none;
+}
+
+.highlight {
+  background-color: #F4D03F;
+  display: inline-block;
+}
+
+.no--margin {
+  margin: 0 0;
+}
+
+.flex--grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.flex--cell {
+  width: 15em;
+}
+
+.color--blue {
+  color: #4A90E2;
+}
+
+.bg--blue {
+  background-color: #4A90E2;
+}
+
+.color--yellow {
+  color: #F4D03F;
+}
+
+.bg--yellow {
+  background-color: #F4D03F;
+}
+
+.color--green {
+  color: #2ECC71;
+}
+
+.bg--green {
+  background-color: #2ECC71;
+}
+
+.body {
+  background-color: #E5E7E9;
+  background: linear-gradient(to bottom, #F7F9F9 0%, #E5E7E9 100%);
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header--title,
+.header--subtitle {
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.horizontal--center {
+  text-align: center;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.li--inline {
+  display: inline;
+}
+
+.page--nav {
+  padding-top: 2em;
+}
+
+.page--content,
+.footer {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 50em) {
+  .page--content,
+  .footer {
+    width: 75vw;
+  }
+}
+@media (min-width: 75em) {
+  .page--content,
+  .footer {
+    width: 60vw;
+  }
+}
+
+.project--name {
+  display: inline-block;
+}
+
+.page--contact {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.contact {
+  margin: 0 0;
+}
+
+.ul--styled {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 0.5em;
+}
+
+.li--spacing {
+  padding: 0.15em 0;
+}
+
+.ul--nested {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.tm1 {
+  margin-top: 1em;
+}
+
+.tm2 {
+  margin-top: 2em;
+}
+
+.footer {
+  text-align: center;
+}
+
+.highlight-color-only {
+  color: #AED6F1;
+}
+
+/*# sourceMappingURL=main.css.map */

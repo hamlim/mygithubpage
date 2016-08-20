@@ -1,0 +1,26 @@
+{
+    "status": [
+        {
+            "date": "Mar 5th, 2016",
+            "tasks": [
+                {
+                    "task": "Take a walk",
+                    "status": "done"
+                },
+                {
+                    "task": "Drink water",
+                    "status": "done"
+                },
+                {
+                    "task": "Apply to Lowercase jobs",
+                    "status": "done"
+                }
+            ],
+            "progress": "done",
+            "stats": {
+                "water": "0oz",
+                "steps": "0"
+            }
+        }
+    ]
+}

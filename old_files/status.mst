@@ -1,0 +1,43 @@
+{{#eachThree}}
+<div class="row fix-height">
+    <div class="four columns box ">
+        <h5>{{one.statusDate}}</h5>
+        <ul>
+            {{#one.statusList}}
+            <li>
+                {{#done}}
+                <strike>{{task}}</strike>
+                {{/done}}
+                {{task}}
+            </li>
+            {{/one.statusList}}
+        </ul>
+    </div>
+    <div class="four columns box ">
+        <h5>{{two.statusDate}}</h5>
+        <ul>
+            {{#two.statusList}}
+            <li>
+                {{#done}}
+                <strike>{{task}}</strike>
+                {{/done}}
+                {{task}}
+            </li>
+            {{/two.statusList}}
+        </ul>
+    </div>
+    <div class="four columns box ">
+        <h5>{{three.statusDate}}</h5>
+        <ul>
+            {{#three.statusList}}
+            <li>
+                {{#done}}
+                <strike>{{task}}</strike>
+                {{/done}}
+                {{task}}
+            </li>
+            {{/three.statusList}}
+        </ul>
+    </div>
+</div>
+{{/eachThree}}

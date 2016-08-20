@@ -1,0 +1,19 @@
+{{#posts}}
+<div class="card">
+    <div class="card-title">
+        <h5 class="margin-bottom-fix">{{postTitle}}</h5>
+    </div>
+    <div class="card-subtitle">
+        <p class="subtitle margin-bottom-fix">{{postSubtitle}}</p>
+        <span class="number-of-words">Length: <span class="number-text">{{numberOfWords}}</span> Words</span>
+    </div>
+    <hr class="margin-hotfix">
+    <div class="synopsis">
+        <p class="synopsis-content margin-bottom-fix">{{postSynopsis}}</p>
+    </div>
+    <div class="bottom-line" style="margin-bottom: 15px;">
+        <span class="post-date">{{postDate}}</span>
+        <span class="post-link"><a class="button button-primary" href="{{postLink}}">Read More</a></span> <!-- paper-btn -->
+    </div>
+</div>
+{{/posts}}

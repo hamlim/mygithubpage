@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>http://matthamlin.me</title>
+        <description>Matt Hamlin's Blog</description>
+        <link>http://matthamlin.me/</link>
+        <atom:link href="http://matthamlin.me" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 06 Jan 2016 00:42:17 +0000</pubDate>
+        <lastBuildDate>Tue, 06 Jan 2016 00:42:17 +0000</lastBuildDate>
+        <generator>Matt Hamlin V1.0</generator>
+
+
+
+        <item>
+            <title>10,000 Characters</title>
+            <description>How Twitter Should Handle 10,000 Character Tweets.</description>
+            <pubDate>2016-01-06T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2016/January/WhatTwitterShouldDo.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2016/January/WhatTwitterShouldDo.html</guid>
+        </item>
+
+        <item>
+            <title>First Project of 2016 [UPDATED]</title>
+            <descrption>My first project of 2016 is all about building something that I need day in and day out.</description>
+            <pubDate>2016-01-05T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2016/January/FirstProjectof2016.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2016/January/FirstProjectof2016.html</guid>
+        </item>
+
+        <item>
+            <title>Building in 2016</title>
+            <descrption>I want to build complete small services that are actually useful for myself, and maybe others.</description>
+            <pubDate>2016-01-03T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2016/January/BuildingIn2016.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2016/January/BuildingIn2016.html</guid>
+        </item>
+
+        <item>
+            <title>DJI vs GoPro</title>
+            <description>2016 is going to be a large year for tech...</description>
+            <pubDate>2016-01-01T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2016/January/DJIvsGoPro.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2016/January/DJIvsGoPro.html</guid>
+        </item>
+        <item>
+            <title>2016 Goals</title>
+            <description>I never stick to my goals and resolutions after New...</description>
+            <pubDate>2015-12-31T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/2016.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/2016.html</guid>
+        </item>
+        <item>
+            <title>2015 in Review</title>
+            <description>2015 was a big year for me, I changed a...</description>
+            <pubDate>2015-12-30T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/2015.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/2015.html</guid>
+        </item>
+        <item>
+            <title>Where is the Powerpoint Remake?</title>
+            <description>If you happen to be following the startup world (which...</description>
+            <pubDate>2015-12-09T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/Powerpoint.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/Powerpoint.html</guid>
+        </item>
+        <item>
+            <title>Blogging vs Working</title>
+            <description>From November 25th to December 1st I was posting a...</description>
+            <pubDate>2015-12-03T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/BloggingvsWorking.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/BloggingvsWorking.html</guid>
+        </item>
+        <item>
+            <title>The Social Max</title>
+            <description>A few days ago I tweeted about an idea I...</description>
+            <pubDate>2015-12-01T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/December/TheSocialMax.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/December/TheSocialMax.html</guid>
+        </item>
+        <item>
+            <title>The Message is in the Medium</title>
+            <description>The above title is something that was taught to me...</description>
+            <pubDate>2015-11-30T00:00:00+00:00</pubDate>
+            <link>http://matthamlin.me/Posts/Pub/2015/November/Message.html</link>
+            <guid isPermaLink="true">http://matthamlin.me/Posts/Pub/2015/November/Message.html</guid>
+        </item>
+    </channel>
+</rss>
