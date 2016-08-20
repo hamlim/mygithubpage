@@ -1,20 +1,7 @@
-@import "_reset.scss";
-// @import "_normalize.scss";
-@import "_typo.scss";
-@import "_flexgrid.scss";
-
-// Playing around with a background gradient
-// html {
-//     background: rgba(255,255,255,1);
-//     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%);
-//     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(90%, rgba(255,255,255,1)), color-stop(100%, rgba(244,208,63,1)), color-stop(99%, rgba(244,208,63,1)), color-stop(100%, rgba(244,208,63,1)));
-//     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%);
-//     background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%);
-//     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%);
-//     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%, rgba(244,208,63,1) 100%);
-//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4d03f', GradientType=0 );
-// }
-
+@import "reset";
+@import "typo";
+@import "flexgrid";
+@import "my_colors";
 
 
 .color--blue {
@@ -34,6 +21,11 @@
 }
 .bg--green {
     background-color: $green;
+}
+
+.body {
+    background-color: $white2;
+    background: linear-gradient(to bottom, $white1 0%, $white2 100%);
 }
 
 .header {
@@ -112,5 +104,5 @@
     text-align: center;
 }
 .highlight-color-only {
-    color: $blue;
+    color: $blue2;
 }
