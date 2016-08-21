@@ -1,108 +1,70 @@
-@import "reset";
-@import "typo";
-@import "flexgrid";
-@import "my_colors";
+@import 'reset';
+@import 'breakpoints';
+@import 'grid';
+@import 'typography';
+@import 'colors';
+@import 'my_colors';
+@import 'vars';
+@import 'basics';
 
 
-.color--blue {
-    color: $blue;
-}
-.bg--blue {
-    background-color: $blue;
-}
-.color--yellow {
-    color: $yellow;
-}
-.bg--yellow {
-    background-color: $yellow;
-}
-.color--green {
-    color: $green;
-}
-.bg--green {
-    background-color: $green;
-}
+// Include the required mixins
+@include typography();
 
-.body {
-    background-color: $white2;
-    background: linear-gradient(to bottom, $white1 0%, $white2 100%);
-}
 
+html {
+    background: linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
+}
 .header {
-    height: 100vh;
     width: 100vw;
-}
-.header--title,
-.header--subtitle {
-    text-align: center;
-}
-.center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.horizontal--center {
-    text-align: center;
-}
-.page {
-    min-height: 100vh;
-    width: 100vw;
-}
-.li--inline {
-    display: inline;
+    height: 90vh;
 }
 .page--nav {
-    padding-top: 2em;
+    min-height: 7vh;
+    padding-bottom: 1em;
 }
-.page--content,
-.footer {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media (min-width: 50em) {
-        width: 75vw;
-    }
-
-    @media (min-width: 75em) {
-        width: 60vw;
+.ul--inline {
+    & .li--inline {
+        display: inline-block;
     }
 }
-.project--name {
-    display: inline-block;
-}
 
-// Resume.html
-.page--contact {
-    text-align: center;
-    padding: 1em 0;
-}
-.contact {
-    margin: 0 0;
-}
-.ul--styled {
-    list-style-type: disc;
-    list-style-position: outside;
-    margin-bottom: 0.5em;
-}
 .li--spacing {
-    padding: 0.15em 0;
+    margin-bottom: 0.25em;
+    list-style: none;
+    background-color: $white1;
+    border-left: solid 4px $purple1;
+    padding: 0.125em 0.5em 0.125em .5em;
+    &:not(:last-child) {
+        padding: 0.125em 0.5em 0 .5em;
+    }
 }
 .ul--nested {
-    list-style-type: circle;
-    list-style-position: inside;
+    margin-left: 1em;
 }
-
-.tm1 {
+.content-header {
     margin-top: 1em;
 }
-.tm2 {
-    margin-top: 2em;
+
+.page--lead {
+    padding-bottom: 0.5em;
 }
-.footer {
-    text-align: center;
+
+.project--card {
+    width: 30vw;
+    padding: 1em;
 }
-.highlight-color-only {
-    color: $blue2;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
