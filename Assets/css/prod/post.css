@@ -254,6 +254,10 @@ a:hover, a:active {
   margin-bottom: 4em;
   background: linear-gradient(135deg, white 0%, #fcf5f0 100%);
 }
+.header--menu .menu {
+  overflow-y: scroll;
+  white-space: nowrap;
+}
 
 .css-selector {
   color: #669900;
@@ -395,6 +399,10 @@ kbd:not(.escape--defaults), var:not(.escape--defaults) {
 sup {
   vertical-align: super;
   font-size: smaller;
+}
+
+.tac {
+  text-align: center;
 }
 
 html {

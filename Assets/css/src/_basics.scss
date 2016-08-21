@@ -75,6 +75,10 @@ a {
 	line-height: 10vh;
 	margin-bottom: 4em;
 	background: linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
+	& .menu {
+		overflow-y: scroll;
+		white-space: nowrap; 
+	}
 }
 
 
