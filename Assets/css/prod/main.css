@@ -385,6 +385,12 @@ pre.inline-block:after {
   display: none;
 }
 
+kbd, var {
+  font-family: "Questrial", sans-serif;
+  background-color: #D5DBDB;
+  color: #000000;
+  font-size: 90%;
+}
 kbd:not(.escape--defaults), var:not(.escape--defaults) {
   font-family: "Space Mono", monospace;
   background-color: #ccc;
