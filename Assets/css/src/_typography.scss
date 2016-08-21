@@ -91,15 +91,46 @@
 			list-style-position: inside;
 		}
 	}
-	kbd, code {
+	pre {
+		font-size: 70%;
+		position: relative;
+		margin-bottom: 1em;
+		border-right: solid 4px $green1;
+		border-left: solid 4px $green1;
 		font-family: "Space Mono", monospace;
-		background-color: #ccc;
-		border-radius: 0.25em;
-		color: $black;
-		font-size: 90%;
-		padding-top: 0.1em;
-		padding-bottom: 0.1em;
-		display: inline-block;
+		background-color: $cararra;
+		padding: 0 1em 0 1em;
+		&:after {
+			content: attr(data-lang);
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 0 0.25em 0.25em 0.25em;
+			color: black;
+			background-color: #ccc;
+			z-index: 2;
+			border-bottom-left-radius: 4px
+		}
+		&.inline-block {
+			padding-top: 0.25em;
+			padding-bottom: 0.25em;
+			display: inline-block;
+			&:after{
+				display: none;
+			}
+		}
+	}
+	kbd, var {
+		&:not(.escape--defaults) {
+			font-family: "Space Mono", monospace;
+			background-color: #ccc;
+			border-radius: 0.25em;
+			color: $black;
+			font-size: 90%;
+			padding-top: 0.1em;
+			padding-bottom: 0.1em;
+			display: inline-block;
+		}
 	}
 	sup {
 		vertical-align: super;

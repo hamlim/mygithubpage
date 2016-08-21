@@ -255,6 +255,22 @@ a:hover, a:active {
   background: linear-gradient(135deg, white 0%, #fcf5f0 100%);
 }
 
+.css-selector {
+  color: #669900;
+}
+
+.css-prop {
+  color: #990082;
+}
+
+.css-string {
+  color: #0077AC;
+}
+
+.css-value {
+  color: #5C4E53;
+}
+
 html {
   font-size: 16px;
   line-height: 1;
@@ -331,7 +347,37 @@ ul:not(.escape--default), ol:not(.escape--default) {
   list-style-position: inside;
 }
 
-kbd, code {
+pre {
+  font-size: 70%;
+  position: relative;
+  margin-bottom: 1em;
+  border-right: solid 4px #A9DFBF;
+  border-left: solid 4px #A9DFBF;
+  font-family: "Space Mono", monospace;
+  background-color: #F2F1EF;
+  padding: 0 1em 0 1em;
+}
+pre:after {
+  content: attr(data-lang);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 0.25em 0.25em 0.25em;
+  color: black;
+  background-color: #ccc;
+  z-index: 2;
+  border-bottom-left-radius: 4px;
+}
+pre.inline-block {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  display: inline-block;
+}
+pre.inline-block:after {
+  display: none;
+}
+
+kbd:not(.escape--defaults), var:not(.escape--defaults) {
   font-family: "Space Mono", monospace;
   background-color: #ccc;
   border-radius: 0.25em;

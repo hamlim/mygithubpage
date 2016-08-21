@@ -76,3 +76,17 @@ a {
 	margin-bottom: 4em;
 	background: linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
 }
+
+
+.css-selector {
+	color: #669900;
+}
+.css-prop {
+	color: #990082;
+}
+.css-string {
+	color: #0077AC;
+}
+.css-value {
+	color: #5C4E53;
+}
