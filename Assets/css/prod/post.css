@@ -359,7 +359,7 @@ pre {
   border-left: solid 4px #A9DFBF;
   font-family: "Space Mono", monospace;
   background-color: #F2F1EF;
-  padding: 0 1em 0 1em;
+  padding: 0 3em 0 1em;
 }
 pre:after {
   content: attr(data-lang);
