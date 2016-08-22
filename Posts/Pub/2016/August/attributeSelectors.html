@@ -54,6 +54,9 @@
                 </p>
             </header>
             <article class="article">
+                <h5>
+                    <u>Update: Added the other operations allowed within the attribute selector that were not in the initial revision of this post.</u>
+                </h5>
                 <p>
                     I have recently been reading a lot of interesting articles and looking at a few interesting Codepen's that deal with attribute selectors. The two links that stand out the most are <a href="https://css-tricks.com/weird-design-languages-with-attributes/" class="link link--out">this article</a> about making a design language with attribute selectors and <a href="http://codepen.io/alexzaworski/pen/xOBmXP" class="link link--out">this</a> codepen about making a color mixer from attribute selectors.
                 </p>
@@ -109,6 +112,18 @@
                     <h4 class="escape--default">Dash separated list: </h4>
                     <pre data-lang="css"><code>
 <span class="css-selector"><span class="css-specialChars">[</span><span class="css-prop">attribute</span>|=<span class="css-string">"something"</span><span class="css-specialChars">]</span></span>
+                    </code></pre>
+                </div>
+                <div class="grid grid-row grid-wrap grid-justify-between grid-align-items-center">
+                    <h4 class="escape--default">Substring match: </h4>
+                    <pre data-lang="css"><code>
+<span class="css-selector"><span class="css-specialChars">[</span><span class="css-prop">attribute</span>*=<span class="css-string">"something"</span><span class="css-specialChars">]</span></span>
+                    </code></pre>
+                </div>
+                <div class="grid grid-row grid-wrap grid-justify-between grid-align-items-center">
+                    <h4 class="escape--default">Case Insensitivity (operator can be any of the above): </h4>
+                    <pre data-lang="css"><code>
+<span class="css-selector"><span class="css-specialChars">[</span><span class="css-prop">attribute</span><em>operator</em><span class="css-string">"something"</span><span class="css-specialChars"> i]</span></span>
                     </code></pre>
                 </div>
                 <p>
