@@ -377,8 +377,7 @@ pre:after {
   border-bottom-left-radius: 4px;
 }
 pre.inline-block {
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding: 0.25em;
   display: inline-block;
 }
 pre.inline-block:after {
