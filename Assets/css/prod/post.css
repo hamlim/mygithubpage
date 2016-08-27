@@ -232,61 +232,56 @@ html {
 }
 @media screen and (min-width: 16.667em) {
   html {
-    font-size: 18px;
     line-height: 1.2;
   }
 }
 @media screen and (min-width: 22.197em) {
   html {
-    font-size: 20px;
     line-height: 1.4;
   }
 }
 @media screen and (min-width: 31.25em) {
   html {
-    font-size: 22px;
     line-height: 1.6;
   }
 }
 @media screen and (min-width: 41.667em) {
   html {
-    font-size: 24px;
     line-height: 1.8;
   }
 }
 @media screen and (min-width: 50em) {
   html {
-    font-size: 26px;
     line-height: 2;
   }
 }
 
 h1:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 2.3);
+  font-size: calc(calc(1em + 1vw) * 1.7);
 }
 
 h2:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 1.7);
+  font-size: calc(calc(1em + 1vw) * 1.4);
 }
 
 h3:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 1.3);
+  font-size: calc(calc(1em + 1vw) * 1.1);
 }
 
 h4:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 0.9);
+  font-size: calc(calc(1em + 1vw) * 0.7);
 }
 
 h5:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 0.7);
+  font-size: calc(calc(1em + 1vw) * 0.5);
 }
 
 h6:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 0.5);
+  font-size: calc(calc(1em + 1vw) * 0.3);
 }
 
 small:not(.escape--default) {
-  font-size: calc((112.5% + 0.25vw) * 0.4);
+  font-size: calc(calc(1em + 1vw) * 0.2);
 }
 
 i:not(.escape--default), em:not(.escape--default) {
@@ -305,7 +300,7 @@ h1:not(.escape--default), h2:not(.escape--default), h3:not(.escape--default), h4
   margin-bottom: 1em;
 }
 h1.escape--default, h2.escape--default, h3.escape--default, h4.escape--default, h5.escape--default, h6.escape--default, small.escape--default, p.escape--default, ul.escape--default, ol.escape--default {
-  margin: 0;
+  margin: 0 0 .25em 0;
   padding: 0;
   border: 0;
   font-size: inherit;
