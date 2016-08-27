@@ -129,6 +129,9 @@ a:hover, a:active {
 .link:visited:not(.link--active):not(.link--special) {
   color: #AED6F1;
 }
+.link:visited:not(.link--active):not(.link--special):hover {
+  color: #FAD7A0;
+}
 .link--active {
   color: #F5CBA7;
 }
