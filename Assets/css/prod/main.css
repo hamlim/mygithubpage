@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Questrial|Space+Mono";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400|Space+Mono";
 *,
 *:before,
 *:after {
@@ -228,7 +228,8 @@ a:hover, a:active {
 html {
   font-size: calc(1em + 1vw);
   line-height: 1;
-  font-family: "Questrial", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 @media screen and (min-width: 16.667em) {
   html {
@@ -256,26 +257,44 @@ html {
   }
 }
 
+h1 {
+  font-weight: 400;
+}
 h1:not(.escape--default) {
   font-size: calc(calc(1em + 1vw) * 1.7);
 }
 
+h2 {
+  font-weight: 400;
+}
 h2:not(.escape--default) {
   font-size: calc(calc(1em + 1vw) * 1.4);
 }
 
+h3 {
+  font-weight: 400;
+}
 h3:not(.escape--default) {
   font-size: calc(calc(1em + 1vw) * 1.1);
 }
 
+h4 {
+  font-weight: 400;
+}
 h4:not(.escape--default) {
   font-size: calc(calc(1em + 1vw) * 0.7);
 }
 
+h5 {
+  font-weight: 400;
+}
 h5:not(.escape--default) {
   font-size: calc(calc(1em + 1vw) * 0.5);
 }
 
+h6 {
+  font-weight: 400;
+}
 h6:not(.escape--default) {
   font-size: calc(calc(1em + 1vw) * 0.3);
 }
