@@ -15,6 +15,9 @@ a {
 	&:hover {
 		color: $yellow;
 	}
+	&:visited:not(.link--active):not(.link--special) {
+		color: $blue2;
+	}
 	&--active {
 		color: $orange1;
 	}

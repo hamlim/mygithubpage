@@ -126,6 +126,9 @@ a:hover, a:active {
 .link:hover {
   color: #F4D03F;
 }
+.link:visited:not(.link--active):not(.link--special) {
+  color: #AED6F1;
+}
 .link--active {
   color: #F5CBA7;
 }
@@ -439,6 +442,7 @@ html {
 .figure .img {
   width: 100%;
   height: auto;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=post.css.map */
