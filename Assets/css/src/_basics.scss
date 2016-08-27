@@ -46,7 +46,7 @@ a {
     background-color: $green;
 }
 
-.page, .footer, .article, .main, .menu {
+.page, .footer, .main, .menu {
     margin: 0 auto;
     @include phone {
         width: 100vw;
