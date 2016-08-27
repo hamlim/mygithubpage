@@ -282,25 +282,25 @@ h4 {
   font-weight: 400;
 }
 h4:not(.escape--default) {
-  font-size: calc(calc(0.75em + 1vw) * 0.7);
+  font-size: calc(calc(0.75em + 1vw) * 0.8);
 }
 
 h5 {
   font-weight: 400;
 }
 h5:not(.escape--default) {
-  font-size: calc(calc(0.75em + 1vw) * 0.5);
+  font-size: calc(calc(0.75em + 1vw) * 0.7);
 }
 
 h6 {
   font-weight: 400;
 }
 h6:not(.escape--default) {
-  font-size: calc(calc(0.75em + 1vw) * 0.3);
+  font-size: calc(calc(0.75em + 1vw) * 0.6);
 }
 
 small:not(.escape--default) {
-  font-size: calc(calc(0.75em + 1vw) * 0.2);
+  font-size: calc(calc(0.75em + 1vw) * 0.5);
 }
 
 i:not(.escape--default), em:not(.escape--default) {

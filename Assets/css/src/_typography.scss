@@ -53,24 +53,24 @@
 	h4 {
 		font-weight: 400;
 		&:not(.escape--default) {
-			font-size: calc(#{$base} * 0.7);
+			font-size: calc(#{$base} * 0.8);
 		}
 	}
 	h5 {
 		font-weight: 400;
 		&:not(.escape--default) { 
-			font-size: calc(#{$base} * 0.5);
+			font-size: calc(#{$base} * 0.7);
 		}
 	}
 	h6 {
 		font-weight: 400;
 		&:not(.escape--default) {
-			font-size: calc(#{$base} * 0.3);
+			font-size: calc(#{$base} * 0.6);
 		}
 	}
 	small {
 		&:not(.escape--default) {
-			font-size: calc(#{$base} * 0.2);
+			font-size: calc(#{$base} * 0.5);
 		}
 	}
 	i, em {
