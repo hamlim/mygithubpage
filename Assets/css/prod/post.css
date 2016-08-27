@@ -232,27 +232,27 @@ html {
 }
 @media screen and (min-width: 16.667em) {
   html {
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 @media screen and (min-width: 22.197em) {
   html {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 @media screen and (min-width: 31.25em) {
   html {
-    line-height: 1.6;
+    line-height: 1.4;
   }
 }
 @media screen and (min-width: 41.667em) {
   html {
-    line-height: 1.8;
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 50em) {
   html {
-    line-height: 2;
+    line-height: 1.6;
   }
 }
 
@@ -382,6 +382,10 @@ html {
 .article--header {
   border-bottom: solid 2px currentColor;
   margin-bottom: 2em;
+}
+
+.title {
+  margin-bottom: 1em;
 }
 
 .article {
