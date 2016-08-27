@@ -74,10 +74,13 @@ a {
 	height: 10vh;
 	line-height: 10vh;
 	margin-bottom: 4em;
-	background: linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
+	background: linear-gradient(135deg, lighten($green1, 15%) 0%, lighten($green2, 15%) 100%);
 	& .menu {
 		overflow-y: scroll;
 		white-space: nowrap; 
+		& .articleName {
+			border-bottom: solid 2px $blue1;
+		}
 	}
 }
 
