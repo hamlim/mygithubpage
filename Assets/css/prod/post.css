@@ -402,7 +402,7 @@ html {
 
 .page {
   padding: 1em;
-  box-shadow: 0px 0px 4px #D5DBDB;
+  box-shadow: 0px 0px 50px #D1E2FB;
   margin-bottom: 2em;
   background-color: #ffffff;
 }
@@ -531,100 +531,6 @@ html {
 
 .dg2 {
   background-color: #ABB2B9;
-}
-
-ol.tree {
-  padding: 0 0 0 30px;
-  width: 300px;
-}
-
-li {
-  position: relative;
-  margin-left: -15px;
-  list-style: none;
-}
-li.file {
-  margin-left: -1px !important;
-}
-li.file span {
-  background: url(/Assets/images/posts/my_new_website/document.png) 0 0 no-repeat;
-  background-size: 21px 21px;
-  color: #000000;
-  padding-left: 21px;
-  display: block;
-}
-li.file span[data-filetype='png'] {
-  background: url(/Assets/images/posts/my_new_website/png.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li.file span[data-filetype='jpg'] {
-  background: url(/Assets/images/posts/my_new_website/jpg.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li.file span[data-filetype='svg'] {
-  background: url(/Assets/images/posts/my_new_website/svg.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li.file span[data-filetype='html'] {
-  background: url(/Assets/images/posts/my_new_website/html.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li.file span[data-filetype='css'] {
-  background: url(/Assets/images/posts/my_new_website/css.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li.file span[data-filetype='scss'] {
-  background: url(/Assets/images/posts/my_new_website/css.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li.file span[data-filetype='sketch'] {
-  background: url(/Assets/images/posts/my_new_website/sketch.png) 0 11px no-repeat;
-  background-size: 21px 21px;
-}
-li input {
-  position: absolute;
-  left: 0;
-  margin-left: 0;
-  opacity: 0;
-  z-index: 2;
-  cursor: pointer;
-  height: 1em;
-  width: 1em;
-  top: 0;
-}
-li input + ol {
-  background: url(/Assets/images/posts/my_new_website/toggle-small-expand.png) 40px 0px no-repeat;
-  background-size: 21px 21px;
-  margin: -0.938em 0 0 -44px;
-  /* 15px */
-  height: 1em;
-}
-li input + ol > li {
-  display: none;
-  margin-left: -14px !important;
-  padding-left: 1px;
-}
-li label {
-  background: url(/Assets/images/posts/my_new_website/folder-horizontal.png) 16px 15px no-repeat;
-  background-size: 21px 21px;
-  cursor: pointer;
-  display: block;
-  padding-left: 37px;
-}
-li input:checked + ol {
-  background: url(/Assets/images/posts/my_new_website/toggle-small-hide.png) 40px 0px no-repeat;
-  background-size: 21px 21px;
-  margin: -1.25em 0 0 -44px;
-  /* 20px */
-  padding: 1.563em 0 0 80px;
-  height: auto;
-}
-li input:checked + ol > li {
-  display: block;
-  margin: 0 0 0.125em;
-}
-li input:checked + ol > li:last-child {
-  margin: 0 0 0.063em;
 }
 
 /*# sourceMappingURL=post.css.map */
