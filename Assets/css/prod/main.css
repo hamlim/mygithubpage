@@ -205,6 +205,7 @@ a:hover, a:active {
   line-height: 10vh;
   margin-bottom: 4em;
   background: linear-gradient(135deg, #e1f4e8 0%, #e9faf0 100%);
+  box-shadow: 0px 4px 50px #D1E2FB;
 }
 .header--menu .menu {
   overflow-y: scroll;

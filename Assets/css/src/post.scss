@@ -13,17 +13,17 @@
 
 
 html {
-    background-color: $white1;
+    background-color: $white;
     color: lighten($black, 10%); 
 }
 
 .page {
     padding: 1em;
-    box-shadow: 0px 0px 50px #D1E2FB;
     margin-bottom: 2em;
     background-color: $white;
 }
 .article--header {
+    text-align: left;
     border-bottom: solid 2px currentColor;
     margin-bottom: 2em;
 }
