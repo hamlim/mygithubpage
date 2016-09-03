@@ -155,4 +155,32 @@
 	.tac {
 		text-align: center;
 	}
+	[data-footnote] {
+    position: relative;
+    &:hover:after {
+    	animation: fade-in 1s ease-in-out;
+      content: attr(data-footnote);
+      font-size: calc(#{$base} * 0.5);
+      padding: 1em 1em 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-bottom: solid 1em $teal1;
+      background-color: $orange1;
+      color: $black;
+      min-width: 5em;
+      position: absolute;
+      top: 130%;
+      left: 0;
+      transform: translateX(-50%);
+      pointer-events: none;
+	    }
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
