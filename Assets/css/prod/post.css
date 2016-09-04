@@ -381,14 +381,14 @@ pre.inline-block:after {
 kbd, var {
   font-family: "Questrial", sans-serif;
   background-color: #D5DBDB;
-  color: #000000;
+  color: #4E4F4C;
   font-size: 90%;
 }
 kbd:not(.escape--defaults), var:not(.escape--defaults) {
   font-family: "Space Mono", monospace;
   background-color: #ccc;
   border-radius: 0.25em;
-  color: #000000;
+  color: #4E4F4C;
   font-size: 90%;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
@@ -415,7 +415,7 @@ sup {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom: solid 1em #A3E4D7;
   background-color: #F5CBA7;
-  color: #000000;
+  color: #4E4F4C;
   min-width: 15em;
   position: absolute;
   top: 130%;
@@ -425,14 +425,14 @@ sup {
 }
 
 html {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: #FCFCFC;
+  color: #686965;
 }
 
 .page {
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #ffffff;
+  background-color: #FCFCFC;
 }
 
 .article--header {
