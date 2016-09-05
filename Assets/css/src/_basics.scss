@@ -37,19 +37,25 @@ a {
 			color: $black;
 		}
 		border-bottom: solid 4px currentColor;
+		transition: all 0.25s linear;
 		&:hover {
 			border-bottom: solid 4px $cape-honey;
+			transition: all 0.25s linear;
 		}
 		&:active {
 			border-bottom: solid 4px $crusta;
+			transition: all 0.25s linear;
 		}
 		&:visited {
 			border-bottom: solid 4px $shamrock;
+			transition: all 0.25s linear;
 			&:hover {
 				border-bottom: solid 4px $cape-honey;
+				transition: all 0.25s linear;
 			}
 			&:active {
 				border-bottom: solid 4px $crusta;
+				transition: all 0.25s linear;
 			}
 		}
 	}

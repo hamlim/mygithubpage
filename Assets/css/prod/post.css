@@ -151,24 +151,30 @@ a:hover, a:active {
 }
 .link--article {
   border-bottom: solid 4px currentColor;
+  transition: all 0.25s linear;
 }
 .link--article:not(.link):not(.link--out) {
   color: #4E4F4C;
 }
 .link--article:hover {
   border-bottom: solid 4px #FDE3A7;
+  transition: all 0.25s linear;
 }
 .link--article:active {
   border-bottom: solid 4px #F2784B;
+  transition: all 0.25s linear;
 }
 .link--article:visited {
   border-bottom: solid 4px #2ECC71;
+  transition: all 0.25s linear;
 }
 .link--article:visited:hover {
   border-bottom: solid 4px #FDE3A7;
+  transition: all 0.25s linear;
 }
 .link--article:visited:active {
   border-bottom: solid 4px #F2784B;
+  transition: all 0.25s linear;
 }
 
 .clr--blue {
