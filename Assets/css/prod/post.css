@@ -219,6 +219,9 @@ a:hover, a:active {
   overflow-y: scroll;
   white-space: nowrap;
 }
+.header--menu .menu::-webkit-scrollbar {
+  display: none;
+}
 .header--menu .menu .articleName {
   border-bottom: solid 2px #A9CCE3;
 }

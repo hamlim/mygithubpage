@@ -85,6 +85,9 @@ a {
 	& .menu {
 		overflow-y: scroll;
 		white-space: nowrap; 
+		&::-webkit-scrollbar {
+			display: none;
+		}
 		& .articleName {
 			border-bottom: solid 2px $blue1;
 		}
