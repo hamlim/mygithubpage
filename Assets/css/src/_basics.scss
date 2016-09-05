@@ -33,7 +33,9 @@ a {
 	}
 
 	&--article {
-		// color: $black;
+		&:not(.link):not(.link--out) {
+			color: $black;
+		}
 		border-bottom: solid 4px currentColor;
 		&:hover {
 			border-bottom: solid 4px $cape-honey;

@@ -152,6 +152,9 @@ a:hover, a:active {
 .link--article {
   border-bottom: solid 4px currentColor;
 }
+.link--article:not(.link):not(.link--out) {
+  color: #4E4F4C;
+}
 .link--article:hover {
   border-bottom: solid 4px #FDE3A7;
 }
