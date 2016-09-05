@@ -32,11 +32,23 @@ a {
 		}
 	}
 
-	&--articleHeader {
-		color: $black;
+	&--article {
+		// color: $black;
 		border-bottom: solid 4px currentColor;
 		&:hover {
 			border-bottom: solid 4px $cape-honey;
+		}
+		&:active {
+			border-bottom: solid 4px $crusta;
+		}
+		&:visited {
+			border-bottom: solid 4px $shamrock;
+			&:hover {
+				border-bottom: solid 4px $cape-honey;
+			}
+			&:active {
+				border-bottom: solid 4px $crusta;
+			}
 		}
 	}
 }

@@ -149,12 +149,23 @@ a:hover, a:active {
 .link--special:hover {
   color: #F9690E;
 }
-.link--articleHeader {
-  color: #4E4F4C;
+.link--article {
   border-bottom: solid 4px currentColor;
 }
-.link--articleHeader:hover {
+.link--article:hover {
   border-bottom: solid 4px #FDE3A7;
+}
+.link--article:active {
+  border-bottom: solid 4px #F2784B;
+}
+.link--article:visited {
+  border-bottom: solid 4px #2ECC71;
+}
+.link--article:visited:hover {
+  border-bottom: solid 4px #FDE3A7;
+}
+.link--article:visited:active {
+  border-bottom: solid 4px #F2784B;
 }
 
 .clr--blue {
