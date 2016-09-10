@@ -13,7 +13,7 @@
 
 
 html {
-    background: linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
+    background: $white; // linear-gradient(135deg, lighten($orange1, 20%) 0%, lighten($orange2, 20%) 100%);
 }
 .header {
     width: 100vw;
@@ -51,7 +51,6 @@ html {
 }
 
 .project--card {
-    width: 30vw;
     padding: 1em;
 }
 

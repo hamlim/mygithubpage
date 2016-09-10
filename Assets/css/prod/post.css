@@ -154,7 +154,7 @@ a:hover, a:active {
   transition: all 0.25s linear;
 }
 .link--article:not(.link):not(.link--out) {
-  color: #4E4F4C;
+  color: #0A0A0A;
 }
 .link--article:hover {
   border-bottom: solid 4px #FDE3A7;
@@ -272,7 +272,7 @@ a:hover, a:active {
 }
 
 html {
-  font-size: calc(1em + 1.5vw);
+  font-size: calc(1em + 1.4vw);
   line-height: 1;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -307,46 +307,46 @@ h1 {
   font-weight: 400;
 }
 h1:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 1.7);
+  font-size: calc(calc(1em + 1.4vw) * 1.7);
 }
 
 h2 {
   font-weight: 400;
 }
 h2:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 1.4);
+  font-size: calc(calc(1em + 1.4vw) * 1.4);
 }
 
 h3 {
   font-weight: 400;
 }
 h3:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 1.1);
+  font-size: calc(calc(1em + 1.4vw) * 1.1);
 }
 
 h4 {
   font-weight: 400;
 }
 h4:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 0.8);
+  font-size: calc(calc(1em + 1.4vw) * 0.8);
 }
 
 h5 {
   font-weight: 400;
 }
 h5:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 0.7);
+  font-size: calc(calc(1em + 1.4vw) * 0.7);
 }
 
 h6 {
   font-weight: 400;
 }
 h6:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 0.6);
+  font-size: calc(calc(1em + 1.4vw) * 0.6);
 }
 
 small:not(.escape--default) {
-  font-size: calc(calc(1em + 1.5vw) * 0.5);
+  font-size: calc(calc(1em + 1.4vw) * 0.5);
 }
 
 i:not(.escape--default), em:not(.escape--default) {
@@ -409,14 +409,14 @@ pre.inline-block:after {
 kbd, var {
   font-family: "Questrial", sans-serif;
   background-color: #D5DBDB;
-  color: #4E4F4C;
+  color: #0A0A0A;
   font-size: 90%;
 }
 kbd:not(.escape--defaults), var:not(.escape--defaults) {
   font-family: "Space Mono", monospace;
   background-color: #ccc;
   border-radius: 0.25em;
-  color: #4E4F4C;
+  color: #0A0A0A;
   font-size: 90%;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
@@ -438,12 +438,12 @@ sup {
 [data-footnote]:hover:after {
   animation: fade-in 1s ease-in-out;
   content: attr(data-footnote);
-  font-size: calc(calc(1em + 1.5vw) * 0.5);
+  font-size: calc(calc(1em + 1.4vw) * 0.5);
   padding: 1em 1em 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-bottom: solid 1em #A3E4D7;
   background-color: #F5CBA7;
-  color: #4E4F4C;
+  color: #0A0A0A;
   min-width: 15em;
   position: absolute;
   top: 130%;
@@ -454,7 +454,7 @@ sup {
 
 html {
   background-color: #FCFCFC;
-  color: #686965;
+  color: #242424;
 }
 
 .page {
