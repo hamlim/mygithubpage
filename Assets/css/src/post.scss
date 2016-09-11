@@ -14,12 +14,11 @@
 
 html {
     background-color: $white;
-    color: lighten($black, 10%); 
+    color: $black; 
 }
 
 .page {
     margin-bottom: 2em;
-    background-color: $white;
 }
 .article--header {
     text-align: left;
