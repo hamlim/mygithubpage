@@ -504,6 +504,11 @@ html {
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
 }
 
+.video {
+  max-width: 100%;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
 .swatch {
   border-radius: 4px;
   margin: 0.25em;
