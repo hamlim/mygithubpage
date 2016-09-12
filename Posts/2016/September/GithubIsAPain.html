@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Github Is A Pain</title>
+
+        <!-- Generic Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="A simple portfolio website for Matt Hamlin.">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+
+
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/Assets/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="/Assets/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/Assets/icons/favicons/favicon-96x96.png" sizes="96x96" type="image/png">
+
+
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/Assets/css/prod/post.css">
+
+    </head>
+    <body class="body">
+        <header class="header--menu">
+            <nav class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+            </nav>
+        </header>
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">Github Is A Pain</h2>
+                <p class="escape--default">The problems of hosting your blog on Github Pages</p>
+                <p class="escape--default">
+                    <em>Published: <time datetime="2016-09-12">September 12th, 2016</time></em>
+                </p>
+            </header>
+            <article class="article">
+                <p>
+                    If you happen to be the one or two people who read this blog semi-regularly you probably know that I host this entire website on Github Pages. This has normally worked out alright in the past, I have had some issues here and there but nothing that I would blame on the system but instead on my knowledge of Git.
+                </p>
+                <p>
+                    However, recently I had an issue where I wanted to add a small <var>.mp4</var> file to include it in a recent blog post but git push kept failing. All the researching I did couldn't narrow down the issue so I gave in and emailed Github support. They too couldn't tell me what was wrong with my push. It was only until about the 10th git push failed that it finally gave me something useful to go off of. Apparently, Github does not allow users to push more than 100MB in one go. 
+                </p>
+                <p>
+                    This got me fairly angry because I had wasted so much time trying to push these changes to github and I find out that a feature Github shipped weeks ago (LFS) hasn't actually shipped to users everywhere.
+                </p>
+                <p>
+                    Even thought it is working now I am still considering how I am hosting this blog and I will seriously consider moving this blog over to a dedicated server. Maybe even just a basic NodeJS server with Express on DigitalOcean to keep it cheap. If you have any suggestions on how I can use Git and also host a static file blog for free or for really cheap please let me know!
+                </p>
+            </article>
+        </main>
+    </body>
+</html>
