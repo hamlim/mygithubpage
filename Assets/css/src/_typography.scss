@@ -16,6 +16,7 @@
 		line-height: $line-base;
 		font-family: "Roboto", sans-serif;
 		font-weight: 300;
+		counter-reset: footnotes;
 		@include phone {
 			line-height: $line-1;
 		}
@@ -128,6 +129,7 @@
 		&.inline-block {
 			padding: 0.25em;
 			display: inline-block;
+			margin: 0;
 			&:after{
 				display: none;
 			}
@@ -157,6 +159,7 @@
 		text-align: center;
 	}
 	[data-footnote] {
+		cursor: context-menu;
     position: relative;
     &:hover:after {
     	animation: fade-in 1s ease-in-out;
@@ -165,7 +168,7 @@
       padding: 1em 1em 0;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       border-bottom: solid 1em $teal1;
-      background-color: $orange1;
+      background-color: $lgray1;
       color: $black;
       min-width: 15em;
       position: absolute;
@@ -173,7 +176,29 @@
       left: 0;
       transform: translateX(-50%);
       pointer-events: none;
-	    }
+	  }
+	}
+	[id*="fn"]:after {
+		content: '';
+		display: block;
+	}
+	[id*="fn"]{
+		counter-increment: footnotes;
+		position: relative;
+		&:before{
+			content: counter(footnotes);
+			border-radius: 50%;
+			display: inline-block;
+			position: absolute;
+			left: -2rem;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $green;
+			color: $white;
+			height: 1rem;
+			width: 1rem;
+			text-align: center;
+		}
 	}
 }
 
