@@ -1,0 +1,144 @@
+:root {
+	--red1: #E6B0AA;
+  --red2: #F5B7B1;
+	--purple1: #D7BDE2;
+	--purple2: #D2B4DE;
+	--blue1: #A9CCE3;
+	--blue2: #AED6F1;
+	--teal1: #A3E4D7;
+	--teal2: #A2D9CE;
+	--green1: #A9DFBF;
+	--green2: #ABEBC6;
+	--yellow1: #F9E79F;
+	--yellow2: #FAD7A0;
+	--orange1: #F5CBA7;
+	--orange2: #EDBB99;
+	--white1: #F7F9F9;
+	--white2: #E5E7E9;
+	--lgray1: #D5DBDB;
+	--lgray2: #CCD1D1;
+	--dgray1: #AEB6BF;
+	--dgray2: #ABB2B9;
+	--white: #ffffff;
+	--black: #000000;
+}
+
+html {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.page {
+  margin-bottom: 2rem;
+}
+.article--header {
+  text-align: left;
+  border-bottom: solid 2px currentColor;
+  margin-bottom: 2rem;
+}
+.title {
+  margin-bottom: 1rem;
+}
+.article {
+  font-weight: 200;
+}
+
+.bq {
+  background-color: var(--lgray2);
+  border-right: solid 4px var(--teal1);
+  border-left: solid 4px var(--teal1);
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.li--spacing {
+  margin-bottom: 0.25rem;
+  list-style: none;
+  background-color: var(--white1);
+  border-left: solid 4px var(--purple1);
+  padding: 0.125rem 0.5rem 0.125rem .5rem;
+}
+.li--spacing:not(:last-child) {
+	padding: 0.125rem 0.5rem 0 .5rem;
+}
+
+.figure {
+  max-width: 100%;
+}
+.figure .img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.video {
+  width: 100%;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+// my_new_website.scss
+
+.swatch {
+	border-radius: 4px;
+	margin: 0.25rem;
+}
+.r1 {
+	background-color: var(--red1);
+}
+.r2 {
+	background-color: var(--red2);
+}
+.p1 {
+	background-color: var(--purple1);
+}
+.p2 {
+	background-color: var(--purple2);
+}
+.b1 {
+	background-color: var(--blue1);
+}
+.b2 {
+	background-color: var(--blue2);
+}
+.t1 {
+	background-color: var(--teal1);
+}
+.t2 {
+	background-color: var(--teal2);
+}
+.g1 {
+	background-color: var(--green1);
+}
+.g2 {
+	background-color: var(--green2);
+}
+.y1 {
+	background-color: var(--yellow1);
+}
+.y2 {
+	background-color: var(--yellow2);
+}
+.o1 {
+	background-color: var(--orange1);
+}
+.o2 {
+	background-color: var(--orange2);
+}
+.w1 {
+	background-color: var(--white1);
+}
+.w2 {
+	background-color: var(--white2);
+}
+.lg1 {
+	background-color: var(--lgray1);
+}
+.lg2 {
+	background-color: var(--lgray2);
+}
+.dg1 {
+	background-color: var(--dgray1);
+}
+.dg2 {
+	background-color: var(--dgray2);
+}
