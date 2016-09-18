@@ -601,7 +601,7 @@ sup, .sup, [css-sup] {
   cursor: context-menu;
   position: relative;
 }
-[data-footnore]:hover:after {
+[data-footnote]:hover:after {
   animation: fade-in 1s ease-in-out;
   content: attr(data-footnote);
   font-size: calc(var(--base) * 0.5);

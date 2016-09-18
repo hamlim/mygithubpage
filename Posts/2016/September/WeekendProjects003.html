@@ -64,6 +64,75 @@
                 <p>
                     I also started yet another project, this time building on top of my <a href="https://goexploring.today/boilerplate" class="link link--out">boilerplate</a> project that is a React, Redux, React Router, and PostCSS based, all using Webpack for the building of the assets.
                 </p>
+                <p>
+                    Sunday I mostly worked on client projects and also worked on this simple little toggle below.
+                </p>
+                <p>
+                    For the toggle I tried to make it easy to use, user friendly and also as usable as possible on other browsers. To see it in its full glory you might want to use chrome, but it should work perfectly fine in any other browser.
+                </p>
+                <div class="grid grid-column grid-justify-center">
+                    <div class="card"  css-card>
+                        <label for="toggle" css-label>
+                            <input id="toggle" type="checkbox" css-toggle />
+                        </label>
+                    </div>
+                    <pre data-lang="css"><code>
+<span class="css-specialChars">[</span><span class="css-selector">css-label</span><span class="css-specialChars">]</span> {
+    <span class="css-prop">width:</span> <span class="css-value">8rem;</span>
+    <span class="css-prop">height:</span> <span class="css-value">4rem;</span>
+    <span class="css-prop">border-radius:</span> <span class="css-value">25%/50%;</span>
+    <span class="css-prop">position:</span> <span class="css-value">relative;</span>
+    <span class="css-prop">background-color:</span> <span class="css-value">var(--light-gray);</span>
+    <span class="css-prop">z-index:</span> <span class="css-value">1;</span>
+    <span class="css-prop">overflow:</span> <span class="css-value">hidden;</span>
+    <span class="css-prop">box-shadow:</span> <span class="css-value">0 0 .5rem .125rem rgba(0,0,0,.2);</span>
+    <span class="css-prop">display:</span> <span class="css-value">inline-block;</span>
+}
+<span class="css-specialChars">[</span><span class="css-selector">css-toggle</span><span class="css-specialChars">]</span> {
+    <span class="css-prop">outline:</span> <span class="css-value">none;</span>
+    <span class="css-prop">appearance:</span> <span class="css-value">none;</span>
+    <span class="css-prop">-webkit-appearance:</span> <span class="css-value">none;</span>
+    <span class="css-prop">position:</span> <span class="css-value">absolute;</span>
+    <span class="css-prop">width:</span> <span class="css-value">4rem;</span>
+    <span class="css-prop">height:</span> <span class="css-value">4rem;</span>
+    <span class="css-prop">background-color:</span> <span class="css-value">var(--light-gray);</span>
+    <span class="css-prop">border-radius:</span> <span class="css-value">50%;</span>
+    <span class="css-prop">top:</span> <span class="css-value">0;</span>
+    <span class="css-prop">left:</span> <span class="css-value">0;</span>
+    <span class="css-prop">padding:</span> <span class="css-value">0;</span>
+    <span class="css-prop">margin:</span> <span class="css-value">0;</span>
+    <span class="css-prop">transition:</span> <span class="css-value">all .5s ease-in-out;</span>
+}
+<span class="css-specialChars">[</span><span class="css-selector">css-toggle</span><span class="css-specialChars">]</span><span class="css-string">:checked</span> {
+    <span class="css-prop">left:</span> <span class="css-value">4rem;</span>
+    <span class="css-prop">background-color:</span> <span class="css-value">var(--green);</span>
+    <span class="css-prop">transition:</span> <span class="css-value">all .5s ease-in-out;</span>
+    <span class="css-prop">box-shadow:</span> <span class="css-value">0 0 .5rem 0.1125rem rgba(0,0,0,.3);</span>
+}
+<span class="css-specialChars">[</span><span class="css-selector">css-toggle</span><span class="css-specialChars">]</span><span class="css-string">:after</span> {
+    <span class="css-prop">position:</span> <span class="css-value">absolute;</span>
+    <span class="css-prop">left:</span> <span class="css-value">50%;</span>
+    <span class="css-prop">top:</span> <span class="css-value">0;</span>
+    <span class="css-prop">bottom:</span> <span class="css-value">0;</span>
+    <span class="css-prop">width:</span> <span class="css-value">6rem;</span>
+    <span class="css-prop">background-color:</span> <span class="css-value">var(--dark-gray);</span>
+    <span class="css-prop">content:</span> <span class="css-value">'';</span>
+    <span class="css-prop">display:</span> <span class="css-value">inline-block;</span>
+    <span class="css-prop">z-index:</span> <span class="css-value">-1;</span>
+}
+                    </code></pre>
+                    <pre data-lang="html"><code>
+&lt;<span class="css-prop">label for</span><span class="css-specialChars">=</span><span class="css-string">"toggle"</span> <span class="css-prop">css-label</span>&gt;
+    &lt;<span class="css-prop">input id</span><span class="css-specialChars">=</span><span class="css-string">"toggle"</span> <span class="css-prop">type</span><span class="css-specialChars">=</span><span class="css-string">"checkbox"</span> <span class="css-prop">css-toggle </span>/&gt;
+&lt;/<span class="css-prop">label</span>&gt;
+                    </code></pre>
+                </div>
+                <p>
+                    You might notice that this sort of relies upon a small hack, one in that Chrome happens to support <code class="inline-block">input[type="checkbox"]:after</code>. I don't know if other browsers happen to support this or not.
+                </p>
+                <p>
+                    Either way I feel like I had a fairly productive weekend, and I think next weekend I will be working on making my website, or maybe just my blog to be React based.
+                </p>
             </article>
         </main>
     </body>

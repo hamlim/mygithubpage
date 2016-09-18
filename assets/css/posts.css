@@ -21,6 +21,11 @@
 	--dgray2: #ABB2B9;
 	--white: #ffffff;
 	--black: #000000;
+	
+	--green: #26C281;
+	--dark-gray: #BDC3C7;
+	--light-gray: #ECF0F1;
+	--blue: #E4F1FE;
 }
 
 html {
@@ -76,7 +81,24 @@ html {
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
 }
 
-// my_new_website.scss
+[css-card] {
+	padding: 1rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 1rem;
+}
+
+/*
+	Blog Post specific css
+*/
+
+/*
+	My New Website css
+*/
 
 .swatch {
 	border-radius: 4px;
@@ -141,4 +163,51 @@ html {
 }
 .dg2 {
 	background-color: var(--dgray2);
+}
+
+/*
+	Weekend Projects 3
+*/
+[css-label] {
+	width: 8rem;
+	height: 4rem;
+	border-radius: 25%/50%;
+	position: relative;
+	background-color: var(--light-gray);
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: 0 0 .5rem .125rem rgba(0,0,0,.2);
+	display: inline-block;
+}
+[css-toggle] {
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--light-gray);
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	transition: all .5s ease-in-out;
+}
+[css-toggle]:checked {
+	left: 4rem;
+	background-color: var(--green);
+	transition: all .5s ease-in-out;
+	box-shadow: 0 0 .5rem 0.1125rem rgba(0,0,0,.3);
+}
+[css-toggle]:after {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	width: 6rem;
+	background-color: var(--dark-gray);
+	content: '';
+	display: inline-block;
+	z-index: -1;
 }
