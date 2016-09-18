@@ -477,6 +477,16 @@ a:active, .a:active, [css-a]:active {
   transition: all 0.25s ease-in-out;
 }
 
+::-moz-selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+::selection{
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .clr--blue {
   color: var(--blue);
 }
