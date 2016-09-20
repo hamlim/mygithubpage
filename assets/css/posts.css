@@ -26,6 +26,7 @@
 	--dark-gray: #BDC3C7;
 	--light-gray: #ECF0F1;
 	--blue: #E4F1FE;
+	--hawkes-blue: #D1E2FB;
 }
 
 html {
@@ -88,7 +89,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 1rem 0 var(--hawkes-blue);
 	margin-bottom: 1rem;
 }
 
@@ -169,14 +170,14 @@ html {
 	Weekend Projects 3
 */
 [css-label] {
-	width: 8rem;
-	height: 4rem;
+	width: 4rem;
+	height: 2rem;
 	border-radius: 25%/50%;
 	position: relative;
 	background-color: var(--light-gray);
 	z-index: 1;
 	overflow: hidden;
-	box-shadow: 0 0 .5rem .125rem rgba(0,0,0,.2);
+	box-shadow: 0 0 .25rem rgba(0,0,0,.2);
 	display: inline-block;
 }
 [css-toggle] {
@@ -184,8 +185,8 @@ html {
 	appearance: none;
 	-webkit-appearance: none;
 	position: absolute;
-	width: 4rem;
-	height: 4rem;
+	width: 2rem;
+	height: 2rem;
 	background-color: var(--light-gray);
 	border-radius: 50%;
 	top: 0;
@@ -195,17 +196,17 @@ html {
 	transition: all .5s ease-in-out;
 }
 [css-toggle]:checked {
-	left: 4rem;
+	left: 2rem;
 	background-color: var(--green);
 	transition: all .5s ease-in-out;
-	box-shadow: 0 0 .5rem 0.1125rem rgba(0,0,0,.3);
+	box-shadow: 0 0 .25rem rgba(0,0,0,.3);
 }
 [css-toggle]:after {
 	position: absolute;
 	left: 50%;
 	top: 0;
 	bottom: 0;
-	width: 6rem;
+	width: 4rem;
 	background-color: var(--dark-gray);
 	content: '';
 	display: inline-block;
