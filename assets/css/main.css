@@ -427,6 +427,7 @@ a, .a, [css-a] {
 a:hover, .a:hover, [css-a]:hover,
 a:active, .a:active, [css-a]:active {
   text-decoration: none;
+  cursor: pointer;
 }
 .link {
   color: var(--green);
