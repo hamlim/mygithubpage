@@ -77,9 +77,12 @@ html {
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.video {
+.video, [css-video]{
   width: 100%;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+[css-youtube] {
+	min-height: 300px;
 }
 
 [css-card] {
