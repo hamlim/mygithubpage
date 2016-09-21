@@ -176,12 +176,18 @@
 
   /* Typography */
   --base: calc(.8rem + 1.5vw);
-  --line-base: 1.6;
-  --line-one: 1.1;
-  --line-two: 1.2;
-  --line-three: 1.3;
-  --line-four: 1.4;
-  --line-five: 1.5;
+  --line-base: 1.8;
+  --line-one: 1.3;
+  --line-two: 1.4;
+  --line-three: 1.5;
+  --line-four: 1.6;
+  --line-five: 1.7;
+
+  --width-one: 100vw;
+  --width-two: 90vw;
+  --width-three: 85vw;
+  --width-four: 75vw;
+  --width-five: 65vw;
 }
 
 /* Custom Selectors */
@@ -191,7 +197,18 @@
   @import Fonts
 */
 
-@import 'https://fonts.googleapis.com/css?family=Work+Sans:400,700|Space+Mono';
+/*@font-face {
+  font-family: 'Affogato';
+  src:  url('/Assets/css/fonts/Affogato-Bold.woff2') format('woff2'),
+        url('/Assets/css/fonts/Affogato-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Affogato';
+  src:  url('/Assets/css/fonts/Affogato-Regular.woff2') format('woff2'),
+        url('/Assets/css/fonts/Affogato-Regular.woff') format('woff');
+}*/
+
 html {
   font-size: var(--base);
   line-height: var(--line-base);
@@ -223,35 +240,35 @@ html {
 @media screen and (min-width: 16.667rem) {
 	html { line-height: var(--line-five); }
   .page, .footer, .main, .menu { 
-		width: 100vw;
+		width: var(--width-one);
 	}
 
 }
 @media screen and (min-width: 22.197rem) {
 	html { line-height: var(--line-four); }
   .page, .footer, .main, .menu { 
-		width: 90vw;
+		width: var(--width-two);
 	}
 
 }
 @media screen and (min-width: 31.250rem) {
   html { line-height: var(--line-three); }
 	.page, .footer, .main, .menu { 
-		width: 85vw;
+		width: var(--width-three);
 	}
 
 }
 @media screen and (min-width: 41.667rem) {
   html { line-height: var(--line-two); }
 	.page, .footer, .main, .menu { 
-		width: 75vw;
+		width: var(--width-four);
 	}
 
 }
 @media screen and (min-width: 50.00rem) {
   html { line-height: var(--line-one); }
 	.page, .footer, .main, .menu { 
-		width: 65vw;
+		width: var(--width-five);
 	}
 
 }
@@ -368,37 +385,43 @@ html {
 
 
 h1, .h1, [css-h1] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default) {
   font-size: calc(var(--base) * 1.7);  
 }
 h2, .h2, [css-h2] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default) {
   font-size: calc(var(--base) * 1.4);  
 }
 h3, .h3, [css-h3] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 h3:not(.escape--default), .h3:not(.escape--default), [css-h3]:not(.escape--default) {
   font-size: calc(var(--base) * 1.1);
 }
 h4, .h4, [css-h4] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 h4:not(.escape--default), .h4:not(.escape--default), [css-h4]:not(.escape--default) {
   font-size: calc(var(--base) * 0.8);
 }
 h5, .h5, [css-h5] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 h5:not(.escape--default), .h5:not(.escape--default), [css-h5]:not(.escape--default) {
   font-size: calc(var(--base) * 0.7);
 }
 h6, .h6, [css-h6] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 h6:not(.escape--default), .h6:not(.escape--default), [css-h6]:not(.escape--default) {
   font-size: calc(var(--base) * 0.6);
@@ -408,7 +431,8 @@ small:not(.escape--default), .small:not(.escape--default), [css-small]:not(.esca
   font-size: calc(var(--base) * 0.5);
 }
 strong, .strong, [css-strong] {
-  font-weight: 400;
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 i, .i, [css-i], em, .em, [css-em] {
   margin: 0;
