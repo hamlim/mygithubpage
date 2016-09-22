@@ -237,40 +237,55 @@ html {
 	margin: 0 auto;
 }
 
+.video, [css-video]{
+  width: 100vw;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+[css-youtube] {
+  min-height: calc(100vw / 1.75);
+}
+
 @media screen and (min-width: 16.667rem) {
 	html { line-height: var(--line-five); }
   .page, .footer, .main, .menu { 
 		width: var(--width-one);
 	}
-
 }
 @media screen and (min-width: 22.197rem) {
 	html { line-height: var(--line-four); }
   .page, .footer, .main, .menu { 
 		width: var(--width-two);
 	}
-
+  .video, [css-video] {
+    margin-left: -5vw;
+  }
 }
 @media screen and (min-width: 31.250rem) {
   html { line-height: var(--line-three); }
 	.page, .footer, .main, .menu { 
 		width: var(--width-three);
 	}
-
+  .video, [css-video] {
+    margin-left: -7.5vw;
+  }
 }
 @media screen and (min-width: 41.667rem) {
   html { line-height: var(--line-two); }
 	.page, .footer, .main, .menu { 
 		width: var(--width-four);
 	}
-
+  .video, [css-video] {
+    margin-left: -12.5vw;
+  }
 }
 @media screen and (min-width: 50.00rem) {
   html { line-height: var(--line-one); }
 	.page, .footer, .main, .menu { 
 		width: var(--width-five);
 	}
-
+  .video, [css-video] {
+    margin-left: -17.5vw;
+  }
 }
 
 
