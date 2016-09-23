@@ -747,14 +747,14 @@ html {
   display: inline-block;
 }
 
-.li--spacing {
+.li--spacing, [css-li] {
   margin-bottom: 0.25rem;
   list-style: none;
   background-color: var(--white1);
   border-left: solid .1rem var(--purple1);
   padding: 0.125rem 0.5rem 0.125rem .5rem;
 }
-.li--spacing:not(:last-child) {
+.li--spacing:not(:last-child), [css-li]:not(:last-child) {
   padding: 0.125rem 0.5rem 0 .5rem;
 }
 .ul--nested {
