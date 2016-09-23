@@ -1,0 +1,793 @@
+:root {
+	/* Breakpoints */
+	--phone-bp: 16.667rem;
+	--phablet-bp: 22.197rem;
+	--tablet-bp: 31.250rem;
+	--desktop-bp: 41.667rem;
+	--xl-bp: 50.00rem;
+	/* Colors */
+	/*
+    Using colors defined at: http://www.flatuicolorpicker.com/
+
+    Table of Contents:
+      Red
+      Pink
+      Purple
+      Blue
+      Green
+      Yellow
+      Orange
+      Gray
+  */
+
+  /* Red */
+  --soft-red: #EC644B;
+  --chestnut-rose: #D24D57;
+  --pomegranate: #F22613;
+  --thunderbird: #D91E18;
+  --old-brick: #96281B;
+  --flamingo: #EF4836;
+  --valenvia: #D64541;
+  --tall-poppy: #C0392B;
+  --monza: #CF000F;
+  --cinnabar: #E74C3C;
+
+  /* Pink */
+  --razzmatazz: #DB0A5B;
+  --sunset-orange: #F64747;
+  --wax-flower: #F1A9A0;
+  --cabaret: #D2527F;
+  --new-york=pink: #E08283;
+  --radical-red: #F62459;
+  --sunglo: #E26A6A;
+
+  /* Purple */
+  --snuff: #DCC6E0;
+  --rebeccapurple: #663399;
+  --honey-flower: #674172;
+  --wistful: #AEA8D3;
+  --plum: #913D88;
+  --seance: #9A12B3;
+  --medium-purple: #BF55EC;
+  --light-wisteria: #BE90D4;
+  --studio: #8E44AD;
+  --wisteria: #9B59B6;
+
+  /* Blue */
+  --san-marino: #446CB3;
+  --alice-blue: #E4F1FE;
+  --royal-blue: #4183D7;
+  --picton-blue-vone: #59ABE3;
+  --spray: #81CFE0;
+  --shakespeare: #52B3D9;
+  --humming-bird: #C5EFF7;
+  --picton-blue-vtwo: #22A7F0;
+  --curious-blue: #3498DB;
+  --madison: #2C3E50;
+  --dodger-blue: #19B5FE;
+  --ming: #336E7B;
+  --ebony-clay: #22313F;
+  --malibu: #6BB9F0;
+  --summer-sky: #1E8BC3;
+  --chambray: #3A539B;
+  --pickled-bluewood: #34495E;
+  --hoki: #67809F;
+  --jelly-bean: #2574A9;
+  --jacksons-purple: #1F3A93;
+  --jordy-blue: #89C4F4;
+  --steel-blue: #4B77BE;
+  --fountain-blue: #5C97BF;
+
+  /* Green */
+  --medium-turquoise: #4ECDC4;
+  --aqua-island: #A2DED0;
+  --gossip: #87D37C;
+  --dark-sea-green: #90C695;
+  --eucalyptus: #26A65B;
+  --caribbean-green: #03C9A9;
+  --silver-tree: #68C3A3;
+  --downy: #65C6BB;
+  --mountain-meadow: #1BBC9B;
+  --light-sea-green: #1BA39C;
+  --medium-aquamarine: #66CC99;
+  --turquoise: #36D7B7;
+  --madang: #C8F7C5;
+  --riptide: #86E2D5;
+  --shamrock: #2ECC71;
+  --niagra-vone: #16A085;
+  --emerald: #3FC380;
+  --green-haze: #019875;
+  --free-speech-aquamarine: #03A678;
+  --ocean-green: #4DAF7C;
+  --niagra-vtwo: #2ABB9B;
+  --jade: #00B16A;
+  --salem: #1E824C;
+  --observatory: #049372;
+  --jungle-green: #26C281;
+
+  /* Yellow */
+  --cream-can: #F5D76E;
+  --ripe-lemon: #F7CA18;
+  --saffron: #F4D03F;
+
+  /* Orange */
+  --confetti: #E9D460;
+  --cape-honey: #FDE3A7;
+  --california: #F89406;
+  --fire-bush: #EB9532;
+  --tahiti-gold: #E87E04;
+  --casablanca: #F4B350;
+  --crusta: #F2784B;
+  --sea-buckthorn: #EB974E;
+  --lightning-yellow: #F5AB35;
+  --burnt-orange: #D35400;
+  --buttercup: #F39C12;
+  --ecstasy: #F9690E;
+  --sandstorm: #F9BF3B;
+  --jaffa: #F27935;
+  --zest: #E67E22;
+
+  /* Gray */
+  --white-smoke: #ECECEC;
+  --lynch: #6C7A89;
+  --pumice: #D2D7D3;
+  --gallery: #EEEEEE;
+  --silver-sand: #BDC3C7;
+  --porcelain: #ECF0F1;
+  --cascade: #95A5A6;
+  --iron: #DADFE1;
+  --edward: #ABB7B7;
+  --cararra: #F2F1EF;
+  --silver: #BFBFBF;
+
+  /* Custom Colors */
+
+  /* Light Colors */
+  --red1: #E6B0AA;
+  --red2: #F5B7B1;
+	--purple1: #D7BDE2;
+	--purple2: #D2B4DE;
+	--blue1: #A9CCE3;
+	--blue2: #AED6F1;
+	--teal1: #A3E4D7;
+	--teal2: #A2D9CE;
+	--green1: #A9DFBF;
+	--green2: #ABEBC6;
+	--yellow1: #F9E79F;
+	--yellow2: #FAD7A0;
+	--orange1: #F5CBA7;
+	--orange2: #EDBB99;
+	--white1: #F7F9F9;
+	--white2: #E5E7E9;
+	--lgray1: #D5DBDB;
+	--lgray2: #CCD1D1;
+	--dgray1: #AEB6BF;
+	--dgray2: #ABB2B9;
+
+	/* Regular Colors */
+	--blue: #4A90E2;
+	--white: #FFFFFF;
+	--font-color: #000000;
+	--green: #2ECC71;
+	--yellow: #F4D03F;
+	--black: #0A0A0A;
+  --hawkes-blue: #F5F7FC;
+
+
+  /* Typography */
+  --base: calc(.8rem + 1.5vw);
+  --line-base: 1.8;
+  --line-one: 1.3;
+  --line-two: 1.4;
+  --line-three: 1.5;
+  --line-four: 1.6;
+  --line-five: 1.7;
+
+  --width-one: 100vw;
+  --width-two: 90vw;
+  --width-three: 85vw;
+  --width-four: 75vw;
+  --width-five: 65vw;
+}
+
+/* Custom Selectors */
+
+
+/*
+  @import Fonts
+*/
+
+/*@font-face {
+  font-family: 'Affogato';
+  src:  url('/Assets/css/fonts/Affogato-Bold.woff2') format('woff2'),
+        url('/Assets/css/fonts/Affogato-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Affogato';
+  src:  url('/Assets/css/fonts/Affogato-Regular.woff2') format('woff2'),
+        url('/Assets/css/fonts/Affogato-Regular.woff') format('woff');
+}*/
+
+html {
+  font-size: var(--base);
+  line-height: var(--line-base);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  counter-reset: footnotes;
+}
+
+/*
+	Reset
+*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*
+	Breakpoints
+*/
+
+.page, .footer, .main, .menu { 
+	margin: 0 auto;
+}
+
+.video, [css-video]{
+  width: 100vw;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+[css-youtube] {
+  min-height: calc(100vw / 1.75);
+}
+
+@media screen and (min-width: 16.667rem) {
+	html { line-height: var(--line-five); }
+  .page, .footer, .main, .menu { 
+		width: var(--width-one);
+	}
+}
+@media screen and (min-width: 22.197rem) {
+	html { line-height: var(--line-four); }
+  .page, .footer, .main, .menu { 
+		width: var(--width-two);
+	}
+  .video, [css-video] {
+    margin-left: -5vw;
+  }
+}
+@media screen and (min-width: 31.250rem) {
+  html { line-height: var(--line-three); }
+	.page, .footer, .main, .menu { 
+		width: var(--width-three);
+	}
+  .video, [css-video] {
+    margin-left: -7.5vw;
+  }
+}
+@media screen and (min-width: 41.667rem) {
+  html { line-height: var(--line-two); }
+	.page, .footer, .main, .menu { 
+		width: var(--width-four);
+	}
+  .video, [css-video] {
+    margin-left: -12.5vw;
+  }
+}
+@media screen and (min-width: 50.00rem) {
+  html { line-height: var(--line-one); }
+	.page, .footer, .main, .menu { 
+		width: var(--width-five);
+	}
+  .video, [css-video] {
+    margin-left: -17.5vw;
+  }
+}
+
+
+/*
+	Grid
+*/
+
+.grid {
+	display: flex;
+}
+.grid-row {
+	flex-direction: row;
+}
+.grid-column {
+	flex-direction: column;
+}
+.grid-row-reverse {
+	flex-direction: row-reverse;
+}
+.grid-column-reverse {
+	flex-direction: column-reverse;
+}
+.grid-wrap {
+	flex-wrap: wrap;
+}
+.grid-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+.grid-nowrap {
+	flex-wrap: nowrap;
+}
+.gird-justify-start {
+	justify-content: flex-start;
+}
+.gird-justify-end {
+	justify-content: flex-end;
+}
+.gird-justify-center {
+	justify-content: center;
+}
+.gird-justify-between {
+	justify-content: space-between;
+}
+.gird-justify-around {
+	justify-content: space-around;
+}
+.grid-align-items-start {
+	align-items: flex-start;
+}
+.grid-align-items-end {
+	align-items: flex-end;
+}
+.grid-align-items-center {
+	align-items: center;
+}
+.grid-align-items-stretch {
+	align-items: stretch;
+}
+.grid-align-items-baseline {
+	align-items: baseline;
+}
+.grid-align-content-start {
+	align-content: flex-start;
+}
+.grid-align-content-end {
+	align-content: flex-end;
+}
+.grid-align-content-center {
+	align-content: center;
+}
+.grid-align-content-stretch {
+	align-content: stretch;
+}
+.grid-align-content-between {
+	align-content: space-between;
+}
+.grid-align-content-around {
+	align-content: space-around;
+}
+
+.item-align-start {
+	align-self: flex-start;
+}
+.item-align-end {
+	align-self: flex-end;
+}
+.item-align-center {
+	align-self: center;
+}
+.item-align-baseline {
+	align-self: baseline;
+}
+.item-align-stretch {
+	align-self: stretch;
+}
+
+.center {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal--center {
+	width: 100%;
+	text-align: center;
+}
+
+
+/*
+  Typography
+*/
+
+
+h1, .h1, [css-h1] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default) {
+  font-size: calc(var(--base) * 1.7);  
+}
+h2, .h2, [css-h2] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default) {
+  font-size: calc(var(--base) * 1.4);  
+}
+h3, .h3, [css-h3] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+h3:not(.escape--default), .h3:not(.escape--default), [css-h3]:not(.escape--default) {
+  font-size: calc(var(--base) * 1.1);
+}
+h4, .h4, [css-h4] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+h4:not(.escape--default), .h4:not(.escape--default), [css-h4]:not(.escape--default) {
+  font-size: calc(var(--base) * 0.8);
+}
+h5, .h5, [css-h5] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+h5:not(.escape--default), .h5:not(.escape--default), [css-h5]:not(.escape--default) {
+  font-size: calc(var(--base) * 0.7);
+}
+h6, .h6, [css-h6] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+h6:not(.escape--default), .h6:not(.escape--default), [css-h6]:not(.escape--default) {
+  font-size: calc(var(--base) * 0.6);
+}
+
+small:not(.escape--default), .small:not(.escape--default), [css-small]:not(.escape--default) {
+  font-size: calc(var(--base) * 0.5);
+}
+strong, .strong, [css-strong] {
+  font: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+i, .i, [css-i], em, .em, [css-em] {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  vertical-align: baseline;
+}
+i:not(.escape--default), .i:not(.escape--default), [css-i]:not(.escape--default), em:not(.escape--default), .em:not(.escape--default), [css-em]:not(.escape--default) {
+ font-style: italic;
+}
+
+a, .a, [css-a] {
+  text-decoration: none;
+}
+a:hover, .a:hover, [css-a]:hover,
+a:active, .a:active, [css-a]:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+.link {
+  color: var(--green);
+}
+.link:hover {
+  color: var(--yellow);
+}
+.link:visited:not(.link--active, .link--special) {
+  color: var(--malibu);
+}
+.link:visited:not(.link--active, .link--special):hover {
+  color: var(--sunglo);
+}
+.link--active {
+  color: var(--california);
+}
+.link--special {
+  color: var(--picton-blue-vone);
+}
+.link--special:hover {
+  color: var(--ecstasy);
+}
+
+.link--article:not(.link, .link--out) {
+  color: var(--black);
+}
+.link--article {
+  border-bottom: solid .1rem currentColor;
+  transition: all 0.25s ease-in-out;
+}
+.link--article:hover {
+  border-bottom: solid .1rem var(--cape-honey);
+  transition: all 0.25s ease-in-out;
+}
+.link--article:active {
+  border-bottom: solid .1rem var(--crusta);
+  transition: all 0.25s ease-in-out;
+}
+.link--article:visited {
+  border-bottom: solid .1rem var(--shamrock);
+  transition: all 0.25s ease-in-out;
+}
+.link--article:visited:hover {
+  border-bottom: solid .1rem var(--cape-honey);
+  transition: all 0.25s ease-in-out;
+}
+.link--article:visited:active {
+  border-bottom: solid .1rem var(--crusta);
+  transition: all 0.25s ease-in-out;
+}
+
+::-moz-selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+::selection{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.clr--blue {
+  color: var(--blue);
+}
+.bg--blue {
+  background-color: var(--blue);
+}
+.clr--yellow {
+    color: var(--yellow);
+}
+.bg--yellow {
+    background-color: var(--yellow);
+}
+.clr--green {
+    color: var(--green);
+}
+.bg--green {
+    background-color: var(--green);
+}
+
+h1, .h1, [css-h1], 
+h2, .h2, [css-h2], 
+h3, .h3, [css-h3], 
+h4, .h4, [css-h4], 
+h5, .h5, [css-h5], 
+h6, .h6, [css-h6], 
+small, .small, [css-small],
+p, .p, [css-p],
+ul, .ul, [css-ul],
+ol, .ol, [css-ol] {
+  margin: 0 0 .25em 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  vertical-align: baseline;
+}
+h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default), 
+h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default), 
+h3:not(.escape--default), .h3, [css-h3]:not(.escape--default), 
+h4:not(.escape--default), .h4:not(.escape--default), [css-h4]:not(.escape--default), 
+h5:not(.escape--default), .h5:not(.escape--default), [css-h5]:not(.escape--default), 
+h6:not(.escape--default), .h6:not(.escape--default), [css-h6]:not(.escape--default), 
+small:not(.escape--default), .small:not(.escape--default), [css-small]:not(.escape--default),
+p:not(.escape--default), .p,:not(.escape--default) [css-p]:not(.escape--default),
+ul:not(.escape--default), .ul:not(.escape--default), [css-ul]:not(.escape--default),
+ol:not(.escape--default), .ol:not(.escape--default), [css-ol]:not(.escape--default) {
+  margin-bottom: 1em;
+}
+ul:not(.escape--default), .ul:not(.escape--default), [css-ul]:not(.escape--default),
+ol:not(.escape--default), .ol:not(.escape--default), [css-ol]:not(.escape--default) {
+  list-style-position: inside;
+}
+
+pre, .pre, [css-pre] {
+  font-size: 70%;
+  position: relative;
+  margin-bottom: 1em;
+  border-right: solid 4px var(--green1);
+  border-left: solid 4px var(--green1);
+  font-family: "Space Mono", monospace;
+  background-color: var(--hawkes-blue);
+  padding: 0 3em 0 1em;
+  overflow-y: scroll; 
+}
+pre::after, .pre::after, [css-pre]::after {
+  content: attr(data-lang);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 0.25rem 0 0;
+  color: black;
+  background-color: var(--hawkes-blue);
+  z-index: 2;
+  border-bottom-right-radius: 4px
+}
+
+code.inline-block, .code.inline-block, [css-code].inline-block {
+  background-color: var(--cararra);
+  color: var(--black);
+  border-bottom: solid .125rem var(--shamrock);
+  font-family: "Questrial", sans-serif;
+  display: inline-block;
+  padding: 0 .3rem;
+}
+
+kbd, .kbd, [css-kbd],
+var, .var, [css-var] {
+  font-family: "Questrial", sans-serif;
+  background-color: var(--lgray1);
+  color: var(--black);
+  font-size: 90%;
+}
+
+kbd:not(escape--default), .kbd:not(escape--default), [css-kbd]:not(escape--default),
+var:not(escape--default), .var:not(escape--default), [css-var]:not(escape--default) {
+  font-family: "Space Mono", monospace;
+  background-color: var(--cararra);
+  color: var(--black);
+  font-size: 90%;
+  padding: 0 .3rem;
+  display: inline-block;
+  border-bottom: solid .1rem var(--shamrock);
+}
+
+sup, .sup, [css-sup] {
+  vertical-align: super;
+  font-size: smaller;
+}
+.tac, [css-tac] {
+  text-align: center;
+}
+[data-footnote] {
+  cursor: context-menu;
+  position: relative;
+}
+[data-footnote]:hover:after {
+  animation: fade-in 1s ease-in-out;
+  content: attr(data-footnote);
+  font-size: calc(var(--base) * 0.5);
+  padding: 1rem 1rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom: solid 1rem var(--teal1);
+  background-color: var(--lgray1);
+  color: var(--black);
+  min-width: 15em;
+  position: absolute;
+  top: 130%;
+  left: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+[id*="fn"] {
+  counter-increment: footnotes;
+  position: relative;
+}
+[id*="fn"]:after {
+  content: '';
+  display: block;
+}
+[id*="fn"]:before {
+  content: counter(footnotes);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--green);
+  color: var(--white);
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.inline-block {
+  display: inline-block;
+}
+
+.header--menu {
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  margin-bottom: 4rem;
+}
+.header--menu .menu {
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+.header--menu .menu::-webkit-scrollbar {
+  display: none;
+}
+.header--menu .menu .articleName {
+  border-bottom: solid .05rem var(--blue);
+}
+
+
+
+.css-selector {
+  color: #669900;
+}
+.css-prop {
+  color: #990082;
+}
+.css-string {
+  color: #0077AC;
+}
+.css-value {
+  color: #5C4E53;
+}
+.css-specialChars {
+  color: #5C4E53;
+}
+
+
+html {
+  background: var(--white);
+}
+.header {
+  width: 100vw;
+  height: 90vh;
+}
+.page--nav {
+  min-height: 7vh;
+  padding-bottom: 1rem;
+}
+.ul--inline .li--inline {
+  display: inline-block;
+}
+
+.li--spacing {
+  margin-bottom: 0.25rem;
+  list-style: none;
+  background-color: var(--white1);
+  border-left: solid .1rem var(--purple1);
+  padding: 0.125rem 0.5rem 0.125rem .5rem;
+}
+.li--spacing:not(:last-child) {
+  padding: 0.125rem 0.5rem 0 .5rem;
+}
+.ul--nested {
+  margin-left: 1rem;
+}
+.content-header {
+  margin-top: 1rem;
+}
+
+.page--lead {
+  padding-bottom: 0.5rem;
+}
+
+.project--card {
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
