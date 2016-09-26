@@ -241,6 +241,10 @@ html {
   width: 100vw;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
 }
+[css-image] {
+  width: 100vw;
+  height: auto;
+}
 [css-youtube] {
   min-height: calc(100vw / 1.75);
 }
@@ -256,7 +260,7 @@ html {
   .page, .footer, .main, .menu { 
 		width: var(--width-two);
 	}
-  .video, [css-video] {
+  .video, [css-video], [css-image] {
     margin-left: -5vw;
   }
 }
@@ -265,7 +269,7 @@ html {
 	.page, .footer, .main, .menu { 
 		width: var(--width-three);
 	}
-  .video, [css-video] {
+  .video, [css-video], [css-image] {
     margin-left: -7.5vw;
   }
 }
@@ -274,7 +278,7 @@ html {
 	.page, .footer, .main, .menu { 
 		width: var(--width-four);
 	}
-  .video, [css-video] {
+  .video, [css-video], [css-image] {
     margin-left: -12.5vw;
   }
 }
@@ -283,7 +287,7 @@ html {
 	.page, .footer, .main, .menu { 
 		width: var(--width-five);
 	}
-  .video, [css-video] {
+  .video, [css-video], [css-image] {
     margin-left: -17.5vw;
   }
 }
@@ -771,8 +775,6 @@ html {
 .project--card {
   padding: 1rem;
 }
-
-
 
 
 

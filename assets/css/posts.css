@@ -207,3 +207,13 @@ html {
 	display: inline-block;
 	z-index: -1;
 }
+
+/*
+	September/October4th
+*/
+
+.bg_image_october {
+	background-image: url('/assets/images/posts/october4th/google_event.png');
+	background-size: cover;
+	padding-top: 10rem; 
+}
