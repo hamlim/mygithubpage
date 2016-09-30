@@ -231,3 +231,8 @@ html {
 	right: 0;
 	opacity: 1;
 }
+[css-footer] {
+	min-height: 20vh;
+	background-color: var(--light-gray);
+	padding: 1rem;
+}
