@@ -321,19 +321,19 @@ html {
 .grid-nowrap {
 	flex-wrap: nowrap;
 }
-.gird-justify-start {
+.grid-justify-start {
 	justify-content: flex-start;
 }
-.gird-justify-end {
+.grid-justify-end {
 	justify-content: flex-end;
 }
-.gird-justify-center {
+.grid-justify-center {
 	justify-content: center;
 }
-.gird-justify-between {
+.grid-justify-between {
 	justify-content: space-between;
 }
-.gird-justify-around {
+.grid-justify-around {
 	justify-content: space-around;
 }
 .grid-align-items-start {
