@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RFP: Database Without Setup</title>
+
+        <!-- Generic Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="A simple portfolio website for Matt Hamlin.">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+
+
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/assets/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="/assets/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/assets/icons/favicons/favicon-96x96.png" sizes="96x96" type="image/png">
+
+
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,700|Space+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/compiled/main.css">
+        <link rel="stylesheet" href="/assets/css/compiled/post.css">
+
+    </head>
+    <body class="body">
+        <header class="header--menu">
+            <nav class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+            </nav>
+        </header>
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">Request For Proposal/Product</h2>
+                <p class="escape--default">A database you don't have to setup.</p>
+                <p class="escape--default">
+                    <em>Published: <time datetime="2016-09-13">September 13th, 2016</time></em>
+                </p>
+            </header>
+            <article class="article">
+                <p>
+                    For the first in my series of Request for Proposal/Product Blog posts, I wanted to explain an idea I had for a database platform/service. When I am working on a new project I want a very simple API that I can use to store some data (nothing more than 100MB), but in the same token I don't want spend the time setting up a DB either on Airtable, or Fieldbook, or some other cloud service.
+                </p>
+                <p>
+                    So the idea is that you can push some data to an endpoint formatted how you want your database formatted, and then the database sends you back an object with the endpoint URL's that point to whatever they should point to. An example of this is below:
+                </p>
+                <pre data-lang="JSON"><code>
+{
+    'todos': [
+        {
+            'id': 1,
+            'text': "lorem ipsum...",
+            'notes': 'blah blah blah',
+            'subtasks': [
+                {
+                    'text': "something",
+                    'completed': true 
+                },
+                {
+                    'text': "something else",
+                    'completed': false 
+                }
+            ],
+            'status': '0'
+        },
+        {
+            'id': 2,
+            'text': "lorem ipsum...",
+            'notes': 'blah blah blah',
+            'subtasks': [
+                {
+                    'text': "something",
+                    'completed': false 
+                },
+                {
+                    'text': "something else",
+                    'completed': false 
+                }
+            ],
+            'status': '1'
+        },
+        {
+            'id': 3,
+            'text': "lorem ipsum...",
+            'notes': 'blah blah blah',
+            'subtasks': [
+                {
+                    'text': "something",
+                    'completed': true 
+                },
+                {
+                    'text': "something else",
+                    'completed': false 
+                }
+            ],
+            'status': '2'
+        }
+    ]
+}
+                </code></pre>
+                <p>
+                    Then the service returns with an object like this:
+                </p>
+                <pre data-lang="JSON"><code>
+{
+    'Create': 'https://link.to.api/`${api_key}`/create',
+    'Read': 'https://link.to.api/`${api_key}`/get/`${id}`',
+    'Update': 'https://link.to.api/`${api_key}`/update/`${id}`',
+    'Delete': 'https://link.to.api/`${api_key}`/delete/`${id}`'
+}
+                </code></pre>
+                <p>
+                    From here I as a developer can use these url's as API endpoints to update the database. Of course this is limited to data that is stored as JSON, but it could be just as easy to send a CSV format, or declare that in the inital package such as <var>'db_type': 'json | MySQL | Other'</var>.
+                </p>
+                <p>
+                    If you know of any such database services please let me know, or if you are interested in seeing something like this exist in the world reach out to me, I would totally be willing to help develop and also be first in line to beta test 😃!
+                </p>
+            </article>
+        </main>
+    </body>
+</html>
