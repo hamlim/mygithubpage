@@ -231,3 +231,14 @@ html {
 	right: 0;
 	opacity: 1;
 }
+
+[css-october-bg-image-pixel] {
+	background-image: url('/assets/images/posts/Pixel/phones.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+[css-bg-image-main] {
+	background-color: var(--white);
+	box-shadow: 0 0 9em 4em var(--white);
+	margin-top: 10em;
+}
