@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>What the Pseudo?</title>
+
+        <!-- Generic Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="A (slightly) comprehensive overview of all things Pseudo.">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+
+
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+
+        <!-- Social -->
+        <!-- Facebook -->
+        <meta property="og:title" content="What the Pseudo?">
+        <meta property="og:description" content="A (slightly) comprehensive overview of all things Pseudo.">
+        <meta property="og:image" content="https://matthamlin.me/assets/images/posts/Pixel/phones.png">
+        <meta property="og:url" content="https://matthamlin.me/Posts/2016/October/Pixel">
+        <!-- Twitter -->
+        <meta name="twitter:title" content="What the Pseudo?">
+        <meta name="twitter:description" content="A (slightly) comprehensive overview of all things Pseudo.">
+        <meta name="twitter:image" content="https://matthamlin.me/assets/images/posts/Pixel/phones.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@immatthamlin">
+
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,700|Space+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/compiled/main.css?update">
+        <link rel="stylesheet" href="/assets/css/compiled/post.css?update">
+
+    </head>
+    <body class="body">
+        <header class="header--menu">
+            <nav class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+            </nav>
+        </header>
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">What the Pseudo?</h2>
+                <p class="escape--default">A (slightly) comprehensive overview of all things Pseudo.</p>
+                <p class="escape--default">
+                    📆: <em><time datetime="2016-10-07">October 7th, 2016</time></em>
+                </p>
+            </header>
+            <article class="article">
+                <p>
+                    CSS is oddly one of the most complex syntaxes that exist in the web development world simply because of how unique it is when compared to languages like Javascript and PHP. This article I wanted to dive into the pseudo classes, elements and selectors and give a fairly brief overview of them for those who are just starting to dive into CSS. 
+                </p>
+                <p>
+                    CSS has two instances of pseudo selectors in the language, the first is Pseudo Elements and the second is Pseudo Classes. This article is going to be broken into two sections covering every pseudo selector that is available (even the ones that aren't in browsers yet<sup><a href="#fn1" id="f1" data-footnote="At the time of writing at least" class="link--article">1</a></sup>).
+                </p>
+                <p>
+                    The difference between the pseudo classes and the pseudo elements are what they actually are in the browser. Pseudo elements act as real elements in the DOM, pseudo classes on the other hand act, you guessed it, just like classes! Here is a simple breakdown of what pseudo elements look like. Pseudo classes can simply be thought of as toggleable classes on an element when a specific action happens related to the element, like <code class="inline-block">:hover</code>.
+                </p>
+                <pre data-lang="html"><code>
+&lt;div&gt;<span class="css-string">::before</span>Stuff in the div.<span class="css-string">::after</span>&lt;/div&gt;
+                </code></pre>
+                <section>
+                    <h3>Pseudo Classes:</h3>
+                    <p>
+                        Pseudo classes act like toggleable states on elements, a great example of this is the <code class="inline-block">:hover</code> pseudo class that gets applied to an element when a user hovers over the element with their cursor. This is commonly used with links or buttons to change their styling so they stand out to the user as an actionable element.
+                    </p>
+                    <p>
+                        
+                    </p>
+                </section>
+                <hr>
+                <h4 class="escape--default">Footnotes:</h4>
+                <small id="fn1">At the time of writing at least. <a href="#f1" class="link--article">☝️</a></small>
+            </article>
+        </main>
+        <footer css-footer>
+            <div class="footer grid grid-wrap grid-row grid-justify-between">
+                <div css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
+                <div css-chip><a href="/archive" class="link--article">Archive</a></div>
+            </div>
+        </footer>
+    </body>
+</html>
