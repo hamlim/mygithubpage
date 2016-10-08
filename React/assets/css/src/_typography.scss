@@ -1,0 +1,212 @@
+@mixin typography {
+	$base: calc(.8em + 1.4vw);
+
+	$line-base: 1;
+	$line-1: 1.1;
+	$line-2: 1.2;
+	$line-3: 1.4;
+	$line-4: 1.5;
+	$line-5: 1.6;
+	
+	// @import 'https://fonts.googleapis.com/css?family=Montserrat';
+	@import 'https://fonts.googleapis.com/css?family=Roboto:300,400|Space+Mono';
+
+	html {
+		font-size: $base;
+		line-height: $line-base;
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+		counter-reset: footnotes;
+		@include phone {
+			line-height: $line-1;
+		}
+		@include phablet {
+			line-height: $line-2;
+		}
+		@include tablet {
+			line-height: $line-3;
+		}
+		@include desktop {
+			line-height: $line-4;
+		}
+		@include xl {
+			line-height: $line-5;
+		}
+	}
+	h1 {
+		font-weight: 400;
+		&:not(.escape--default) {
+			font-size: calc(#{$base} * 1.7);	
+		}
+	}
+	h2 {
+		font-weight: 400;
+		&:not(.escape--default) {
+			font-size: calc(#{$base} * 1.4);
+		}
+	}
+	h3 {
+		font-weight: 400;
+		&:not(.escape--default) {
+			font-size: calc(#{$base} * 1.1);
+		}
+	}
+	h4 {
+		font-weight: 400;
+		&:not(.escape--default) {
+			font-size: calc(#{$base} * 0.8);
+		}
+	}
+	h5 {
+		font-weight: 400;
+		&:not(.escape--default) { 
+			font-size: calc(#{$base} * 0.7);
+		}
+	}
+	h6 {
+		font-weight: 400;
+		&:not(.escape--default) {
+			font-size: calc(#{$base} * 0.6);
+		}
+	}
+	small {
+		&:not(.escape--default) {
+			font-size: calc(#{$base} * 0.5);
+		}
+	}
+	i, em {
+		&:not(.escape--default) {
+			font-style: italic;
+		}
+		&.escape--default {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: inherit;
+			font: inherit;
+			vertical-align: baseline;
+		}
+	}
+	h1, h2, h3, h4, h5, h6, small, p, ul, ol {
+		&:not(.escape--default) {
+			margin-bottom: 1em;
+		}
+		&.escape--default {
+			margin: 0 0 .25em 0;
+			padding: 0;
+			border: 0;
+			font-size: inherit;
+			font: inherit;
+			vertical-align: baseline;
+		}
+	}
+	ul, ol {
+		&:not(.escape--default) {
+			list-style-position: inside;
+		}
+	}
+	pre {
+		font-size: 70%;
+		position: relative;
+		margin-bottom: 1em;
+		border-right: solid 4px $green1;
+		border-left: solid 4px $green1;
+		font-family: "Space Mono", monospace;
+		background-color: $cararra;
+		padding: 0 3em 0 1em;
+		overflow-y: scroll; 
+		&:after {
+			content: attr(data-lang);
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 0 0.25rem 0 0;
+			color: black;
+			background-color: #ccc;
+			z-index: 2;
+			border-bottom-right-radius: 4px
+		}
+		&.inline-block {
+			padding: 0.25em;
+			display: inline-block;
+			margin: 0;
+			&:after{
+				display: none;
+			}
+		}
+	}
+	kbd, var {
+		&:not(.escape--defaults) {
+			font-family: "Space Mono", monospace;
+			background-color: #ccc;
+			border-radius: 0.25em;
+			color: $black;
+			font-size: 90%;
+			padding-top: 0.1em;
+			padding-bottom: 0.1em;
+			display: inline-block;
+		}
+		font-family: "Questrial", sans-serif;
+		background-color: $lgray1;
+		color: $black;
+		font-size: 90%;
+	}
+	sup {
+		vertical-align: super;
+    font-size: smaller;
+	}
+	.tac {
+		text-align: center;
+	}
+	[data-footnote] {
+		cursor: context-menu;
+    position: relative;
+    &:hover:after {
+    	animation: fade-in 1s ease-in-out;
+      content: attr(data-footnote);
+      font-size: calc(#{$base} * 0.5);
+      padding: 1em 1em 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-bottom: solid 1em $teal1;
+      background-color: $lgray1;
+      color: $black;
+      min-width: 15em;
+      position: absolute;
+      top: 130%;
+      left: 0;
+      transform: translateX(-50%);
+      pointer-events: none;
+	  }
+	}
+	[id*="fn"]:after {
+		content: '';
+		display: block;
+	}
+	[id*="fn"]{
+		counter-increment: footnotes;
+		position: relative;
+		&:before{
+			content: counter(footnotes);
+			border-radius: 50%;
+			display: inline-block;
+			position: absolute;
+			left: -2rem;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $green;
+			color: $white;
+			height: 1rem;
+			width: 1rem;
+			text-align: center;
+		}
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
