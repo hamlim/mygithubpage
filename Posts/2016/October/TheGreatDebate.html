@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Great Debate</title>
+
+        <!-- Generic Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="The debate for and against CSS.">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+
+
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+
+        <!-- Social -->
+        <!-- Facebook -->
+        <meta property="og:title" content="The Great Debate">
+        <meta property="og:description" content="The debate for and against CSS.">
+        <meta property="og:url" content="https://matthamlin.me/Posts/2016/October/WeeklyRecap006">
+        <!-- Twitter -->
+        <meta name="twitter:title" content="The Great Debate">
+        <meta name="twitter:description" content="The debate for and against CSS.">
+        <meta name="twitter:site" content="@immatthamlin">
+
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,700|Space+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/compiled/main.css?update">
+        <link rel="stylesheet" href="/assets/css/compiled/post.css?update">
+
+    </head>
+    <body class="body">
+        <header class="header--menu">
+            <nav class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+            </nav>
+        </header>
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">The Great Debate 🤔</h2>
+                <p class="escape--default">The debate for and against CSS</p>
+                <p class="escape--default">
+                    📆: <time datetime="2016-10-08">October 8th, 2016</time>
+                </p>
+            </header>
+            <article class="article">
+                <p>
+                    If you aren't actively developing websites or web applications you might not know about the growing debate about one of my favorite web languages CSS. I want to dive into some of the history of how the debate originated, what exactly is being debated about and where we as web developers might be able to make some compromises as well.
+                </p>
+                <p>
+                    If you don't fully know what CSS is or Javascript, I highly recomment learning more about both <a href="https://www.w3.org/standards/webdesign/htmlcss" class="link--article">here first</a> and then coming back here once you understand the basics of both.
+                </p>
+                <section>
+                    <h4 id="history">History:</h4>
+                    <p>
+                        It is difficult to point to any one place where the fracture between both sides actually started, I have a feeling that minor fractures between each side started when componentization began to rise in the Javascript community.
+                    </p>
+                    <p>
+                        With the rise of Javascript libraries and frameworks such as Backbone, then Ember, Angular, React and others many Javascript developers began seperating their view logic from their business logic, this seperation became known as the MVC paradigm and was and still is prevalent in different programming languages and entirely different environments than just on the web. This paradigm gave way to modern day componentization where developers wanted to compose their applications from a core library of patterns that they could reuse across different applications or websites to simplify development. 
+                    </p>
+                    <p>
+                        Componentization was the ultimate step towards keeping code DRY, meaning that developers didn't need to spend the time redeveloping the same dropdown every time a designer requests a dropdown. This drive lead to a group of engineers at Facebook to develop a very popular framework known as React. I don't have the time (or the effort) to dive into the background of React however React really made the fractures grow between developers who support CSS and those who don't.
+                    </p>
+                    <p>
+                        The Great Debate really kicked off when an engineer at Facebook named Christopher Chedeau, gave a talk where he exposed some of the issues he and his team had seen with CSS while developing web applications and components at Facebook. The entire presentation can be sumarized by the slide below but the entire slide deck is <a href="https://speakerdeck.com/vjeux/react-css-in-js" class="link--article">available here</a> to read through.
+                    </p>
+                    <img css-image src="/assets/images/posts/TheGreatDebate/The_Slide.jpg" alt="The slide that started the great debate." aria-describedby="image_description">
+                    <p id="image_description">
+                        In the slide Christopher describes 7 issues with the way that CSS is currently spec'd out.
+                        <ol>
+                            <li css-li>Global Namespace</li>
+                            <li css-li>Dependencies</li>
+                            <li css-li>Dead Code Elimination</li>
+                            <li css-li>Minification</li>
+                            <li css-li>Sharing Constants</li>
+                            <li css-li>Non-Deterministic Resolution</li>
+                            <li css-li>Isolation</li>
+                        </ol>
+                        Now most of these issues only arise from having thousands of developers touching hundereds of thousands of lines of code all in a day, so for the most part the only issues that arise from CSS when adopting a React-like Javascript paradigm is the Cascade.
+                    </p>
+                </section>
+                <section>
+                    <h4 id="issues">Core Issues:</h4>
+                    <p>
+                        Many of the points brought up by Christopher are indeed valid, but only valid from a javascript developer's mindset, and he even notes that in the following slides. So I will narrow down the core issues with CSS that almost everyone on the side arguing to eliminate the need for CSS can agree with.
+                        <ol>
+                            <li css-li><a href="#global" class="link">Global Namespace</a></li>
+                            <li css-li><a href="#inheritance" class="link">Inheritance, Source Order and Specificity</a></li>
+                            <li css-li><a href="#codebase" class="link">Codebase Growth</a></li>
+                            <li css-li><a href="#static" class="link">Static</a></li>
+                        </ol>
+                    </p>
+                    <h6 id="global">Global Namespace:</h6>
+                    <p>
+                        CSS is, by nature, globally namespaced. Every time a developer writes out the following they have declared a CSS "Global variable".
+                    </p>
+                    <pre data-lang="CSS"><code>
+.myClass {
+    ...
+}
+                    </code></pre>
+                    <p>
+                        Anytime this CSS is linked to a document with an element that has the class <code class="inline-block">.myClass</code> those styles will be applied to that element.
+                    </p>
+                    <h6 id="inheritance">Inheritance, Source Order and Specificity:</h6>
+                    <p>
+                        This is a pretty tricky concept of CSS even for those who are used to programming in different languages. Inheritance means that a sibling element will inherit <em>(some)</em> styles from their parent node. If you want to inherit all styles from the parent you can simply style the child node and set every style you want inherited to be like the following: <code class="inline-block">color: inherit;</code>
+                    </p>
+                    <p>
+                        Source order and Specificity are coupled together when considering CSS. Both are really tricky to understand as well, CSS, or rather CSS parsers, assign weights to selectors when parsing the CSS into an <a href="#ast" class="link--article" data-footnote="Abstract Syntax Tree" id="ast">AST</a>. The breakdown is as follows:
+                        <ul>
+                            <li css-li>!important</li>
+                            <li css-li>Inline Styles via the <code class="inline-block">style</code> attribute</li>
+                            <li css-li>ID Selectors <code class="inline-block">#foo { ... }</code></li>
+                            <li css-li>Class Selectors, Pseudo class selectors, attribute selectors</li>
+                            <li css-li>Element Selectors</li>
+                        </ul>
+                        These are comonly layed out as a comma seperated list of numbers something like 0,0,0,0 (notice that there is no value assigned to <code class="inline-block">!important</code>). This is known as Specificity. 
+                    </p>
+                    <p>
+                        If you happen to have, in your CSS two selectors that target the same element the one with the highest specificity will win over no matter the order of your CSS. However if both selectors share the same specificity, then the one that was declared last will win out. Sometimes this convinces new CSS developers to naively move the styling they want to take effect to the bottom of their CSS document <a href="#fn1" id="f1" class="link--article" data-footnote="Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😃.">👇</a>
+                    </p>
+                    <h6 id="codebase">Codebase Growth:</h6>
+                    <p>
+                        This is something that is only highlighted when you have a codebase that has existed for any fairly long amount of time. This also isn't a concept that only happens in CSS, it happens to any codebase, it just becomes slightly more complicated because CSS is seperated from the content that it is styling. This was solved in Javascript with the invention of JSX where React was able to move the content into the Javascript. 
+                    </p>
+                    <p>
+                        This issue doesn't only affect React applications though, at Wayfair I ran into this issue hundereds of times, where I was tasked with redesigning something and I need to decide whether to make a new file to style the stuff and add new classnames to everything or to spend the hours of time to search through the current styles and determine which need to stay and which need to remove. It gets even more complicated when you find out that the CSS you might be editing to fit your page/section is possibly in use somewhere else, so any edits you make will affect everyone else.
+                    </p>
+                    <h6 id="static">Static:</h6>
+                    <p>
+                        Prior to CSS4, every shared value in CSS had to be repeated when using it on a different element. So if you had defined your brand color across a few selectors or many selectors simply as the hexadecimal value you would have to do a search and replace on the code to change it if your brand colors changed.
+                    </p>
+                    <p>
+                        This issue has mostly been addressed for us web developers, most organizations have solved this by introducing pre-processors into their workflow, at Wayfair we use SCSS and Grunt, on my personal projects I use PostCSS and Webpack. Even the CSS spec has added in ways to solve this with CSS Custom Attributes aka CSS Variables.
+                    </p>
+                </section>
+                <section>
+                    <h5 id="resolutions">Resolving the Conflict:</h5>
+                    <p>
+                        CSS, as with every language for web development, is a growing standard with flaws. Some of these flaws are being addressed in newer editions, and some of these flaws are addressable by adapting your build processes. I intently believe that CSS has a ton of value in it's current form, and that as the people that write the spec add more and more value to the language.
+                    </p>
+                </section>
+
+                <hr>
+                <h5 class="escape--default">Footnotes:</h5>
+                <small id="fn1">Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😃. <a href="#f1" class="link--article">👆</a></small>
+            </article>
+        </main>
+        <footer css-footer>
+            <div class="footer grid grid-wrap grid-row grid-justify-between">
+                <div css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
+                <div css-chip><a href="/archive" class="link--article">Archive</a></div>
+            </div>
+        </footer>
+    </body>
+</html>

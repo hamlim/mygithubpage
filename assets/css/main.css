@@ -218,6 +218,7 @@ html {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   counter-reset: footnotes;
+  background: var(--white);
 }
 
 /*
@@ -595,7 +596,7 @@ pre, .pre, [css-pre] {
   border-left: solid 4px var(--green1);
   font-family: "Space Mono", monospace;
   background-color: var(--hawkes-blue);
-  padding: 0 3em 0 1em;
+  padding: 0 2em;
   overflow-y: scroll; 
 }
 pre::after, .pre::after, [css-pre]::after {
@@ -605,9 +606,6 @@ pre::after, .pre::after, [css-pre]::after {
   top: 0;
   padding: 0 0.25rem 0 0;
   color: black;
-  background-color: var(--hawkes-blue);
-  z-index: 2;
-  border-bottom-right-radius: 4px
 }
 
 code.inline-block, .code.inline-block, [css-code].inline-block {
@@ -653,17 +651,18 @@ sup, .sup, [css-sup] {
   animation: fade-in 1s ease-in-out;
   content: attr(data-footnote);
   font-size: calc(var(--base) * 0.5);
-  padding: 1rem 1rem 0;
+  padding: .5em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-bottom: solid 1rem var(--teal1);
-  background-color: var(--lgray1);
+  border-bottom: solid .5em var(--teal1);
+  background-color: var(--hawkes-blue);
   color: var(--black);
   min-width: 15em;
   position: absolute;
   top: 130%;
-  left: 0;
+  left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
+  z-index: 1;
 }
 [id*="fn"] {
   counter-increment: footnotes;
@@ -738,10 +737,6 @@ sup, .sup, [css-sup] {
   color: #5C4E53;
 }
 
-
-html {
-  background: var(--white);
-}
 .header {
   width: 100vw;
   height: 90vh;
