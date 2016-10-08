@@ -200,6 +200,13 @@
   @import Fonts
 */
 
+@font-face {
+  font-family: 'NotoColorEmoji';
+  src: url('/assets/css/fonts/NotoColorEmoji.ttf') format('ttf');
+  font-family: 'Noto sans';
+  src: url('/assets/css/fonts/NotoSans-Regular.tff') format('tff');
+}
+
 /*@font-face {
   font-family: 'Affogato';
   src:  url('/Assets/css/fonts/Affogato-Bold.woff2') format('woff2'),
@@ -215,7 +222,7 @@
 html {
   font-size: var(--base);
   line-height: var(--line-base);
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Noto sans', sans-serif;
   font-weight: 300;
   counter-reset: footnotes;
   background: var(--white);

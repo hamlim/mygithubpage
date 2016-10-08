@@ -41,6 +41,7 @@ html {
   text-align: left;
   border-bottom: solid 2px currentColor;
   margin-bottom: 2rem;
+  position: relative;
 }
 .title {
   margin-bottom: 1rem;
@@ -242,3 +243,92 @@ html {
 	box-shadow: 0 0 9em 4em var(--white);
 	margin-top: 10em;
 }
+
+/*
+	Custom Emoji
+*/
+[css-emoji] {
+	background-size: contain;
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	vertical-align: -.1em;
+}
+[css-emoji="one"], [css-emoji="1"] {
+	background-image: url('/assets/css/fonts/emoji/one.png');
+}
+[css-emoji="two"], [css-emoji="2"] {
+	background-image: url('/assets/css/fonts/emoji/two.png');
+}
+[css-emoji="three"], [css-emoji="3"] {
+	background-image: url('/assets/css/fonts/emoji/three.png');
+}
+[css-emoji="four"], [css-emoji="4"] {
+	background-image: url('/assets/css/fonts/emoji/four.png');
+}
+[css-emoji="five"], [css-emoji="5"] {
+	background-image: url('/assets/css/fonts/emoji/five.png');
+}
+[css-emoji="six"], [css-emoji="6"] {
+	background-image: url('/assets/css/fonts/emoji/six.png');
+}
+[css-emoji="seven"], [css-emoji="7"] {
+	background-image: url('/assets/css/fonts/emoji/seven.png');
+}
+[css-emoji="eight"], [css-emoji="8"] {
+	background-image: url('/assets/css/fonts/emoji/eight.png');
+}
+[css-emoji="nine"], [css-emoji="9"] {
+	background-image: url('/assets/css/fonts/emoji/nine.png');
+}
+[css-emoji="zero"], [css-emoji="0"] {
+	background-image: url('/assets/css/fonts/emoji/zero.png');
+}
+[css-emoji="smile"] {
+	background-image: url('/assets/css/fonts/emoji/smile.png');
+}
+[css-emoji="cry"] {
+	background-image: url('/assets/css/fonts/emoji/cry.png');
+}
+[css-emoji="thinking"] {
+	background-image: url('/assets/css/fonts/emoji/thinking.png');
+}
+[css-emoji="fireworks"] {
+	background-image: url('/assets/css/fonts/emoji/fireworks.png');
+}
+[css-emoji="point-up"] {
+	background-image: url('/assets/css/fonts/emoji/point-up.png');
+}
+[css-emoji="point-down"] {
+	background-image: url('/assets/css/fonts/emoji/point-down.png');
+}
+[css-emoji="sunrise"] {
+	background-image: url('/assets/css/fonts/emoji/sunrise.png');
+}
+[css-emoji="sick"] {
+	background-image: url('/assets/css/fonts/emoji/sick.png');
+}
+[css-emoji="calendar"] {
+	background-image: url('/assets/css/fonts/emoji/calendar.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
