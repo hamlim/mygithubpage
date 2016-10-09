@@ -311,9 +311,18 @@ html {
 [css-emoji="calendar"] {
 	background-image: url('/assets/css/fonts/emoji/calendar.png');
 }
-
-
-
+[css-emoji="hash"], [css-emoji="#"] {
+	background-image: url('/assets/css/fonts/emoji/hash.png');
+}
+[css-emoji="twitter"] {
+	background-image: url('/assets/css/fonts/emoji/blue-bird.png');
+}
+[css-emoji="phone"] {
+	background-image: url('/assets/css/fonts/emoji/phone.png');
+}
+[css-emoji="email"] {
+	background-image: url('/assets/css/fonts/emoji/email.png');
+}
 
 
 

@@ -175,6 +175,7 @@
   --dark-gray: #BDC3C7;
   --light-gray: #ECF0F1;
   --light-blue: #E4F1FE;
+  --mint-green: #00FF7F;
 
 
   /* Typography */
@@ -473,6 +474,16 @@ i, .i, [css-i], em, .em, [css-em] {
 }
 i:not(.escape--default), .i:not(.escape--default), [css-i]:not(.escape--default), em:not(.escape--default), .em:not(.escape--default), [css-em]:not(.escape--default) {
  font-style: italic;
+}
+
+s, .s, [css-strike] {
+  color: var(--lgray1);
+}
+
+ins, .ins, [css-ins] {
+  background-color: var(--mint-green);
+  padding: 0 .25em;
+  font-style: italic;
 }
 
 a, .a, [css-a] {
