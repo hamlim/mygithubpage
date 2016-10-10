@@ -323,7 +323,9 @@ html {
 [css-emoji="email"] {
 	background-image: url('/assets/css/fonts/emoji/email.png');
 }
-
+[css-emoji="red-light"] {
+	background-image: url('/assets/css/fonts/emoji/red-light.png');
+}
 
 
 

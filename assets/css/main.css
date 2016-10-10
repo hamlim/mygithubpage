@@ -176,6 +176,7 @@
   --light-gray: #ECF0F1;
   --light-blue: #E4F1FE;
   --mint-green: #00FF7F;
+  --honeydew: honeydew;
 
 
   /* Typography */
@@ -633,6 +634,7 @@ code.inline-block, .code.inline-block, [css-code].inline-block {
   font-family: "Questrial", sans-serif;
   display: inline-block;
   padding: 0 .3rem;
+  border-radius: 10px;
 }
 
 kbd, .kbd, [css-kbd],
@@ -767,14 +769,22 @@ sup, .sup, [css-sup] {
   display: inline-block;
 }
 
-.li--spacing, [css-li] {
+.li--spacing, [css-li], [css-dt] {
   margin-bottom: 0.25rem;
   list-style: none;
   background-color: var(--white1);
   border-left: solid .1rem var(--purple1);
   padding: 0.125rem 0.5rem 0.125rem .5rem;
 }
-.li--spacing:not(:last-child), [css-li]:not(:last-child) {
+[css-dd] {
+  margin-bottom: 0.25rem;
+  list-style: none;
+  background-color: var(--honeydew);
+  border-left: solid .1rem var(--blue2);
+  padding: 0.125rem 0.5rem 0.125rem .5rem;
+  font-size: 80%;
+}
+.li--spacing:not(:last-child), [css-li]:not(:last-child), [css-dd]:not(:last-child), [css-dt]:not(:last-child) {
   padding: 0.125rem 0.5rem 0 .5rem;
 }
 .ul--nested {
