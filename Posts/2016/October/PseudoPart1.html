@@ -61,6 +61,7 @@
             <header class="article--header horizontal--center">
                 <h2 class="title">What the Pseudo?</h2>
                 <p class="escape--default">A <s>comprehensive</s> overview of all things Pseudo in CSS.</p>
+                <p class="escape--default">Part 1</p>
                 <p class="escape--default">
                     <span css-emoji="calendar"></span>: <time datetime="2016-10-12">October 12th, 2016</time>
                 </p>
@@ -73,10 +74,10 @@
                     CSS is oddly one of the most complex syntaxes that exist in the web development world simply because of how unique it is when compared to languages like Javascript and PHP. This article I wanted to dive into the pseudo classes, elements and selectors and give a fairly brief overview of them for those who are just starting to dive into CSS. 
                 </p>
                 <p>
-                    CSS has two instances of pseudo selectors in the language, the first is pseudo elements and the second is pseudo classes. This article is going to be broken into two sections covering every pseudo selector that is available (even the ones that aren't in browsers yet<a href="#fn1" id="f1" data-footnote="At the time of writing at least" class="link--article" css-emoji="point-down"></a>).
+                    CSS has two instances of pseudo selectors in the language, the first is pseudo classes and the second is pseudo elements. This article is going to be broken into two sections covering every pseudo selector that is available (even the ones that aren't in browsers yet<a href="#fn1" id="f1" data-footnote="At the time of writing at least" class="link--article" css-emoji="point-down"></a>).
                 </p>
                 <p>
-                    The difference between the pseudo classes and the pseudo elements are what they actually are in the browser. Pseudo elements act as real elements in the DOM, pseudo classes on the other hand act, you guessed it, just like classes! Pseudo classes can simply be thought of as toggleable classes on an element when a specific action happens related to the element, like <code class="inline-block">:hover</code>.
+                    The difference between the pseudo classes and the pseudo elements are what they actually are in the browser. Pseudo elements act as elements in the DOM, pseudo classes on the other hand act, you guessed it, just like classes! Pseudo classes can simply be thought of as toggleable classes on an element when a specific action happens related to the element, like <code class="inline-block">:hover</code>.
                 </p>
                 <pre data-lang="html"><code>
 &lt;div&gt;<span class="css-string">::before</span>Stuff in the div.<span class="css-string">::after</span>&lt;/div&gt;
@@ -320,12 +321,9 @@
                         </p></dd>
                     </dl>
                 </section>
-                <section>
-                    <h3>Pseudo Elements:</h3>
-                    <p>
-                        
-                    </p>
-                </section>
+                <p>
+                    Stay tuned for part two where I will cover pseudo elements and some of their use cases!
+                </p>
                 <hr>
                 <h4 class="escape--default">Footnotes:</h4>
                 <small id="fn1">At the time of writing at least. <a href="#f1" class="link--article">☝️</a></small>
