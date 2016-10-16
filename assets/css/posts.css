@@ -332,17 +332,16 @@ html {
 
 .title {
 	animation: fade-in 2s ease-in-out;
-	transform-origin: 0 0;
+
 	transform: translateZ(0); /* opt in for GPU rendering  */
 }
 @keyframes fade-in {
 	0% {
 		opacity: 0;
-		transform: rotate(-90deg);
+		transform: scale(0);
 	}
 	100% {
 		opacity: 1;
-		/*transform: scale(1);*/
-		transform: rotate(0deg);
+		transform: scale(1);
 	}
 }
