@@ -106,7 +106,7 @@
                         <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">::backdrop</code></dt>
                         <dd css-dd><p class="escape--default">
                             This pseudo element exists between the element on the top layer of the stack of elements and any elements beneath the element on the top layer of the stack. It can be used to hide content behind the element that is in the top layer currently. This isn't widely supported yet so be carfeul with where you use it.
-                        </p></dd> 
+                        </p></dd>
                         <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">::placeholder</code></dt>
                         <dd css-dd><p class="escape--default">
                             This pseudo element allows web developers to style any placeholder text within form elements. Please note that the same restrictions on what properties can be styled with the <code class="inline-block">::first-line</code> element also apply here.
@@ -128,6 +128,21 @@
                 <p>
                     One common question that many new CSS developers ask is what is the difference between using a single colon before the pseudo elements above and double colon. The reason as to why both exist is because in the CSS 2 specification both pseudo elements and pseudo classes used a single colon, however in the CSS 3 specification the W3C working group decided change pseudo elements to the double colon syntax to signify the difference between elements and classes.
                 </p>
+                <!-- Disqus -->
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                  this.page.url = 'https://matthamlin.me/Posts/2016/October/PseudoPart2';  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = 49; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = '//matthamlin-me-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </article>
         </main>
         <footer css-footer>

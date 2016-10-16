@@ -76,7 +76,7 @@
                         It is difficult to point to any one place where the fracture between both sides actually started, I have a feeling that minor fractures between each side started when componentization began to rise in the Javascript community.
                     </p>
                     <p>
-                        With the rise of Javascript libraries and frameworks such as Backbone, then Ember, Angular, React and others many Javascript developers began seperating their view logic from their business logic, this seperation became known as the MVC paradigm and was and still is prevalent in different programming languages and entirely different environments than just on the web. This paradigm gave way to modern day componentization where developers wanted to compose their applications from a core library of patterns that they could reuse across different applications or websites to simplify development. 
+                        With the rise of Javascript libraries and frameworks such as Backbone, then Ember, Angular, React and others many Javascript developers began seperating their view logic from their business logic, this seperation became known as the MVC paradigm and was and still is prevalent in different programming languages and entirely different environments than just on the web. This paradigm gave way to modern day componentization where developers wanted to compose their applications from a core library of patterns that they could reuse across different applications or websites to simplify development.
                     </p>
                     <p>
                         Componentization was the ultimate step towards keeping code DRY, meaning that developers didn't need to spend the time redeveloping the same dropdown every time a designer requests a dropdown. This drive lead to a group of engineers at Facebook to develop a very popular framework known as React. I don't have the time (or the effort) to dive into the background of React however React really made the fractures grow between developers who support CSS and those who don't.
@@ -135,14 +135,14 @@
                             <li css-li>Class Selectors, Pseudo class selectors, attribute selectors</li>
                             <li css-li>Element Selectors</li>
                         </ul>
-                        These are comonly layed out as a comma seperated list of numbers something like 0,0,0,0 (notice that there is no value assigned to <code class="inline-block">!important</code>). This is known as Specificity. 
+                        These are comonly layed out as a comma seperated list of numbers something like 0,0,0,0 (notice that there is no value assigned to <code class="inline-block">!important</code>). This is known as Specificity.
                     </p>
                     <p>
                         If you happen to have, in your CSS two selectors that target the same element the one with the highest specificity will win over no matter the order of your CSS. However if both selectors share the same specificity, then the one that was declared last will win out. Sometimes this convinces new CSS developers to naively move the styling they want to take effect to the bottom of their CSS document <a href="#fn1" id="f1" class="link--article" data-footnote="Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😃."><span css-emoji="point-down"></span></a>
                     </p>
                     <h6 id="codebase">Codebase Growth:</h6>
                     <p>
-                        This is something that is only highlighted when you have a codebase that has existed for any fairly long amount of time. This also isn't a concept that only happens in CSS, it happens to any codebase, it just becomes slightly more complicated because CSS is seperated from the content that it is styling. This was solved in Javascript with the invention of JSX where React was able to move the content into the Javascript. 
+                        This is something that is only highlighted when you have a codebase that has existed for any fairly long amount of time. This also isn't a concept that only happens in CSS, it happens to any codebase, it just becomes slightly more complicated because CSS is seperated from the content that it is styling. This was solved in Javascript with the invention of JSX where React was able to move the content into the Javascript.
                     </p>
                     <p>
                         This issue doesn't only affect React applications though, at Wayfair I ran into this issue hundereds of times, where I was tasked with redesigning something and I need to decide whether to make a new file to style the stuff and add new classnames to everything or to spend the hours of time to search through the current styles and determine which need to stay and which need to remove. It gets even more complicated when you find out that the CSS you might be editing to fit your page/section is possibly in use somewhere else, so any edits you make will affect everyone else.
@@ -167,12 +167,27 @@
                         I love web standards, and I love being able to use them but sometimes it feels like developers want to move towards using their own build process that takes this great new technology and converts it into old technology. Sure this is great for the end users but it also feels like a way to relieve the pressure put on browser vendors to add these new standards to their parsing engines.
                     </p>
                     <p>
-                        So thats my take on the great CSS debate, feel free to reach out to me by <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthamlin.me%2FPosts%2F2016%2FSeptember%2FSeptemberUpdate&via=immatthamlin&text=%20%20-&" class="link link--article">tweeting to me</a>, <a href="mailto:matthewjameshamlin@gmail.com" class="link link--article">emailing me</a> or <a data-footnote="+1 425 210 0980" href="sms:+14252100980" class="link link--article">texting me</a> with your thoughts on whether CSS is good. I would also love to learn how you use CSS either at work or on your own projects! 
+                        So thats my take on the great CSS debate, feel free to reach out to me by <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthamlin.me%2FPosts%2F2016%2FSeptember%2FSeptemberUpdate&via=immatthamlin&text=%20%20-&" class="link link--article">tweeting to me</a>, <a href="mailto:matthewjameshamlin@gmail.com" class="link link--article">emailing me</a> or <a data-footnote="+1 425 210 0980" href="sms:+14252100980" class="link link--article">texting me</a> with your thoughts on whether CSS is good. I would also love to learn how you use CSS either at work or on your own projects!
                     </p>
                 </section>
                 <hr>
                 <h5 class="escape--default">Footnotes:</h5>
                 <small id="fn1">Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet <span css-emoji="smile"></span>. <a href="#f1" class="link--article"><span css-emoji="point-up"></span></a></small>
+                <!-- Disqus -->
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                  this.page.url = 'https://matthamlin.me/Posts/2016/October/TheGreatDebate';  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = 46; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = '//matthamlin-me-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </article>
         </main>
         <footer css-footer>
