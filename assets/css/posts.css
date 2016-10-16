@@ -326,21 +326,23 @@ html {
 [css-emoji="red-light"] {
 	background-image: url('/assets/css/fonts/emoji/red-light.png');
 }
+[css-emoji="coffee"] {
+	background-image: url('/assets/css/fonts/emoji/coffee.png');
+}
 
 .title {
 	animation: fade-in 2s ease-in-out;
+	transform-origin: 0 0;
 	transform: translateZ(0); /* opt in for GPU rendering  */
 }
 @keyframes fade-in {
 	0% {
 		opacity: 0;
-		transform: scale(0);
-	}
-	50% {
-		transform: scale(1.2);
+		transform: rotate(-90deg);
 	}
 	100% {
 		opacity: 1;
-		transform: scale(1);
+		/*transform: scale(1);*/
+		transform: rotate(0deg);
 	}
 }
