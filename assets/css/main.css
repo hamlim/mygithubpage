@@ -202,12 +202,12 @@
   @import Fonts
 */
 
-@font-face {
+/*@font-face {
   font-family: 'NotoColorEmoji';
   src: url('/assets/css/fonts/NotoColorEmoji.ttf') format('ttf');
   font-family: 'Noto sans';
   src: url('/assets/css/fonts/NotoSans-Regular.tff') format('tff');
-}
+}*/
 
 /*@font-face {
   font-family: 'Affogato';
@@ -246,7 +246,7 @@ html {
 	Breakpoints
 */
 
-.page, .footer, .main, .menu { 
+.page, .footer, .main, .menu {
 	margin: 0 auto;
 }
 
@@ -264,13 +264,13 @@ html {
 
 @media screen and (min-width: 16.667rem) {
 	html { line-height: var(--line-five); }
-  .page, .footer, .main, .menu { 
+  .page, .footer, .main, .menu {
 		width: var(--width-one);
 	}
 }
 @media screen and (min-width: 22.197rem) {
 	html { line-height: var(--line-four); }
-  .page, .footer, .main, .menu { 
+  .page, .footer, .main, .menu {
 		width: var(--width-two);
 	}
   .video, [css-video], [css-image] {
@@ -279,7 +279,7 @@ html {
 }
 @media screen and (min-width: 31.250rem) {
   html { line-height: var(--line-three); }
-	.page, .footer, .main, .menu { 
+	.page, .footer, .main, .menu {
 		width: var(--width-three);
 	}
   .video, [css-video], [css-image] {
@@ -288,7 +288,7 @@ html {
 }
 @media screen and (min-width: 41.667rem) {
   html { line-height: var(--line-two); }
-	.page, .footer, .main, .menu { 
+	.page, .footer, .main, .menu {
 		width: var(--width-four);
 	}
   .video, [css-video], [css-image] {
@@ -297,7 +297,7 @@ html {
 }
 @media screen and (min-width: 50.00rem) {
   html { line-height: var(--line-one); }
-	.page, .footer, .main, .menu { 
+	.page, .footer, .main, .menu {
 		width: var(--width-five);
 	}
   .video, [css-video], [css-image] {
@@ -421,14 +421,14 @@ h1, .h1, [css-h1] {
   font-weight: 700;
 }
 h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default) {
-  font-size: calc(var(--base) * 2);  
+  font-size: calc(var(--base) * 2);
 }
 h2, .h2, [css-h2] {
   font: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default) {
-  font-size: calc(var(--base) * 1.6);  
+  font-size: calc(var(--base) * 1.6);
 }
 h3, .h3, [css-h3] {
   font: 'Work Sans', sans-serif;
@@ -574,12 +574,12 @@ a:active, .a:active, [css-a]:active {
     background-color: var(--green);
 }
 
-h1, .h1, [css-h1], 
-h2, .h2, [css-h2], 
-h3, .h3, [css-h3], 
-h4, .h4, [css-h4], 
-h5, .h5, [css-h5], 
-h6, .h6, [css-h6], 
+h1, .h1, [css-h1],
+h2, .h2, [css-h2],
+h3, .h3, [css-h3],
+h4, .h4, [css-h4],
+h5, .h5, [css-h5],
+h6, .h6, [css-h6],
 small, .small, [css-small],
 p, .p, [css-p],
 ul, .ul, [css-ul],
@@ -590,12 +590,12 @@ ol, .ol, [css-ol] {
   font-size: inherit;
   vertical-align: baseline;
 }
-h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default), 
-h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default), 
-h3:not(.escape--default), .h3, [css-h3]:not(.escape--default), 
-h4:not(.escape--default), .h4:not(.escape--default), [css-h4]:not(.escape--default), 
-h5:not(.escape--default), .h5:not(.escape--default), [css-h5]:not(.escape--default), 
-h6:not(.escape--default), .h6:not(.escape--default), [css-h6]:not(.escape--default), 
+h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default),
+h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default),
+h3:not(.escape--default), .h3, [css-h3]:not(.escape--default),
+h4:not(.escape--default), .h4:not(.escape--default), [css-h4]:not(.escape--default),
+h5:not(.escape--default), .h5:not(.escape--default), [css-h5]:not(.escape--default),
+h6:not(.escape--default), .h6:not(.escape--default), [css-h6]:not(.escape--default),
 small:not(.escape--default), .small:not(.escape--default), [css-small]:not(.escape--default),
 p:not(.escape--default), .p,:not(.escape--default) [css-p]:not(.escape--default),
 ul:not(.escape--default), .ul:not(.escape--default), [css-ul]:not(.escape--default),
@@ -616,7 +616,7 @@ pre, .pre, [css-pre] {
   font-family: "Space Mono", monospace;
   background-color: var(--hawkes-blue);
   padding: 0 2em;
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 pre::after, .pre::after, [css-pre]::after {
   content: attr(data-lang);
@@ -824,9 +824,3 @@ sup, .sup, [css-sup] {
 .linkedin {
   border-bottom: solid .2rem #0077b5;
 }
-
-
-
-
-
-
