@@ -332,7 +332,6 @@ html {
 
 .title {
 	animation: fade-in 2s ease-in-out;
-
 	transform: translateZ(0); /* opt in for GPU rendering  */
 }
 @keyframes fade-in {
