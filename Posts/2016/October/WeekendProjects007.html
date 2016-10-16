@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weekly Recap #005</title>
+
+        <!-- Generic Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="My Weekend Projects">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+
+
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+
+        <!-- Social -->
+        <!-- Facebook -->
+
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/compiled/main.css">
+        <link rel="stylesheet" href="/assets/css/compiled/post.css">
+
+    </head>
+    <body class="body">
+        <header class="header--menu">
+            <nav class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+            </nav>
+        </header>
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">Weekend Projects <span css-emoji="hash"></span><span css-emoji="7"></span></h2>
+                <p class="escape--default">Recap of my Weekend</p>
+                <p class="escape--default">
+                    <span css-emoji="calendar"></span>: <time datetime="2016-10-16">October 16th, 2016</time>
+                </p>
+            </header>
+            <article class="article">
+                <p>
+                  This weekend was mostly spent working on this website, I made a few optimizations and also wrote a few blog posts as well!
+                  I wanted to do a lot more react work this weekend on this site and also on a few other projects, but I think I will start bringing
+                  my personal laptop to work to do some of that work on the train rides in the morning and afternoon.
+                </p>
+                <p>
+                  So this weekend what I did do is publish three new blog posts, the first of which was my 7th Weekly Recap which you can
+                  <a href="./WeeklyRecap007" class="link--article">read here</a>. I also published the <a href="./State-of-my-Projects" class="link--article">
+                    State of my Projects</a> which is a blog post that I will be updating with all my ongoing projects and project ideas from here
+                  on out.
+                </p>
+                <p>
+                  I also started a new blog post series which I am going to call Sunday Morning Recap, you can read the first one <a href="./SundayMorningRecap01" class="link--article">here</a>.
+                  I know I have been starting more and more projects recently but this has been sitting in my head for a few weeks now and decided Sunday mornings would be an adequate
+                  time to start publishing this series. I would love any and all feedback you have about this new series either below in the comments (more about those below) or in the
+                  comments on that post, or just on twitter/sms/email!
+                </p>
+                <p>
+                  On the technical side of things, this weekend I updated some styles across this website including removing the need for a 3rd party font family (besides the monospace one I use)
+                  so I am now relying on a little trick I found <a href="https://bitsofco.de/the-new-system-font-stack/" class="link--article">here</a> where I set the <code class="inline-block">font-family</code>
+                  to the font names of base fonts shipped in many OS's.
+                </p>
+                <pre data-lang="css"><code>
+<span class="css-selector">body:</span> <span class="css-specialChars">{</span>
+  <span class="css-prop">font-family:</span> <span class="css-value">-apple-system,
+               BlinkMacSystemFont,
+               <span class="css-string">"Segoe UI"</span>,
+               Roboto,
+               Oxygen-Sans,
+               Ubuntu,
+               Cantarell,
+               <span class="css-string">"Helvetica Neue"</span>,
+               sans-serif;</span>
+<span class="css-specialChars">}</span>
+                </code></pre>
+                <p>
+                  This allows me to cut down on the number of requests the browser has to make before loading the webpage, which I am a fan of. Soon I might
+                  cut out the need of even requiring a monospace font from Google Fonts. Although I will need to do some testing on what the default monospace
+                  fonts look like on most OS's.
+                </p>
+                <p>
+                  As you can see below I also added Disqus commenting to some of my new blog posts, and will be adding them to all future blog posts. I did this
+                  to hopefully reduce the friction for readers to leave feedback on blog posts and also to increase the amount of communication between me, the author,
+                  and you, my audience. Let me know what you think about this either below in the comments or on twitter/sms/email! I was hesitant to add a comment system
+                  like Disqus mainly because so far my website has included zero JS, but now I unfortunately need to start including JS in the site.
+                </p>
+                <p>
+                  So that has been my weekend, let me know what your weekend was like below, work on anything exciting or go somewhere awesome? Let me know!
+                </p>
+                <!-- Disqus -->
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                  this.page.url = 'https://matthamlin.me/Posts/2016/October/WeekendProjects007';  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = 53; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = '//matthamlin-me-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </article>
+        </main>
+        <footer css-footer>
+            <div class="footer grid grid-wrap grid-row grid-justify-between">
+                <div css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
+                <div class="wrapper">
+                    <span css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" class="link--article" css-emoji="twitter" title="Tweet Me"></a></span>
+                    <span css-chip><a href="sms:+14252100980" class="link--article" css-emoji="phone" title="Text Me"></a></span>
+                    <span css-chip><a href="mailto:matthewjameshamlin@gmail.com" class="link--article" css-emoji="email" title="Email Me"></a></span>
+                </div>
+                <div css-chip><a href="/archive" class="link--article">Archive</a></div>
+            </div>
+        </footer>
+    </body>
+</html>
