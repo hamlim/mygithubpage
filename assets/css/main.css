@@ -226,7 +226,15 @@
 html {
   font-size: var(--base);
   line-height: var(--line-base);
-  font-family: 'Noto sans', sans-serif;
+  font-family: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Oxygen-Sans,
+               Ubuntu,
+               Cantarell,
+               "Helvetica Neue",
+               sans-serif;;
   font-weight: 300;
   counter-reset: footnotes;
   background: var(--white);
@@ -439,42 +447,36 @@ html {
 }
 
 h1, .h1, [css-h1] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h1:not(.escape--default), .h1:not(.escape--default), [css-h1]:not(.escape--default) {
   font-size: calc(var(--base) * 2);
 }
 h2, .h2, [css-h2] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h2:not(.escape--default), .h2:not(.escape--default), [css-h2]:not(.escape--default) {
   font-size: calc(var(--base) * 1.6);
 }
 h3, .h3, [css-h3] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h3:not(.escape--default), .h3:not(.escape--default), [css-h3]:not(.escape--default) {
   font-size: calc(var(--base) * 1.4);
 }
 h4, .h4, [css-h4] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h4:not(.escape--default), .h4:not(.escape--default), [css-h4]:not(.escape--default) {
   font-size: calc(var(--base) * 1.2);
 }
 h5, .h5, [css-h5] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h5:not(.escape--default), .h5:not(.escape--default), [css-h5]:not(.escape--default) {
   font-size: calc(var(--base) * 1);
 }
 h6, .h6, [css-h6] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 h6:not(.escape--default), .h6:not(.escape--default), [css-h6]:not(.escape--default) {
@@ -485,7 +487,6 @@ small:not(.escape--default), .small:not(.escape--default), [css-small]:not(.esca
   font-size: calc(var(--base) * 0.6);
 }
 strong, .strong, [css-strong] {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 i, .i, [css-i], em, .em, [css-em] {
@@ -653,7 +654,7 @@ code.inline-block, .code.inline-block, [css-code].inline-block {
   background-color: var(--cararra);
   color: var(--black);
   border-bottom: solid .125rem var(--shamrock);
-  font-family: "Questrial", sans-serif;
+  font-family: "Space Mono", monospace;
   display: inline-block;
   padding: 0 .3rem;
   border-radius: 10px;
@@ -661,7 +662,7 @@ code.inline-block, .code.inline-block, [css-code].inline-block {
 
 kbd, .kbd, [css-kbd],
 var, .var, [css-var] {
-  font-family: "Questrial", sans-serif;
+  font-family: "Space Mono", monospace;
   background-color: var(--lgray1);
   color: var(--black);
   font-size: 90%;
@@ -761,7 +762,9 @@ sup, .sup, [css-sup] {
   border-bottom: solid .05rem var(--blue);
 }
 
-
+/*
+@TODO: convert the colors below to root variables and use attribte selectors
+*/
 
 .css-selector {
   color: #669900;
@@ -800,7 +803,6 @@ sup, .sup, [css-sup] {
 }
 [css-dd] {
   margin-bottom: 0.25rem;
-  list-style: none;
   background-color: var(--honeydew);
   border-left: solid .1rem var(--blue2);
   padding: 0.125rem 0.5rem 0.125rem .5rem;
