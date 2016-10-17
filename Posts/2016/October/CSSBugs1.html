@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Bugs: Inline-block</title>
+
+        <!-- Generic Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
+        <meta name="description" content="How to solve those pesky CSS bugs.">
+        <meta name="subject" content="Matt Hamlin's Portfolio site">
+        <meta name="robots" content="index,follow">
+        <meta name="classification" content="individual">
+        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="reply-to" content="hamlim@outlook.com">
+        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
+        <meta name="url" content="https://matthamlin.me/">
+        <meta name="identifier-URL" content="https://matthamlin.me/">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+
+
+        <!-- Generic Link Tags -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="author" href="humans.txt">
+
+        <!-- Favicons -->
+        <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+
+        <!-- Social -->
+        <!-- Facebook -->
+        <meta property="og:title" content="CSS Bugs 1: Inline-Blocks">
+        <meta property="og:description" content="How to solve those pesky CSS bugs.">
+        <meta property="og:url" content="https://matthamlin.me/Posts/2016/October/CSSBugs1">
+        <!-- Twitter -->
+        <meta name="twitter:title" content="CSS Bugs 1: Inline-Blocks">
+        <meta name="twitter:description" content="How to solve those pesky CSS bugs.">
+        <meta name="twitter:site" content="@immatthamlin">
+
+        <!-- Android -->
+        <meta name="theme-color" content="#2ECC71">
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/compiled/main.css?v2.0">
+        <link rel="stylesheet" href="/assets/css/compiled/post.css?v2.0">
+
+    </head>
+    <body class="body">
+        <header class="header--menu">
+            <nav class="menu">
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+            </nav>
+        </header>
+        <main class="page">
+            <header class="article--header horizontal--center">
+                <h2 class="title">CSS Bugs 1: Inline-Block and that magic Padding</h2>
+                <p class="escape--default">How to remove that extra space between inline-block elements</p>
+                <p class="escape--default">
+                    <span css-emoji="calendar"></span>: <time datetime="2016-10-18"><a href="./" class="link--article">October</a> 18th, 2016</time>
+                </p>
+            </header>
+            <article class="article">
+              <p>
+                If you are an active web developer and have ever worked with CSS before, you know that it can be a really pesky langauge with a lot of gotchas
+                and quirks. One of these known quirks is the spacing rendered between inline-block elements. This is an odd bug that happens because of the whitespace
+                between the blocks. This spacing can be seen in the pen embedded below:
+              </p>
+              <!-- Codepen embed -->
+              <p data-height="265" data-theme-id="light" data-slug-hash="ZpqYAO" data-default-tab="css,result" data-user="matthamlin" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/matthamlin/pen/ZpqYAO/">Inline Block Element spacing</a> by Matt Hamlin (<a href="http://codepen.io/matthamlin">@matthamlin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+              <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+              <p>
+                In the above example because there is a new line and some tabs between each <code class="inline-block">inline-block</code> element, the browser renders
+                space between each element. Sometimes this is a really finicky bug where you might spend hours looking for where that padding or margin was added to
+                that one element.
+              </p>
+              <p>
+                Luckily there are some solutions for this issue. In the codepen embedded below you can see a simple solution (that when paired with your favorite Autoprefixing
+                plugin) will work in any browser IE11 or newer.
+              </p>
+              <!-- Codepen Embed -->
+              <p data-height="265" data-theme-id="light" data-slug-hash="KgxwkV" data-default-tab="html,result" data-user="matthamlin" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/matthamlin/pen/KgxwkV/">Fixing the inline-block space problem</a> by Matt Hamlin (<a href="http://codepen.io/matthamlin">@matthamlin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+              <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+              <p>
+                Another solution (for if you need to support browsers older than IE11) you can simply do the below trick. Where you comment out the whitespace between
+                each <code class="inline-block">inline-block</code> element as shown in the following pen:
+              </p>
+              <p data-height="265" data-theme-id="light" data-slug-hash="Egdapm" data-default-tab="html,result" data-user="matthamlin" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/matthamlin/pen/Egdapm/">Whitespace Inline-block fix</a> by Matt Hamlin (<a href="http://codepen.io/matthamlin">@matthamlin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+              <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+              <p>
+                If you know of another trick to fix this css bug feel free to leave it in the comments below!
+              </p>
+              <!-- Disqus -->
+              <div id="disqus_thread"></div>
+              <script>
+              var disqus_config = function () {
+                this.page.url = 'https://matthamlin.me/Posts/2016/October/CSSBugs1';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = 53; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = '//matthamlin-me-1.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            </article>
+        </main>
+        <footer css-footer>
+            <div class="footer grid grid-wrap grid-row grid-justify-between">
+                <div css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
+                <div class="wrapper">
+                    <span css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" class="link--article" css-emoji="twitter" title="Tweet Me"></a></span>
+                    <span css-chip><a href="sms:+14252100980" class="link--article" css-emoji="phone" title="Text Me"></a></span>
+                    <span css-chip><a href="mailto:matthewjameshamlin@gmail.com" class="link--article" css-emoji="email" title="Email Me"></a></span>
+                </div>
+                <div css-chip><a href="/archive" class="link--article">Archive</a></div>
+            </div>
+        </footer>
+    </body>
+</html>
