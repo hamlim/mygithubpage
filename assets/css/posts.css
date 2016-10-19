@@ -27,6 +27,8 @@
 	--light-gray: #ECF0F1;
 	--blue: #E4F1FE;
 	--hawkes-blue: #D1E2FB;
+	--medium-sea-green: mediumseagreen;
+	--royal-blue: royalblue;
 }
 
 html {
@@ -343,4 +345,52 @@ html {
 		opacity: 1;
 		transform: scale(1);
 	}
+}
+
+/*
+
+	Nova Layout
+
+*/
+
+[css-body] {
+	background: linear-gradient(to bottom, var(--medium-sea-green), var(--royal-blue));
+}
+[css-header] {
+	display: flex;
+	width: 100vw;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+[css-meta] {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 30vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+[css-nav] [css-title] {
+	font-size: 3em;
+}
+[css-nav] [css-subtitle] {
+	font-size: 1.5em;
+}
+[css-page] {
+	background-color: rgba(255, 255, 255, .3);
+	line-height: 1.8;
+}
+[css-container] {
+	padding: 1em 0;
+}
+[css-other] {
+	background-color: rgba(255, 255, 255, .5);
+	padding: 1em 0;
+}
+
+[css-paragraph]:first-child::first-letter {
+	font-size: 2em;
 }
