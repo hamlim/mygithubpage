@@ -256,7 +256,7 @@ html {
 	Breakpoints
 */
 
-.page, .footer, .main, .menu {
+.page, .footer, .main, .menu, [css-container] {
 	margin: 0 auto;
 }
 
@@ -277,13 +277,13 @@ html {
 
 @media screen and (min-width: 16.667rem) {
 	html { line-height: var(--line-five); }
-  .page, .footer, .main, .menu {
+  .page, .footer, .main, .menu, [css-container] {
 		width: var(--width-one);
 	}
 }
 @media screen and (min-width: 22.197rem) {
 	html { line-height: var(--line-four); }
-  .page, .footer, .main, .menu {
+  .page, .footer, .main, .menu, [css-container] {
 		width: var(--width-two);
 	}
   .video, [css-video], [css-image], [css-pre], pre {
@@ -295,7 +295,7 @@ html {
 }
 @media screen and (min-width: 31.250rem) {
   html { line-height: var(--line-three); }
-	.page, .footer, .main, .menu {
+	.page, .footer, .main, .menu, [css-container] {
 		width: var(--width-three);
 	}
   .video, [css-video], [css-image], [css-pre], pre {
@@ -307,7 +307,7 @@ html {
 }
 @media screen and (min-width: 41.667rem) {
   html { line-height: var(--line-two); }
-	.page, .footer, .main, .menu {
+	.page, .footer, .main, .menu, [css-container] {
 		width: var(--width-four);
 	}
   .video, [css-video], [css-image], [css-pre], pre {
@@ -319,7 +319,7 @@ html {
 }
 @media screen and (min-width: 50.00rem) {
   html { line-height: var(--line-one); }
-	.page, .footer, .main, .menu {
+	.page, .footer, .main, .menu, [css-container] {
 		width: var(--width-five);
 	}
   .video, [css-video], [css-image], [css-pre], pre {
