@@ -59,16 +59,37 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var css = __webpack_require__(173);
+	
+	
 	// var post_css = require('./assets/css/posts.css');
 	
 	
-	if (document.getElementById('navMount-index')) {
+	if (document.getElementById('index')) {
+	  _reactDom2.default.render(_react2.default.createElement(_components.Header, null), document.getElementsByClassName('headerMount-index')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { index: true }), document.getElementById('navMount-index'));
 	}
-	if (document.getElementById('navMount-resume')) {
+	if (document.getElementById('resume')) {
+	  _reactDom2.default.render(_react2.default.createElement(
+	    _components.Header,
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'header--subtitle clr--green' },
+	      'Blog Archive'
+	    )
+	  ), document.getElementsByClassName('headerMount-resume')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { resume: true }), document.getElementById('navMount-resume'));
 	}
-	if (document.getElementById('navMount-blog')) {
+	if (document.getElementById('blog')) {
+	  _reactDom2.default.render(_react2.default.createElement(
+	    _components.Header,
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'header--subtitle clr--green' },
+	      'Resume'
+	    )
+	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { blog: true }), document.getElementById('navMount-blog'));
 	}
 
@@ -21448,7 +21469,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Nav = undefined;
+	exports.Header = exports.Nav = undefined;
 	
 	var _react = __webpack_require__(1);
 	
@@ -21487,6 +21508,26 @@
 					"Blog"
 				)
 			)
+		);
+	};
+	
+	var Header = exports.Header = function Header(props) {
+		var subtitle = "";
+		if (props.blog) {
+			subtitle = "<h2 className=\"header--subtitle clr--green\">Blog Archive</h2>";
+		};
+		if (props.resume) {
+			subtitle = "<h2 className=\"header--subtitle clr--green\">Resume</h2>";
+		};
+		return _react2.default.createElement(
+			"div",
+			{ className: "header--siblings" },
+			_react2.default.createElement(
+				"h1",
+				{ className: "header--title clr--blue" },
+				"Matt Hamlin"
+			),
+			props.children
 		);
 	};
 

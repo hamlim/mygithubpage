@@ -15,3 +15,13 @@ export const Nav = (props) => {
 		</ul>
 	)
 };
+
+
+export const Header = (props) => {
+	return (
+		<div className="header--siblings">
+			<h1 className="header--title clr--blue">Matt Hamlin</h1>
+			{props.children}
+		</div>
+	)
+}
