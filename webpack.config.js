@@ -27,6 +27,6 @@ module.exports = {
 		]
 	},
   postcss: function () {
-    return [autoprefixer, cssnext];
+    return [cssnext];
   }
 }

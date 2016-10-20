@@ -16,10 +16,6 @@ module.exports = function(grunt) {
                     { src: 'Assets/css/posts.css', dest: 'Assets/css/compiled/post.css' },
                 ]
             }
-            // dist: {
-            //   src: 'Assets/css/*.css',
-            //   dest: 'Assets/css/compiled/*.css'
-            // }
         }
     });
 

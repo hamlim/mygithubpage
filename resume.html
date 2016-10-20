@@ -36,38 +36,26 @@
         <meta name="theme-color" content="#2ECC71">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="assets/css/compiled/main.css">
+        <!-- <link rel="stylesheet" href="assets/css/compiled/main.css"> -->
 
     </head>
     <body class="body">
-        <header class="header center">
+        <header data-css-header class="headerMount-index">
             <span class="header--siblings">
                 <h1 class="header--title clr--blue">Matt Hamlin</h1>
                 <h2 class="header--subtitle clr--green">Resume</h2>
             </span>
         </header>
         <main class="page">
-            <nav class="page--nav horizontal--center">
-                <ul class="nav--links ul--nostyle ul--inline">
-                    <li class="li--inline">
-                        <a href="./index.html" class="link">Portfolio</a>
-                    </li>
-                    <li class="li--inline">
-                        <a href="./resume.html" class="link--active">Resume</a>
-                    </li>
-                    <li class="li--inline">
-                        <a href="./archive.html" class="link">Blog</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav data-css-nav id="navMount-resume"></nav>
             <section class="page--content">
                 <div class="page--contact horizontal--center pbottom">
                     <h3 class="escape--default ontact contact--name">Matt Hamlin - <span class="highlight-color-only">Web Developer</span></h3>
                     <p class="escape--default contact contact--location">3922 113th Ave SE, Snohomish WA 98290</p>
-                    <p class="escape--default contact contact--email"><a href="mailto:hamlim@outlook.com" class="link">hamlim@outlook.com</a></p>
-                    <p class="escape--default contact contact--phone"><a href="tel:+14252100980" class="link">+1-(425)-210-0980</a></p>
-                    <p class="escape--default contact contact--linkedin"><a href="https://linkedin.com/in/hamlim" class="link">Linkedin</a></p>
-                    <p class="escape--default contact contact--github"><a href="https://github.com/hamlim" class="link">Github</a></p>
+                    <p class="escape--default contact contact--email"><a href="mailto:hamlim@outlook.com" data-css-link>hamlim@outlook.com</a></p>
+                    <p class="escape--default contact contact--phone"><a href="tel:+14252100980" data-css-link>+1-(425)-210-0980</a></p>
+                    <p class="escape--default contact contact--linkedin"><a href="https://linkedin.com/in/hamlim" data-css-link>Linkedin</a></p>
+                    <p class="escape--default contact contact--github"><a href="https://github.com/hamlim" data-css-link>Github</a></p>
                 </div>
                 <h3 class="content--header pbottom">Profile:</h3>
                 <div class="page--lead pbottom">
@@ -171,7 +159,7 @@
                 <h3 class="content--header">Experience:</h3>
                 <div class="page--experience">
                     <h4 class="experience no--margin">Web Developer</h4>
-                    <h4 class="experience no--margin"><a href="http://www.wayfair.com/" class="link">Wayfair</a></h4>
+                    <h4 class="experience no--margin"><a href="http://www.wayfair.com/" data-css-link>Wayfair</a></h4>
                     <p class="experience no--margin">
                         Web Developer: July 2016 - Present
                     </p>
@@ -193,7 +181,7 @@
 
                     <br/>
                     <h4 class="experience no--margin">Web Developer</h4>
-                    <h4 class="experience no--margin"><a href="http://www.compotool.com/" class="link">Compotool</a></h4>
+                    <h4 class="experience no--margin"><a href="http://www.compotool.com/" data-css-link>Compotool</a></h4>
                     <p class="experience no--margin">Internship: Jun. 2014 - Oct. 2015</p>
                     <p class="experience no--margin">
                         Contract Web Developer: Oct. 2015 - July 2016
@@ -218,7 +206,7 @@
 
                     <br/>
                     <h4 class="experience no--margin">Web Designer and Developer</h4>
-                    <h4 class="experience no--margin"><a href="http://www.kymainternational.com/" class="link">KYMA International</a></h4>
+                    <h4 class="experience no--margin"><a href="http://www.kymainternational.com/" data-css-link>KYMA International</a></h4>
                     <p class="experience no--margin">
                         Dec. 2015 - Jan. 2016
                     </p>
@@ -239,12 +227,12 @@
                 </div>
                 <h3 class="content--header">Projects:</h3>
                 <div class="page--projects">
-                    <h4 class="project no--margin"><a href="https://goexploring.today/Dollar" class="link">Dollar</a></h4>
+                    <h4 class="project no--margin"><a href="https://goexploring.today/Dollar" data-css-link>Dollar</a></h4>
                     <p class="project tm1">
                         Dollar is an easy, mobile-centric, finance tracking web application I built over the span of 3 months.
                     </p>
                     <br />
-                    <h4 class="project no--margin"><a href="https://goexploring.today/Bundles" class="link">Bundles</a></h4>
+                    <h4 class="project no--margin"><a href="https://goexploring.today/Bundles" data-css-link>Bundles</a></h4>
                     <p class="project tm1">
                         Bundles is a simple way to share collections of digital content with anyone. Users can create amazing full-bleed websites that emphasize the
                         content they want to share. I built Bundles over the span of 6 months.
@@ -254,7 +242,7 @@
         </main>
         <footer class="footer">
             <p>
-                <strong>If you have read this far <a class="link--special" href="mailto:hamlim@outlook.com">email me</a> or <a href="https://www.dropbox.com/s/s7em8c2oq8pgj4e/Matt%20Hamlin%20Resume.pdf?dl=0" class="link--special">get a PDF copy</a> of my resume!</strong>
+                <strong>If you have read this far <a data-css-link-special href="mailto:hamlim@outlook.com">email me</a> or <a href="https://www.dropbox.com/s/s7em8c2oq8pgj4e/Matt%20Hamlin%20Resume.pdf?dl=0" data-css-link-special>get a PDF copy</a> of my resume!</strong>
             </p>
         </footer>
         <script src="./bundle.js" type="text/javascript"></script>

@@ -37,29 +37,17 @@
 
         <!-- Styles -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
-        <link rel="stylesheet" href="assets/css/compiled/main.css">
+        <!-- <link rel="stylesheet" href="assets/css/compiled/main.css"> -->
 
     </head>
-    <body class="body">
-        <header class="header center">
+    <body data-css-body class="body">
+        <header data-css-header data-css-container class="headerMount-index" >
             <div class="header--siblings">
                 <h1 class="header--title clr--blue">Matt Hamlin</h1>
             </div>
         </header>
-        <main class="page">
-            <nav class="page--nav horizontal--center">
-                <ul class="nav--links ul--nostyle ul--inline">
-                    <li class="li--inline">
-                        <a href="./index.html" class="link--active">Portfolio</a>
-                    </li>
-                    <li class="li--inline">
-                        <a href="./resume.html" class="link">Resume</a>
-                    </li>
-                    <li class="li--inline">
-                        <a href="./archive.html" class="link">Blog</a>
-                    </li>
-                </ul>
-            </nav>
+        <main data-css-page class="page js-main">
+            <nav data-css-nav id="navMount-index"></nav>
             <article class="page--content">
                 <header class="page--lead">
                     <h2 class="">Matt Hamlin is a web developer, designer and sometimes writer.</h2>
@@ -67,31 +55,31 @@
                 <h3 class="article--title">Projects:</h3>
                 <section class="grid grid-column grid-wrap">
                     <section class="project--card">
-                        <h4 class="project--name"><a href="https://goexploring.today/" class="link">Goexploring.today</a></h4>
+                        <h4 class="project--name"><a href="https://goexploring.today/" data-css-link>Goexploring.today</a></h4>
                         <p class="project--description">
                             A list of all my projects.
                         </p>
                     </section>
                     <section class="project--card">
-                        <h4 class="project--name"><a href="https://goexploring.today/Dollar" class="link">Dollar</a></h4>
+                        <h4 class="project--name"><a href="https://goexploring.today/Dollar" data-css-link>Dollar</a></h4>
                         <p class="project--description">
                             A simple financial management tool.
                         </p>
                     </section>
                     <section class="project--card">
-                        <h4 class="project--name"><a href="https://goexploring.today/Bundles" class="link">Bundles</a></h4>
+                        <h4 class="project--name"><a href="https://goexploring.today/Bundles" data-css-link>Bundles</a></h4>
                         <p class="project--description">
                             Share collections of content with one link.
                         </p>
                     </section>
                     <section class="project--card">
-                        <h4 class="project--name"><a href="http://kymainternational.com" class="link">KYMA International Landing Page</a></h4>
+                        <h4 class="project--name"><a href="http://kymainternational.com" data-css-link>KYMA International Landing Page</a></h4>
                         <p class="project--description">
                             Launched landing page and designed brand assets.
                         </p>
                     </section>
                     <section class="project--card">
-                        <h4 class="project--name"><a href="https://goexploring.today/boilerplate" class="link">boilerplate</a></h4>
+                        <h4 class="project--name"><a href="https://goexploring.today/boilerplate" data-css-link>boilerplate</a></h4>
                         <p class="project--description">
                             A simple project boilerplate, the basis for all my <em>modern</em> projects.
                         </p>
@@ -99,28 +87,31 @@
                 </section>
                 <h3 class="article--title">Social:</h3>
                 <section class="grid grid-row grid-wrap grid-justify-center">
-                    <section class="project--card tac">
-                        <p class="project--name">Email: <a href="mailto:hamlim@outlook.com" class="link email">hamlim@outlook.com</a></p>
-                    </section>
-                    <section class="project--card tac">
-                        <p class="project--name">Twitter: <a href="https://twitter.com/immatthamlin" class="link twitter">@immatthamlin</a></p>
-                    </section>
-                    <section class="project--card tac">
-                        <p class="project--name">LinkedIn: <a href="https://linkedin.com/in/hamlim" class="link linkedin">Matt Hamlin</a></p>
-                    </section>
-                    <section class="project--card tac">
-                        <p class="project--name">Snapchat: <a href="https://snapchat.com/add/immatthamlin" class="link snap">@immatthamlin</a></p>
-                    </section>
-                    <section class="project--card tac">
-                        <p class="project--name">Github: <a href="https://github.com/hamlim" class="link github">Matt Hamlin</a></p>
-                    </section>
+                    <div data-css-chip class="tac">
+                        <p class="project--name">Email: <a href="mailto:hamlim@outlook.com" data-css-social-link="email" data-css-link>hamlim@outlook.com</a></p>
+                    </div>
+                    <div data-css-chip class="project--card tac">
+                        <p class="project--name">Twitter: <a href="https://twitter.com/immatthamlin" data-css-social-link="twitter"  data-css-link>@immatthamlin</a></p>
+                    </div>
+                    <div data-css-chip class="project--card tac">
+                        <p class="project--name">LinkedIn: <a href="https://linkedin.com/in/hamlim" data-css-social-link="linkedin"  data-css-link>Matt Hamlin</a></p>
+                    </div>
+                    <div data-css-chip class="project--card tac">
+                        <p class="project--name">Snapchat: <a href="https://snapchat.com/add/immatthamlin" data-css-social-link="snap"  data-css-link>@immatthamlin</a></p>
+                    </div>
+                    <div data-css-chip class="project--card tac">
+                        <p class="project--name">Github: <a href="https://github.com/hamlim" data-css-social-link="github"  data-css-link>Matt Hamlin</a></p>
+                    </div>
+                    <div data-css-chip>
+                        <p class="project--name">Messenger: <a href="https://m.me/immatthamlin" data-css-social-link="messenger" data-css-link>Matt Hamlin</a></p>
+                    </div>
                 </section>
             </article>
         </main>
-        <footer css-footer>
+        <footer data-css-footer>
             <div class="footer grid grid-wrap grid-row grid-justify-between">
-                <div css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
-                <div css-chip><a href="https://twitter.com/immatthamlin" class="link--article">Twitter</a></div>
+                <div data-css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
+                <div data-css-chip><a href="https://twitter.com/immatthamlin" class="link--article">Twitter</a></div>
             </div>
         </footer>
         <script src="./bundle.js" type="text/javascript"></script>
