@@ -212,6 +212,10 @@
 	--inline: {
 		display: inline-block;
 	};
+
+	--tac: {
+		text-align: center;
+	};
 }
 
 /* Custom Selectors */
@@ -710,7 +714,7 @@ sup, .sup, [data-css-sup] {
   font-size: smaller;
 }
 .tac, [data-css-tac] {
-  text-align: center;
+  @apply --tac;
 }
 [data-footnote] {
   cursor: context-menu;
