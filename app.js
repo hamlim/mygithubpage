@@ -12,10 +12,10 @@ if (document.getElementById('index')) {
   ReactDOM.render(<Nav index />, document.getElementById('navMount-index'));
 }
 if (document.getElementById('resume')) {
-  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-resume')[0]);
+  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Resume</h2></Header>, document.getElementsByClassName('headerMount-resume')[0]);
   ReactDOM.render(<Nav resume />, document.getElementById('navMount-resume'));
 }
 if (document.getElementById('blog')) {
-  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Resume</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
+  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
   ReactDOM.render(<Nav blog />, document.getElementById('navMount-blog'));
 }

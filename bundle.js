@@ -75,7 +75,7 @@
 	    _react2.default.createElement(
 	      'h2',
 	      { className: 'header--subtitle clr--green' },
-	      'Blog Archive'
+	      'Resume'
 	    )
 	  ), document.getElementsByClassName('headerMount-resume')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { resume: true }), document.getElementById('navMount-resume'));
@@ -87,7 +87,7 @@
 	    _react2.default.createElement(
 	      'h2',
 	      { className: 'header--subtitle clr--green' },
-	      'Resume'
+	      'Blog Archive'
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { blog: true }), document.getElementById('navMount-blog'));
