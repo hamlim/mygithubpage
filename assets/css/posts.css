@@ -331,6 +331,9 @@ html {
 [css-emoji="coffee"] {
 	background-image: url('/assets/css/fonts/emoji/coffee.png');
 }
+[css-emoji="chat"] {
+	background-image: url('/assets/css/fonts/emoji/chat.png');
+}
 
 .title {
 	animation: fade-in 2s ease-in-out;
