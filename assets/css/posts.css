@@ -379,6 +379,9 @@ html {
 	align-items: center;
 	text-align: center;
 }
+[css-nav] {
+	color: var(--white);
+}
 [css-nav] [css-title] {
 	font-size: 3em;
 }
