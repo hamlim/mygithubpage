@@ -61,7 +61,7 @@
                 <p class="escape--default">A <s>comprehensive</s> overview of all things Pseudo in CSS.</p>
                 <p class="escape--default">Part 1</p>
                 <p class="escape--default">
-                    <span css-emoji="calendar"></span>: <time datetime="2016-10-12">October 12th, 2016</time>
+                    <span data-css-emoji="calendar"></span>: <time datetime="2016-10-12">October 12th, 2016</time>
                 </p>
             </header>
             <article class="article">
@@ -72,7 +72,7 @@
                     CSS is oddly one of the most complex syntaxes that exist in the web development world simply because of how unique it is when compared to languages like Javascript and PHP. This article I wanted to dive into the pseudo classes, elements and selectors and give a fairly brief overview of them for those who are just starting to dive into CSS.
                 </p>
                 <p>
-                    CSS has two instances of pseudo selectors in the language, the first is pseudo classes and the second is pseudo elements. This article is going to be broken into two sections covering every pseudo selector that is available (even the ones that aren't in browsers yet<a href="#fn1" id="f1" data-footnote="At the time of writing at least" data-css-link-article css-emoji="point-down"></a>).
+                    CSS has two instances of pseudo selectors in the language, the first is pseudo classes and the second is pseudo elements. This article is going to be broken into two sections covering every pseudo selector that is available (even the ones that aren't in browsers yet<a href="#fn1" id="f1" data-footnote="At the time of writing at least" data-css-link-article data-css-emoji="point-down"></a>).
                 </p>
                 <p>
                     The difference between the pseudo classes and the pseudo elements are what they actually are in the browser. Pseudo elements act as elements in the DOM, pseudo classes on the other hand act, you guessed it, just like classes! Pseudo classes can simply be thought of as toggleable classes on an element when a specific action happens related to the element, like <code class="inline-block">:hover</code>.
@@ -89,232 +89,232 @@
                         A lot of amazing innovations in CSS and HTML have happened because of neat tricks with these pseudo classes, the most common example is the Checkbox Hack, wherein a checkbox is wrapped in a label and then hidden, this offers a simple way to toggle states on an element. Many web developers have used this trick to build entire user experience paradigms that previously required a ton of Javascript.
                     </p>
                     <p>
-                        Below is a list of all the current Pseudo classes within the CSS specification, some (marked with the red light <span css-emoji="red-light"></span>) are currently still in an experimental state and may not be implemented in your current browser.
+                        Below is a list of all the current Pseudo classes within the CSS specification, some (marked with the red light <span data-css-emoji="red-light"></span>) are currently still in an experimental state and may not be implemented in your current browser.
                     </p>
                     <dl>
-                        <dt css-dt><code class="inline-block">:active</code>
+                        <dt data-css-dt><code class="inline-block">:active</code>
                         </dt>
-                        <dd css-dd><p class="escape--default">
+                        <dd data-css-dd><p class="escape--default">
                             This class matches an element when it is activated by the user, typically this is between the <code class="inline-block">onmousedown</code> event and the <code class="inline-block">onmouseup</code> event (note it should only match the primary or left click event for right hand mice). It also matches when a uses the tab key to an element.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:any()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:any()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class was a prior implementation of the <code class="inline-block">:matches()</code> selector in both Firefox and Webkit browsers. If you need to use this functionality refer to <code class="inline-block">:matches</code> below.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:checked</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:checked</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects any radio, checkbox, or option in a select element that is currently checked. This is popularly used for what I described above as the "Checkbox Hack".
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:default</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:default</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects the default value for any user interface element out of a group of similar elements. This can select one or many elements that are the default.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:dir()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:dir()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects elements based on their text direction. <code class="inline-block">:dir(rtl) | :dir(ltr)</code> this is slightly different from the <code class="inline-block">[dir="..."]</code> attribute selector, yet is only fully supported in Firefox 49 currently.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:disabled</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:disabled</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects any disabled element, and is mostly used for styling input's and buttons.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:empty</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:empty</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects all elements that are empty of any content including whitespace, see <code class="inline-block">:blank</code> below for selecting empty elements include elements that only contain whitespace.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:enabled</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:enabled</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects any enabled element, an element is enabled if it can be activated, or if it can accept focus.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:first</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:first</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects the first page of a document when printing, you can only change margins, orphans, widows and page-breaks within this selector.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:first-child</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:first-child</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects the first child of the parent node.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:first-of-type</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:first-of-type</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class is similar to the above however it selects every first instance of a new unique element within the parent node. If you have a div  with the following elements: (1) span, (2) em (3) span (4) span and (5) strike, this selector will select the elements: 1, 2, and 5.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:fullscreen</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:fullscreen</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects any element that is currently being displayed in fullscreen and all it's children so you can do the following: <code class="inline-block">div:fullscreen > h1 { ... }</code>.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:focus</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:focus</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects the current element that has recieved focus either from the keyboard or when the user is selecting it via the mouse.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:hover</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:hover</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects any element that the mouse cursor is currently hovering over. Please note that this shouldn't be used to dramatically hide/show content on a page because it is basically meaningless to a touch screen device without a mouse.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:indeterminate</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:indeterminate</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects any checkbox who has had it's <code class="inline-block">indeterminate</code> attribute set to true, a group of radio buttons where none are selected or a progress element that has an indeterminate value.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:in-range</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:in-range</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects an element that has it's value attribute within the specified maximum and minimum values.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:invalid</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:invalid</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This class selects an input or a form whose content fails to validate (i.e. an input type="email"'s value is 'test')
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:lang()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:lang()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects elements based on the language the element is determined to be in.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:last-child</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:last-child</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the last child element within a parent container, essentially the opposite of <code class="inline-block">:first-child</code>.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:last-of-type</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:last-of-type</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the last element element with the given element name within the parent node, it acts recursively, and is used like <code class="inline-block">div em:last-of-type { ... }</code> where that selects the last elements of name em within the div and within node trees inside the div.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:left</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:left</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This matches any left page when printing a page, you can only change margin, padding, border, and background. This also is determined by the direction of the language, so if the language were right to left technically it would select the right-hand-side page.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:link</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:link</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all elements within the scope element. Make sure to follow the following LVHA rule, style links in order of <code class="inline-block">:link</code> -> <code class="inline-block">:visited</code> -> <code class="inline-block">:hover</code> -> <code class="inline-block">:active</code> to make sure you don't override styles.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:not()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:not()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This matches any scope that does not match the selectors within the parenthesis. Note, only recently did they update the spec to support a comma-sperated list of selectors and not all browsers support that so make sure to chain the selector for matching elements that don't match several different selectors.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:nth-child()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:nth-child()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the <code class="inline-block">an+b | even | odd</code>'th child within the scope. where a and b are integers. This can be used to do some really amazing stuff like making a CSS only randomizer using this selector and the Cicada Principle, <a href="https://www.lottejackson.com/learning/nth-child-cicada-principle" data-css-link-article>Read more here</a>.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:nth-last-child()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:nth-last-child()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This is essentially the same as above but searches the parent node from bottom to top.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:nth-last-of-type()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:nth-last-of-type()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This is similar to <code class="inline-block">:last-of-type</code> above but also matches for a pattern similar to <code class="inline-block">:nth-child</code>.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:nth-of-type()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:nth-of-type()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This is similar to the above selector but starts at the top of the scope context.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:only-child</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:only-child</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all elements that are the only child of their parent node.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:only-of-type</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:only-of-type</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This matches the same above but for a specific element type.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:optional</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:optional</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all input elements that do not have the required attribute set on them.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:out-of-range</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:out-of-range</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects an element that has it's value attribute that is outside the range of values between the minumum and maximum values.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:read-only</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:read-only</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects any element that is not writable by the user.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:read-write</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:read-write</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects any elements that are writable by the user such as an input or textarea, and even elements that are contenteditable.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:required</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:required</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects input elements that have the required attribute.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:right</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:right</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This is similar to the <code class="inline-block">:left</code> selector except it selects the right-hand-side pages when printing a document.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:root</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:root</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the root node for the context, for HTML this targets the <code class="inline-block">&lt;html&gt;</code> element and has a higher specificity than the <code class="inline-block">html { ... }</code> selector.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:scope</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:scope</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects scoped style elements within an HTML document, if none are specified it selects the HTML element.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:target</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:target</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the element that is targeted by the url. This is commonly used for styling an ID that has been linked to. Currently you can only target ID's even though the CSS spec has an example of it being applied to a class on a p element.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:valid</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:valid</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects a form or input whose value validates correctly.
                         </p></dd>
-                        <dt css-dt><code class="inline-block">:visited</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><code class="inline-block">:visited</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This targets all anchor tags that have been previously visited by the user. Because of privacy concerns you can only change the following on visited anchor tags: color, background-color, border-color, border-*-color, outline-color, column-rule-color, fill and stroke. Though the color can be changed, the method <code class="inline-block">getComputedStyle</code> will lie and always give back the value of the non-visited color.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:any-link</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:any-link</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all elements that match <code class="inline-block">:link</code> or <code class="inline-block">:visited</code>.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:local-link</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:local-link</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects links that point to the current domain that the page is on.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:active-drop-target</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:active-drop-target</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all input type="file" elements that are active.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:valid-drop-target</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:valid-drop-target</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all input type="file" elements whose input file is validated.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:invalid-drop-target</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:invalid-drop-target</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all input type="file" elements whose input file can't be validated.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:current</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:current</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This is where it gets odd, this selects the element or an ancestor of the element that is currently being displayed, it can also take in an argument of comma-seperated selectors or compound selectors to match elements that are currently being read out loud in a speech rendering of the document.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:past</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:past</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This is the same as the above selector except for elements that have previously been read out by a speech rendering of the document. (all elements up until the :current element)
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:future</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:future</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects all elements to be read out after the :current element.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:placeholder-shown</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:placeholder-shown</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selector matches an input element that is showing such placeholder text.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:user-error</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:user-error</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selector must match an :invalid, :out-of-range, or blank-but-:required elements between the time the user has attempted to submit the form and before the user has interacted again with the form element.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:blank</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:blank</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selector is similar to <code class="inline-block">:empty</code> but also matches for whitespace only between the opening and closing tags of an element.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:nth-match()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:nth-match()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the nth element that matches the selector passed into the parenthesis.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:nth-last-match()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:nth-last-match()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selects the nth element (starting from the last node) that matches the selector passed into the parenthesis.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:nth-column()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:nth-column()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selector is similar to <code class="inline-block">:nth-child</code> except matches all cells within the column.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:nth-last-column()</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:nth-last-column()</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selector is similar to above except starts it's search from the last node within the parent and matches all cells within the column.
                         </p></dd>
-                        <dt css-dt><span css-emoji="red-light"></span><code class="inline-block">:matches</code></dt>
-                        <dd css-dd><p class="escape--default">
+                        <dt data-css-dt><span data-css-emoji="red-light"></span><code class="inline-block">:matches</code></dt>
+                        <dd data-css-dd><p class="escape--default">
                             This selector targets any compound selector that literally matches the selectors within the parenthesis of the selector. (ex. <code class="inline-block">p :matches(em, ins, s) { ... }</code> will select any em tag, ins tag or s tag within a p tag.)
                         </p></dd>
                     </dl>
@@ -342,15 +342,15 @@
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </article>
         </main>
-        <footer css-footer>
+        <footer data-css-footer>
             <div class="footer grid grid-wrap grid-row grid-justify-between">
-                <div css-chip>&copy; <a href="https://matthamlin.me" data-css-link-article>Matt Hamlin</a> 2016</div>
+                <div data-css-chip>&copy; <a href="https://matthamlin.me" data-css-link-article>Matt Hamlin</a> 2016</div>
                 <div class="wrapper">
-                    <span css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" data-css-link-article css-emoji="twitter" title="Tweet Me"></a></span>
-                    <span css-chip><a href="sms:+14252100980" data-css-link-article css-emoji="phone" title="Text Me"></a></span>
-                    <span css-chip><a href="mailto:matthewjameshamlin@gmail.com" data-css-link-article css-emoji="email" title="Email Me"></a></span>
+                    <span data-css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" data-css-link-article data-css-emoji="twitter" title="Tweet Me"></a></span>
+                    <span data-css-chip><a href="sms:+14252100980" data-css-link-article data-css-emoji="phone" title="Text Me"></a></span>
+                    <span data-css-chip><a href="mailto:matthewjameshamlin@gmail.com" data-css-link-article data-css-emoji="email" title="Email Me"></a></span>
                 </div>
-                <div css-chip><a href="/archive" data-css-link-article>Archive</a></div>
+                <div data-css-chip><a href="/archive" data-css-link-article>Archive</a></div>
             </div>
         </footer>
     </body>
