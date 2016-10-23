@@ -14,16 +14,12 @@ module.exports = function(grunt) {
                 files: [
                     { src: 'Assets/css/main.css', dest: 'Assets/css/compiled/main.css' },
                     { src: 'Assets/css/posts.css', dest: 'Assets/css/compiled/post.css' },
+                    { src: 'assets/css/photos.css', dest: 'assets/css/compiled/photos.css'}
                 ]
             }
-            // dist: {
-            //   src: 'Assets/css/*.css',
-            //   dest: 'Assets/css/compiled/*.css'
-            // }
         }
     });
 
-    // grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-postcss');
 
     // Default task(s).
