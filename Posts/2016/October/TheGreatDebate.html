@@ -51,7 +51,7 @@
     <body class="body">
         <header class="header--menu">
             <nav class="menu">
-                <h1 class="menu--home escape--default inline-block"><a href="/index.html" class="link--article">Matt Hamlin</a></h1>
+                <h1 class="menu--home escape--default inline-block"><a href="/index.html" data-css-link-article>Matt Hamlin</a></h1>
             </nav>
         </header>
         <main class="page">
@@ -68,7 +68,7 @@
                     If you aren't actively developing websites or web applications you might not know about the growing debate about one of my favorite web languages CSS. I want to dive into some of the history of how the debate originated, what exactly is being debated about and where we as web developers might be able to make some compromises as well.
                 </p>
                 <p>
-                    If you don't fully know what CSS is or Javascript, I highly recomment learning more about both <a href="https://www.w3.org/standards/webdesign/htmlcss" class="link--article">here first</a> and then coming back here once you understand the basics of both.
+                    If you don't fully know what CSS is or Javascript, I highly recomment learning more about both <a href="https://www.w3.org/standards/webdesign/htmlcss" data-css-link-article>here first</a> and then coming back here once you understand the basics of both.
                 </p>
                 <section>
                     <h4 id="history">History:</h4>
@@ -82,7 +82,7 @@
                         Componentization was the ultimate step towards keeping code DRY, meaning that developers didn't need to spend the time redeveloping the same dropdown every time a designer requests a dropdown. This drive lead to a group of engineers at Facebook to develop a very popular framework known as React. I don't have the time (or the effort) to dive into the background of React however React really made the fractures grow between developers who support CSS and those who don't.
                     </p>
                     <p>
-                        The Great Debate really kicked off when an engineer at Facebook named Christopher Chedeau, gave a talk where he exposed some of the issues he and his team had seen with CSS while developing web applications and components at Facebook. The entire presentation can be sumarized by the slide below but the entire slide deck is <a href="https://speakerdeck.com/vjeux/react-css-in-js" class="link--article">available here</a> to read through.
+                        The Great Debate really kicked off when an engineer at Facebook named Christopher Chedeau, gave a talk where he exposed some of the issues he and his team had seen with CSS while developing web applications and components at Facebook. The entire presentation can be sumarized by the slide below but the entire slide deck is <a href="https://speakerdeck.com/vjeux/react-css-in-js" data-css-link-article>available here</a> to read through.
                     </p>
                     <img css-image src="/assets/images/posts/TheGreatDebate/The_Slide.jpg" alt="The slide that started the great debate." aria-describedby="image_description">
                     <p id="image_description">
@@ -127,7 +127,7 @@
                         This is a pretty tricky concept of CSS even for those who are used to programming in different languages. Inheritance means that a sibling element will inherit <em>(some)</em> styles from their parent node. If you want to inherit all styles from the parent you can simply style the child node and set every style you want inherited to be like the following: <code class="inline-block">color: inherit;</code>
                     </p>
                     <p>
-                        Source order and Specificity are coupled together when considering CSS. Both are really tricky to understand as well, CSS, or rather CSS parsers, assign weights to selectors when parsing the CSS into an <a href="#ast" class="link--article" data-footnote="Abstract Syntax Tree" id="ast">AST</a>. The breakdown is as follows:
+                        Source order and Specificity are coupled together when considering CSS. Both are really tricky to understand as well, CSS, or rather CSS parsers, assign weights to selectors when parsing the CSS into an <a href="#ast" data-css-link-article data-footnote="Abstract Syntax Tree" id="ast">AST</a>. The breakdown is as follows:
                         <ul>
                             <li css-li>!important</li>
                             <li css-li>Inline Styles via the <code class="inline-block">style</code> attribute</li>
@@ -138,7 +138,7 @@
                         These are comonly layed out as a comma seperated list of numbers something like 0,0,0,0 (notice that there is no value assigned to <code class="inline-block">!important</code>). This is known as Specificity.
                     </p>
                     <p>
-                        If you happen to have, in your CSS two selectors that target the same element the one with the highest specificity will win over no matter the order of your CSS. However if both selectors share the same specificity, then the one that was declared last will win out. Sometimes this convinces new CSS developers to naively move the styling they want to take effect to the bottom of their CSS document <a href="#fn1" id="f1" class="link--article" data-footnote="Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😃."><span css-emoji="point-down"></span></a>
+                        If you happen to have, in your CSS two selectors that target the same element the one with the highest specificity will win over no matter the order of your CSS. However if both selectors share the same specificity, then the one that was declared last will win out. Sometimes this convinces new CSS developers to naively move the styling they want to take effect to the bottom of their CSS document <a href="#fn1" id="f1" data-css-link-article data-footnote="Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😃."><span css-emoji="point-down"></span></a>
                     </p>
                     <h6 id="codebase">Codebase Growth:</h6>
                     <p>
@@ -172,7 +172,7 @@
                 </section>
                 <hr>
                 <h5 class="escape--default">Footnotes:</h5>
-                <small id="fn1">Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet <span css-emoji="smile"></span>. <a href="#f1" class="link--article"><span css-emoji="point-up"></span></a></small>
+                <small id="fn1">Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet <span css-emoji="smile"></span>. <a href="#f1" data-css-link-article><span css-emoji="point-up"></span></a></small>
                 <!-- Disqus -->
                 <div id="disqus_thread"></div>
                 <script>
@@ -192,8 +192,8 @@
         </main>
         <footer css-footer>
             <div class="footer grid grid-wrap grid-row grid-justify-between">
-                <div css-chip>&copy; <a href="https://matthamlin.me" class="link--article">Matt Hamlin</a> 2016</div>
-                <div css-chip><a href="/archive" class="link--article">Archive</a></div>
+                <div css-chip>&copy; <a href="https://matthamlin.me" data-css-link-article>Matt Hamlin</a> 2016</div>
+                <div css-chip><a href="/archive" data-css-link-article>Archive</a></div>
             </div>
         </footer>
     </body>
