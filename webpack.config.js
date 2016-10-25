@@ -1,13 +1,23 @@
 var path = require('path');
 var webpack = require('webpack');
 var cssnext = require('postcss-cssnext')({features: {rem: {html: false}}});
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+// var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 
 module.exports = {
-	entry: './app.js',
-	output: {
-		path: __dirname,
-		filename: 'bundle.js'
+	entry: {
+		landing: './app.js',
+		blog: './blog.js'
 	},
+	output: {
+		path: __dirname + '/dist',
+		filename: '[name].js'
+	},
+	plugins: [
+		new webpack.optimize.CommonsChunkPlugin('common', 'common.js'),
+	  new ExtractTextPlugin("[name].css")
+	],
 	watch: true,
 	devtool: "source-map",
 	module: {
@@ -22,7 +32,7 @@ module.exports = {
 			},
 			{
         test:   /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader")
       }
 		]
 	},

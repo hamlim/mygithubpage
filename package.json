@@ -28,5 +28,11 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "postcss-loader": "^1.0.0"
   }
 }
