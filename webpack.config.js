@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var cssnext = require('postcss-cssnext')({features: {rem: {html: false}}});
+var postcolor = require('postcss-color-function');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 // var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
@@ -37,6 +38,6 @@ module.exports = {
 		]
 	},
   postcss: function () {
-    return [cssnext];
+    return [cssnext, postcolor];
   }
 }

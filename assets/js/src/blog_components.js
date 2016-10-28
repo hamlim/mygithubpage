@@ -3,11 +3,11 @@ import React from 'react';
 
 export const PostHeader = (props) => {
   return (
-    <div className="blog-header">
-      <h1 className="title">{props.title}</h1>
-      <h3 className="subtitle">{props.subtitle}</h3>
-      <p className="publish-date">Published <time dateTime={props.timestamp}><a href="/" className="link">{props.month}</a> {props.datestring}</time></p>
-      <p className="tags"><a className="tag" href={"./tags/" + props.tag}>{props.tag}</a></p>
+    <div className="🚀">
+      <h1 className="🚀-🍇">{props.title}</h1>
+      <h3 className="🚀-🍈">{props.subtitle}</h3>
+      <p className="🚀-🍌">Published <time dateTime={props.timestamp}><a href="/" className="🚲">{props.month}</a> {props.datestring}</time></p>
+      <p className="🚀-🍎"><a className="🚀-🌮" href={"./tags/" + props.tag}>{props.tag}</a></p>
     </div>
   )
 }

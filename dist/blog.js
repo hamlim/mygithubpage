@@ -48,27 +48,27 @@ webpackJsonp([0],{
 	var PostHeader = exports.PostHeader = function PostHeader(props) {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "blog-header" },
+	    { className: "\uD83D\uDE80" },
 	    _react2.default.createElement(
 	      "h1",
-	      { className: "title" },
+	      { className: "\uD83D\uDE80-\uD83C\uDF47" },
 	      props.title
 	    ),
 	    _react2.default.createElement(
 	      "h3",
-	      { className: "subtitle" },
+	      { className: "\uD83D\uDE80-\uD83C\uDF48" },
 	      props.subtitle
 	    ),
 	    _react2.default.createElement(
 	      "p",
-	      { className: "publish-date" },
+	      { className: "\uD83D\uDE80-\uD83C\uDF4C" },
 	      "Published ",
 	      _react2.default.createElement(
 	        "time",
 	        { dateTime: props.timestamp },
 	        _react2.default.createElement(
 	          "a",
-	          { href: "/", className: "link" },
+	          { href: "/", className: "\uD83D\uDEB2" },
 	          props.month
 	        ),
 	        " ",
@@ -77,10 +77,10 @@ webpackJsonp([0],{
 	    ),
 	    _react2.default.createElement(
 	      "p",
-	      { className: "tags" },
+	      { className: "\uD83D\uDE80-\uD83C\uDF4E" },
 	      _react2.default.createElement(
 	        "a",
-	        { className: "tag", href: "./tags/" + props.tag },
+	        { className: "\uD83D\uDE80-\uD83C\uDF2E", href: "./tags/" + props.tag },
 	        props.tag
 	      )
 	    )

@@ -1,0 +1,174 @@
+:root {
+
+  /* Breakpoints */
+	--xs-bp: 16.667rem;
+	--s-bp: 22.197rem;
+	--m-bp: 31.250rem;
+	--l-bp: 41.667rem;
+	--xl-bp: 50.00rem;
+
+
+  /*
+    Colors
+  */
+
+  --white: ghostwhite;
+	--black: color(var(--white) contrast(50%));
+	--gray: slategray;
+	--a-one: springgreen;
+  --a-two: color(var(--a-one) lightness(- 5%));
+  --a-three: color(var(--a-one) lightness(- 15%));
+  --b-one: dodgerblue;
+  --b-two: color(var(--b-one) lightness(- 5%));
+  --b-three: color(var(--b-one) lightness(- 15%));
+  --c-one: blueviolet;
+	--c-two: color(var(--c-one) lightness(- 5%));
+  --c-three: color(var(--c-one) lightness(- 15%));
+  --d-one: lightpink;
+	--d-two: color(var(--d-one) lightness(- 5%));
+  --d-three: color(var(--d-one) lightness(- 15%));
+	--e-one: tomato;
+	--e-two: color(var(--e-one) lightness(- 5%));
+  --e-three: color(var(--e-one) lightness(- 15%));
+	--f-one: color(#F9BF3B lightness(+ 5%) hue(+ 10deg));
+	--f-two: color(var(--f-one) lightness(- 5%));
+  --f-three: color(var(--f-one) lightness(- 15%));
+
+  /* Typography */
+  --base: calc(1vmin + 1rem);
+  --line: 1.8;
+  --font-stack: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Oxygen-Sans,
+               Ubuntu,
+               Cantarell,
+               "Helvetica Neue",
+               sans-serif;
+
+  --w-one: 100vw;
+  --w-two: 90vw;
+  --w-three: 85vw;
+  --w-four: 75vw;
+  --w-five: 65vw;
+
+  --border: 5px;
+  --border-radius: .75em;
+
+	/*
+		Extendable classes
+	*/
+	--center: {
+		display: flex;
+	  justify-content: center;
+	  align-items: center;
+	};
+
+  --full-width: {
+    width: 100%;
+    height: auto;
+  };
+
+  --box-shadow: {
+    box-shadow: 0 0 2rem 0 var(--gray);
+  };
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@custom-media --xs-viewport (min-width: 16.667rem);
+@custom-media --s-viewport (min-width: 22.197rem);
+@custom-media --m-viewport (min-width: 31.250rem);
+@custom-media --l-viewport (min-width: 41.667rem);
+@custom-media --xl-viewport (min-width: 50.00rem);
+
+html {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-stack);
+  font-size: var(--base);
+  line-height: var(--line);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5, p { font-size: 1rem; }
+h6 { font-size: .8rem; }
+small { font-size: .6rem; }
+
+h1, h2, h3, h4, h5, h6, strong { font-weight: 700; }
+strong { font-style: oblique; }
+em { font-style: italic; }
+del { color: var(--gray); }
+ins { background-color: var(--f-one); }
+
+blockquote {
+  background-color: var(--gray);
+  border: solid var(--border) var(--a-one);
+  padding: 1em;
+}
+blockquote p {
+  font-size: 1.2rem;
+}
+cite {
+  color: color(var(--black) lightness(+ 10%));
+  font-weight: thin;
+}
+pre {
+
+}
+
+
+
+[class="📹"] {
+  @apply --full-width;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Purely used so I can edit peacfully
+*/
