@@ -153,24 +153,19 @@ code {
 }
 a {
   transition: all .2s ease;
-  color: var(--a-one);
   text-decoration: none;
   border-bottom: solid var(--border) var(--d-one);
 }
 a:visited {
-  color: var(--a-three);
   border-bottom: solid var(--border) var(--d-three);
 }
 a:hover {
-  color: var(--f-one);
   border-bottom: solid var(--border) var(--e-one);
 }
 a:active {
-  color: var(--c-one);
   border-bottom: solid var(--border) var(--e-two);
 }
 a:focus {
-  color: var(--c-three);
   border-bottom: solid var(--border) var(--e-three);
 }
 footer {
