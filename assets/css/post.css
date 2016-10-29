@@ -154,19 +154,24 @@ code {
 a {
   transition: all .2s ease;
   text-decoration: none;
-  border-bottom: solid var(--border) var(--d-one);
+  color: var(--black);
+  border-bottom: solid var(--border) var(--a-one);
 }
 a:visited {
-  border-bottom: solid var(--border) var(--d-three);
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--b-one);
 }
 a:hover {
-  border-bottom: solid var(--border) var(--e-one);
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--c-one);
 }
 a:active {
-  border-bottom: solid var(--border) var(--e-two);
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--d-two);
 }
 a:focus {
-  border-bottom: solid var(--border) var(--e-three);
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--e-one);
 }
 footer {
   height: 20vh;

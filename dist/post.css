@@ -89,19 +89,28 @@ a {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   text-decoration: none;
-  border-bottom: solid 4px lightpink;
+  color: rgb(69, 69, 69);
+  border-bottom: solid 4px springgreen;
 }
 a:visited {
-  border-bottom: solid 4px rgb(255, 107, 129);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-bottom: solid 4px dodgerblue;
 }
 a:hover {
-  border-bottom: solid 4px tomato;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-bottom: solid 4px blueviolet;
 }
 a:active {
-  border-bottom: solid 4px rgb(255, 77, 46);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-bottom: solid 4px rgb(255, 158, 173);
 }
 a:focus {
-  border-bottom: solid 4px rgb(250, 37, 0);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-bottom: solid 4px tomato;
 }
 footer {
   height: 20vh;
