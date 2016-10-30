@@ -12,7 +12,7 @@
     Colors
   */
 
-  --white: ghostwhite;
+  --white: whitesmoke;
 	--black: color(var(--white) contrast(40%));
 	--gray: slategray;
 	--a-one: springgreen;
