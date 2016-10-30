@@ -765,9 +765,8 @@ sup, .sup, [data-css-sup] {
   margin-bottom: 4px;
   margin-bottom: 0.25rem;
   list-style: none;
-  background-color: #F7F9F9;
-  border-left: solid 1.6px #D7BDE2;
-  border-left: solid .1rem #D7BDE2;
+  border-left: solid 1.6px #2ECC71;
+  border-left: solid .1rem #2ECC71;
   padding: 2px 8px 2px 8px;
   padding: 0.125rem 0.5rem 0.125rem .5rem;
 }

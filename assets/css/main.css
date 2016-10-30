@@ -837,8 +837,7 @@ sup, .sup, [data-css-sup] {
 .li--spacing, [data-css-li], [data-css-dt] {
   margin-bottom: 0.25rem;
   list-style: none;
-  background-color: var(--white1);
-  border-left: solid .1rem var(--purple1);
+  border-left: solid .1rem var(--green);
   padding: 0.125rem 0.5rem 0.125rem .5rem;
 }
 [data-css-dd] {

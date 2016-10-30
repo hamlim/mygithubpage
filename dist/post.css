@@ -21,7 +21,7 @@
 
 
 html {
-  background-color: ghostwhite;
+  background-color: whitesmoke;
   color: rgb(69, 69, 69);
   font-family: -apple-system,
                BlinkMacSystemFont,
@@ -69,7 +69,7 @@ cite {
 }
 pre {
   background-color: slategray;
-  color: ghostwhite;
+  color: whitesmoke;
 }
 pre::before {
   content: attr(data-lang);
