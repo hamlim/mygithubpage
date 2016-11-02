@@ -74,7 +74,7 @@ cite {
   font-weight: thin;
 }
 pre {
-  background-color: slategray;
+  background-color: rgb(197, 204, 211);
   color: #FFFFFF;
 }
 pre::before {
@@ -85,11 +85,9 @@ pre::before {
   color: rgb(69, 71, 71);
 }
 code {
-  background-color: slategray;
-  color: rgb(0, 179, 89);
-  display: inline-block;
-  padding: .125em .25em;
-  border-radius: .5em;
+  background-color: rgb(197, 204, 211);
+  color: tomato;
+  display: inline;
 }
 a {
   -webkit-transition: all .2s ease;
@@ -252,6 +250,17 @@ footer {
 }
 [class*="❌"] {
   margin: 0;
+}
+
+[class*="footnote-parent"]::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+[class*="fn"] {
+  float: left;
+  margin-top: .8em;
+  font-size: 150%;
 }
 
 [class*="🆕"] {

@@ -140,7 +140,7 @@ cite {
   font-weight: thin;
 }
 pre {
-  background-color: var(--gray);
+  background-color: color(var(--gray) lightness(+ 30%));
   color: var(--white);
 }
 pre::before {
@@ -151,11 +151,9 @@ pre::before {
   color: var(--black);
 }
 code {
-  background-color: var(--gray);
-  color: var(--a-three);
-  display: inline-block;
-  padding: .125em .25em;
-  border-radius: .5em;
+  background-color: color(var(--gray) lightness(+ 30%));
+  color: var(--e-one);
+  display: inline;
 }
 a {
   transition: all .2s ease;
@@ -304,6 +302,17 @@ footer {
 }
 [class*="❌"] {
   margin: 0;
+}
+
+[class*="footnote-parent"]::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+[class*="fn"] {
+  float: left;
+  margin-top: .8em;
+  font-size: 150%;
 }
 
 [class*="🆕"] {
