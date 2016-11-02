@@ -12,7 +12,7 @@
     Colors
   */
 
-  --white: whitesmoke;
+  --white: #FFFFFF;
 	--black: color(var(--white) contrast(40%));
 	--gray: slategray;
 	--a-one: springgreen;
@@ -122,12 +122,18 @@ del { color: var(--gray); }
 ins { background-color: var(--f-one); }
 
 blockquote {
-  background-color: var(--gray);
-  border: solid var(--border) var(--a-one);
-  padding: 1em;
+  color: var(--b-one);
 }
 blockquote p {
   font-size: 1.2rem;
+}
+blockquote p::before {
+  content: open-quote;
+  color: var(--d-one);
+}
+blockquote p::after {
+  content: close-quote;
+  color: var(--d-one);
 }
 cite {
   color: color(var(--black) lightness(+ 10%));
@@ -295,7 +301,6 @@ footer {
 
 [class*="🔥"] {
   padding-bottom: .5em;
-  border-bottom: solid var(--border) var(--f-one);
 }
 [class*="❌"] {
   margin: 0;
