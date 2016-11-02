@@ -71,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
   };
 
   --full-width: {
@@ -345,6 +346,9 @@ footer {
   }
   [class*="📹"] {
     margin-left: calc(((100vw - var(--w-three)) / 2) * -1);
+  }
+  footer {
+    flex-direction: row;
   }
 }
 @media (--l-viewport) {
