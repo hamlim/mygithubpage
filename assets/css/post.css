@@ -323,6 +323,10 @@ footer {
   text-align: center;
   font-size: calc(var(--base) * 2);
 }
+[class*="📹"] {
+  width: 100vw;
+  height: auto;
+}
 
 @media (--xs-viewport) {
   [class*="🔧"] {

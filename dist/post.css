@@ -274,6 +274,10 @@ footer {
   text-align: center;
   font-size: calc((1vmin + 1rem) * 2);
 }
+[class*="📹"] {
+  width: 100vw;
+  height: auto;
+}
 
 @media (min-width: 16.667rem) {
   [class*="🔧"] {
