@@ -10,7 +10,8 @@ export const PostHeader = (props) => {
       <p className="🚀-🍎"><a className="🚀-🌮" href={"./tags/" + props.tag}>{props.tag}</a></p>
     </div>
   )
-}
+};
+
 
 export const PostFooter = (props) => {
   return (

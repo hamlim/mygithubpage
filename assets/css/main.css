@@ -987,3 +987,20 @@ sup, .sup, [data-css-sup] {
 [data-css-emoji="fbm"] {
 	background-image: url('/assets/css/fonts/emoji/fb-messenger.png');
 }
+
+
+[class*="papercraft"] {
+	height: 2em;
+	width: 2em;
+	margin: 1em;
+}
+[class*="papercraft-front"] {
+	fill: var(--blue);
+}
+[class*="papercraft-back"] {
+	fill: var(--mint-green);
+}
+
+[class*="header--subtitle"] {
+	text-align: center;
+}

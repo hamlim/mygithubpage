@@ -20,9 +20,41 @@ export const Nav = (props) => {
 export const Header = (props) => {
 	return (
 		<div className="header--siblings">
-			<h1 className="header--title clr--blue">Matt Hamlin</h1>
+			<h1 className="header--title clr--blue">
+				<svg className="papercraft papercraft-m" width="64" height="64" viewBox="0 0 32 32" title="Matt Hamlin">
+					<path className="papercraft-back" d="M32 0 L32 32 L0 32 Z"/>
+					<path className="papercraft-front" d="M0 0 L32 32 L0 32 Z"/>
+				</svg>
+				<svg className="papercraft papercraft-h" width="64" height="64" viewBox="0 0 32 32">
+	        <path className="papercraft-back" d="M0 0 L6 0 L12 32 L0 32 Z M20 0 L32 0 L32 32 L22 32 Z"/>
+	        <path className="papercraft-front" d="M32 0 L32 20 L0 32 L0 12 Z"/>
+	      </svg>
+			</h1>
 			{props.children}
 		</div>
+	)
+};
+
+const PostList = (props) => {
+	const articleLinks = props.articles.map(function(article, index){
+		return (
+			<li key={index} data-css-li>{article.title} - <a href={"./Posts/2016/"+ props.month +"/" + article.link} data-css-link>Read Here</a></li>
+		); });
+  return (
+		<ul>
+			<h5 data-css-tac><a href={"./Posts/2016/" + props.month} data-css-link>{props.month} {props.year}:</a></h5>
+			{articleLinks}
+		</ul>
+  )
+};
+
+export const AllPosts = (monthlyArticles, ...props) => {
+	const monthLists = monthlyArticles.monthlyArticles.map(function(obj, index) { return (<PostList key={index} month={obj.month} year={obj.year} articles={obj.articles} />); });
+	return (
+		<section className="page--content">
+			<h4 className="content--header tm2">Past Blog Posts:</h4>
+			{monthLists}
+		</section>
 	)
 };
 

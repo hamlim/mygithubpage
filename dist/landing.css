@@ -938,4 +938,21 @@ sup, .sup, [data-css-sup] {
 	background-image: url('/assets/css/fonts/emoji/fb-messenger.png');
 }
 
+
+[class*="papercraft"] {
+	height: 2em;
+	width: 2em;
+	margin: 1em;
+}
+[class*="papercraft-front"] {
+	fill: #4A90E2;
+}
+[class*="papercraft-back"] {
+	fill: #00FF7F;
+}
+
+[class*="header--subtitle"] {
+	text-align: center;
+}
+
 /*# sourceMappingURL=landing.css.map*/

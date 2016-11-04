@@ -18,6 +18,232 @@ webpackJsonp([1],[
 	
 	var landingcss = __webpack_require__(178);
 	
+	var listing = [{
+	  'month': 'November',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'Macbook Pro',
+	    'link': 'MacbookPro'
+	  }, {
+	    'title': 'Refactoring Sucks',
+	    'link': 'RefactoringSucks'
+	  }, {
+	    'title': 'Just Ship It',
+	    'link': 'JustShipIt'
+	  }, {
+	    'title': 'October Recap',
+	    'link': 'OctoberRecap'
+	  }]
+	}, {
+	  'month': 'October',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'Sunday Morning Recap 3',
+	    'link': 'SundayMorningRecap3'
+	  }, {
+	    'title': 'Weekly Recap 9',
+	    'link': 'WeeklyRecap9'
+	  }, {
+	    'title': 'Photos v1',
+	    'link': 'Photosv1'
+	  }, {
+	    'title': 'Weekend Projects 8',
+	    'link': 'WeekendProjects008'
+	  }, {
+	    'title': 'Sunday Morning Recap 2',
+	    'link': 'SundayMorningRecap02'
+	  }, {
+	    'title': 'Weekly Recap 8',
+	    'link': 'WeeklyRecap008'
+	  }, {
+	    'title': 'CSS Bugs: Inline-Block',
+	    'link': 'CSSBugs1'
+	  }, {
+	    'title': 'Weekend Projects 7',
+	    'link': 'WeekendProjects007'
+	  }, {
+	    'title': 'Sunday Morning Recap 1',
+	    'link': 'SundayMorningRecap01'
+	  }, {
+	    'title': 'State of my Projects',
+	    'link': 'State-of-my-Projects'
+	  }, {
+	    'title': 'Weekly Recap 7',
+	    'link': 'WeeklyRecap007'
+	  }, {
+	    'title': 'Pseudo Elements',
+	    'link': 'PseudoPart2'
+	  }, {
+	    'title': 'Pseudo Classes',
+	    'link': 'PseudoPart1'
+	  }, {
+	    'title': 'Weekend Projects 6',
+	    'link': 'WeekendProjects006'
+	  }, {
+	    'title': 'The Great CSS Debate',
+	    'link': 'TheGreatDebate'
+	  }, {
+	    'title': 'Weekly Recap 6',
+	    'link': 'WeeklyRecap006'
+	  }, {
+	    'title': 'Pixel Phones',
+	    'link': 'Pixel'
+	  }, {
+	    'title': 'Weekly Recap 5',
+	    'link': 'WeeklyRecap005'
+	  }, {
+	    'title': 'October 4th',
+	    'link': 'October4th'
+	  }]
+	}, {
+	  'month': 'September',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'September Update',
+	    'link': 'SeptemberUpdate'
+	  }, {
+	    'title': 'Sick Update',
+	    'link': 'Sick'
+	  }, {
+	    'title': 'Weekly Recap 4',
+	    'link': 'WeeklyRecap004'
+	  }, {
+	    'title': 'Preserving Aspect Ratio with CSS',
+	    'link': 'VideoAspectRatioWithCSS'
+	  }, {
+	    'title': 'GoPro Karma',
+	    'link': 'GoProKarma'
+	  }, {
+	    'title': 'Google Event Updates',
+	    'link': 'GoogleEventUpdates'
+	  }, {
+	    'title': 'Weekend Projects 3',
+	    'link': 'WeekendProjects003'
+	  }, {
+	    'title': 'Weekly Recap 3',
+	    'link': 'WeeklyRecap003'
+	  }, {
+	    'title': 'Hyper(term) is Cool',
+	    'link': 'HyperTerm'
+	  }, {
+	    'title': 'RFP: Database API',
+	    'link': 'RFP1Database'
+	  }, {
+	    'title': 'Google Event Predictions',
+	    'link': 'GoogleEventPredictions'
+	  }, {
+	    'title': 'Github is a Pain',
+	    'link': 'GithubIsAPain'
+	  }, {
+	    'title': 'Weekend Projects 2',
+	    'link': 'WeekendProjects002'
+	  }, {
+	    'title': 'Weekly Recap 2',
+	    'link': 'WeeklyRecap002'
+	  }, {
+	    'title': 'YouTube is Not for You',
+	    'link': 'YouTube_Is_For_Advertisers'
+	  }, {
+	    'title': 'Weekend Projects 1',
+	    'link': 'BuildingAnAPIOnNow'
+	  }, {
+	    'title': 'Weekly Recap 1',
+	    'link': 'WeeklyRecap001'
+	  }]
+	}, {
+	  'month': 'August',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'My New Website',
+	    'link': 'My_New_Website'
+	  }, {
+	    'title': 'Pull Quotes on the Web',
+	    'link': 'pullQuotes'
+	  }, {
+	    'title': 'Redesign v5',
+	    'link': 'designV5'
+	  }, {
+	    'title': 'Attribute Selectors FTW',
+	    'link': 'attributeSelectors'
+	  }, {
+	    'title': 'August Updates',
+	    'link': 'august'
+	  }]
+	}, {
+	  'month': 'April',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'Redesign',
+	    'link': 'Redesign'
+	  }]
+	}, {
+	  'month': 'January',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'LMS Redesign Part 1',
+	    'link': 'LMSRedesignPart1'
+	  }, {
+	    'title': 'The Scariest Time of My Life',
+	    'link': 'afraid'
+	  }, {
+	    'title': 'Client Side',
+	    'link': 'ClientSide'
+	  }, {
+	    'title': '10,000 Characters',
+	    'link': 'WhatTwitterShouldDo'
+	  }, {
+	    'title': 'My First Project of 2016',
+	    'link': 'FirstProjectof2016'
+	  }, {
+	    'title': 'Building in 2016',
+	    'link': 'BuildingIn2016'
+	  }, {
+	    'title': 'DJI vs GoPro',
+	    'link': 'DJIvsGoPro'
+	  }]
+	}, {
+	  'month': 'December',
+	  'year': '2015',
+	  'articles': [{
+	    'title': '2016 Goals',
+	    'link': '2016'
+	  }, {
+	    'title': '2015 in Review',
+	    'link': '2015'
+	  }, {
+	    'title': 'Where is the Powerpoint Remake?',
+	    'link': 'Powerpoint'
+	  }, {
+	    'title': 'Blogging vs Working',
+	    'link': 'BloggingvsWorking'
+	  }, {
+	    'title': 'The Social Max',
+	    'link': 'TheSocialMax'
+	  }]
+	}, {
+	  'month': 'November',
+	  'year': '2015',
+	  'articles': [{
+	    'title': 'The Message is in the Medium',
+	    'link': 'Message'
+	  }, {
+	    'title': 'A New Resume',
+	    'link': 'ANewResume'
+	  }, {
+	    'title': 'Family Time',
+	    'link': 'FamilyTime'
+	  }, {
+	    'title': 'Weekend Projects',
+	    'link': 'WeekendProjects'
+	  }, {
+	    'title': 'Thanksgiving',
+	    'link': 'Thanksgiving'
+	  }, {
+	    'title': 'A New Look',
+	    'link': 'ANewLook'
+	  }]
+	}];
+	
 	if (document.getElementById('index')) {
 	  _reactDom2.default.render(_react2.default.createElement(_components.Header, null), document.getElementsByClassName('headerMount-index')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { index: true }), document.getElementById('navMount-index'));
@@ -47,6 +273,7 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { blog: true }), document.getElementById('navMount-blog'));
+	  _reactDom2.default.render(_react2.default.createElement(_components.AllPosts, { monthlyArticles: listing }), document.getElementById('listingMount-blog'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-blog'));
 	}
 
@@ -21431,7 +21658,7 @@ webpackJsonp([1],[
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Footer = exports.Header = exports.Nav = undefined;
+	exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
 	
 	var _react = __webpack_require__(1);
 	
@@ -21480,9 +21707,69 @@ webpackJsonp([1],[
 			_react2.default.createElement(
 				"h1",
 				{ className: "header--title clr--blue" },
-				"Matt Hamlin"
+				_react2.default.createElement(
+					"svg",
+					{ className: "papercraft papercraft-m", width: "64", height: "64", viewBox: "0 0 32 32", title: "Matt Hamlin" },
+					_react2.default.createElement("path", { className: "papercraft-back", d: "M32 0 L32 32 L0 32 Z" }),
+					_react2.default.createElement("path", { className: "papercraft-front", d: "M0 0 L32 32 L0 32 Z" })
+				),
+				_react2.default.createElement(
+					"svg",
+					{ className: "papercraft papercraft-h", width: "64", height: "64", viewBox: "0 0 32 32" },
+					_react2.default.createElement("path", { className: "papercraft-back", d: "M0 0 L6 0 L12 32 L0 32 Z M20 0 L32 0 L32 32 L22 32 Z" }),
+					_react2.default.createElement("path", { className: "papercraft-front", d: "M32 0 L32 20 L0 32 L0 12 Z" })
+				)
 			),
 			props.children
+		);
+	};
+	
+	var PostList = function PostList(props) {
+		var articleLinks = props.articles.map(function (article, index) {
+			return _react2.default.createElement(
+				"li",
+				{ key: index, "data-css-li": true },
+				article.title,
+				" - ",
+				_react2.default.createElement(
+					"a",
+					{ href: "./Posts/2016/" + props.month + "/" + article.link, "data-css-link": true },
+					"Read Here"
+				)
+			);
+		});
+		return _react2.default.createElement(
+			"ul",
+			null,
+			_react2.default.createElement(
+				"h5",
+				{ "data-css-tac": true },
+				_react2.default.createElement(
+					"a",
+					{ href: "./Posts/2016/" + props.month, "data-css-link": true },
+					props.month,
+					" ",
+					props.year,
+					":"
+				)
+			),
+			articleLinks
+		);
+	};
+	
+	var AllPosts = exports.AllPosts = function AllPosts(monthlyArticles) {
+		var monthLists = monthlyArticles.monthlyArticles.map(function (obj, index) {
+			return _react2.default.createElement(PostList, { key: index, month: obj.month, year: obj.year, articles: obj.articles });
+		});
+		return _react2.default.createElement(
+			"section",
+			{ className: "page--content" },
+			_react2.default.createElement(
+				"h4",
+				{ className: "content--header tm2" },
+				"Past Blog Posts:"
+			),
+			monthLists
 		);
 	};
 	
