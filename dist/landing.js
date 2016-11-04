@@ -22,6 +22,9 @@ webpackJsonp([1],[
 	  'month': 'November',
 	  'year': '2016',
 	  'articles': [{
+	    'title': 'Don\'t Reach for React',
+	    'link': 'DontReachForReact'
+	  }, {
 	    'title': 'Macbook Pro',
 	    'link': 'MacbookPro'
 	  }, {
