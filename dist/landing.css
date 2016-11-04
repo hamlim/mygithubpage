@@ -456,42 +456,59 @@ a:active, .a:active, [data-css-a]:active {
 }
 [data-css-link-article] {
 	color: #0A0A0A;
-	border-bottom: solid 1.6px currentColor;
-	border-bottom: solid .1rem currentColor;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+	position: relative;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	overflow: hidden;
+	padding: 0 .1em;
 }
-
+[data-css-link-article]::after {
+	content: '';
+  position: absolute;
+  height: calc(100% + 10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: salmon;
+  z-index: -1;
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
 [data-css-link-article]:hover {
-  border-bottom: solid 1.6px #FDE3A7;
-  border-bottom: solid .1rem #FDE3A7;
-  -webkit-transition: all 0.25s ease-in-out;
+	color: #FFFFFF;
+}
+[data-css-link-article]:hover::after {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+}
+/*
+[data-css-link-article]:hover {
+  border-bottom: solid .1rem var(--cape-honey);
   transition: all 0.25s ease-in-out;
 }
 [data-css-link-article]:active {
-  border-bottom: solid 1.6px #F2784B;
-  border-bottom: solid .1rem #F2784B;
-  -webkit-transition: all 0.25s ease-in-out;
+  border-bottom: solid .1rem var(--crusta);
   transition: all 0.25s ease-in-out;
 }
 [data-css-link-article]:visited {
-  border-bottom: solid 1.6px #2ECC71;
-  border-bottom: solid .1rem #2ECC71;
-  -webkit-transition: all 0.25s ease-in-out;
+  border-bottom: solid .1rem var(--shamrock);
   transition: all 0.25s ease-in-out;
 }
 [data-css-link-article]:visited:hover {
-  border-bottom: solid 1.6px #FDE3A7;
-  border-bottom: solid .1rem #FDE3A7;
-  -webkit-transition: all 0.25s ease-in-out;
+  border-bottom: solid .1rem var(--cape-honey);
   transition: all 0.25s ease-in-out;
 }
 [data-css-link-article]:visited:active {
-  border-bottom: solid 1.6px #F2784B;
-  border-bottom: solid .1rem #F2784B;
-  -webkit-transition: all 0.25s ease-in-out;
+  border-bottom: solid .1rem var(--crusta);
   transition: all 0.25s ease-in-out;
-}
+}*/
 
 ::-moz-selection {
   background-color: #0A0A0A;
