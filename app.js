@@ -9,6 +9,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': 'Creativity',
+        'link': 'Creativity'
+      },
+      {
         'title': 'Don\'t Reach for React',
         'link': 'DontReachForReact'
       },
