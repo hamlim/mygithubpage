@@ -1,6 +1,15 @@
 var path = require('path');
 var webpack = require('webpack');
-var cssnext = require('postcss-cssnext')({features: {rem: {html: false}}});
+var cssnext = require('postcss-cssnext')({
+	features: {
+		rem: {
+			html: false
+		},
+		customProperties: {
+			preserve: true
+		}
+	}}
+);
 var postcolor = require('postcss-color-function');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
