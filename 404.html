@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Four Zero Four</title>
+  </head>
+  <body>
+    <svg viewBox="0 0 100 100" height="100vh" width="100vw">
+      <path d="M15,25 -10,50 15,50 15,25 15,75" stroke="#00FF7F" />
+      <path d="M40,25 C15,25 15,75 40,75 C65,75 65,25 40,25" stroke="#1E90FF" />
+      <path d="M90,25 65,50 90,50 90,25 90,75" stroke="#00FF7F" />
+    </svg>
+    <style>
+      svg {
+        background-color: #eee;
+      }
+      svg * {
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: .2s;
+        fill: none;
+        transform-origin: 50% 50%;
+      }
+      svg:hover * {
+        animation: spin 5s infinite ease;
+      }
+      @keyframes spin {
+        0% {
+          transform: translateX(0);
+        }
+        33.33% {
+          transform: translateX(100%);
+        }
+        66.66% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+  </body>
+</html>
