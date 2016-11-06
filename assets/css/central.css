@@ -1,0 +1,313 @@
+:root {
+  /* Breakpoints */
+	--xs-bp: 16.667rem;
+	--s-bp: 22.197rem;
+	--m-bp: 31.250rem;
+	--l-bp: 41.667rem;
+	--xl-bp: 50.00rem;
+  /*
+    Colors
+  */
+  --white: #FFFFFF;
+	--black: color(var(--white) contrast(40%));
+	--gray: slategray;
+	--a-one: springgreen;
+  --a-two: color(var(--a-one) lightness(- 5%));
+  --a-three: color(var(--a-one) lightness(- 15%));
+  --b-one: dodgerblue;
+  --b-two: color(var(--b-one) lightness(- 5%));
+  --b-three: color(var(--b-one) lightness(- 15%));
+  --c-one: blueviolet;
+	--c-two: color(var(--c-one) lightness(- 5%));
+  --c-three: color(var(--c-one) lightness(- 15%));
+  --d-one: lightpink;
+	--d-two: color(var(--d-one) lightness(- 5%));
+  --d-three: color(var(--d-one) lightness(- 15%));
+	--e-one: tomato;
+	--e-two: color(var(--e-one) lightness(- 5%));
+  --e-three: color(var(--e-one) lightness(- 15%));
+	--f-one: color(#F9BF3B lightness(+ 5%) hue(+ 10deg));
+	--f-two: color(var(--f-one) lightness(- 5%));
+  --f-three: color(var(--f-one) lightness(- 15%));
+  /* Typography */
+  --base: calc(1vmin + 1rem);
+  --line: 1.8;
+  --font-stack: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Oxygen-Sans,
+               Ubuntu,
+               Cantarell,
+               "Helvetica Neue",
+               sans-serif;
+  --w-one: 100vw;
+  --w-two: 90vw;
+  --w-three: 85vw;
+  --w-four: 75vw;
+  --w-five: 65vw;
+  --border: 4px;
+  --border-radius: 3px;
+	/*
+		Extendable classes
+	*/
+	--center: {
+		display: flex;
+	  justify-content: center;
+	  align-items: center;
+	};
+  --spaced: {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  };
+  --full-width: {
+    width: 100%;
+    height: auto;
+  };
+  --box-shadow: {
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+  };
+}
+
+@custom-media --xs-viewport (min-width: 16.667rem);
+@custom-media --s-viewport (min-width: 22.197rem);
+@custom-media --m-viewport (min-width: 31.250rem);
+@custom-media --l-viewport (min-width: 41.667rem);
+@custom-media --xl-viewport (min-width: 50.00rem);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+  @see https://benfrain.com/app-reset-a-minimal-css-reset-for-web-applications/ - for reasons why we have to add this
+*/
+base, basefont, datalist, head, meta, script, style, title,
+noembed, param, template {
+    display: none;
+}
+
+html {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-stack);
+  font-size: var(--base);
+  line-height: var(--line);
+}
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5, p { font-size: 1rem; }
+h6 { font-size: .8rem; }
+small { font-size: .6rem; }
+
+h1, h2, h3, h4, h5, h6, strong { font-weight: 700; }
+strong { font-style: oblique; }
+em { font-style: italic; }
+del { color: var(--gray); }
+ins { background-color: var(--f-one); }
+u {
+  text-decoration: none;
+  border-bottom: solid 3px currentColor;
+}
+
+blockquote {
+  color: color(var(--white) contrast(60%));
+  background-color: color(var(--white) shade(10%));
+}
+blockquote p {
+  font-size: 1.2rem;
+  width: 95%;
+  margin: 0 auto;
+}
+blockquote p::before {
+  content: open-quote;
+  color: var(--d-one);
+}
+blockquote p::after {
+  content: close-quote;
+  color: var(--d-one);
+}
+blockquote cite {
+  font-size: .9rem;
+  color: color(var(--black) lightness(+ 20%));
+  font-weight: thin;
+  display: inline-block;
+  width: 95%;
+  margin: 0 auto;
+  text-align: right;
+}
+blockquote cite::before {
+  content: '-';
+}
+pre {
+  background-color: color(var(--gray) lightness(+ 40%));
+  position: relative;
+  padding: 1.5em 1em;
+}
+pre::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: .25em;
+  left: 1em;
+  color: var(--black);
+}
+code {
+  background-color: color(var(--gray) lightness(+ 40%));
+  color: var(--e-one);
+  display: inline;
+}
+a {
+  transition: all .2s ease;
+  text-decoration: none;
+  color: var(--black);
+  border-bottom: solid var(--border) var(--a-one);
+}
+a:visited {
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--b-one);
+}
+a:hover {
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--c-one);
+}
+a:active {
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--d-two);
+}
+a:focus {
+  transition: all .2s ease;
+  border-bottom: solid var(--border) var(--e-one);
+}
+
+
+
+/*
+  Globals
+*/
+::-moz-selection {
+  background-color: var(--f-one);
+  color: var(--black);
+}
+
+::selection{
+  background-color: var(--f-one);
+  color: var(--black);
+}
+
+
+/*
+  Styles for the styleguide
+*/
+main {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+article,
+header {
+  margin: 1em 0;
+  border-radius: var(--border-radius);
+  padding: .5em;
+  @apply --box-shadow;
+}
+.iflex {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.iflex * {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+}
+.s-1 {
+  background-color: var(--white);
+  color: color(var(--white) contrast(100%));
+}
+.s-2 {
+  background-color: var(--black);
+  color: color(var(--black) contrast(100%));
+}
+.s-3 {
+  background-color: var(--gray);
+  color: color(var(--gray) contrast(100%));
+}
+.s-4 {
+  background-color: var(--a-one);
+  color: color(var(--a-one) contrast(100%));
+}
+.s-5 {
+  background-color: var(--a-two);
+  color: color(var(--a-two) contrast(100%));
+}
+.s-6 {
+  background-color: var(--a-three);
+  color: color(var(--a-three) contrast(100%));
+}
+.s-7 {
+  background-color: var(--b-one);
+  color: color(var(--b-one) contrast(100%));
+}
+.s-8 {
+  background-color: var(--b-two);
+  color: color(var(--b-two) contrast(100%));
+}
+.s-9 {
+  background-color: var(--b-three);
+  color: color(var(--b-three) contrast(100%));
+}
+.s-10 {
+  background-color: var(--c-one);
+  color: color(var(--c-one) contrast(100%));
+}
+.s-11 {
+  background-color: var(--c-two);
+  color: color(var(--c-two) contrast(100%));
+}
+.s-12 {
+  background-color: var(--c-three);
+  color: color(var(--c-three) contrast(100%));
+}
+.s-13 {
+  background-color: var(--d-one);
+  color: color(var(--d-one) contrast(100%));
+}
+.s-14 {
+  background-color: var(--d-two);
+  color: color(var(--d-two) contrast(100%));
+}
+.s-15 {
+  background-color: var(--d-three);
+  color: color(var(--d-three) contrast(100%));
+}
+.s-16 {
+  background-color: var(--e-one);
+  color: color(var(--e-one) contrast(100%));
+}
+.s-17 {
+  background-color: var(--e-two);
+  color: color(var(--e-two) contrast(100%));
+}
+.s-18 {
+  background-color: var(--e-three);
+  color: color(var(--e-three) contrast(100%));
+}
+.s-19 {
+  background-color: var(--f-one);
+  color: color(var(--f-one) contrast(100%));
+}
+.s-20 {
+  background-color: var(--f-two);
+  color: color(var(--f-two) contrast(100%));
+}
+.s-21 {
+  background-color: var(--f-three);
+  color: color(var(--f-three) contrast(100%));
+}

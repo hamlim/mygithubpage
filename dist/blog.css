@@ -33,9 +33,7 @@
 
 html {
   background-color: #ffffff;
-  background-color: var(--white);
   color: #000000;
-  color: var(--black);
 }
 
 .page {
@@ -59,11 +57,8 @@ html {
 
 .bq {
   background-color: #CCD1D1;
-  background-color: var(--lgray2);
   border-right: solid 4px #A3E4D7;
-  border-right: solid 4px var(--teal1);
   border-left: solid 4px #A3E4D7;
-  border-left: solid 4px var(--teal1);
   padding: 8px 32px;
   padding: 0.5rem 2rem;
   margin-bottom: 16px;
@@ -75,9 +70,7 @@ html {
   margin-bottom: 0.25rem;
   list-style: none;
   background-color: #F7F9F9;
-  background-color: var(--white1);
   border-left: solid 4px #D7BDE2;
-  border-left: solid 4px var(--purple1);
   padding: 2px 8px 2px 8px;
   padding: 0.125rem 0.5rem 0.125rem .5rem;
 }
@@ -110,7 +103,6 @@ html {
 	        align-items: center;
 	width: 100%;
 	box-shadow: 0 0 1rem 0 #D1E2FB;
-	box-shadow: 0 0 1rem 0 var(--hawkes-blue);
 	margin-bottom: 16px;
 	margin-bottom: 1rem;
 }
@@ -130,83 +122,63 @@ html {
 }
 .r1 {
 	background-color: #E6B0AA;
-	background-color: var(--red1);
 }
 .r2 {
 	background-color: #F5B7B1;
-	background-color: var(--red2);
 }
 .p1 {
 	background-color: #D7BDE2;
-	background-color: var(--purple1);
 }
 .p2 {
 	background-color: #D2B4DE;
-	background-color: var(--purple2);
 }
 .b1 {
 	background-color: #A9CCE3;
-	background-color: var(--blue1);
 }
 .b2 {
 	background-color: #AED6F1;
-	background-color: var(--blue2);
 }
 .t1 {
 	background-color: #A3E4D7;
-	background-color: var(--teal1);
 }
 .t2 {
 	background-color: #A2D9CE;
-	background-color: var(--teal2);
 }
 .g1 {
 	background-color: #A9DFBF;
-	background-color: var(--green1);
 }
 .g2 {
 	background-color: #ABEBC6;
-	background-color: var(--green2);
 }
 .y1 {
 	background-color: #F9E79F;
-	background-color: var(--yellow1);
 }
 .y2 {
 	background-color: #FAD7A0;
-	background-color: var(--yellow2);
 }
 .o1 {
 	background-color: #F5CBA7;
-	background-color: var(--orange1);
 }
 .o2 {
 	background-color: #EDBB99;
-	background-color: var(--orange2);
 }
 .w1 {
 	background-color: #F7F9F9;
-	background-color: var(--white1);
 }
 .w2 {
 	background-color: #E5E7E9;
-	background-color: var(--white2);
 }
 .lg1 {
 	background-color: #D5DBDB;
-	background-color: var(--lgray1);
 }
 .lg2 {
 	background-color: #CCD1D1;
-	background-color: var(--lgray2);
 }
 .dg1 {
 	background-color: #AEB6BF;
-	background-color: var(--dgray1);
 }
 .dg2 {
 	background-color: #ABB2B9;
-	background-color: var(--dgray2);
 }
 
 /*
@@ -220,7 +192,6 @@ html {
 	border-radius: 25%/50%;
 	position: relative;
 	background-color: #ECF0F1;
-	background-color: var(--light-gray);
 	z-index: 1;
 	overflow: hidden;
 	box-shadow: 0 0 .25rem rgba(0,0,0,.2);
@@ -237,7 +208,6 @@ html {
 	height: 32px;
 	height: 2rem;
 	background-color: #ECF0F1;
-	background-color: var(--light-gray);
 	border-radius: 50%;
 	top: 0;
 	left: 0;
@@ -250,7 +220,6 @@ html {
 	left: 32px;
 	left: 2rem;
 	background-color: #26C281;
-	background-color: var(--green);
 	-webkit-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 	box-shadow: 0 0 .25rem rgba(0,0,0,.3);
@@ -263,7 +232,6 @@ html {
 	width: 64px;
 	width: 4rem;
 	background-color: #BDC3C7;
-	background-color: var(--dark-gray);
 	content: '';
 	display: inline-block;
 	z-index: -1;
@@ -287,7 +255,6 @@ html {
 	display: inline-block;
 	position: absolute;
 	background-color: #ffffff;
-	background-color: var(--white);
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -302,9 +269,7 @@ html {
 }
 [data-css-bg-image-main] {
 	background-color: #ffffff;
-	background-color: var(--white);
 	box-shadow: 0 0 9em 4em #ffffff;
-	box-shadow: 0 0 9em 4em var(--white);
 	margin-top: 10em;
 }
 
@@ -441,8 +406,6 @@ html {
 [data-css-body] {
 	background: -webkit-linear-gradient(top, mediumseagreen, royalblue);
 	background: linear-gradient(to bottom, mediumseagreen, royalblue);
-	background: -webkit-linear-gradient(top, var(--medium-sea-green), var(--royal-blue));
-	background: linear-gradient(to bottom, var(--medium-sea-green), var(--royal-blue));
 }
 [data-css-header] {
 	display: -webkit-box;
@@ -478,7 +441,6 @@ html {
 }
 [data-css-nav] {
 	color: #ffffff;
-	color: var(--white);
 }
 [data-css-nav] [data-css-title] {
 	font-size: 3em;

@@ -6,7 +6,7 @@ var cssnext = require('postcss-cssnext')({
 			html: false
 		},
 		customProperties: {
-			preserve: true
+			preserve: 'computed'
 		}
 	}}
 );
@@ -19,7 +19,8 @@ module.exports = {
 	entry: {
 		landing: './app.js',
 		blog: './blog.js',
-		post: './post.js'
+		post: './post.js',
+		central: './central.js'
 	},
 	output: {
 		path: __dirname + '/dist',

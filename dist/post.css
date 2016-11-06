@@ -1,13 +1,67 @@
 :root {
 
   /* Breakpoints */
+	--xs-bp: 266.672px;
+	--xs-bp: 16.667rem;
+	--s-bp: 355.152px;
+	--s-bp: 22.197rem;
+	--m-bp: 500px;
+	--m-bp: 31.250rem;
+	--l-bp: 666.672px;
+	--l-bp: 41.667rem;
+	--xl-bp: 800px;
+	--xl-bp: 50.00rem;
 
 
   /*
     Colors
   */
 
+  --white: #FFFFFF;
+	--black: rgb(69, 71, 71);
+	--gray: slategray;
+	--a-one: springgreen;
+  --a-two: rgb(0, 230, 115);
+  --a-three: rgb(0, 179, 89);
+  --b-one: dodgerblue;
+  --b-two: rgb(5, 130, 255);
+  --b-three: rgb(0, 105, 209);
+  --c-one: blueviolet;
+	--c-two: rgb(126, 29, 215);
+  --c-three: rgb(99, 23, 171);
+  --d-one: lightpink;
+	--d-two: rgb(255, 158, 173);
+  --d-three: rgb(255, 107, 129);
+	--e-one: tomato;
+	--e-two: rgb(255, 77, 46);
+  --e-three: rgb(250, 37, 0);
+	--f-one: rgb(250, 227, 82);
+	--f-two: rgb(249, 223, 57);
+  --f-three: rgb(247, 215, 8);
+
   /* Typography */
+  --base: calc(1vmin + 1rem);
+  --line: 1.8;
+  --font-stack: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Oxygen-Sans,
+               Ubuntu,
+               Cantarell,
+               "Helvetica Neue",
+               sans-serif;
+
+  --w-one: 100vw;
+  --w-two: 90vw;
+  --w-three: 85vw;
+  --w-four: 75vw;
+  --w-five: 65vw;
+
+  --adjusted-w: 100vw;
+
+  --border: 4px;
+  --border-radius: .75em
 
 	/*
 		Extendable classes
