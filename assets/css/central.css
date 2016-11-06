@@ -67,7 +67,8 @@ html {
   font-size: var(--font-size);
   line-height: var(--line-height);
 }
-h1 { font-size: 2.3rem; }
+h1:not(.escape--default) { font-size: 2.3rem; }
+h1.escape--default { font-size: 1rem; }
 h2 { font-size: 1.9rem; }
 h3 { font-size: 1.4rem; }
 h4 { font-size: 1.3rem; }

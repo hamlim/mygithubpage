@@ -49,7 +49,8 @@ html {
   font-size: 22px;
   line-height: 2;
 }
-h1 { font-size: 36.8px; font-size: 2.3rem; }
+h1:not(.escape--default) { font-size: 36.8px; font-size: 2.3rem; }
+h1.escape--default { font-size: 16px; font-size: 1rem; }
 h2 { font-size: 30.4px; font-size: 1.9rem; }
 h3 { font-size: 22.4px; font-size: 1.4rem; }
 h4 { font-size: 20.8px; font-size: 1.3rem; }
