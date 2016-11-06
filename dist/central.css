@@ -90,9 +90,12 @@ a:not(.escape) {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 5px 0;
   overflow: hidden;
   text-decoration: none;
+  margin: 0;
+}
+nav li + li {
+  margin-left: .25em;
 }
 a.escape {
   text-decoration: none;
@@ -105,7 +108,7 @@ a:not(.escape)::before {
   height: 5px;
   left: 0;
   position: absolute;
-  background-color: springgreen;
+  background-color: #FAE352;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;

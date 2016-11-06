@@ -320,7 +320,7 @@ var listing = [
 
 
 if (document.getElementById('index')) {
-  ReactDOM.render(<Header/>, document.getElementsByClassName('headerMount-index')[0]);
+  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Portfolio</h2></Header>, document.getElementsByClassName('headerMount-index')[0]);
   ReactDOM.render(<Nav index />, document.getElementById('navMount-index'));
   ReactDOM.render(<Footer />, document.getElementById('footerMount-index'));
 }

@@ -102,9 +102,12 @@ a:not(.escape) {
   color: var(--black);
   transition: color .5s ease;
   display: inline-flex;
-  padding: 5px 0;
   overflow: hidden;
   text-decoration: none;
+  margin: 0;
+}
+nav li + li {
+  margin-left: .25em;
 }
 a.escape {
   text-decoration: none;
@@ -117,7 +120,7 @@ a:not(.escape)::before {
   height: 5px;
   left: 0;
   position: absolute;
-  background-color: var(--a);
+  background-color: var(--d);
   transition: transform .5s ease;
 }
 a:not(.escape):hover::before {

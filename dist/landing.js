@@ -251,7 +251,15 @@ webpackJsonp([2],[
 	}];
 	
 	if (document.getElementById('index')) {
-	  _reactDom2.default.render(_react2.default.createElement(_components.Header, null), document.getElementsByClassName('headerMount-index')[0]);
+	  _reactDom2.default.render(_react2.default.createElement(
+	    _components.Header,
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'header--subtitle clr--green' },
+	      'Portfolio'
+	    )
+	  ), document.getElementsByClassName('headerMount-index')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { index: true }), document.getElementById('navMount-index'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-index'));
 	}
