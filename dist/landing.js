@@ -16,7 +16,7 @@ webpackJsonp([2],[
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var landingcss = __webpack_require__(180);
+	var landingcss = __webpack_require__(177);
 	
 	var listing = [{
 	  'month': 'November',
@@ -21656,7 +21656,12 @@ webpackJsonp([2],[
 /* 174 */,
 /* 175 */,
 /* 176 */,
-/* 177 */,
+/* 177 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
 /* 178 */,
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
@@ -21802,22 +21807,22 @@ webpackJsonp([2],[
 				_react2.default.createElement(
 					"span",
 					{ "data-css-chip": true },
-					_react2.default.createElement("a", { href: "https://twitter.com/intent/tweet?&text=Hey+@immatthamlin", "data-css-link-article": true, "data-css-emoji": "twitter", title: "Tweet Me" })
+					_react2.default.createElement("a", { href: "https://twitter.com/intent/tweet?&text=Hey+@immatthamlin", className: "escape", "data-css-emoji": "twitter", title: "Tweet Me" })
 				),
 				_react2.default.createElement(
 					"span",
 					{ "data-css-chip": true },
-					_react2.default.createElement("a", { href: "sms:+14252100980", "data-css-link-article": true, "data-css-emoji": "phone", title: "Text Me" })
+					_react2.default.createElement("a", { href: "sms:+14252100980", className: "escape", "data-css-emoji": "phone", title: "Text Me" })
 				),
 				_react2.default.createElement(
 					"span",
 					{ "data-css-chip": true },
-					_react2.default.createElement("a", { href: "mailto:matthewjameshamlin@gmail.com", "data-css-link-article": true, "data-css-emoji": "email", title: "Email Me" })
+					_react2.default.createElement("a", { href: "mailto:matthewjameshamlin@gmail.com", className: "escape", "data-css-emoji": "email", title: "Email Me" })
 				),
 				_react2.default.createElement(
 					"span",
 					{ "data-css-chip": true },
-					_react2.default.createElement("a", { href: "https://m.me/immatthamlin", "data-css-link-article": true, "data-css-emoji": "fbm", title: "Message Me" })
+					_react2.default.createElement("a", { href: "https://m.me/immatthamlin", className: "escape", "data-css-emoji": "fbm", title: "Message Me" })
 				)
 			),
 			_react2.default.createElement(
@@ -21828,15 +21833,10 @@ webpackJsonp([2],[
 					{ href: "https://twitter.com/immatthamlin", "data-css-link-article": true },
 					"Twitter"
 				)
-			)
+			),
+			_react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Quicksand:400,700", rel: "stylesheet" })
 		);
 	};
-
-/***/ },
-/* 180 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
 
 /***/ }
 ]);

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Nav, Header, Footer, AllPosts } from './assets/js/src/components';
-var landingcss = require('./assets/css/main.css');
+var landingcss = require('./assets/css/central.css');
 
 var listing = [
   {

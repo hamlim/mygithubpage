@@ -63,12 +63,13 @@ export const Footer = (props) => {
 		<div data-css-container data-css-footer-nav>
 				<div data-css-chip>&copy; <a href="https://matthamlin.me" data-css-link-article>Matt Hamlin</a> 2016</div>
 					<div>
-							<span data-css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" data-css-link-article data-css-emoji="twitter" title="Tweet Me"></a></span>
-							<span data-css-chip><a href="sms:+14252100980" data-css-link-article data-css-emoji="phone" title="Text Me"></a></span>
-							<span data-css-chip><a href="mailto:matthewjameshamlin@gmail.com" data-css-link-article data-css-emoji="email" title="Email Me"></a></span>
-							<span data-css-chip><a href="https://m.me/immatthamlin" data-css-link-article data-css-emoji="fbm" title="Message Me"></a></span>
+							<span data-css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" className="escape" data-css-emoji="twitter" title="Tweet Me"></a></span>
+							<span data-css-chip><a href="sms:+14252100980" className="escape" data-css-emoji="phone" title="Text Me"></a></span>
+							<span data-css-chip><a href="mailto:matthewjameshamlin@gmail.com" className="escape" data-css-emoji="email" title="Email Me"></a></span>
+							<span data-css-chip><a href="https://m.me/immatthamlin" className="escape" data-css-emoji="fbm" title="Message Me"></a></span>
 					</div>
 				<div data-css-chip><a href="https://twitter.com/immatthamlin" data-css-link-article>Twitter</a></div>
+				<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" />
 		</div>
 	)
 };

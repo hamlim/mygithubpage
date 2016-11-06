@@ -21473,22 +21473,22 @@ webpackJsonp([0],[
 	      _react2.default.createElement(
 	        "span",
 	        { className: "chip" },
-	        _react2.default.createElement("a", { href: "https://twitter.com/intent/tweet?&text=Hey+@immatthamlin", className: "link", "data-css-emoji": "twitter", title: "Tweet Me" })
+	        _react2.default.createElement("a", { href: "https://twitter.com/intent/tweet?&text=Hey+@immatthamlin", className: "escape", "data-css-emoji": "twitter", title: "Tweet Me" })
 	      ),
 	      _react2.default.createElement(
 	        "span",
 	        { className: "chip" },
-	        _react2.default.createElement("a", { href: "sms:+14252100980", className: "link", "data-css-emoji": "phone", title: "Text Me" })
+	        _react2.default.createElement("a", { href: "sms:+14252100980", className: "escape", "data-css-emoji": "phone", title: "Text Me" })
 	      ),
 	      _react2.default.createElement(
 	        "span",
 	        { className: "chip" },
-	        _react2.default.createElement("a", { href: "mailto:matthewjameshamlin@gmail.com", className: "link", "data-css-emoji": "email", title: "Email Me" })
+	        _react2.default.createElement("a", { href: "mailto:matthewjameshamlin@gmail.com", className: "escape", "data-css-emoji": "email", title: "Email Me" })
 	      ),
 	      _react2.default.createElement(
 	        "span",
 	        { className: "chip" },
-	        _react2.default.createElement("a", { href: "https://m.me/immatthamlin", className: "link", "data-css-emoji": "fbm", title: "Message Me" })
+	        _react2.default.createElement("a", { href: "https://m.me/immatthamlin", className: "escape", "data-css-emoji": "fbm", title: "Message Me" })
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -21499,7 +21499,8 @@ webpackJsonp([0],[
 	        { href: "/archive", className: "link" },
 	        "Archive"
 	      )
-	    )
+	    ),
+	    _react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Quicksand:400,700", rel: "stylesheet" })
 	  );
 	};
 
