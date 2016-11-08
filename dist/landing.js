@@ -22,6 +22,9 @@ webpackJsonp([2],[
 	  'month': 'November',
 	  'year': '2016',
 	  'articles': [{
+	    'title': 'I Voted',
+	    'link': 'IVoted'
+	  }, {
 	    'title': 'Monday Mornings',
 	    'link': 'MondayMornings'
 	  }, {
