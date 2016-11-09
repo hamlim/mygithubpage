@@ -61,7 +61,7 @@ webpackJsonp([0],[
 	  case '4':
 	    _reactDom2.default.render(_react2.default.createElement(
 	      _components.PostHeader,
-	      { title: 'The American Fall 2016' },
+	      { title: 'The American Fall of 2016' },
 	      _react2.default.createElement(
 	        'time',
 	        { datetime: '2016-11-09' },
