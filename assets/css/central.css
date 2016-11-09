@@ -1,6 +1,7 @@
 :root {
   --white: #ffffff;
   --neutral-white: color(#FFFFFF shade(2%));
+  --light-gray: color(#FFFFFF shade(8%));
   --black: #041122;
   --a: springgreen;
   --b: dodgerblue;
@@ -184,7 +185,7 @@ section {
 
 blockquote {
   color: var(--black);
-  background-color: var(--neutral-white);
+  background-color: var(--light-gray);
 }
 blockquote p {
   font-size: 1.2rem;
