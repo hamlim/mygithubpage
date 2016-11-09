@@ -18,9 +18,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	entry: {
 		landing: './app.js',
-		blog: './blog.js',
-		post: './post.js',
-		central: './central.js'
+		blog: './blog.js'
 	},
 	output: {
 		path: __dirname + '/dist',

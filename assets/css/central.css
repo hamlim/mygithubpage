@@ -49,6 +49,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+p, ul, ol {
   margin-top: .5em;
 }
 html {
@@ -75,6 +77,12 @@ h4 { font-size: 1.3rem; }
 h5, p { font-size: 1rem; }
 h6, small { font-size: .9rem; }
 
+aside {
+  font-size: .9rem;
+  padding: 1rem;
+  background-color: var(--neutral-white);
+  border-left: solid 5px var(--c);
+}
 ins {
   background-color: var(--a);
   display: inline-flex;
@@ -101,7 +109,6 @@ a:not(.escape) {
   box-sizing: border-box;
   position: relative;
   color: var(--black);
-  transition: color .5s ease;
   display: inline-flex;
   overflow: hidden;
   text-decoration: none;
@@ -112,7 +119,12 @@ nav li + li {
 }
 a.escape {
   text-decoration: none;
-  color: var(--c);
+  color: var(--black);
+  transition: color .5s ease;
+}
+a.escape:hover {
+  color: var(--b);
+  transition: color .5s ease;
 }
 a:not(.escape)::before {
   content: '';
@@ -121,33 +133,36 @@ a:not(.escape)::before {
   height: 5px;
   left: 0;
   position: absolute;
-  background-color: var(--d);
-  transition: transform .5s ease;
+  background: linear-gradient(to right, var(--a), var(--d));
 }
 a:not(.escape):hover::before {
-  transform: translateX(-100%);
+  animation: slide 2s infinite;
 }
-a:not(.escape)::after {
-  content: '';
-  width: 100%;
-  top: 0;
-  height: 5px;
-  left: 0;
-  position: absolute;
-  background-color: var(--a);
-  transition: transform .5s ease;
-}
-a:not(.escape):hover::after {
-  transform: translateX(100%);
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 article {
   background-color: var(--white);
   border-radius: 2px;
   max-width: 35rem;
-  margin: 2rem auto;
+  margin: 0 auto 3rem;
   @apply --box-shadow;
-/*   animation: fade-up 1.5s ease-in; */
+}
+main {
+  padding-top: 3rem;
+  animation: fade-up 1.5s ease-in;
 }
 section {
   padding: 1em;
@@ -550,8 +565,12 @@ pre {
 }
 [data-css-footer-nav] {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: space-between;
+  align-items: center;
+  @media (--m-viewport) {
+    flex-flow: row wrap;
+  }
 }
 
 [data-css-social-link="snap"] {
@@ -574,92 +593,120 @@ pre {
 }
 
 
-[data-css-emoji] {
+[data-css-emoji],
+[class*="emoji-"] {
 	background-size: contain;
 	display: inline-block;
 	height: 1em;
 	width: 1em;
 	vertical-align: -.1em;
 }
-[data-css-emoji="one"], [data-css-emoji="1"] {
+[data-css-emoji="one"], [data-css-emoji="1"],
+[class*="emoji-one"], [class*="emoji-1"], [class*="emoji-1⃣"] {
 	background-image: url('/assets/css/fonts/emoji/one.png');
 }
-[data-css-emoji="two"], [data-css-emoji="2"] {
+[data-css-emoji="two"], [data-css-emoji="2"],
+[class*="emoji-two"], [class*="emoji-2"], [class*="emoji-2⃣"] {
 	background-image: url('/assets/css/fonts/emoji/two.png');
 }
-[data-css-emoji="three"], [data-css-emoji="3"] {
+[data-css-emoji="three"], [data-css-emoji="3"],
+[class*="emoji-three"], [class*="emoji-3"], [class*="emoji-3⃣"] {
 	background-image: url('/assets/css/fonts/emoji/three.png');
 }
-[data-css-emoji="four"], [data-css-emoji="4"] {
+[data-css-emoji="four"], [data-css-emoji="4"],
+[class*="emoji-four"], [class*="emoji-4"], [class*="emoji-4⃣"] {
 	background-image: url('/assets/css/fonts/emoji/four.png');
 }
-[data-css-emoji="five"], [data-css-emoji="5"] {
+[data-css-emoji="five"], [data-css-emoji="5"],
+[class*="emoji-five"], [class*="emoji-5"], [class*="emoji-5⃣"] {
 	background-image: url('/assets/css/fonts/emoji/five.png');
 }
-[data-css-emoji="six"], [data-css-emoji="6"] {
+[data-css-emoji="six"], [data-css-emoji="6"],
+[class*="emoji-six"], [class*="emoji-6"], [class*="emoji-6⃣"] {
 	background-image: url('/assets/css/fonts/emoji/six.png');
 }
-[data-css-emoji="seven"], [data-css-emoji="7"] {
+[data-css-emoji="seven"], [data-css-emoji="7"],
+[class*="emoji-seven"], [class*="emoji-7"], [class*="emoji-7⃣"] {
 	background-image: url('/assets/css/fonts/emoji/seven.png');
 }
-[data-css-emoji="eight"], [data-css-emoji="8"] {
+[data-css-emoji="eight"], [data-css-emoji="8"],
+[class*="emoji-eight"], [class*="emoji-8"], [class*="emoji-8⃣"] {
 	background-image: url('/assets/css/fonts/emoji/eight.png');
 }
-[data-css-emoji="nine"], [data-css-emoji="9"] {
+[data-css-emoji="nine"], [data-css-emoji="9"],
+[class*="emoji-nine"], [class*="emoji-9"], [class*="emoji-9⃣"] {
 	background-image: url('/assets/css/fonts/emoji/nine.png');
 }
-[data-css-emoji="zero"], [data-css-emoji="0"] {
+[data-css-emoji="zero"], [data-css-emoji="0"],
+[class*="emoji-zero"], [class*="emoji-0"], [class*="emoji-0⃣"] {
 	background-image: url('/assets/css/fonts/emoji/zero.png');
 }
-[data-css-emoji="smile"] {
+[data-css-emoji="smile"],
+[class*="emoji-smile"], [class*="emoji-😃"] {
 	background-image: url('/assets/css/fonts/emoji/smile.png');
 }
-[data-css-emoji="cry"] {
+[data-css-emoji="cry"],
+[class*="emoji-cry"], [class*="emoji-😢"] {
 	background-image: url('/assets/css/fonts/emoji/cry.png');
 }
-[data-css-emoji="thinking"] {
+[data-css-emoji="thinking"],
+[class*="emoji-thinking"], [class*="emoji-🤔"] {
 	background-image: url('/assets/css/fonts/emoji/thinking.png');
 }
-[data-css-emoji="fireworks"] {
+[data-css-emoji="fireworks"],
+[class*="emoji-fireworks"], [class*="emoji-🎆"] {
 	background-image: url('/assets/css/fonts/emoji/fireworks.png');
 }
-[data-css-emoji="point-up"] {
+[data-css-emoji="point-up"],
+[class*="emoji-point-up"], [class*="emoji-👆"] {
 	background-image: url('/assets/css/fonts/emoji/point-up.png');
 }
-[data-css-emoji="point-down"] {
+[data-css-emoji="point-down"],
+[class*="emoji-point-down"], [class*="emoji-👇"] {
 	background-image: url('/assets/css/fonts/emoji/point-down.png');
 }
-[data-css-emoji="sunrise"] {
+[data-css-emoji="sunrise"],
+[class*="emoji-sunrise"], [class*="emoji-🌅"] {
 	background-image: url('/assets/css/fonts/emoji/sunrise.png');
 }
-[data-css-emoji="sick"] {
+[data-css-emoji="sick"],
+[class*="emoji-sick"], [class*="emoji-sick"] {
 	background-image: url('/assets/css/fonts/emoji/sick.png');
 }
-[data-css-emoji="calendar"] {
+[data-css-emoji="calendar"],
+[class*="emoji-calendar"], [class*="emoji-📆"] {
 	background-image: url('/assets/css/fonts/emoji/calendar.png');
 }
-[data-css-emoji="hash"], [data-css-emoji="#"] {
+[data-css-emoji="hash"], [data-css-emoji="#"],
+[class*="emoji-hash"], [class*="emoji-#"], [class*="emoji-#⃣"] {
 	background-image: url('/assets/css/fonts/emoji/hash.png');
 }
-[data-css-emoji="twitter"] {
+[data-css-emoji="twitter"],
+[class*="emoji-twitter"], [class*="emoji-🐦"] {
 	background-image: url('/assets/css/fonts/emoji/blue-bird.png');
 }
-[data-css-emoji="phone"] {
+[data-css-emoji="phone"],
+[class*="emoji-phone"], [class*="emoji-☎"] {
 	background-image: url('/assets/css/fonts/emoji/phone.png');
 }
-[data-css-emoji="email"] {
+[data-css-emoji="email"],
+[class*="emoji-email"], [class*="emoji-✉"] {
 	background-image: url('/assets/css/fonts/emoji/email.png');
 }
-[data-css-emoji="red-light"] {
+[data-css-emoji="red-light"],
+[class*="emoji-red-light"], [class*="emoji-🚨"] {
 	background-image: url('/assets/css/fonts/emoji/red-light.png');
 }
-[data-css-emoji="coffee"] {
+[data-css-emoji="coffee"],
+[class*="emoji-coffee"], [class*="emoji-☕"] {
 	background-image: url('/assets/css/fonts/emoji/coffee.png');
 }
-[data-css-emoji="chat"] {
+[data-css-emoji="chat"],
+[class*="emoji-chat"], [class*="emoji-💬"] {
 	background-image: url('/assets/css/fonts/emoji/chat.png');
 }
-[data-css-emoji="fbm"] {
+[data-css-emoji="fbm"],
+[class*="emoji-fbm"], [class*="emoji-💬"] {
 	background-image: url('/assets/css/fonts/emoji/fb-messenger.png');
 }
 
@@ -670,7 +717,7 @@ pre {
 	margin: .5em;
 }
 [class*="papercraft-front"] {
-	fill: var(--d);
+	fill: var(--c);
 }
 [class*="papercraft-back"] {
 	fill: var(--a);

@@ -31,6 +31,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+p, ul, ol {
   margin-top: .5em;
 }
 html {
@@ -57,6 +59,14 @@ h4 { font-size: 20.8px; font-size: 1.3rem; }
 h5, p { font-size: 16px; font-size: 1rem; }
 h6, small { font-size: 14.4px; font-size: .9rem; }
 
+aside {
+  font-size: 14.4px;
+  font-size: .9rem;
+  padding: 16px;
+  padding: 1rem;
+  background-color: rgb(250, 250, 250);
+  border-left: solid 5px salmon;
+}
 ins {
   background-color: springgreen;
   display: -webkit-inline-box;
@@ -163,10 +173,15 @@ article {
   border-radius: 2px;
   max-width: 560px;
   max-width: 35rem;
-  margin: 32px auto;
-  margin: 2rem auto;
+  margin: 0 auto 48px;
+  margin: 0 auto 3rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-/*   animation: fade-up 1.5s ease-in; */
+}
+main {
+  padding-top: 48px;
+  padding-top: 3rem;
+  -webkit-animation: fade-up 1.5s ease-in;
+          animation: fade-up 1.5s ease-in;
 }
 section {
   padding: 1em;
@@ -684,12 +699,22 @@ pre {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-flow: row wrap;
-	    flex-flow: row wrap;
+	-ms-flex-flow: column wrap;
+	    flex-flow: column wrap;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center
 }
+@media (min-width: 31.250rem) {
+
+  [data-css-footer-nav] {
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;;
+  }
+  }
 
 [data-css-social-link="snap"] {
 	border-bottom: solid 3.2px #fffc00;
@@ -851,4 +876,4 @@ pre {
 	text-align: center;
 }
 
-/*# sourceMappingURL=central.css.map*/
+/*# sourceMappingURL=common.css.map*/

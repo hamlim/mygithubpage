@@ -73,3 +73,37 @@ export const Footer = (props) => {
 		</div>
 	)
 };
+
+export const PostFooter = (props) => {
+	return (
+		<section data-css-container data-css-footer-nav>
+			<div>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> 2016</div>
+			<div>
+				<span><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" className="emoji-🐦 escape" title="Tweet Me"></a></span>
+				<span><a href="sms:+14252100980" className="emoji-☎ escape" title="Text Me"></a></span>
+				<span><a href="mailto:matthewjameshamlin@gmail.com" className="emoji-✉ escape" title="Email Me"></a></span>
+				<span><a href="https://m.me/immatthamlin" className="emoji-💬 escape" title="Message Me"></a></span>
+			</div>
+			<div><a href="/archive">Archive</a></div>
+			<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" />
+		</section>
+	)
+};
+
+export const PostHeader = (props) => {
+	let subtitleHtml;
+	if (props.subtitle) {
+		subtitleHtml = <h3>{props.subtitle}</h3>;
+	}
+	return (
+		<section>
+			<h2 className="🆕 ❌">{props.title}</h2>
+			{subtitleHtml}
+			<div className="🔧">
+				<p className="❌">
+						<span className="emoji-📆"></span>: {props.children}
+				</p>
+			</div>
+		</section>
+	)
+}

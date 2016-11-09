@@ -16,14 +16,14 @@ export const PostHeader = (props) => {
 export const PostFooter = (props) => {
   return (
     <div className="blog-footer">
-      <div className="chip">&copy; <a href="https://matthamlin.me" className="link">Matt Hamlin</a> 2016</div>
-      <div className="wrapper">
-        <span className="chip"><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" className="escape" data-css-emoji="twitter" title="Tweet Me"></a></span>
-        <span className="chip"><a href="sms:+14252100980" className="escape" data-css-emoji="phone" title="Text Me"></a></span>
-        <span className="chip"><a href="mailto:matthewjameshamlin@gmail.com" className="escape" data-css-emoji="email" title="Email Me"></a></span>
-        <span className="chip"><a href="https://m.me/immatthamlin" className="escape" data-css-emoji="fbm" title="Message Me"></a></span>
+      <div>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> 2016</div>
+      <div>
+          <span><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" className="emoji-🐦 escape" title="Tweet Me"></a></span>
+          <span><a href="sms:+14252100980" className="emoji-☎ escape" title="Text Me"></a></span>
+          <span><a href="mailto:matthewjameshamlin@gmail.com" className="emoji-✉ escape" title="Email Me"></a></span>
+          <span><a href="https://m.me/immatthamlin" className="emoji-💬 escape" title="Message Me"></a></span>
       </div>
-      <div className="chip"><a href="/archive" className="link">Archive</a></div>
+      <div><a href="/archive">Archive</a></div>
       <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" />
     </div>
   )

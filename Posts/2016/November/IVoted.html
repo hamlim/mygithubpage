@@ -8,48 +8,36 @@
         <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
         <meta name="theme-color" content="#2ECC71">
         <!-- Styles -->
-        <link rel="stylesheet" href="/dist/post.css">
+        <link rel="stylesheet" href="/dist/common.css">
     </head>
-    <body id="post">
-      <header class="🔥">
-        <h2 class="🆕 ❌">I Voted</h2>
-        <div class="🔧">
-          <p class="❌">
-              <span class="emoji-📆"></span>: <time datetime="2016-11-08"><a href="./" >November</a> 8th, 2016</time>
-          </p>
-        </div>
-      </header>
+    <body id="post" data-post-id="3">
       <main class="🔧">
         <article class="article">
-          <p>
-            Today I voted, and I hope you did too.
-          </p>
-          <p>
-            In other news my Tuesday was pretty plain, I am pretty excited that after today I won't have to deal with the mess that was
-            this presidential election (fingers crossed). I started to wrap up work on the project I have been working on for the past
-            two or three weeks now (they go by so fast I have no idea how long I have been working on this stuff). And I have been jumping
-            into more cleanup tasks with my original team that I joined the company with.
-          </p>
-          <p>
-            Part of me really enjoys the clean up tickets, and another part of me really hates it. I talked about this in another blog post so I
-            won't talk too much about it here.
-          </p>
-          <p>
-            Outside of work I have been working on (yet again) this website trying to narrow down a sleak style to the site and ideally trying to
-            improve my process of creating new things, and also you the user's experience on this site. If you have any feedback at all feel free
-            to reach out using some of the links below, or even open an Issue on the git repo for this site located <a href="https://github.com/hamlim/mygithubpage/issues">here.</a>
-          </p>
+          <header id="headerMount"></header>
+          <section>
+            <p>
+              Today I voted, and I hope you did too.
+            </p>
+            <p>
+              In other news my Tuesday was pretty plain, I am pretty excited that after today I won't have to deal with the mess that was
+              this presidential election (fingers crossed). I started to wrap up work on the project I have been working on for the past
+              two or three weeks now (they go by so fast I have no idea how long I have been working on this stuff). And I have been jumping
+              into more cleanup tasks with my original team that I joined the company with.
+            </p>
+            <p>
+              Part of me really enjoys the clean up tickets, and another part of me really hates it. I talked about this in another blog post so I
+              won't talk too much about it here.
+            </p>
+            <p>
+              Outside of work I have been working on (yet again) this website trying to narrow down a sleak style to the site and ideally trying to
+              improve my process of creating new things, and also you the user's experience on this site. If you have any feedback at all feel free
+              to reach out using some of the links below, or even open an Issue on the git repo for this site located <a href="https://github.com/hamlim/mygithubpage/issues">here.</a>
+            </p>
+          </section>
         </article>
+        <footer data-css-footer id="footerMount"></footer>
       </main>
-      <footer class="🔧">
-        <div>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> 2016</div>
-        <div>
-            <span><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" class="emoji-🐦" title="Tweet Me"></a></span>
-            <span><a href="sms:+14252100980" class="emoji-☎" title="Text Me"></a></span>
-            <span><a href="mailto:matthewjameshamlin@gmail.com" class="emoji-✉" title="Email Me"></a></span>
-            <span><a href="https://m.me/immatthamlin" class="emoji-💬" title="Message Me"></a></span>
-        </div>
-        <div><a href="/archive">Archive</a></div>
-      </footer>
+      <script src="/dist/common.js" charset="utf-8"></script>
+      <script src="/dist/blog.js" charset="utf-8"></script>
     </body>
 </html>
