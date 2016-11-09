@@ -26,7 +26,7 @@
   /*
 		Extendable classes
 	*/;
-}
+} /* Set for width of main  */
 
 * {
   box-sizing: border-box;
@@ -302,54 +302,13 @@ sup {
 .video, [data-css-video]{
   width: 100vw;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  min-height: 57.14286vw;
+  height: auto;
 }
 [data-css-image] {
   width: 100vw;
   height: auto;
 }
-[data-css-youtube] {
-  min-height: 57.14286vw;
-	width: 100vw;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-pre {
-	width: 100vw;
-}
-
-
-@media (min-width: 22.197rem) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2);
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-@media (min-width: 31.250rem) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2);
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-@media (min-width: 41.667rem) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2);
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-@media (min-width: 50.00rem) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2)
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-
 
 /*
 	Grid

@@ -64,7 +64,7 @@ webpackJsonp([0],[
 	      { title: 'The American Fall of 2016' },
 	      _react2.default.createElement(
 	        'time',
-	        { datetime: '2016-11-09' },
+	        { dateTime: '2016-11-09' },
 	        _react2.default.createElement(
 	          'a',
 	          { href: './' },

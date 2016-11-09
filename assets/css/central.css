@@ -43,6 +43,7 @@
 @custom-media --xs-viewport (min-width: 16.667rem);
 @custom-media --s-viewport (min-width: 22.197rem);
 @custom-media --m-viewport (min-width: 31.250rem);
+@custom-media --xm-viewport (min-width: 35rem); /* Set for width of main  */
 @custom-media --l-viewport (min-width: 41.667rem);
 @custom-media --xl-viewport (min-width: 50.00rem);
 
@@ -263,54 +264,13 @@ sup {
 .video, [data-css-video]{
   width: 100vw;
   @apply --box-shadow;
+  min-height: calc(100vw / 1.75);
+  height: auto;
 }
 [data-css-image] {
   width: 100vw;
   height: auto;
 }
-[data-css-youtube] {
-  min-height: calc(100vw / 1.75);
-	width: 100vw;
-  @apply --box-shadow;
-}
-pre {
-	width: 100vw;
-}
-
-
-@media (--s-viewport) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2);
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-@media (--m-viewport) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2);
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-@media (--l-viewport) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2);
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-@media (--xl-viewport) {
-  .video, [data-css-video], [data-css-image], [data-css-pre], pre {
-    margin-left: calc(-1 * (100vw - 35rem) / 2)
-  }
-	[data-css-pre], pre {
-		padding: 0 calc((100vw - 35rem) / 2);
-	}
-}
-
 
 /*
 	Grid
