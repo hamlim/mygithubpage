@@ -39,7 +39,7 @@ switch (DOCID) {
     break;
   case '4':
     ReactDOM.render(
-      <PostHeader title="The American Fall 2016">
+      <PostHeader title="The American Fall of 2016">
         <time datetime="2016-11-09"><a href="./" >November</a> 9th, 2016</time>
       </PostHeader>,
       document.getElementById('headerMount')
