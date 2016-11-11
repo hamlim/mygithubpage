@@ -75,6 +75,40 @@ webpackJsonp([0],[
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '5':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'We\'re Not Fucked*', subtitle: '*(completely)' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-11-09' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'November'
+	        ),
+	        ' 10th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
+	  case '6':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Don\'t Force It' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-11-10' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'November'
+	        ),
+	        ' 10th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ }

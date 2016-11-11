@@ -49,4 +49,28 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '5':
+    ReactDOM.render(
+      <PostHeader title="We're Not Fucked*" subtitle="*(completely)">
+        <time dateTime="2016-11-09"><a href="./" >November</a> 10th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
+  case '6':
+    ReactDOM.render(
+      <PostHeader title="Don't Force It">
+        <time dateTime="2016-11-10"><a href="./" >November</a> 10th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }
