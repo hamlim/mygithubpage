@@ -7,7 +7,7 @@
   --b: dodgerblue;
   --c: salmon;
   --d: #FAE352;
-  --gray: rgb(181, 181, 181);
+  --gray: rgb(130, 130, 130);
 
   --xs-bp: 266.672px;
   --xs-bp: 16.667rem;
@@ -76,7 +76,7 @@ ins {
   padding: .25em;
 }
 del {
-  color: rgb(181, 181, 181);
+  color: rgb(130, 130, 130);
 }
 strong {
   font-weight: bold;
@@ -250,7 +250,7 @@ blockquote cite::before {
   content: '-';
 }
 pre {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(235, 235, 235);
   position: relative;
   padding: 1.5em 1em;
   font-size: 80%;
@@ -265,9 +265,9 @@ pre::before {
   color: #041122;
 }
 code, kbd, var {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(235, 235, 235);
   font-family: monospace;
-  color: salmon;
+  color: rgb(130, 130, 130);
   display: inline;
 }
 
@@ -556,16 +556,16 @@ sup {
 }
 
 
-.css-selector {
+.css-selector, .code-a {
   color: #669900;
 }
-.css-prop {
+.css-prop, .code-b {
   color: #990082;
 }
-.css-string {
+.css-string, .code-c {
   color: #0077AC;
 }
-.css-value {
+.css-value, .code-d {
   color: #5C4E53;
 }
 .css-specialChars {

@@ -7,7 +7,7 @@
   --b: dodgerblue;
   --c: salmon;
   --d: #FAE352;
-  --gray: color(#E8E8E8 lightness(- 20%));
+  --gray: color(#E8E8E8 lightness(- 40%));
 
   --xs-bp: 16.667rem;
 	--s-bp: 22.197rem;
@@ -214,7 +214,7 @@ blockquote cite::before {
   content: '-';
 }
 pre {
-  background-color: color(var(--gray) lightness(+ 40%));
+  background-color: var(--light-gray);
   position: relative;
   padding: 1.5em 1em;
   font-size: 80%;
@@ -229,9 +229,9 @@ pre::before {
   color: var(--black);
 }
 code, kbd, var {
-  background-color: color(var(--gray) lightness(+ 40%));
+  background-color: var(--light-gray);
   font-family: monospace;
-  color: var(--c);
+  color: var(--gray);
   display: inline;
 }
 
@@ -446,16 +446,16 @@ sup {
 }
 
 
-.css-selector {
+.css-selector, .code-a {
   color: #669900;
 }
-.css-prop {
+.css-prop, .code-b {
   color: #990082;
 }
-.css-string {
+.css-string, .code-c {
   color: #0077AC;
 }
-.css-value {
+.css-value, .code-d {
   color: #5C4E53;
 }
 .css-specialChars {

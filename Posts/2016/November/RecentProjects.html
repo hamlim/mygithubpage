@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recent Projects</title>
+    <!-- Generic Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+    <meta name="theme-color" content="#2ECC71">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/dist/common.css">
+  </head>
+  <body id="post" data-post-id="7">
+    <main class="🔧">
+      <article class="article">
+        <header id="headerMount"></header>
+        <section>
+          <p>
+            I have been working on a few different small little ideas recently mostly over on <a href="codepen.io/matthamlin/">Codepen</a> that
+            I wanted to talk a bit more about those little ideas here.
+          </p>
+          <p>
+            Most of the ideas I was working on were small litle ideas that kind of stuck in my mind. The perfect example of this is the one I did
+            most recently. The idea was to have a simple little toggle on a webpage to invert the colors of the page to make it easier to read.
+            You can see this in the embedded pen below, I am using a few lines of JS to add an event listener to the light bulb button at the bottom
+            right corner of the page. This event handler simply sets an active flag to check on what colors to set.
+          </p>
+          <aside>
+            <p>
+              I guess I could have used the color-mod function to get a color that is contrasting with the current color. (More below)
+            </p>
+          </aside>
+          <p>
+            Then I also set two custom properties on the document element (<code>:root</code>) one for setting the background color and the other for setting
+            the color. Thats basically it.
+          </p>
+          <p data-height="265" data-theme-id="0" data-slug-hash="gLPBjo" data-default-tab="js,result" data-user="matthamlin" data-embed-version="2" data-pen-title="Toggle light and dark theme on blog post" data-preview="true" class="codepen"></p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          <pre data-lang="JS"><code>
+document.getElementsByClassName('js-btn')[0].addEventListener('click', (e) => {
+  if (e.target.getAttribute('active') === 'true') {
+    e.target.setAttribute('active', 'false');
+    document.documentElement.style.setProperty('--bg-color', '#fff');
+    document.documentElement.style.setProperty('--color', '#111');
+  } else {
+    e.target.setAttribute('active', 'true');
+    document.documentElement.style.setProperty('--bg-color', '#111');
+    document.documentElement.style.setProperty('--color', '#fff');
+  }
+});
+          </code></pre>
+          <p>
+            As I noted in the above aside, I think I could simplify this code quite a bit more, but I will be leaving it in the current form so it is a bit
+            easier for others to come to and understand how it is working.
+          </p>
+          <p>
+            Another little project I worked on was a simple SVG drawing API built out because I wanted a simple JS API to draw to an SVG element like we have
+            for Canvas and WebGL. Its still really early on in this development, and I don't really see any good use cases for this, but I just made it to learn a bit more
+            about how ES6 classes work.
+          </p>
+          <p data-height="265" data-theme-id="0" data-slug-hash="zoxKYQ" data-default-tab="js,result" data-user="matthamlin" data-embed-version="2" data-pen-title="SVG JS API" class="codepen"></p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+      </article>
+      <footer data-css-footer id="footerMount"></footer>
+    </main>
+    <script src="/dist/common.js" charset="utf-8"></script>
+    <script src="/dist/blog.js" charset="utf-8"></script>
+  </body>
+</html>
