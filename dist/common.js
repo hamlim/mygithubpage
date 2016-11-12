@@ -21631,7 +21631,7 @@
 					"Twitter"
 				)
 			),
-			_react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Quicksand:400,700", rel: "stylesheet" })
+			_react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Montserrat:400,700", rel: "stylesheet" })
 		);
 	};
 	
@@ -21683,7 +21683,7 @@
 					"Archive"
 				)
 			),
-			_react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Quicksand:400,700", rel: "stylesheet" })
+			_react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Montserrat:400,700", rel: "stylesheet" })
 		);
 	};
 	

@@ -69,7 +69,7 @@ export const Footer = (props) => {
 							<span data-css-chip><a href="https://m.me/immatthamlin" className="escape" data-css-emoji="fbm" title="Message Me"></a></span>
 					</div>
 				<div data-css-chip><a href="https://twitter.com/immatthamlin" data-css-link-article>Twitter</a></div>
-				<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" />
+				<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
 		</div>
 	)
 };
@@ -85,7 +85,7 @@ export const PostFooter = (props) => {
 				<span><a href="https://m.me/immatthamlin" className="emoji-💬 escape" title="Message Me"></a></span>
 			</div>
 			<div><a href="/archive">Archive</a></div>
-			<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
 		</section>
 	)
 };
