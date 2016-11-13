@@ -9,6 +9,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': 'Photos v2',
+        'link': 'Photosv2'
+      },
+      {
         'title': 'Recent Projects',
         'link': 'RecentProjects'
       },
