@@ -542,6 +542,7 @@ sup {
 
 [class*="social-icon"] {
 	height: 2em;
+  cursor: pointer;
 }
 [class*="social-icon--snapchat"] {
 	fill: var(--snap);
