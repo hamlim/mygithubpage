@@ -9,6 +9,12 @@
   --d: #FAE352;
   --gray: rgb(130, 130, 130);
 
+  --snap: #fffc00;
+  --twitter: #1da1f2;
+  --messenger: #0084ff;
+  --linkedin: #0077b5;
+  --github: #181717;
+
   --xs-bp: 266.672px;
   --xs-bp: 16.667rem;
 	--s-bp: 355.152px;
@@ -676,31 +682,170 @@ sup {
   }
   }
 
-[data-css-social-link="snap"] {
-	border-bottom: solid 3.2px #fffc00;
-	border-bottom: solid .2rem #fffc00;
+[class*="social-icon"] {
+	height: 2em;
 }
-[data-css-social-link="github"] {
-	border-bottom: solid 3.2px #4078c0;
-	border-bottom: solid .2rem #4078c0;
+[class*="social-icon--snapchat"] {
+	fill: #fffc00;
 }
-[data-css-social-link="email"] {
-	border-bottom: solid 3.2px #ea4335;
-	border-bottom: solid .2rem #ea4335;
+[class*="social-icon--snapchat"]:hover {
+  -webkit-animation: svg-fill-s 1s infinite;
+          animation: svg-fill-s 1s infinite;
 }
-[data-css-social-link="twitter"] {
-	border-bottom: solid 3.2px #1da1f2;
-	border-bottom: solid .2rem #1da1f2;
+[class*="social-icon--twitter"] {
+	fill: #1da1f2;
 }
-[data-css-social-link="linkedin"] {
-	border-bottom: solid 3.2px #0077b5;
-	border-bottom: solid .2rem #0077b5;
+[class*="social-icon--twitter"]:hover {
+  -webkit-animation: svg-fill-t 1s infinite;
+          animation: svg-fill-t 1s infinite;
 }
-[data-css-social-link="messenger"] {
-	border-bottom: solid 3.2px #0084FF;
-	border-bottom: solid .2rem #0084FF;
+[class*="social-icon--github"] {
+  fill: #181717;
+}
+[class*="social-icon--github"]:hover {
+  -webkit-animation: svg-fill-g 1s infinite;
+          animation: svg-fill-g 1s infinite;
+}
+[class*="social-icon--linkedin"] {
+  fill: #0077b5;
+}
+[class*="social-icon--linkedin"]:hover {
+  -webkit-animation: svg-fill-l 1s infinite;
+          animation: svg-fill-l 1s infinite;
+}
+[class*="social-icon--messenger"] {
+  fill: #0084ff;
+}
+[class*="social-icon--messenger"]:hover {
+  -webkit-animation: svg-fill-m 1s infinite;
+          animation: svg-fill-m 1s infinite;
 }
 
+@-webkit-keyframes svg-fill-s {
+  0%, 100% {
+    fill: #fffc00;
+  }
+  10% { fill: rgb(106, 255, 0); }
+  20% { fill: rgb(0, 255, 47); }
+  30% { fill: rgb(0, 255, 200); }
+  40% { fill: rgb(0, 157, 255); }
+  50% { fill: rgb(0, 4, 255); }
+  60% { fill: rgb(149, 0, 255); }
+  70% { fill: rgb(255, 0, 208); }
+  80% { fill: rgb(255, 0, 55); }
+  90% { fill: rgb(255, 98, 0); }
+}
+
+@keyframes svg-fill-s {
+  0%, 100% {
+    fill: #fffc00;
+  }
+  10% { fill: rgb(106, 255, 0); }
+  20% { fill: rgb(0, 255, 47); }
+  30% { fill: rgb(0, 255, 200); }
+  40% { fill: rgb(0, 157, 255); }
+  50% { fill: rgb(0, 4, 255); }
+  60% { fill: rgb(149, 0, 255); }
+  70% { fill: rgb(255, 0, 208); }
+  80% { fill: rgb(255, 0, 55); }
+  90% { fill: rgb(255, 98, 0); }
+}
+@-webkit-keyframes svg-fill-t {
+  0%, 100% {
+    fill: #1da1f2;
+  }
+  10% { fill: rgb(28, 32, 242); }
+  20% { fill: rgb(153, 28, 242); }
+  30% { fill: rgb(242, 28, 203); }
+  40% { fill: rgb(242, 28, 75); }
+  50% { fill: rgb(242, 110, 28); }
+  60% { fill: rgb(242, 238, 28); }
+  70% { fill: rgb(117, 242, 28); }
+  80% { fill: rgb(28, 242, 68); }
+  90% { fill: rgb(28, 242, 196); }
+}
+@keyframes svg-fill-t {
+  0%, 100% {
+    fill: #1da1f2;
+  }
+  10% { fill: rgb(28, 32, 242); }
+  20% { fill: rgb(153, 28, 242); }
+  30% { fill: rgb(242, 28, 203); }
+  40% { fill: rgb(242, 28, 75); }
+  50% { fill: rgb(242, 110, 28); }
+  60% { fill: rgb(242, 238, 28); }
+  70% { fill: rgb(117, 242, 28); }
+  80% { fill: rgb(28, 242, 68); }
+  90% { fill: rgb(28, 242, 196); }
+}
+@-webkit-keyframes svg-fill-l {
+  0%, 100% {
+    fill: #0077b5;
+  }
+  10% { fill: rgb(0, 9, 179); }
+  20% { fill: rgb(98, 0, 179); }
+  30% { fill: rgb(179, 0, 152); }
+  40% { fill: rgb(179, 0, 45); }
+  50% { fill: rgb(179, 62, 0); }
+  60% { fill: rgb(179, 170, 0); }
+  70% { fill: rgb(80, 179, 0); }
+  80% { fill: rgb(0, 179, 27); }
+  90% { fill: rgb(0, 179, 134); }
+}
+@keyframes svg-fill-l {
+  0%, 100% {
+    fill: #0077b5;
+  }
+  10% { fill: rgb(0, 9, 179); }
+  20% { fill: rgb(98, 0, 179); }
+  30% { fill: rgb(179, 0, 152); }
+  40% { fill: rgb(179, 0, 45); }
+  50% { fill: rgb(179, 62, 0); }
+  60% { fill: rgb(179, 170, 0); }
+  70% { fill: rgb(80, 179, 0); }
+  80% { fill: rgb(0, 179, 27); }
+  90% { fill: rgb(0, 179, 134); }
+}
+@-webkit-keyframes svg-fill-g {
+  0%, 100% {
+    fill: #181717;
+  }
+  50% { fill: rgb(153, 148, 148); }
+}
+@keyframes svg-fill-g {
+  0%, 100% {
+    fill: #181717;
+  }
+  50% { fill: rgb(153, 148, 148); }
+}
+@-webkit-keyframes svg-fill-m {
+  0%, 100% {
+    fill: #0084ff;
+  }
+  10% { fill: rgb(21, 0, 255); }
+  20% { fill: rgb(174, 0, 255); }
+  30% { fill: rgb(255, 0, 183); }
+  40% { fill: rgb(255, 0, 30); }
+  50% { fill: rgb(255, 123, 0); }
+  60% { fill: rgb(234, 255, 0); }
+  70% { fill: rgb(81, 255, 0); }
+  80% { fill: rgb(0, 255, 72); }
+  90% { fill: rgb(0, 255, 225); }
+}
+@keyframes svg-fill-m {
+  0%, 100% {
+    fill: #0084ff;
+  }
+  10% { fill: rgb(21, 0, 255); }
+  20% { fill: rgb(174, 0, 255); }
+  30% { fill: rgb(255, 0, 183); }
+  40% { fill: rgb(255, 0, 30); }
+  50% { fill: rgb(255, 123, 0); }
+  60% { fill: rgb(234, 255, 0); }
+  70% { fill: rgb(81, 255, 0); }
+  80% { fill: rgb(0, 255, 72); }
+  90% { fill: rgb(0, 255, 225); }
+}
 
 [data-css-emoji],
 [class*="emoji-"] {

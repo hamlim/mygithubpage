@@ -9,6 +9,12 @@
   --d: #FAE352;
   --gray: color(#E8E8E8 lightness(- 40%));
 
+  --snap: #fffc00;
+  --twitter: #1da1f2;
+  --messenger: #0084ff;
+  --linkedin: #0077b5;
+  --github: #181717;
+
   --xs-bp: 16.667rem;
 	--s-bp: 22.197rem;
 	--m-bp: 31.250rem;
@@ -534,25 +540,102 @@ sup {
   }
 }
 
-[data-css-social-link="snap"] {
-	border-bottom: solid .2rem #fffc00;
+[class*="social-icon"] {
+	height: 2em;
 }
-[data-css-social-link="github"] {
-	border-bottom: solid .2rem #4078c0;
+[class*="social-icon--snapchat"] {
+	fill: var(--snap);
 }
-[data-css-social-link="email"] {
-	border-bottom: solid .2rem #ea4335;
+[class*="social-icon--snapchat"]:hover {
+  animation: svg-fill-s 1s infinite;
 }
-[data-css-social-link="twitter"] {
-	border-bottom: solid .2rem #1da1f2;
+[class*="social-icon--twitter"] {
+	fill: var(--twitter);
 }
-[data-css-social-link="linkedin"] {
-	border-bottom: solid .2rem #0077b5;
+[class*="social-icon--twitter"]:hover {
+  animation: svg-fill-t 1s infinite;
 }
-[data-css-social-link="messenger"] {
-	border-bottom: solid .2rem #0084FF;
+[class*="social-icon--github"] {
+  fill: var(--github);
+}
+[class*="social-icon--github"]:hover {
+  animation: svg-fill-g 1s infinite;
+}
+[class*="social-icon--linkedin"] {
+  fill: var(--linkedin);
+}
+[class*="social-icon--linkedin"]:hover {
+  animation: svg-fill-l 1s infinite;
+}
+[class*="social-icon--messenger"] {
+  fill: var(--messenger);
+}
+[class*="social-icon--messenger"]:hover {
+  animation: svg-fill-m 1s infinite;
 }
 
+@keyframes svg-fill-s {
+  0%, 100% {
+    fill: var(--snap);
+  }
+  10% { fill: color(var(--snap) hue(+ 36deg)); }
+  20% { fill: color(var(--snap) hue(+ 72deg)); }
+  30% { fill: color(var(--snap) hue(+ 108deg)); }
+  40% { fill: color(var(--snap) hue(+ 144deg)); }
+  50% { fill: color(var(--snap) hue(+ 180deg)); }
+  60% { fill: color(var(--snap) hue(+ 216deg)); }
+  70% { fill: color(var(--snap) hue(+ 252deg)); }
+  80% { fill: color(var(--snap) hue(+ 288deg)); }
+  90% { fill: color(var(--snap) hue(+ 324deg)); }
+}
+@keyframes svg-fill-t {
+  0%, 100% {
+    fill: var(--twitter);
+  }
+  10% { fill: color(var(--twitter) hue(+ 36deg)); }
+  20% { fill: color(var(--twitter) hue(+ 72deg)); }
+  30% { fill: color(var(--twitter) hue(+ 108deg)); }
+  40% { fill: color(var(--twitter) hue(+ 144deg)); }
+  50% { fill: color(var(--twitter) hue(+ 180deg)); }
+  60% { fill: color(var(--twitter) hue(+ 216deg)); }
+  70% { fill: color(var(--twitter) hue(+ 252deg)); }
+  80% { fill: color(var(--twitter) hue(+ 288deg)); }
+  90% { fill: color(var(--twitter) hue(+ 324deg)); }
+}
+@keyframes svg-fill-l {
+  0%, 100% {
+    fill: var(--linkedin);
+  }
+  10% { fill: color(var(--linkedin) hue(+ 36deg)); }
+  20% { fill: color(var(--linkedin) hue(+ 72deg)); }
+  30% { fill: color(var(--linkedin) hue(+ 108deg)); }
+  40% { fill: color(var(--linkedin) hue(+ 144deg)); }
+  50% { fill: color(var(--linkedin) hue(+ 180deg)); }
+  60% { fill: color(var(--linkedin) hue(+ 216deg)); }
+  70% { fill: color(var(--linkedin) hue(+ 252deg)); }
+  80% { fill: color(var(--linkedin) hue(+ 288deg)); }
+  90% { fill: color(var(--linkedin) hue(+ 324deg)); }
+}
+@keyframes svg-fill-g {
+  0%, 100% {
+    fill: var(--github);
+  }
+  50% { fill: color(var(--github) lightness(+ 50%)); }
+}
+@keyframes svg-fill-m {
+  0%, 100% {
+    fill: var(--messenger);
+  }
+  10% { fill: color(var(--messenger) hue(+ 36deg)); }
+  20% { fill: color(var(--messenger) hue(+ 72deg)); }
+  30% { fill: color(var(--messenger) hue(+ 108deg)); }
+  40% { fill: color(var(--messenger) hue(+ 144deg)); }
+  50% { fill: color(var(--messenger) hue(+ 180deg)); }
+  60% { fill: color(var(--messenger) hue(+ 216deg)); }
+  70% { fill: color(var(--messenger) hue(+ 252deg)); }
+  80% { fill: color(var(--messenger) hue(+ 288deg)); }
+  90% { fill: color(var(--messenger) hue(+ 324deg)); }
+}
 
 [data-css-emoji],
 [class*="emoji-"] {

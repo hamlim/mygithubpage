@@ -877,25 +877,24 @@ sup, .sup, [data-css-sup] {
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
+[class*="social-icon"] {
+	height: 2em;
+}
+[class*="social-icon--snapchat"] {
+	fill: #fffc00;
+}
 
-
-[data-css-social-link="snap"] {
-	border-bottom: solid .2rem #fffc00;
+[class*="social-icon--twitter"] {
+	fill: #1da1f2;
 }
-[data-css-social-link="github"] {
-	border-bottom: solid .2rem #4078c0;
+[class*="social-icon--github"] {
+	fill: #181717;
 }
-[data-css-social-link="email"] {
-	border-bottom: solid .2rem #ea4335;
+[class*="social-icon--linkedin"] {
+	fill: #0077b5;
 }
-[data-css-social-link="twitter"] {
-	border-bottom: solid .2rem #1da1f2;
-}
-[data-css-social-link="linkedin"] {
-	border-bottom: solid .2rem #0077b5;
-}
-[data-css-social-link="messenger"] {
-	border-bottom: solid .2rem #0084FF;
+[class*="social-icon--messenger"] {
+	fill: #0077b5;
 }
 
 
