@@ -14,6 +14,8 @@
   --messenger: #0084ff;
   --linkedin: #0077b5;
   --github: #181717;
+  --chat: #7BB32E;
+  --email: #E75A4D;
 
   --xs-bp: 266.672px;
   --xs-bp: 16.667rem;
@@ -109,6 +111,8 @@ a:not(.escape) {
   overflow: hidden;
   text-decoration: none;
   margin: 0;
+  border-bottom: solid 3px currentColor;
+  cursor: pointer;
 }
 nav li + li {
   margin-left: .25em;
@@ -124,55 +128,40 @@ a.escape:hover {
   -webkit-transition: color .5s ease;
   transition: color .5s ease;
 }
-a:not(.escape)::before {
-  content: '';
-  width: 100%;
-  bottom: 0;
-  height: 5px;
-  left: 0;
-  position: absolute;
-  background: -webkit-linear-gradient(left, springgreen, #FAE352);
-  background: linear-gradient(to right, springgreen, #FAE352);
+a:not(.escape):hover,
+a:not(.escape).active {
+  -webkit-animation: link-flash 2s infinite;
+          animation: link-flash 2s infinite;
 }
-a:not(.escape):hover::before {
-  -webkit-animation: slide 2s infinite;
-          animation: slide 2s infinite;
+
+@-webkit-keyframes link-flash {
+  0%, 100% {
+    color: springgreen;
+  }
+  10% { color: rgb(0, 229, 255); }
+  20% { color: rgb(0, 76, 255); }
+  30% { color: rgb(77, 0, 255); }
+  40% { color: rgb(229, 0, 255); }
+  50% { color: rgb(255, 0, 128); }
+  60% { color: rgb(255, 26, 0); }
+  70% { color: rgb(255, 179, 0); }
+  80% { color: rgb(178, 255, 0); }
+  90% { color: rgb(26, 255, 0); }
 }
-@-webkit-keyframes slide {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+
+@keyframes link-flash {
+  0%, 100% {
+    color: springgreen;
   }
-  25% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  75% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes slide {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  25% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  75% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
+  10% { color: rgb(0, 229, 255); }
+  20% { color: rgb(0, 76, 255); }
+  30% { color: rgb(77, 0, 255); }
+  40% { color: rgb(229, 0, 255); }
+  50% { color: rgb(255, 0, 128); }
+  60% { color: rgb(255, 26, 0); }
+  70% { color: rgb(255, 179, 0); }
+  80% { color: rgb(178, 255, 0); }
+  90% { color: rgb(26, 255, 0); }
 }
 
 article {
@@ -686,12 +675,23 @@ sup {
 	height: 2em;
   cursor: pointer;
 }
+[class*="social-icon--small"] {
+  height: 1em;
+  cursor: pointer;
+}
 [class*="social-icon--snapchat"] {
 	fill: #fffc00;
 }
 [class*="social-icon--snapchat"]:hover {
   -webkit-animation: svg-fill-s 1s infinite;
           animation: svg-fill-s 1s infinite;
+}
+[class*="social-icon--email"] {
+	fill: #E75A4D;
+}
+[class*="social-icon--email"]:hover {
+  -webkit-animation: svg-fill-e 1s infinite;
+          animation: svg-fill-e 1s infinite;
 }
 [class*="social-icon--twitter"] {
 	fill: #1da1f2;
@@ -721,6 +721,14 @@ sup {
   -webkit-animation: svg-fill-m 1s infinite;
           animation: svg-fill-m 1s infinite;
 }
+[class*="social-icon--chat"] {
+  fill: #7BB32E;
+}
+[class*="social-icon--chat"]:hover {
+  -webkit-animation: svg-fill-c 1s infinite;
+          animation: svg-fill-c 1s infinite;
+}
+
 
 @-webkit-keyframes svg-fill-s {
   0%, 100% {
@@ -737,6 +745,7 @@ sup {
   90% { fill: rgb(255, 98, 0); }
 }
 
+
 @keyframes svg-fill-s {
   0%, 100% {
     fill: #fffc00;
@@ -750,6 +759,34 @@ sup {
   70% { fill: rgb(255, 0, 208); }
   80% { fill: rgb(255, 0, 55); }
   90% { fill: rgb(255, 98, 0); }
+}
+@-webkit-keyframes svg-fill-e {
+  0%, 100% {
+    fill: #E75A4D;
+  }
+  10% { fill: rgb(231, 181, 75); }
+  20% { fill: rgb(187, 231, 75); }
+  30% { fill: rgb(94, 231, 75); }
+  40% { fill: rgb(75, 231, 150); }
+  50% { fill: rgb(75, 218, 231); }
+  60% { fill: rgb(75, 125, 231); }
+  70% { fill: rgb(119, 75, 231); }
+  80% { fill: rgb(212, 75, 231); }
+  90% { fill: rgb(231, 75, 156); }
+}
+@keyframes svg-fill-e {
+  0%, 100% {
+    fill: #E75A4D;
+  }
+  10% { fill: rgb(231, 181, 75); }
+  20% { fill: rgb(187, 231, 75); }
+  30% { fill: rgb(94, 231, 75); }
+  40% { fill: rgb(75, 231, 150); }
+  50% { fill: rgb(75, 218, 231); }
+  60% { fill: rgb(75, 125, 231); }
+  70% { fill: rgb(119, 75, 231); }
+  80% { fill: rgb(212, 75, 231); }
+  90% { fill: rgb(231, 75, 156); }
 }
 @-webkit-keyframes svg-fill-t {
   0%, 100% {
@@ -846,6 +883,34 @@ sup {
   70% { fill: rgb(81, 255, 0); }
   80% { fill: rgb(0, 255, 72); }
   90% { fill: rgb(0, 255, 225); }
+}
+@-webkit-keyframes svg-fill-c {
+  0%, 100% {
+    fill: #7BB32E;
+  }
+  10% { fill: rgb(46, 178, 48); }
+  20% { fill: rgb(46, 178, 128); }
+  30% { fill: rgb(46, 150, 178); }
+  40% { fill: rgb(46, 70, 178); }
+  50% { fill: rgb(101, 46, 178); }
+  60% { fill: rgb(178, 46, 176); }
+  70% { fill: rgb(178, 46, 97); }
+  80% { fill: rgb(178, 75, 46); }
+  90% { fill: rgb(178, 154, 46); }
+}
+@keyframes svg-fill-c {
+  0%, 100% {
+    fill: #7BB32E;
+  }
+  10% { fill: rgb(46, 178, 48); }
+  20% { fill: rgb(46, 178, 128); }
+  30% { fill: rgb(46, 150, 178); }
+  40% { fill: rgb(46, 70, 178); }
+  50% { fill: rgb(101, 46, 178); }
+  60% { fill: rgb(178, 46, 176); }
+  70% { fill: rgb(178, 46, 97); }
+  80% { fill: rgb(178, 75, 46); }
+  90% { fill: rgb(178, 154, 46); }
 }
 
 [data-css-emoji],

@@ -14,6 +14,8 @@
   --messenger: #0084ff;
   --linkedin: #0077b5;
   --github: #181717;
+  --chat: #7BB32E;
+  --email: #E75A4D;
 
   --xs-bp: 16.667rem;
 	--s-bp: 22.197rem;
@@ -121,6 +123,8 @@ a:not(.escape) {
   overflow: hidden;
   text-decoration: none;
   margin: 0;
+  border-bottom: solid 3px currentColor;
+  cursor: pointer;
 }
 nav li + li {
   margin-left: .25em;
@@ -134,31 +138,24 @@ a.escape:hover {
   color: var(--b);
   transition: color .5s ease;
 }
-a:not(.escape)::before {
-  content: '';
-  width: 100%;
-  bottom: 0;
-  height: 5px;
-  left: 0;
-  position: absolute;
-  background: linear-gradient(to right, var(--a), var(--d));
+a:not(.escape):hover,
+a:not(.escape).active {
+  animation: link-flash 2s infinite;
 }
-a:not(.escape):hover::before {
-  animation: slide 2s infinite;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
+
+@keyframes link-flash {
+  0%, 100% {
+    color: var(--a);
   }
-  25% {
-    transform: translateX(100%);
-  }
-  75% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  10% { color: color(var(--a) hue(+ 36deg)); }
+  20% { color: color(var(--a) hue(+ 72deg)); }
+  30% { color: color(var(--a) hue(+ 108deg)); }
+  40% { color: color(var(--a) hue(+ 144deg)); }
+  50% { color: color(var(--a) hue(+ 180deg)); }
+  60% { color: color(var(--a) hue(+ 216deg)); }
+  70% { color: color(var(--a) hue(+ 252deg)); }
+  80% { color: color(var(--a) hue(+ 288deg)); }
+  90% { color: color(var(--a) hue(+ 324deg)); }
 }
 
 article {
@@ -544,11 +541,21 @@ sup {
 	height: 2em;
   cursor: pointer;
 }
+[class*="social-icon--small"] {
+  height: 1em;
+  cursor: pointer;
+}
 [class*="social-icon--snapchat"] {
 	fill: var(--snap);
 }
 [class*="social-icon--snapchat"]:hover {
   animation: svg-fill-s 1s infinite;
+}
+[class*="social-icon--email"] {
+	fill: var(--email);
+}
+[class*="social-icon--email"]:hover {
+  animation: svg-fill-e 1s infinite;
 }
 [class*="social-icon--twitter"] {
 	fill: var(--twitter);
@@ -574,6 +581,13 @@ sup {
 [class*="social-icon--messenger"]:hover {
   animation: svg-fill-m 1s infinite;
 }
+[class*="social-icon--chat"] {
+  fill: var(--chat);
+}
+[class*="social-icon--chat"]:hover {
+  animation: svg-fill-c 1s infinite;
+}
+
 
 @keyframes svg-fill-s {
   0%, 100% {
@@ -588,6 +602,20 @@ sup {
   70% { fill: color(var(--snap) hue(+ 252deg)); }
   80% { fill: color(var(--snap) hue(+ 288deg)); }
   90% { fill: color(var(--snap) hue(+ 324deg)); }
+}
+@keyframes svg-fill-e {
+  0%, 100% {
+    fill: var(--email);
+  }
+  10% { fill: color(var(--email) hue(+ 36deg)); }
+  20% { fill: color(var(--email) hue(+ 72deg)); }
+  30% { fill: color(var(--email) hue(+ 108deg)); }
+  40% { fill: color(var(--email) hue(+ 144deg)); }
+  50% { fill: color(var(--email) hue(+ 180deg)); }
+  60% { fill: color(var(--email) hue(+ 216deg)); }
+  70% { fill: color(var(--email) hue(+ 252deg)); }
+  80% { fill: color(var(--email) hue(+ 288deg)); }
+  90% { fill: color(var(--email) hue(+ 324deg)); }
 }
 @keyframes svg-fill-t {
   0%, 100% {
@@ -636,6 +664,20 @@ sup {
   70% { fill: color(var(--messenger) hue(+ 252deg)); }
   80% { fill: color(var(--messenger) hue(+ 288deg)); }
   90% { fill: color(var(--messenger) hue(+ 324deg)); }
+}
+@keyframes svg-fill-c {
+  0%, 100% {
+    fill: var(--chat);
+  }
+  10% { fill: color(var(--chat) hue(+ 36deg)); }
+  20% { fill: color(var(--chat) hue(+ 72deg)); }
+  30% { fill: color(var(--chat) hue(+ 108deg)); }
+  40% { fill: color(var(--chat) hue(+ 144deg)); }
+  50% { fill: color(var(--chat) hue(+ 180deg)); }
+  60% { fill: color(var(--chat) hue(+ 216deg)); }
+  70% { fill: color(var(--chat) hue(+ 252deg)); }
+  80% { fill: color(var(--chat) hue(+ 288deg)); }
+  90% { fill: color(var(--chat) hue(+ 324deg)); }
 }
 
 [data-css-emoji],
