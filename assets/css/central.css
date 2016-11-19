@@ -64,7 +64,7 @@ p, ul, ol {
   margin-top: .5em;
 }
 html {
-  font-family: "Montserrat",
+  font-family: "Poppins",
                -apple-system,
                BlinkMacSystemFont,
                "Segoe UI",
@@ -381,7 +381,8 @@ sup {
 /*
   Typography
 */
-[data-css-lead] {
+[data-css-lead],
+.lead {
 	font-size: calc(var(--font-size) * 2);
 	text-align: center;
 	width: 100%;

@@ -85,4 +85,15 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '8':
+    ReactDOM.render(
+      <PostHeader title="That First Fucking Step">
+        <time dateTime="2016-11-18"><a href="./" >November</a> 18th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
 }

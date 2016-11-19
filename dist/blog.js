@@ -126,6 +126,22 @@ webpackJsonp([0],[
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '8':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'That First Fucking Step' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-11-18' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'November'
+	        ),
+	        ' 18th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	}
 
 /***/ }
