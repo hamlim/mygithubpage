@@ -9,6 +9,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': 'The Future of Consumer VR',
+        'link': 'TheFutureofConsumerVR'
+      },
+      {
         'title': 'Links',
         'link': 'Links'
       },
