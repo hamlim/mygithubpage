@@ -60,6 +60,9 @@ html {
   font-size: 22px;
   line-height: 2;
 }
+body {
+  position: relative;
+}
 h1:not(.escape--default) { font-size: 36.8px; font-size: 2.3rem; }
 h1.escape--default { font-size: 16px; font-size: 1rem; }
 h2 { font-size: 30.4px; font-size: 1.9rem; }
@@ -183,7 +186,6 @@ section {
   padding: 1em;
 }
 
-
 @-webkit-keyframes fade-up {
   from {
     opacity: 0;
@@ -191,7 +193,6 @@ section {
             transform: translateY(100%);
   }
 }
-
 
 @keyframes fade-up {
   from {
@@ -1046,6 +1047,82 @@ sup {
 
 [class*="header--subtitle"] {
 	text-align: center;
+}
+
+.LB-wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.LB-image {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 55vw;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+}
+[class*="LB-target-wrapper"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+[class*="LB-target-wrapper"] div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 2;
+}
+[class*="LB-target-wrapper"] img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+[class*="LB-target-wrapper"]::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: rgb(235, 235, 235);
+}
+[class*="LB-target-wrapper"]:not(:target) {
+  display: none;
+}
+[class*="LB-caption"], [class*="LB-target-caption"] {
+  text-align: center;
+  margin: 0 0 24px;
+  margin: 0 0 1.5rem;
+  display: block;
 }
 
 /*# sourceMappingURL=common.css.map*/

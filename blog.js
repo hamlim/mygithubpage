@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { PostHeader, PostFooter } from './assets/js/src/components';
+import { Lightbox } from './assets/js/src/reactlightbox';
 var post_css = require('./assets/css/central.css');
-
 
 const DOCID = document.body.getAttribute('data-post-id');
 
@@ -103,6 +103,48 @@ switch (DOCID) {
         <time dateTime="2016-11-19"><a href="./" >November</a> 19th, 2016</time>
       </PostHeader>,
       document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
+  case '10':
+    ReactDOM.render(
+      <PostHeader title="The Future of Consumer VR">
+        <time dateTime="2016-11-20"><a href="./" >November</a> 20th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    let imagearray = [
+      {
+        img: '/assets/images/posts/daydream/Photos/0.jpg',
+        caption: 'The box it came in'
+      },
+      {
+        img: '/assets/images/posts/daydream/Photos/1.jpg',
+        caption: 'The Daydream View'
+      },
+      {
+        img: '/assets/images/posts/daydream/Photos/2.jpg',
+        caption: 'Another angle of the Daydream View'
+      },
+      {
+        img: '/assets/images/posts/daydream/Photos/3.jpg',
+        caption: 'The front flap of the Daydream View'
+      },
+      {
+        img: '/assets/images/posts/daydream/Photos/4.jpg',
+        caption: 'The Daydream View controller'
+      },
+      {
+        img: '/assets/images/posts/daydream/Photos/5.jpg',
+        caption: 'The Daydream View controller in the Daydream View for storage'
+      }
+    ];
+    ReactDOM.render(
+      <Lightbox images={imagearray} title="Daydream View" />,
+      document.getElementById('reactLightboxMount')
     );
     ReactDOM.render(
       <PostFooter />,

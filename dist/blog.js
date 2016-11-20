@@ -1,5 +1,6 @@
-webpackJsonp([0],[
-/* 0 */
+webpackJsonp([0],{
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14,9 +15,11 @@ webpackJsonp([0],[
 	
 	var _components = __webpack_require__(172);
 	
+	var _reactlightbox = __webpack_require__(173);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var post_css = __webpack_require__(173);
+	var post_css = __webpack_require__(174);
 	
 	var DOCID = document.body.getAttribute('data-post-id');
 	
@@ -160,8 +163,112 @@ webpackJsonp([0],[
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '10':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'The Future of Consumer VR' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-11-20' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'November'
+	        ),
+	        ' 20th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    var imagearray = [{
+	      img: '/assets/images/posts/daydream/Photos/0.jpg',
+	      caption: 'The box it came in'
+	    }, {
+	      img: '/assets/images/posts/daydream/Photos/1.jpg',
+	      caption: 'The Daydream View'
+	    }, {
+	      img: '/assets/images/posts/daydream/Photos/2.jpg',
+	      caption: 'Another angle of the Daydream View'
+	    }, {
+	      img: '/assets/images/posts/daydream/Photos/3.jpg',
+	      caption: 'The front flap of the Daydream View'
+	    }, {
+	      img: '/assets/images/posts/daydream/Photos/4.jpg',
+	      caption: 'The Daydream View controller'
+	    }, {
+	      img: '/assets/images/posts/daydream/Photos/5.jpg',
+	      caption: 'The Daydream View controller in the Daydream View for storage'
+	    }];
+	    _reactDom2.default.render(_react2.default.createElement(_reactlightbox.Lightbox, { images: imagearray, title: 'Daydream View' }), document.getElementById('reactLightboxMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
+/***/ },
+
+/***/ 173:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.Lightbox = undefined;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// 	props.images => [{url: 'something.jpg', caption: 'caption'}, ...]
+	
+	var Lightbox = exports.Lightbox = function Lightbox(props) {
+		var imgWrappers = props.images.map(function (obj, index) {
+			return _react2.default.createElement(
+				"div",
+				{ className: "LB-wrapper", key: index },
+				_react2.default.createElement(
+					"a",
+					{ href: "#LB_target_" + index, className: "escape" },
+					_react2.default.createElement("img", { id: "LB_" + index, src: obj.img, alt: obj.caption, className: "LB-image" })
+				),
+				_react2.default.createElement(
+					"small",
+					{ className: "LB-caption" },
+					obj.caption
+				)
+			);
+		});
+		var portalImages = props.images.map(function (obj, index) {
+			return _react2.default.createElement(
+				"a",
+				{ href: "#LB_" + index, className: "LB-target-wrapper escape", id: "LB_target_" + index, key: index },
+				_react2.default.createElement(
+					"div",
+					null,
+					_react2.default.createElement("img", { src: obj.img, alt: obj.caption, className: "LB-target-img" }),
+					_react2.default.createElement(
+						"small",
+						{ className: "LB-target-caption" },
+						obj.caption
+					)
+				)
+			);
+		});
+		return _react2.default.createElement(
+			"section",
+			{ className: "LB-component" },
+			_react2.default.createElement(
+				"h2",
+				{ className: "LB-title" },
+				props.title
+			),
+			imgWrappers,
+			portalImages
+		);
+	};
+
 /***/ }
-]);
+
+});
 //# sourceMappingURL=blog.js.map
