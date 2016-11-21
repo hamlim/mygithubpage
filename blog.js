@@ -151,4 +151,16 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '11':
+    ReactDOM.render(
+      <PostHeader title="Government is Broken">
+        <time dateTime="2016-11-20"><a href="./" >November</a> 20th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }
