@@ -9,6 +9,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': 'Quit Complaining',
+        'link': 'QuitComplaining'
+      },
+      {
         'title': 'Government is Broken',
         'link': 'GovernmentIsBroken'
       },

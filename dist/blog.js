@@ -217,6 +217,23 @@ webpackJsonp([0],{
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '12':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Quit Complaining' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-11-24' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'November'
+	        ),
+	        ' 24th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },
