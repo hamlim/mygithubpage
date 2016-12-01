@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { PostHeader, PostFooter } from './assets/js/src/components';
 import { Lightbox } from './assets/js/src/reactlightbox';
+import { ColorCards } from './assets/js/src/colorcards';
 var post_css = require('./assets/css/central.css');
 
 const DOCID = document.body.getAttribute('data-post-id');
@@ -170,6 +171,26 @@ switch (DOCID) {
       </PostHeader>,
       document.getElementById('headerMount')
     );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
+  case '13':
+    ReactDOM.render(
+      <PostHeader title="Color Cards">
+        <time dateTime="2016-11-29"><a href="./" >November</a> 29th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    window.fetch('/assets/json/colors.json').then(function (response) {
+      return response.json().then((jsonResponse) => {
+        ReactDOM.render(
+          <ColorCards colors={jsonResponse} />,
+          document.getElementById('ColorCards')
+        );
+      });
+    });
     ReactDOM.render(
       <PostFooter />,
       document.getElementById('footerMount')

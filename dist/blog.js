@@ -17,9 +17,11 @@ webpackJsonp([0],{
 	
 	var _reactlightbox = __webpack_require__(173);
 	
+	var _colorcards = __webpack_require__(174);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var post_css = __webpack_require__(174);
+	var post_css = __webpack_require__(175);
 	
 	var DOCID = document.body.getAttribute('data-post-id');
 	
@@ -234,6 +236,28 @@ webpackJsonp([0],{
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '13':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Color Cards' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-11-29' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'November'
+	        ),
+	        ' 29th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    window.fetch('/assets/json/colors.json').then(function (response) {
+	      return response.json().then(function (jsonResponse) {
+	        _reactDom2.default.render(_react2.default.createElement(_colorcards.ColorCards, { colors: jsonResponse }), document.getElementById('ColorCards'));
+	      });
+	    });
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },
@@ -300,6 +324,46 @@ webpackJsonp([0],{
 			imgWrappers,
 			portalImages
 		);
+	};
+
+/***/ },
+
+/***/ 174:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.ColorCards = undefined;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ColorCards = exports.ColorCards = function ColorCards(colors) {
+	  var cards = colors.colors.map(function (obj, index) {
+	    var styles = {
+	      backgroundColor: obj.hex
+	    };
+	    return _react2.default.createElement(
+	      "div",
+	      { key: index, style: styles, className: "ColorCards" },
+	      _react2.default.createElement(
+	        "span",
+	        { className: "ColorCards-hex" },
+	        obj.hex
+	      )
+	    );
+	  });
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "ColorCards-wrapper" },
+	    cards
+	  );
 	};
 
 /***/ }

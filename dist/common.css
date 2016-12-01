@@ -1131,4 +1131,34 @@ sup {
   display: block;
 }
 
+
+.ColorCards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+  .ColorCards {
+    width: 10em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+    .ColorCards-hex {
+      display: inline-block;
+      padding: .1em .3em;
+      background-color: rgba(255, 255, 255, .7);
+      color: black;
+    }
 /*# sourceMappingURL=common.css.map*/

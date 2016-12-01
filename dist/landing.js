@@ -16,12 +16,15 @@ webpackJsonp([1],[
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var landingcss = __webpack_require__(174);
+	var landingcss = __webpack_require__(175);
 	
 	var listing = [{
 	  'month': 'November',
 	  'year': '2016',
 	  'articles': [{
+	    'title': 'Color Cards',
+	    'link': 'ColorCards'
+	  }, {
 	    'title': 'Quit Complaining',
 	    'link': 'QuitComplaining'
 	  }, {
