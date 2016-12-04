@@ -5,6 +5,16 @@ var landingcss = require('./assets/css/central.css');
 
 var listing = [
   {
+    'month': 'December',
+    'year': '2016',
+    'articles': [
+      {
+        'title': 'November Recap',
+        'link': 'NovemberRecap'
+      }
+    ]
+  },
+  {
     'month': 'November',
     'year': '2016',
     'articles': [

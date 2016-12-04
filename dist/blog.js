@@ -258,6 +258,23 @@ webpackJsonp([0],{
 	    });
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '14':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'November Recap' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-12-04' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'December'
+	        ),
+	        ' 4th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },

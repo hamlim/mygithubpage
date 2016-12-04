@@ -19,6 +19,13 @@ webpackJsonp([1],[
 	var landingcss = __webpack_require__(175);
 	
 	var listing = [{
+	  'month': 'December',
+	  'year': '2016',
+	  'articles': [{
+	    'title': 'November Recap',
+	    'link': 'NovemberRecap'
+	  }]
+	}, {
 	  'month': 'November',
 	  'year': '2016',
 	  'articles': [{
