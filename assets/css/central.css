@@ -7,7 +7,7 @@
   --b: dodgerblue;
   --c: salmon;
   --d: #FAE352;
-  --gray: color(#E8E8E8 lightness(- 40%));
+  --gray: color(#E8E8E8 lightness(- 50%));
 
   --snap: #fffc00;
   --twitter: #1da1f2;
@@ -238,6 +238,7 @@ code, kbd, var {
   font-family: monospace;
   color: var(--gray);
   display: inline;
+  padding: 0 .1em;
 }
 
 ul, ol {

@@ -22,6 +22,9 @@ webpackJsonp([1],[
 	  'month': 'December',
 	  'year': '2016',
 	  'articles': [{
+	    'title': 'CSS Feature Locks',
+	    'link': 'CSSFeatureLocks'
+	  }, {
 	    'title': 'November Recap',
 	    'link': 'NovemberRecap'
 	  }]

@@ -27,7 +27,7 @@
     "rucksack": "^1.0.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.14.0"
   },
   "dependencies": {
     "babel-preset-es2016": "^6.16.0",
@@ -35,5 +35,9 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "postcss-color-function": "^2.0.1",
     "postcss-loader": "^1.0.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/hamlim/mygithubpage.git",
+  "author": "Matt Hamlin <hamlim@outlook.com>",
+  "license": "MIT"
 }
