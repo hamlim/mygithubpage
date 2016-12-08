@@ -162,11 +162,8 @@ a:not(.escape).active {
 }
 
 article {
-  background-color: var(--white);
-  border-radius: 2px;
-  max-width: 35rem;
+  max-width: 40rem;
   margin: 0 auto 3rem;
-  @apply --box-shadow;
 }
 main {
   padding-top: 3rem;
