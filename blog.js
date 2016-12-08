@@ -211,7 +211,7 @@ switch (DOCID) {
   case '15':
     ReactDOM.render(
       <PostHeader title="CSS Feature Locks" subtitle="Wait what?">
-        <time dateTime="2016-12-09"><a href="./" >December</a> 9th, 2016</time>
+        <time dateTime="2016-12-08"><a href="./" >December</a> 8th, 2016</time>
       </PostHeader>,
       document.getElementById('headerMount')
     );
