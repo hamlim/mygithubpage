@@ -292,6 +292,23 @@ webpackJsonp([0],{
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '16':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'CSS in JSX Limitations', subtitle: 'Wait what?' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-12-13' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'December'
+	        ),
+	        ' 13th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },

@@ -220,4 +220,16 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '16':
+    ReactDOM.render(
+      <PostHeader title="CSS in JSX Limitations" subtitle="Wait what?">
+        <time dateTime="2016-12-13"><a href="./" >December</a> 13th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }

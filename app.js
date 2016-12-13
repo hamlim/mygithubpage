@@ -9,6 +9,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': 'The Limitations of CSS in JSX', 
+        'link': 'CSSinJSXLimitations'
+      },
+      {
         'title': 'CSS Feature Locks', 
         'link': 'CSSFeatureLocks'
       },

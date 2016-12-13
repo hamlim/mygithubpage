@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Limitations of CSS in JSX</title>
+      <!-- Generic Meta Tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+      <meta name="theme-color" content="#2ECC71">
+      <!-- Styles -->
+      <link rel="stylesheet" href="/dist/common.css">
+  </head>
+  <body id="post" data-post-id="16">
+    <main class="🔧">
+      <article class="article">
+        <header id="headerMount"></header>
+        <section>
+          <p>
+            I really enjoy writing my html in javascript these days. If you told me that I felt this way about jsx a year ago I would have laughed in your face, 
+            heck I even tweeted about why I hated jsx. But now I feel like I understand why React developers decided on this kind of programming. The UI is a 
+            function of your current state, this state can be either stored or passed down through props, but it is bound to this state. Writing your html in a 
+            different place than where you handle the state of the view seems pretty crazy once this idea clicks.
+          </p>
+          <p>
+            However I have one large issue that is holding me back from fully accepting jsx, and that is css. Unlike many other UI developers also using React 
+            or other vdom view frameworks I still really love writing css. Especially bleeding edge css that I use <code>postcss-cssnext</code> to compile out
+             to current day css. Now I have publicly stated a few times (or have meant to) that i only intend on building web apps that only support evergreen 
+             browsers, however there are still a ton of css features that I am using with cssnext that I can't use in most browsers. Even the super advanced 
+             browsers like Chrome Canary or Safari Tech Preview.
+          </p>
+          <p>
+            The fact that I can't use some of these cool css features has held me back from jumping fully into the jsx lifestyle. I have been playing around 
+            with some css in js libraries. (I really enjoy <code>cxs</code> by Brent Jackson <a href="https://github.com/jxnblk/cxs">Link here</a> ) but even 
+            that library has some limitations.
+          </p>
+          <p>
+            Sure some of the functionality that I am using in CSS could be accomplished with some javascript and a few custom properties in CSS, but I haven't 
+            had the time to work on breaking down the css syntax with JS, parsing it and then building out something that spits out the values I need. (Weekend
+             project maybe? <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64" style="display: inline-block; vertical-align: middle;"><circle fill="#FFDD67" cx="32" cy="32" r="30"/><path fill="#664E27" d="M49.695 34.436c-.406-.52-1.127-.43-1.912-.43H16.215c-.785 0-1.505-.09-1.912.43C10.393 39.422 14.993 54 31.999 54c17.007 0 21.606-14.578 17.696-19.564z"/><path fill="#4C3526" d="M33.842 41.741c-.578-.014-1.47.526-1.144 1.957.163.723 1.19 1.597 1.19 2.763 0 2.372-3.777 2.372-3.777 0 0-1.166 1.025-2.04 1.19-2.763.326-1.431-.565-1.971-1.145-1.957-1.571.041-4.149 1.736-4.149 4.604 0 3.224 2.684 5.836 5.992 5.836 3.307 0 5.99-2.612 5.99-5.836.001-2.867-2.577-4.563-4.147-4.604z"/><path fill="#FF717F" d="M24.287 50.665c2.229.956 4.8 1.517 7.713 1.517 2.914 0 5.484-.561 7.713-1.517-2.15-1.032-4.711-1.663-7.713-1.663s-5.561.631-7.713 1.663z"/><path fill="#FFF" d="M46.953 36H17.046c-2.053 0-2.053 4-.053 4h30.012c2.001 0 2.001-4-.052-4z"/><circle fill="#664E27" cx="20.5" cy="23" r="5"/><circle fill="#664E27" cx="43.5" cy="23" r="5"/></svg>)
+          </p>
+          <p>
+            I really wish that I could write css as I know it, and have it parsed by postcss during my build step, my ideal solution I guess would then be to
+             use template literals that inject the styles into a style tag, or get rolled up into a stylesheet for cacheing purposes, and that get scoped to 
+             the component either by a shared root selector or by some other method, something like this:
+          </p>
+          <pre><code>const styles = `
+.component.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.component .component-child {
+  font-weight: bold;
+  text-align: center;
+  width: 100vw;
+}`;
+</code></pre>
+          <p>
+            I do however feel that until I set up some sort of server side rendering for my websites that I won't be able to even use a method like above 
+            because generally these methods insert a <code>&lt;style&gt;</code> tag into the html instead of generating a css file that I can load in like 
+            I do currently. All in all I not missing out on any sort of great advancement, with the lack of full features and support as well as the granularity 
+            of control over how the css gets generated my current process will work for me for the coming months.
+          </p>
+        </section>
+      </article>
+      <footer data-css-footer id="footerMount"></footer>
+    </main>
+    <script src="/dist/common.js" charset="utf-8"></script>
+    <script src="/dist/blog.js" charset="utf-8"></script>
+  </body>
+</html>
