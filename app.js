@@ -401,3 +401,7 @@ if (document.getElementById('blog')) {
   ReactDOM.render(<AllPosts monthlyArticles={listing} />, document.getElementById('listingMount-blog'));
   ReactDOM.render(<Footer />, document.getElementById('footerMount-blog'));
 }
+
+if (document.getElementById('monthly')) {
+  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
+}

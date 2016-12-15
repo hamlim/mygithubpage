@@ -339,6 +339,18 @@ webpackJsonp([1],[
 	  _reactDom2.default.render(_react2.default.createElement(_components.AllPosts, { monthlyArticles: listing }), document.getElementById('listingMount-blog'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-blog'));
 	}
+	
+	if (document.getElementById('monthly')) {
+	  _reactDom2.default.render(_react2.default.createElement(
+	    _components.Header,
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'header--subtitle clr--green' },
+	      'Blog Archive'
+	    )
+	  ), document.getElementsByClassName('headerMount-blog')[0]);
+	}
 
 /***/ }
 ]);
