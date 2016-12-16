@@ -9,6 +9,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': 'The Macbook Pro', 
+        'link': 'TheMacbookPro'
+      },
+      {
         'title': 'The Limitations of CSS in JSX', 
         'link': 'CSSinJSXLimitations'
       },
