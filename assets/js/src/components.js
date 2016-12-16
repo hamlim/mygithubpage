@@ -123,14 +123,10 @@ export const PostFooter = (props) => {
 };
 
 export const PostHeader = (props) => {
-	let subtitleHtml;
-	if (props.subtitle) {
-		subtitleHtml = <h3>{props.subtitle}</h3>;
-	}
 	return (
 		<section>
 			<h2 className="🆕 ❌">{props.title}</h2>
-			{subtitleHtml}
+			{props.subtitle ? <h3>{props.subtitle}</h3> : ''}
 			<div className="🔧">
 				<p className="❌">
 						<span className="emoji-📆"></span>: {props.children}
