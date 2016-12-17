@@ -232,4 +232,16 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '17':
+    ReactDOM.render(
+      <PostHeader title="The Macbook Pro">
+        <time dateTime="2016-12-16"><a href="./" >December</a> 16th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }

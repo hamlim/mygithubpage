@@ -21752,14 +21752,6 @@
 	};
 	
 	var PostHeader = exports.PostHeader = function PostHeader(props) {
-		var subtitleHtml = void 0;
-		if (props.subtitle) {
-			subtitleHtml = _react2.default.createElement(
-				"h3",
-				null,
-				props.subtitle
-			);
-		}
 		return _react2.default.createElement(
 			"section",
 			null,
@@ -21768,7 +21760,11 @@
 				{ className: "\uD83C\uDD95 \u274C" },
 				props.title
 			),
-			subtitleHtml,
+			props.subtitle ? _react2.default.createElement(
+				"h3",
+				null,
+				props.subtitle
+			) : '',
 			_react2.default.createElement(
 				"div",
 				{ className: "\uD83D\uDD27" },

@@ -176,27 +176,9 @@ article {
 main {
   padding-top: 48px;
   padding-top: 3rem;
-  -webkit-animation: fade-up 1.5s ease-in;
-          animation: fade-up 1.5s ease-in;
 }
 section {
   padding: 1em;
-}
-
-@-webkit-keyframes fade-up {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
 }
 
 @-webkit-keyframes blink-anim {

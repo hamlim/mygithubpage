@@ -309,6 +309,23 @@ webpackJsonp([0],{
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '17':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'The Macbook Pro' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-12-16' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'December'
+	        ),
+	        ' 16th, 2016'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },
