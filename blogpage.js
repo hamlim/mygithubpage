@@ -2,11 +2,9 @@ import React from 'react';
 import { render } from 'react-dom'
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 
-import Home from './Assets/js/Home';
-import Resume from './Assets/js/Resume';
-import BlogArchive from './Assets/js/BlogArchive';
-import Posts from './Assets/js/Posts';
-import Post from './Assets/js/Post';
+import PostHome from './Assets/js/postHome';
+import MonthListing from './Assets/js/monthListing';
+
 
 render(
   <Router history={browserHistory}>
