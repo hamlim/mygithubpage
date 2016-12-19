@@ -134,4 +134,4 @@ export const PostHeader = (props) => {
 			</div>
 		</section>
 	)
-}
+};
