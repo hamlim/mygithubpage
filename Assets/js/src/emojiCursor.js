@@ -7,7 +7,7 @@
 
 export default function emojiCursor() {
 	
-	  var possibleEmoji = ["🎄", "🎅🏻", "❄️", "⛄", "🎁"];
+	  var possibleEmoji = ["🎄", "🎅", "❄️", "⛄", "🎁"];
 	  var width = document.body.scrollWidth;
 	  var height = document.body.scrollHeight;
 	  var cursor = { x: width / 2, y: width / 2 };

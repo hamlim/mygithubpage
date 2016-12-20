@@ -7,7 +7,7 @@
   --b: dodgerblue;
   --c: salmon;
   --d: #FAE352;
-  --gray: rgb(130, 130, 130);
+  --gray: rgb(105, 105, 105);
 
   --snap: #fffc00;
   --twitter: #1da1f2;
@@ -87,7 +87,7 @@ ins {
   padding: .25em;
 }
 del {
-  color: rgb(130, 130, 130);
+  color: rgb(105, 105, 105);
 }
 strong {
   font-weight: bold;
@@ -168,38 +168,17 @@ a:not(.escape).active {
 }
 
 article {
-  background-color: #ffffff;
-  border-radius: 2px;
-  max-width: 560px;
-  max-width: 35rem;
+  max-width: 640px;
+  max-width: 40rem;
   margin: 0 auto 48px;
   margin: 0 auto 3rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 main {
   padding-top: 48px;
   padding-top: 3rem;
-  -webkit-animation: fade-up 1.5s ease-in;
-          animation: fade-up 1.5s ease-in;
 }
 section {
   padding: 1em;
-}
-
-@-webkit-keyframes fade-up {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
 }
 
 @-webkit-keyframes blink-anim {
@@ -263,8 +242,9 @@ pre::before {
 code, kbd, var {
   background-color: rgb(235, 235, 235);
   font-family: monospace;
-  color: rgb(130, 130, 130);
+  color: rgb(105, 105, 105);
   display: inline;
+  padding: 0 .1em;
 }
 
 ul, ol {
@@ -1131,30 +1111,44 @@ sup {
   display: block;
 }
 
+
 .ColorCards-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-}
-.ColorCards {
-  width: 10em;
-  height: 10em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-  .ColorCards-hex {
-    display: inline-block;
-    padding: .1em .3em;
-    background-color: rgba(255, 255, 255, .7);
-    color: black;
+  .ColorCards {
+    width: 10em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+    .ColorCards-hex {
+      display: inline-block;
+      padding: .1em .3em;
+      background-color: rgba(255, 255, 255, .7);
+      color: black;
+    }
+
+
+/*
+  svg reset
+*/
+
+.svg-reset {
+  display: inline-block;
+  vertical-align: middle;
+}
 /*# sourceMappingURL=landing.css.map*/
