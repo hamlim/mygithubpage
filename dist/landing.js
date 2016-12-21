@@ -31,6 +31,9 @@ webpackJsonp([1],{
 	  'month': 'December',
 	  'year': '2016',
 	  'articles': [{
+	    'title': 'Paralysis',
+	    'link': 'Paralysis'
+	  }, {
 	    'title': 'The Macbook Pro',
 	    'link': 'TheMacbookPro'
 	  }, {

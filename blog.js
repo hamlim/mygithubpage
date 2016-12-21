@@ -244,4 +244,16 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '18':
+    ReactDOM.render(
+      <PostHeader title="Paralysis">
+        <time dateTime="2016-12-20"><a href="./" >December</a> 20th, 2016</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }
