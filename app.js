@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Nav, Header, Footer, AllPosts } from './assets/js/src/components';
+// holidays
+import emojiCursor from './Assets/js/src/emojiCursor';
+emojiCursor();
+
 var landingcss = require('./assets/css/central.css');
 
 var listing = [
@@ -8,6 +12,10 @@ var listing = [
     'month': 'December',
     'year': '2016',
     'articles': [
+      {
+        'title': 'Paralysis', 
+        'link': 'Paralysis'
+      },
       {
         'title': 'The Macbook Pro', 
         'link': 'TheMacbookPro'
