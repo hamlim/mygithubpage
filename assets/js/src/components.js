@@ -135,3 +135,11 @@ export const PostHeader = (props) => {
 		</section>
 	)
 };
+
+export const Tag = (href, children, ...props) => {
+	return (
+		<a className="Tag" href={href}>
+			{children}
+		</a>
+	)
+};
