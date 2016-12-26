@@ -343,6 +343,28 @@ webpackJsonp([0],{
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '19':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Drained' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2016-12-26' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'December'
+	        ),
+	        ' 26th, 2016'
+	      ),
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'burnout' },
+	        'Burnout'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },
