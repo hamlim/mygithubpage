@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Nav, Header, Footer, AllPosts } from './assets/js/src/components';
+import { Nav, Header, Footer, AllPosts, TagApp } from './assets/js/src/components';
 // holidays
-import emojiCursor from './Assets/js/src/emojiCursor';
-emojiCursor();
+// import emojiCursor from './Assets/js/src/emojiCursor';
+// emojiCursor();
 
 var landingcss = require('./assets/css/central.css');
 
@@ -420,4 +420,22 @@ if (document.getElementById('blog')) {
 
 if (document.getElementById('monthly')) {
   ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
+}
+
+let tagArr = [
+  "Burnout"
+];
+
+let postsWithTags = [
+  {
+    "name": "Drained",
+    "link": "/Posts/2016/December/Drained"
+  }
+];
+
+if (document.getElementById('tags')) {
+  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
+  ReactDOM.render(<Nav tags />, document.getElementById('navMount-tags'));
+  ReactDOM.render(<TagApp tags={tagArr} taggedPosts={postsWithTags} />, document.getElementById('pageMount'));
+  ReactDOM.render(<Footer />, document.getElementById('footerMount-tags'));
 }

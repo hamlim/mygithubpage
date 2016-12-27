@@ -21468,7 +21468,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
+	exports.TagApp = exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
 	
 	var _react = __webpack_require__(1);
 	
@@ -21505,6 +21505,15 @@
 					"a",
 					{ href: "./archive.html", className: props.blog ? "link active" : "link" },
 					"Blog"
+				)
+			),
+			_react2.default.createElement(
+				"li",
+				{ "data-css-li-inline": true, className: "li--inline" },
+				_react2.default.createElement(
+					"a",
+					{ href: "./tags.html", className: props.tags ? "link active" : "link" },
+					"Tags"
 				)
 			)
 		);
@@ -21820,6 +21829,40 @@
 			"a",
 			{ className: "Tag escape", href: "/tags#" + props.href },
 			props.children
+		);
+	};
+	
+	// Tags
+	
+	var TagApp = exports.TagApp = function TagApp(props) {
+		var tags = props.tags;
+		var taggedPosts = props.taggedPosts;
+		var tagsHtml = tags.map(function (tag, index) {
+			return _react2.default.createElement(
+				"ul",
+				{ key: index, className: "Tag-wrapper" },
+				_react2.default.createElement(
+					"h4",
+					{ className: "Tag-title", id: tag.toLowerCase() },
+					tag
+				),
+				taggedPosts.map(function (post, index) {
+					return _react2.default.createElement(
+						"li",
+						{ className: "Tag-item", key: index },
+						_react2.default.createElement(
+							"a",
+							{ href: post.link },
+							post.name
+						)
+					);
+				})
+			);
+		});
+		return _react2.default.createElement(
+			"section",
+			null,
+			tagsHtml
 		);
 	};
 

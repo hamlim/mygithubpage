@@ -12,6 +12,9 @@ export const Nav = (props) => {
 			<li data-css-li-inline className="li--inline">
 				<a href="./archive.html" className={props.blog ? "link active": "link"}>Blog</a>
 			</li>
+			<li data-css-li-inline className="li--inline">
+				<a href="./tags.html" className={props.tags ? "link active": "link"}>Tags</a>
+			</li>
 		</ul>
 	)
 };
@@ -150,5 +153,31 @@ export const Tag = (props) => {
 		<a className="Tag escape" href={"/tags#" + props.href}>
 			{props.children}
 		</a>
+	)
+};
+
+
+
+// Tags
+
+export const TagApp = (props) => {
+	let tags = props.tags;
+	let taggedPosts = props.taggedPosts;
+	let tagsHtml = tags.map((tag, index) => {
+		return (
+			<ul key={index} className="Tag-wrapper">
+				<h4 className="Tag-title" id={tag.toLowerCase()}>{tag}</h4>
+				{taggedPosts.map((post, index) => {
+					return (
+						<li className="Tag-item" key={index}><a href={post.link}>{post.name}</a></li>
+					);
+				})}
+			</ul>
+		)
+	}) 
+	return (
+		<section>
+			{tagsHtml}
+		</section>
 	)
 };
