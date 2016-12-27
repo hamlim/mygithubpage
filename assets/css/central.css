@@ -893,3 +893,34 @@ sup {
   display: inline-block;
   vertical-align: middle;
 }
+
+/*
+  Tags
+*/
+
+.Tag.Tag {
+  all: unset;
+  display: inline-flex;
+  background-color: var(--neutral-white);
+  border-radius: .25em;
+  text-decoration: none;
+  padding: 0 .5em;
+  transition: all .5s ease;
+  color: var(--black);
+}
+
+.Tag.Tag::before {
+  content: '#';
+  display: inline-block;
+  padding-right: .25em;
+}
+
+.Tag.Tag:hover,
+.Tag.Tag:focus {
+  background-color: var(--a);
+  transition: all .5s ease;
+}
+
+.Tag-container {
+  overflow-y: scroll;
+}

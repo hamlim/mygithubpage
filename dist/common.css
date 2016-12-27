@@ -1150,4 +1150,39 @@ sup {
   display: inline-block;
   vertical-align: middle;
 }
+
+/*
+  Tags
+*/
+
+.Tag.Tag {
+  all: unset;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: rgb(250, 250, 250);
+  border-radius: .25em;
+  text-decoration: none;
+  padding: 0 .5em;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: #041122;
+}
+
+.Tag.Tag::before {
+  content: '#';
+  display: inline-block;
+  padding-right: .25em;
+}
+
+.Tag.Tag:hover,
+.Tag.Tag:focus {
+  background-color: springgreen;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.Tag-container {
+  overflow-y: scroll;
+}
 /*# sourceMappingURL=common.css.map*/

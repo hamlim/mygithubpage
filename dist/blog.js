@@ -356,13 +356,17 @@ webpackJsonp([0],{
 	          'December'
 	        ),
 	        ' 26th, 2016'
-	      ),
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
 	      _react2.default.createElement(
 	        _components.Tag,
 	        { href: 'burnout' },
 	        'Burnout'
 	      )
-	    ), document.getElementById('headerMount'));
+	    ), document.getElementById('tagMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
 	}

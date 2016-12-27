@@ -136,10 +136,19 @@ export const PostHeader = (props) => {
 	)
 };
 
-export const Tag = (href, children, ...props) => {
+export const TagContainer = (props) => {
 	return (
-		<a className="Tag" href={href}>
-			{children}
+		<div className="Tag-container">
+			<h5 className="Tag-title">{props.title}</h5>
+			{props.children}
+		</div>
+	);
+};
+
+export const Tag = (props) => {
+	return (
+		<a className="Tag escape" href={"/tags#" + props.href}>
+			{props.children}
 		</a>
 	)
 };

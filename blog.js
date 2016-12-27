@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { PostHeader, PostFooter, Tag } from './assets/js/src/components';
+import { PostHeader, PostFooter, TagContainer, Tag } from './assets/js/src/components';
 import { Lightbox } from './assets/js/src/reactlightbox';
 import { ColorCards } from './assets/js/src/colorcards';
 var post_css = require('./assets/css/central.css');
@@ -260,9 +260,14 @@ switch (DOCID) {
     ReactDOM.render(
       <PostHeader title="Drained">
         <time dateTime="2016-12-26"><a href="./" >December</a> 26th, 2016</time>
-        <Tag href="burnout">Burnout</Tag>
       </PostHeader>,
       document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <TagContainer title="Tags:">
+        <Tag href="burnout">Burnout</Tag>
+      </TagContainer>,
+      document.getElementById('tagMount')
     );
     ReactDOM.render(
       <PostFooter />,

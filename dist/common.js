@@ -21468,7 +21468,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Tag = exports.PostHeader = exports.PostFooter = exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
+	exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
 	
 	var _react = __webpack_require__(1);
 	
@@ -21802,11 +21802,24 @@
 		);
 	};
 	
-	var Tag = exports.Tag = function Tag(href, children) {
+	var TagContainer = exports.TagContainer = function TagContainer(props) {
+		return _react2.default.createElement(
+			"div",
+			{ className: "Tag-container" },
+			_react2.default.createElement(
+				"h5",
+				{ className: "Tag-title" },
+				props.title
+			),
+			props.children
+		);
+	};
+	
+	var Tag = exports.Tag = function Tag(props) {
 		return _react2.default.createElement(
 			"a",
-			{ className: "Tag", href: href },
-			children
+			{ className: "Tag escape", href: "/tags#" + props.href },
+			props.children
 		);
 	};
 
