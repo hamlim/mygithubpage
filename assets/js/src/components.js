@@ -168,9 +168,11 @@ export const TagApp = (props) => {
 			<ul key={index} className="Tag-wrapper">
 				<h4 className="Tag-title" id={tag.toLowerCase()}>{tag}</h4>
 				{taggedPosts.map((post, index) => {
-					return (
-						<li className="Tag-item" key={index}><a href={post.link}>{post.name}</a></li>
-					);
+					if (post.tag === tag) {
+						return (
+							<li className="Tag-item" key={index}><a href={post.link}>{post.name}</a></li>
+						);
+					}
 				})}
 			</ul>
 		)

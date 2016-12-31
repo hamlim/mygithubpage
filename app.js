@@ -13,6 +13,10 @@ var listing = [
     'year': '2016',
     'articles': [
       {
+        'title': '2017', 
+        'link': '2017'
+      },
+      {
         'title': 'Drained', 
         'link': 'Drained'
       },
@@ -423,13 +427,20 @@ if (document.getElementById('monthly')) {
 }
 
 let tagArr = [
-  "Burnout"
+  "Burnout",
+  "Summary"
 ];
 
 let postsWithTags = [
   {
     "name": "Drained",
-    "link": "/Posts/2016/December/Drained"
+    "link": "/Posts/2016/December/Drained",
+    "tag": "Burnout"
+  },
+  {
+    "name": "2017",
+    "link": "/Posts/2016/December/2017",
+    "tag": "Summary"
   }
 ];
 

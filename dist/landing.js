@@ -26,6 +26,9 @@ webpackJsonp([1],[
 	  'month': 'December',
 	  'year': '2016',
 	  'articles': [{
+	    'title': '2017',
+	    'link': '2017'
+	  }, {
 	    'title': 'Drained',
 	    'link': 'Drained'
 	  }, {
@@ -365,11 +368,16 @@ webpackJsonp([1],[
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	}
 	
-	var tagArr = ["Burnout"];
+	var tagArr = ["Burnout", "Summary"];
 	
 	var postsWithTags = [{
 	  "name": "Drained",
-	  "link": "/Posts/2016/December/Drained"
+	  "link": "/Posts/2016/December/Drained",
+	  "tag": "Burnout"
+	}, {
+	  "name": "2017",
+	  "link": "/Posts/2016/December/2017",
+	  "tag": "Summary"
 	}];
 	
 	if (document.getElementById('tags')) {

@@ -21847,15 +21847,17 @@
 					tag
 				),
 				taggedPosts.map(function (post, index) {
-					return _react2.default.createElement(
-						"li",
-						{ className: "Tag-item", key: index },
-						_react2.default.createElement(
-							"a",
-							{ href: post.link },
-							post.name
-						)
-					);
+					if (post.tag === tag) {
+						return _react2.default.createElement(
+							"li",
+							{ className: "Tag-item", key: index },
+							_react2.default.createElement(
+								"a",
+								{ href: post.link },
+								post.name
+							)
+						);
+					}
 				})
 			);
 		});
