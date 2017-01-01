@@ -9,6 +9,16 @@ var landingcss = require('./assets/css/central.css');
 
 var listing = [
   {
+    'month': 'January',
+    'year': '2017',
+    'articles': [
+      {
+        'title': 'One',
+        'link': 'one'
+      }
+    ]
+  },
+  {
     'month': 'December',
     'year': '2016',
     'articles': [
@@ -428,7 +438,8 @@ if (document.getElementById('monthly')) {
 
 let tagArr = [
   "Burnout",
-  "Summary"
+  "Summary",
+  "Daily"
 ];
 
 let postsWithTags = [
@@ -441,6 +452,11 @@ let postsWithTags = [
     "name": "2017",
     "link": "/Posts/2016/December/2017",
     "tag": "Summary"
+  },
+  {
+    "name": "One",
+    "link": "/Posts/2017/January/one",
+    "tag": "Daily"
   }
 ];
 

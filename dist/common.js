@@ -21552,7 +21552,7 @@
 				" - ",
 				_react2.default.createElement(
 					"a",
-					{ href: "./Posts/2016/" + props.month + "/" + article.link, "data-css-link": true },
+					{ href: "./Posts/" + props.year + "/" + props.month + "/" + article.link, "data-css-link": true },
 					"Read Here"
 				)
 			);

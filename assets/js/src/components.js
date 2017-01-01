@@ -41,7 +41,7 @@ export const Header = (props) => {
 const PostList = (props) => {
 	const articleLinks = props.articles.map(function(article, index){
 		return (
-			<li key={index} data-css-li>{article.title} - <a href={"./Posts/2016/"+ props.month +"/" + article.link} data-css-link>Read Here</a></li>
+			<li key={index} data-css-li>{article.title} - <a href={"./Posts/"+ props.year +"/"+ props.month +"/" + article.link} data-css-link>Read Here</a></li>
 		); });
   return (
 		<ul>
