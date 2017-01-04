@@ -13,6 +13,10 @@ var listing = [
     'year': '2017',
     'articles': [
       {
+        'title': 'Four',
+        'link': 'four'
+      },
+      {
         'title': 'Three',
         'link': 'three'
       },
@@ -474,6 +478,11 @@ let postsWithTags = [
   {
     "name": "Three",
     "link": "/Posts/2017/January/three",
+    "tag": "Daily"
+  },
+  {
+    "name": "Four",
+    "link": "/Posts/2017/January/four",
     "tag": "Daily"
   }
 ];
