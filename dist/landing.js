@@ -20,12 +20,18 @@ webpackJsonp([1],[
 	// import emojiCursor from './Assets/js/src/emojiCursor';
 	// emojiCursor();
 	
-	var landingcss = __webpack_require__(175);
+	var landingcss = __webpack_require__(244);
 	
 	var listing = [{
 	  'month': 'January',
 	  'year': '2017',
 	  'articles': [{
+	    'title': 'Social Networks',
+	    'link': 'Social_Networks'
+	  }, {
+	    'title': 'Five',
+	    'link': 'five'
+	  }, {
 	    'title': 'Four',
 	    'link': 'four'
 	  }, {
@@ -384,7 +390,7 @@ webpackJsonp([1],[
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	}
 	
-	var tagArr = ["Burnout", "Summary", "Daily"];
+	var tagArr = ["Burnout", "Summary", "Daily", "Social"];
 	
 	var postsWithTags = [{
 	  "name": "Drained",
@@ -410,6 +416,14 @@ webpackJsonp([1],[
 	  "name": "Four",
 	  "link": "/Posts/2017/January/four",
 	  "tag": "Daily"
+	}, {
+	  "name": "Five",
+	  "link": "/Posts/2017/January/five",
+	  "tag": "Daily"
+	}, {
+	  "name": "Social Networks",
+	  "link": "/Posts/2017/January/Social_Networks",
+	  "tag": "Social"
 	}];
 	
 	if (document.getElementById('tags')) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export const Nav = (props) => {
 	return (
@@ -148,13 +149,36 @@ export const TagContainer = (props) => {
 	);
 };
 
-export const Tag = (props) => {
+const PreStyledTag = (props) => {
 	return (
-		<a className="Tag escape" href={"/tags#" + props.href}>
+		<a className={`escape ${props.className}`} href={"/tags#" + props.href}>
 			{props.children}
 		</a>
 	)
 };
+
+export const Tag = styled(PreStyledTag)`
+	all: unset;
+	display: inline-flex;
+	background-color: var(--a);
+	border-radius: .25em;
+	text-decoration: none;
+	padding: 0 .5em;
+	transition: all .5s ease;
+	color: var(--black);
+
+	&:before {
+		content: '#';
+		display: inline-block;
+		padding-right: .25em;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: var(--c);
+		transition: all .5s ease;
+	}
+`;
 
 
 

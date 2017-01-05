@@ -15,13 +15,13 @@ webpackJsonp([0],{
 	
 	var _components = __webpack_require__(172);
 	
-	var _reactlightbox = __webpack_require__(173);
+	var _reactlightbox = __webpack_require__(242);
 	
-	var _colorcards = __webpack_require__(174);
+	var _colorcards = __webpack_require__(243);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var post_css = __webpack_require__(175);
+	var post_css = __webpack_require__(244);
 	
 	var DOCID = document.body.getAttribute('data-post-id');
 	
@@ -499,11 +499,63 @@ webpackJsonp([0],{
 	    ), document.getElementById('tagMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '25':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Five' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2017-01-05' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'January'
+	        ),
+	        ' 5th, 2017'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'daily' },
+	        'Daily'
+	      )
+	    ), document.getElementById('tagMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
+	  case '26':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Social Networks' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2017-01-05' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'January'
+	        ),
+	        ' 5th, 2017'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'social' },
+	        'Social'
+	      )
+	    ), document.getElementById('tagMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },
 
-/***/ 173:
+/***/ 242:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -569,7 +621,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 174:
+/***/ 243:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

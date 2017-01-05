@@ -901,7 +901,7 @@ sup {
 .Tag.Tag {
   all: unset;
   display: inline-flex;
-  background-color: var(--neutral-white);
+  background-color: var(--a);
   border-radius: .25em;
   text-decoration: none;
   padding: 0 .5em;
@@ -917,7 +917,7 @@ sup {
 
 .Tag.Tag:hover,
 .Tag.Tag:focus {
-  background-color: var(--a);
+  background-color: var(--c);
   transition: all .5s ease;
 }
 

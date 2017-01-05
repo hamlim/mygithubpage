@@ -13,6 +13,14 @@ var listing = [
     'year': '2017',
     'articles': [
       {
+        'title': 'Social Networks',
+        'link': 'Social_Networks'
+      },
+      {
+        'title': 'Five',
+        'link': 'five'
+      },
+      {
         'title': 'Four',
         'link': 'four'
       },
@@ -451,7 +459,8 @@ if (document.getElementById('monthly')) {
 let tagArr = [
   "Burnout",
   "Summary",
-  "Daily"
+  "Daily",
+  "Social"
 ];
 
 let postsWithTags = [
@@ -484,6 +493,16 @@ let postsWithTags = [
     "name": "Four",
     "link": "/Posts/2017/January/four",
     "tag": "Daily"
+  },
+  {
+    "name": "Five",
+    "link": "/Posts/2017/January/five",
+    "tag": "Daily"
+  },
+  {
+    "name": "Social Networks",
+    "link": "/Posts/2017/January/Social_Networks",
+    "tag": "Social"
   }
 ];
 
