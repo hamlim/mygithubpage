@@ -207,3 +207,49 @@ export const TagApp = (props) => {
 		</section>
 	)
 };
+
+const FloatedQuote = (props) => {
+	return (
+		<blockquote className={`${props.className}`}>
+			<p>
+				The future of social media is in conversations.
+			</p>
+		</blockquote>
+	)
+};
+
+const FloatedQuoteStyled = styled(FloatedQuote)`
+	float: left;
+	margin: .5em .5em .5em 0;
+	& > p {
+		width: 15rem;
+		padding: .25em;
+		text-align: center;
+	}
+`;
+
+
+const FloatedQuoteContainer = (props) => {
+	return (
+		<section className={`${props.className}`}>
+			<h4>Conversations</h4>
+			<p>
+				I honestly think if Twitter was more conversation orientated than it would be 10 times more popular for a lot more users, when you compare monthly active users on messaging apps 
+				to Twitter, it makes it look like a small side project/hobby rather than a publicly traded company. 
+			</p>
+			<FloatedQuoteStyled />
+			<p>
+				This bundles really well into my final point as well, if Twitter built a better conversational interface rather than a megaphone I think it would build better communities as well 
+				as foster more interactivity.
+			</p>
+		</section>
+	)
+};
+
+export const StyledFloatedQuoteContainer = styled(FloatedQuoteContainer)`
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+`;

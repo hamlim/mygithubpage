@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { PostHeader, PostFooter, TagContainer, Tag } from './assets/js/src/components';
+import { PostHeader, PostFooter, TagContainer, Tag, StyledFloatedQuoteContainer } from './assets/js/src/components';
 import { Lightbox } from './assets/js/src/reactlightbox';
 import { ColorCards } from './assets/js/src/colorcards';
 var post_css = require('./assets/css/central.css');
@@ -388,6 +388,10 @@ switch (DOCID) {
         <time dateTime="2017-01-05"><a href="./" >January</a> 5th, 2017</time>
       </PostHeader>,
       document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <StyledFloatedQuoteContainer />,
+      document.getElementById('blockquote-container')
     );
     ReactDOM.render(
       <TagContainer title="Tags:">

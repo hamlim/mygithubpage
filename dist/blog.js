@@ -540,6 +540,7 @@ webpackJsonp([0],{
 	        ' 5th, 2017'
 	      )
 	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.StyledFloatedQuoteContainer, null), document.getElementById('blockquote-container'));
 	    _reactDom2.default.render(_react2.default.createElement(
 	      _components.TagContainer,
 	      { title: 'Tags:' },

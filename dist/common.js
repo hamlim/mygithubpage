@@ -21468,9 +21468,11 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.TagApp = exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
+	exports.StyledFloatedQuoteContainer = exports.TagApp = exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.AllPosts = exports.Header = exports.Nav = undefined;
 	
-	var _templateObject = _taggedTemplateLiteral(['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\n\t&:before {\n\t\tcontent: \'#\';\n\t\tdisplay: inline-block;\n\t\tpadding-right: .25em;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n'], ['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\n\t&:before {\n\t\tcontent: \'#\';\n\t\tdisplay: inline-block;\n\t\tpadding-right: .25em;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n']);
+	var _templateObject = _taggedTemplateLiteral(['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\n\t&:before {\n\t\tcontent: \'#\';\n\t\tdisplay: inline-block;\n\t\tpadding-right: .25em;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n'], ['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\n\t&:before {\n\t\tcontent: \'#\';\n\t\tdisplay: inline-block;\n\t\tpadding-right: .25em;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n']),
+	    _templateObject2 = _taggedTemplateLiteral(['\n\tfloat: left;\n\tmargin: .5em .5em .5em 0;\n\t& > p {\n\t\twidth: 15rem;\n\t\tpadding: .25em;\n\t\ttext-align: center;\n\t}\n'], ['\n\tfloat: left;\n\tmargin: .5em .5em .5em 0;\n\t& > p {\n\t\twidth: 15rem;\n\t\tpadding: .25em;\n\t\ttext-align: center;\n\t}\n']),
+	    _templateObject3 = _taggedTemplateLiteral(['\n\t&:after {\n\t\tcontent: \'\';\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n'], ['\n\t&:after {\n\t\tcontent: \'\';\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n']);
 	
 	var _react = __webpack_require__(1);
 	
@@ -21877,6 +21879,45 @@
 			tagsHtml
 		);
 	};
+	
+	var FloatedQuote = function FloatedQuote(props) {
+		return _react2.default.createElement(
+			'blockquote',
+			{ className: '' + props.className },
+			_react2.default.createElement(
+				'p',
+				null,
+				'The future of social media is in conversations.'
+			)
+		);
+	};
+	
+	var FloatedQuoteStyled = (0, _styledComponents2.default)(FloatedQuote)(_templateObject2);
+	
+	var FloatedQuoteContainer = function FloatedQuoteContainer(props) {
+		return _react2.default.createElement(
+			'section',
+			{ className: '' + props.className },
+			_react2.default.createElement(
+				'h4',
+				null,
+				'Conversations'
+			),
+			_react2.default.createElement(
+				'p',
+				null,
+				'I honestly think if Twitter was more conversation orientated than it would be 10 times more popular for a lot more users, when you compare monthly active users on messaging apps to Twitter, it makes it look like a small side project/hobby rather than a publicly traded company.'
+			),
+			_react2.default.createElement(FloatedQuoteStyled, null),
+			_react2.default.createElement(
+				'p',
+				null,
+				'This bundles really well into my final point as well, if Twitter built a better conversational interface rather than a megaphone I think it would build better communities as well as foster more interactivity.'
+			)
+		);
+	};
+	
+	var StyledFloatedQuoteContainer = exports.StyledFloatedQuoteContainer = (0, _styledComponents2.default)(FloatedQuoteContainer)(_templateObject3);
 
 /***/ },
 /* 173 */
