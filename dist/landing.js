@@ -26,6 +26,10 @@ webpackJsonp([1],[
 	  'month': 'January',
 	  'year': '2017',
 	  'articles': [{
+	    'title': 'Six',
+	    'link': 'six',
+	    'tag': 'Daily'
+	  }, {
 	    'title': 'Social Networks',
 	    'link': 'Social_Networks'
 	  }, {
@@ -424,6 +428,10 @@ webpackJsonp([1],[
 	  "name": "Social Networks",
 	  "link": "/Posts/2017/January/Social_Networks",
 	  "tag": "Social"
+	}, {
+	  "name": "Six",
+	  "link": "/Posts/2017/January/six",
+	  "tag": "Daily"
 	}];
 	
 	if (document.getElementById('tags')) {
