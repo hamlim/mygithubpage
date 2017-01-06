@@ -460,7 +460,7 @@ sup {
 
 [data-css-header] {
 	@apply --center;
-  height: 75vh;
+  height: 15rem;
 }
 .header {
   width: 100vw;
