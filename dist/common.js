@@ -21562,7 +21562,7 @@
 				' - ',
 				_react2.default.createElement(
 					'a',
-					{ href: "./Posts/" + props.year + "/" + props.month + "/" + article.link, 'data-css-link': true },
+					{ href: './Posts/' + props.year + '/' + props.month + '/' + article.link, 'data-css-link': true },
 					'Read Here'
 				)
 			);
@@ -21575,7 +21575,7 @@
 				{ 'data-css-tac': true },
 				_react2.default.createElement(
 					'a',
-					{ href: "./Posts/2016/" + props.month, 'data-css-link': true },
+					{ href: './Posts/' + props.year + '/' + props.month, 'data-css-link': true },
 					props.month,
 					' ',
 					props.year,
@@ -21603,6 +21603,7 @@
 	};
 	
 	var Footer = exports.Footer = function Footer(props) {
+		var now = new Date();
 		return _react2.default.createElement(
 			'div',
 			{ 'data-css-container': true, 'data-css-footer-nav': true },
@@ -21615,7 +21616,8 @@
 					{ href: 'https://matthamlin.me' },
 					'Matt Hamlin'
 				),
-				' 2016'
+				' ',
+				now.getFullYear()
 			),
 			_react2.default.createElement(
 				'div',
@@ -21687,6 +21689,7 @@
 	};
 	
 	var PostFooter = exports.PostFooter = function PostFooter(props) {
+		var now = new Date();
 		return _react2.default.createElement(
 			'section',
 			{ 'data-css-container': true, 'data-css-footer-nav': true },
@@ -21699,7 +21702,8 @@
 					{ href: 'https://matthamlin.me' },
 					'Matt Hamlin'
 				),
-				' 2016'
+				' ',
+				now.getFullYear()
 			),
 			_react2.default.createElement(
 				'div',

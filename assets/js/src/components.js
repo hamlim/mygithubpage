@@ -42,11 +42,11 @@ export const Header = (props) => {
 const PostList = (props) => {
 	const articleLinks = props.articles.map(function(article, index){
 		return (
-			<li key={index} data-css-li>{article.title} - <a href={"./Posts/"+ props.year +"/"+ props.month +"/" + article.link} data-css-link>Read Here</a></li>
+			<li key={index} data-css-li>{article.title} - <a href={`./Posts/${props.year}/${props.month}/${article.link}`} data-css-link>Read Here</a></li>
 		); });
   return (
 		<ul>
-			<h5 data-css-tac><a href={"./Posts/2016/" + props.month} data-css-link>{props.month} {props.year}:</a></h5>
+			<h5 data-css-tac><a href={`./Posts/${props.year}/${props.month}`} data-css-link>{props.month} {props.year}:</a></h5>
 			{articleLinks}
 		</ul>
   )
@@ -63,9 +63,10 @@ export const AllPosts = (monthlyArticles, ...props) => {
 };
 
 export const Footer = (props) => {
+	let now = new Date();
 	return (
 		<div data-css-container data-css-footer-nav>
-				<div data-css-chip>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> 2016</div>
+				<div data-css-chip>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> {now.getFullYear()}</div>
 					<div>
 							<span data-css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" className="escape" title="Tweet Me, @immatthamlin">
 								<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" strokeLinejoin="round" strokeMiterlimit="1.414" className="social-icon social-icon--small social-icon--twitter">
@@ -95,9 +96,10 @@ export const Footer = (props) => {
 };
 
 export const PostFooter = (props) => {
+	let now = new Date();
 	return (
 		<section data-css-container data-css-footer-nav>
-			<div>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> 2016</div>
+			<div>&copy; <a href="https://matthamlin.me">Matt Hamlin</a> {now.getFullYear()}</div>
 			<div>
 				<span data-css-chip><a href="https://twitter.com/intent/tweet?&text=Hey+@immatthamlin" className="escape" title="Tweet Me, @immatthamlin">
 					<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" strokeLinejoin="round" strokeMiterlimit="1.414" className="social-icon social-icon--small social-icon--twitter">
