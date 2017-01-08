@@ -19,13 +19,16 @@ webpackJsonp([1],[
 	// holidays
 	// import emojiCursor from './Assets/js/src/emojiCursor';
 	// emojiCursor();
-	
 	var landingcss = __webpack_require__(244);
 	
 	var listing = [{
 	  'month': 'January',
 	  'year': '2017',
 	  'articles': [{
+	    'title': 'Eight',
+	    'link': 'eight',
+	    'tag': 'Daily'
+	  }, {
 	    'title': 'Seven',
 	    'link': 'seven',
 	    'tag': 'Daily'
@@ -439,6 +442,10 @@ webpackJsonp([1],[
 	}, {
 	  "name": "Seven",
 	  "link": "/Posts/2017/January/seven",
+	  "tag": "Daily"
+	}, {
+	  "name": "Eight",
+	  "link": "/Posts/2017/January/eight",
 	  "tag": "Daily"
 	}];
 	

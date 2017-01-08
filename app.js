@@ -4,7 +4,6 @@ import { Nav, Header, Footer, AllPosts, TagApp } from './assets/js/src/component
 // holidays
 // import emojiCursor from './Assets/js/src/emojiCursor';
 // emojiCursor();
-
 var landingcss = require('./assets/css/central.css');
 
 var listing = [
@@ -12,6 +11,11 @@ var listing = [
     'month': 'January',
     'year': '2017',
     'articles': [
+      {
+        'title': 'Eight',
+        'link': 'eight',
+        'tag': 'Daily'
+      },
       {
         'title': 'Seven',
         'link': 'seven',
@@ -522,6 +526,11 @@ let postsWithTags = [
   {
     "name": "Seven",
     "link": "/Posts/2017/January/seven",
+    "tag": "Daily"
+  },
+  {
+    "name": "Eight",
+    "link": "/Posts/2017/January/eight",
     "tag": "Daily"
   }
 ];
