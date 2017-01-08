@@ -26,6 +26,10 @@ webpackJsonp([1],[
 	  'month': 'January',
 	  'year': '2017',
 	  'articles': [{
+	    'title': 'Seven',
+	    'link': 'seven',
+	    'tag': 'Daily'
+	  }, {
 	    'title': 'Six',
 	    'link': 'six',
 	    'tag': 'Daily'
@@ -431,6 +435,10 @@ webpackJsonp([1],[
 	}, {
 	  "name": "Six",
 	  "link": "/Posts/2017/January/six",
+	  "tag": "Daily"
+	}, {
+	  "name": "Seven",
+	  "link": "/Posts/2017/January/seven",
 	  "tag": "Daily"
 	}];
 	

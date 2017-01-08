@@ -13,6 +13,11 @@ var listing = [
     'year': '2017',
     'articles': [
       {
+        'title': 'Seven',
+        'link': 'seven',
+        'tag': 'Daily'
+      },
+      {
         'title': 'Six',
         'link': 'six',
         'tag': 'Daily'
@@ -48,27 +53,27 @@ var listing = [
     'year': '2016',
     'articles': [
       {
-        'title': '2017', 
+        'title': '2017',
         'link': '2017'
       },
       {
-        'title': 'Drained', 
+        'title': 'Drained',
         'link': 'Drained'
       },
       {
-        'title': 'Paralysis', 
+        'title': 'Paralysis',
         'link': 'Paralysis'
       },
       {
-        'title': 'The Macbook Pro', 
+        'title': 'The Macbook Pro',
         'link': 'TheMacbookPro'
       },
       {
-        'title': 'The Limitations of CSS in JSX', 
+        'title': 'The Limitations of CSS in JSX',
         'link': 'CSSinJSXLimitations'
       },
       {
-        'title': 'CSS Feature Locks', 
+        'title': 'CSS Feature Locks',
         'link': 'CSSFeatureLocks'
       },
       {
@@ -512,6 +517,11 @@ let postsWithTags = [
   {
     "name": "Six",
     "link": "/Posts/2017/January/six",
+    "tag": "Daily"
+  },
+  {
+    "name": "Seven",
+    "link": "/Posts/2017/January/seven",
     "tag": "Daily"
   }
 ];
