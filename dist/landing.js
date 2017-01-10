@@ -389,6 +389,14 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { blog: true }), document.getElementById('navMount-blog'));
+	  // window.fetch('/Assets/json/posts.json').then(function (response) {
+	  //   return response.json().then((jsonResponse) => {
+	  //     ReactDOM.render(
+	  //       <AllPosts monthlyArticles={jsonResponse} />,
+	  //       document.getElementById('listingMount-blog')
+	  //     );
+	  //   });
+	  // });
 	  _reactDom2.default.render(_react2.default.createElement(_components.AllPosts, { monthlyArticles: listing }), document.getElementById('listingMount-blog'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-blog'));
 	}
@@ -404,58 +412,6 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	}
-	
-	var tagArr = ["Burnout", "Summary", "Daily", "Social"];
-	
-	var postsWithTags = [{
-	  "name": "Drained",
-	  "link": "/Posts/2016/December/Drained",
-	  "tag": "Burnout"
-	}, {
-	  "name": "2017",
-	  "link": "/Posts/2016/December/2017",
-	  "tag": "Summary"
-	}, {
-	  "name": "One",
-	  "link": "/Posts/2017/January/one",
-	  "tag": "Daily"
-	}, {
-	  "name": "Two",
-	  "link": "/Posts/2017/January/two",
-	  "tag": "Daily"
-	}, {
-	  "name": "Three",
-	  "link": "/Posts/2017/January/three",
-	  "tag": "Daily"
-	}, {
-	  "name": "Four",
-	  "link": "/Posts/2017/January/four",
-	  "tag": "Daily"
-	}, {
-	  "name": "Five",
-	  "link": "/Posts/2017/January/five",
-	  "tag": "Daily"
-	}, {
-	  "name": "Social Networks",
-	  "link": "/Posts/2017/January/Social_Networks",
-	  "tag": "Social"
-	}, {
-	  "name": "Six",
-	  "link": "/Posts/2017/January/six",
-	  "tag": "Daily"
-	}, {
-	  "name": "Seven",
-	  "link": "/Posts/2017/January/seven",
-	  "tag": "Daily"
-	}, {
-	  "name": "Eight",
-	  "link": "/Posts/2017/January/eight",
-	  "tag": "Daily"
-	}, {
-	  "name": "Nine",
-	  "link": "/Posts/2017/January/nine",
-	  "tag": "Daily"
-	}];
 	
 	if (document.getElementById('tags')) {
 	  _reactDom2.default.render(_react2.default.createElement(
@@ -473,7 +429,6 @@ webpackJsonp([1],[
 	      _reactDom2.default.render(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
 	    });
 	  });
-	  //ReactDOM.render(<TagApp tags={tagArr} taggedPosts={postsWithTags} />, document.getElementById('pageMount'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-tags'));
 	}
 

@@ -467,6 +467,14 @@ if (document.getElementById('resume')) {
 if (document.getElementById('blog')) {
   ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
   ReactDOM.render(<Nav blog />, document.getElementById('navMount-blog'));
+  // window.fetch('/Assets/json/posts.json').then(function (response) {
+  //   return response.json().then((jsonResponse) => {
+  //     ReactDOM.render(
+  //       <AllPosts monthlyArticles={jsonResponse} />,
+  //       document.getElementById('listingMount-blog')
+  //     );
+  //   });
+  // });
   ReactDOM.render(<AllPosts monthlyArticles={listing} />, document.getElementById('listingMount-blog'));
   ReactDOM.render(<Footer />, document.getElementById('footerMount-blog'));
 }
@@ -475,75 +483,6 @@ if (document.getElementById('monthly')) {
   ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
 }
 
-let tagArr = [
-  "Burnout",
-  "Summary",
-  "Daily",
-  "Social"
-];
-
-let postsWithTags = [
-  {
-    "name": "Drained",
-    "link": "/Posts/2016/December/Drained",
-    "tag": "Burnout"
-  },
-  {
-    "name": "2017",
-    "link": "/Posts/2016/December/2017",
-    "tag": "Summary"
-  },
-  {
-    "name": "One",
-    "link": "/Posts/2017/January/one",
-    "tag": "Daily"
-  },
-  {
-    "name": "Two",
-    "link": "/Posts/2017/January/two",
-    "tag": "Daily"
-  },
-  {
-    "name": "Three",
-    "link": "/Posts/2017/January/three",
-    "tag": "Daily"
-  },
-  {
-    "name": "Four",
-    "link": "/Posts/2017/January/four",
-    "tag": "Daily"
-  },
-  {
-    "name": "Five",
-    "link": "/Posts/2017/January/five",
-    "tag": "Daily"
-  },
-  {
-    "name": "Social Networks",
-    "link": "/Posts/2017/January/Social_Networks",
-    "tag": "Social"
-  },
-  {
-    "name": "Six",
-    "link": "/Posts/2017/January/six",
-    "tag": "Daily"
-  },
-  {
-    "name": "Seven",
-    "link": "/Posts/2017/January/seven",
-    "tag": "Daily"
-  },
-  {
-    "name": "Eight",
-    "link": "/Posts/2017/January/eight",
-    "tag": "Daily"
-  },
-  {
-    "name": "Nine",
-    "link": "/Posts/2017/January/nine",
-    "tag": "Daily"
-  }
-];
 
 if (document.getElementById('tags')) {
   ReactDOM.render(<Header><h2 className="header--subtitle">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
@@ -556,6 +495,5 @@ if (document.getElementById('tags')) {
       );
     });
   });
-  //ReactDOM.render(<TagApp tags={tagArr} taggedPosts={postsWithTags} />, document.getElementById('pageMount'));
   ReactDOM.render(<Footer />, document.getElementById('footerMount-tags'));
 }

@@ -52,8 +52,19 @@ const PostList = (props) => {
   )
 };
 
-export const AllPosts = (monthlyArticles, ...props) => {
-	const monthLists = monthlyArticles.monthlyArticles.map(function(obj, index) { return (<PostList key={index} month={obj.month} year={obj.year} articles={obj.articles} />); });
+export const AllPosts = ({monthlyArticles}) => {
+	let months = new Set();
+	let years = new Set();
+	monthlyArticles.forEach(post => {
+		months.add(post.month);
+		years.add(post.year);
+	});
+	let monthArr = [...months];
+	let yearsArr = [...years];
+	for (let year of years) {
+
+	}
+	const monthLists = monthlyArticles.map(function(obj, index) { return (<PostList key={index} month={obj.month} year={obj.year} articles={obj.articles} />); });
 	return (
 		<section className="page--content">
 			<h4 className="content--header tm2">Past Blog Posts:</h4>
@@ -61,6 +72,27 @@ export const AllPosts = (monthlyArticles, ...props) => {
 		</section>
 	)
 };
+
+const AllPostsNew = ({articles}) => {
+	let months = new Set();
+	let years = new Set();
+	monthlyArticles.forEach(post => {
+		months.add(post.month);
+		years.add(post.year);
+	});
+	let monthArr = [...months];
+	let yearsArr = [...years];
+	for (let year of years) {
+
+	}
+	const monthLists = monthlyArticles.map(function(obj, index) { return (<PostList key={index} month={obj.month} year={obj.year} articles={obj.articles} />); });
+	return (
+		<section className="page--content">
+			<h4 className="content--header tm2">Past Blog Posts:</h4>
+			{monthLists}
+		</section>
+	)
+}
 
 export const Footer = (props) => {
 	let now = new Date();

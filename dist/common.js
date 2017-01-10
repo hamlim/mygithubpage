@@ -21484,9 +21484,9 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-	
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	var Nav = exports.Nav = function Nav(props) {
 		return _react2.default.createElement(
@@ -21588,8 +21588,90 @@
 		);
 	};
 	
-	var AllPosts = exports.AllPosts = function AllPosts(monthlyArticles) {
-		var monthLists = monthlyArticles.monthlyArticles.map(function (obj, index) {
+	var AllPosts = exports.AllPosts = function AllPosts(_ref) {
+		var monthlyArticles = _ref.monthlyArticles;
+	
+		var months = new Set();
+		var years = new Set();
+		monthlyArticles.forEach(function (post) {
+			months.add(post.month);
+			years.add(post.year);
+		});
+		var monthArr = [].concat(_toConsumableArray(months));
+		var yearsArr = [].concat(_toConsumableArray(years));
+		var _iteratorNormalCompletion = true;
+		var _didIteratorError = false;
+		var _iteratorError = undefined;
+	
+		try {
+			for (var _iterator = years[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+				var year = _step.value;
+			}
+		} catch (err) {
+			_didIteratorError = true;
+			_iteratorError = err;
+		} finally {
+			try {
+				if (!_iteratorNormalCompletion && _iterator.return) {
+					_iterator.return();
+				}
+			} finally {
+				if (_didIteratorError) {
+					throw _iteratorError;
+				}
+			}
+		}
+	
+		var monthLists = monthlyArticles.map(function (obj, index) {
+			return _react2.default.createElement(PostList, { key: index, month: obj.month, year: obj.year, articles: obj.articles });
+		});
+		return _react2.default.createElement(
+			'section',
+			{ className: 'page--content' },
+			_react2.default.createElement(
+				'h4',
+				{ className: 'content--header tm2' },
+				'Past Blog Posts:'
+			),
+			monthLists
+		);
+	};
+	
+	var AllPostsNew = function AllPostsNew(_ref2) {
+		var articles = _ref2.articles;
+	
+		var months = new Set();
+		var years = new Set();
+		monthlyArticles.forEach(function (post) {
+			months.add(post.month);
+			years.add(post.year);
+		});
+		var monthArr = [].concat(_toConsumableArray(months));
+		var yearsArr = [].concat(_toConsumableArray(years));
+		var _iteratorNormalCompletion2 = true;
+		var _didIteratorError2 = false;
+		var _iteratorError2 = undefined;
+	
+		try {
+			for (var _iterator2 = years[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+				var year = _step2.value;
+			}
+		} catch (err) {
+			_didIteratorError2 = true;
+			_iteratorError2 = err;
+		} finally {
+			try {
+				if (!_iteratorNormalCompletion2 && _iterator2.return) {
+					_iterator2.return();
+				}
+			} finally {
+				if (_didIteratorError2) {
+					throw _iteratorError2;
+				}
+			}
+		}
+	
+		var monthLists = monthlyArticles.map(function (obj, index) {
 			return _react2.default.createElement(PostList, { key: index, month: obj.month, year: obj.year, articles: obj.articles });
 		});
 		return _react2.default.createElement(
@@ -21857,29 +21939,29 @@
 		var tagSet = new Set();
 		taggedPosts.forEach(function (post) {
 			if (post.hasOwnProperty(tags)) {
-				var _iteratorNormalCompletion = true;
-				var _didIteratorError = false;
-				var _iteratorError = undefined;
+				var _iteratorNormalCompletion3 = true;
+				var _didIteratorError3 = false;
+				var _iteratorError3 = undefined;
 	
 				try {
-					for (var _iterator = post.tags[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-						var tag = _step.value;
+					for (var _iterator3 = post.tags[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+						var tag = _step3.value;
 	
 						if (tag != undefined) {
 							tagSet.add(tag);
 						}
 					}
 				} catch (err) {
-					_didIteratorError = true;
-					_iteratorError = err;
+					_didIteratorError3 = true;
+					_iteratorError3 = err;
 				} finally {
 					try {
-						if (!_iteratorNormalCompletion && _iterator.return) {
-							_iterator.return();
+						if (!_iteratorNormalCompletion3 && _iterator3.return) {
+							_iterator3.return();
 						}
 					} finally {
-						if (_didIteratorError) {
-							throw _iteratorError;
+						if (_didIteratorError3) {
+							throw _iteratorError3;
 						}
 					}
 				}
