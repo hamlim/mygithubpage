@@ -546,8 +546,16 @@ let postsWithTags = [
 ];
 
 if (document.getElementById('tags')) {
-  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
+  ReactDOM.render(<Header><h2 className="header--subtitle">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
   ReactDOM.render(<Nav tags />, document.getElementById('navMount-tags'));
-  ReactDOM.render(<TagApp tags={tagArr} taggedPosts={postsWithTags} />, document.getElementById('pageMount'));
+  window.fetch('/Assets/json/posts.json').then(function (response) {
+    return response.json().then((jsonResponse) => {
+      ReactDOM.render(
+        <TagApp taggedPosts={jsonResponse} />,
+        document.getElementById('pageMount')
+      );
+    });
+  });
+  //ReactDOM.render(<TagApp tags={tagArr} taggedPosts={postsWithTags} />, document.getElementById('pageMount'));
   ReactDOM.render(<Footer />, document.getElementById('footerMount-tags'));
 }

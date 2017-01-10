@@ -251,7 +251,7 @@ webpackJsonp([0],{
 	        ' 29th, 2016'
 	      )
 	    ), document.getElementById('headerMount'));
-	    window.fetch('/assets/json/colors.json').then(function (response) {
+	    window.fetch('/Assets/json/colors.json').then(function (response) {
 	      return response.json().then(function (jsonResponse) {
 	        _reactDom2.default.render(_react2.default.createElement(_colorcards.ColorCards, { colors: jsonResponse }), document.getElementById('ColorCards'));
 	      });

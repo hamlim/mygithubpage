@@ -463,12 +463,17 @@ webpackJsonp([1],[
 	    null,
 	    _react2.default.createElement(
 	      'h2',
-	      { className: 'header--subtitle clr--green' },
+	      { className: 'header--subtitle' },
 	      'Blog Tags'
 	    )
 	  ), document.getElementsByClassName('headerMount-tags')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { tags: true }), document.getElementById('navMount-tags'));
-	  _reactDom2.default.render(_react2.default.createElement(_components.TagApp, { tags: tagArr, taggedPosts: postsWithTags }), document.getElementById('pageMount'));
+	  window.fetch('/Assets/json/posts.json').then(function (response) {
+	    return response.json().then(function (jsonResponse) {
+	      _reactDom2.default.render(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
+	    });
+	  });
+	  //ReactDOM.render(<TagApp tags={tagArr} taggedPosts={postsWithTags} />, document.getElementById('pageMount'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-tags'));
 	}
 

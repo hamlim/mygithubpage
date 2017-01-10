@@ -183,7 +183,7 @@ switch (DOCID) {
       </PostHeader>,
       document.getElementById('headerMount')
     );
-    window.fetch('/assets/json/colors.json').then(function (response) {
+    window.fetch('/Assets/json/colors.json').then(function (response) {
       return response.json().then((jsonResponse) => {
         ReactDOM.render(
           <ColorCards colors={jsonResponse} />,

@@ -21484,6 +21484,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 	
 	var Nav = exports.Nav = function Nav(props) {
@@ -21851,36 +21853,69 @@
 	// Tags
 	
 	var TagApp = exports.TagApp = function TagApp(props) {
-		var tags = props.tags;
 		var taggedPosts = props.taggedPosts;
-		var tagsHtml = tags.map(function (tag, index) {
-			return _react2.default.createElement(
-				'ul',
-				{ key: index, className: 'Tag-wrapper' },
-				_react2.default.createElement(
-					'h4',
-					{ className: 'Tag-title', id: tag.toLowerCase() },
-					tag
-				),
-				taggedPosts.map(function (post, index) {
-					if (post.tag === tag) {
-						return _react2.default.createElement(
-							'li',
-							{ className: 'Tag-item', key: index },
-							_react2.default.createElement(
-								'a',
-								{ href: post.link },
-								post.name
-							)
-						);
+		var tagSet = new Set();
+		taggedPosts.forEach(function (post) {
+			if (post.hasOwnProperty(tags)) {
+				var _iteratorNormalCompletion = true;
+				var _didIteratorError = false;
+				var _iteratorError = undefined;
+	
+				try {
+					for (var _iterator = post.tags[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+						var tag = _step.value;
+	
+						if (tag != undefined) {
+							tagSet.add(tag);
+						}
 					}
-				})
-			);
+				} catch (err) {
+					_didIteratorError = true;
+					_iteratorError = err;
+				} finally {
+					try {
+						if (!_iteratorNormalCompletion && _iterator.return) {
+							_iterator.return();
+						}
+					} finally {
+						if (_didIteratorError) {
+							throw _iteratorError;
+						}
+					}
+				}
+			}
+			if (post.hasOwnProperty('tag') && post.tag != undefined) {
+				tagSet.add(post.tag);
+			}
 		});
+		var tagArr = [].concat(_toConsumableArray(tagSet));
 		return _react2.default.createElement(
 			'section',
 			null,
-			tagsHtml
+			tagArr.map(function (tag, index) {
+				return _react2.default.createElement(
+					'ul',
+					{ key: index, className: 'Tag-wrapper' },
+					_react2.default.createElement(
+						'h4',
+						{ className: 'Tag-title', id: tag.toLowerCase() },
+						tag
+					),
+					taggedPosts.map(function (post, index) {
+						if (post.hasOwnProperty('tag') && post.tag === tag || post.hasOwnProperty('tags') && tag in post.tags) {
+							return _react2.default.createElement(
+								'li',
+								{ key: index, className: 'Tag-item' },
+								_react2.default.createElement(
+									'a',
+									{ href: post.path },
+									post.title
+								)
+							);
+						}
+					})
+				);
+			})
 		);
 	};
 	

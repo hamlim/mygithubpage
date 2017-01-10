@@ -187,25 +187,37 @@ export const Tag = styled(PreStyledTag)`
 // Tags
 
 export const TagApp = (props) => {
-	let tags = props.tags;
 	let taggedPosts = props.taggedPosts;
-	let tagsHtml = tags.map((tag, index) => {
-		return (
-			<ul key={index} className="Tag-wrapper">
-				<h4 className="Tag-title" id={tag.toLowerCase()}>{tag}</h4>
-				{taggedPosts.map((post, index) => {
-					if (post.tag === tag) {
-						return (
-							<li className="Tag-item" key={index}><a href={post.link}>{post.name}</a></li>
-						);
-					}
-				})}
-			</ul>
-		)
-	}) 
+	let tagSet = new Set();
+	taggedPosts.forEach(post => {
+		if (post.hasOwnProperty(tags)) {
+			for (let tag of post.tags) {
+				if (tag != undefined) {
+					tagSet.add(tag);
+				}
+			}
+		}
+		if (post.hasOwnProperty('tag') && post.tag != undefined) {
+			tagSet.add(post.tag);
+		}
+	});
+	let tagArr = [...tagSet];
 	return (
 		<section>
-			{tagsHtml}
+			{tagArr.map((tag, index) => {
+				return (
+					<ul key={index} className="Tag-wrapper">
+						<h4 className="Tag-title" id={tag.toLowerCase()}>{tag}</h4>
+						{taggedPosts.map((post, index) => {
+							if ((post.hasOwnProperty('tag') && (post.tag === tag)) || (post.hasOwnProperty('tags') && tag in post.tags)) {
+								return (
+									<li key={index} className="Tag-item"><a href={post.path}>{post.title}</a></li>
+								);
+							}
+						})}
+					</ul>
+				);
+			})}
 		</section>
 	)
 };
@@ -236,12 +248,12 @@ const FloatedQuoteContainer = (props) => {
 		<section className={`${props.className}`}>
 			<h4>Conversations</h4>
 			<p>
-				I honestly think if Twitter was more conversation orientated than it would be 10 times more popular for a lot more users, when you compare monthly active users on messaging apps 
-				to Twitter, it makes it look like a small side project/hobby rather than a publicly traded company. 
+				I honestly think if Twitter was more conversation orientated than it would be 10 times more popular for a lot more users, when you compare monthly active users on messaging apps
+				to Twitter, it makes it look like a small side project/hobby rather than a publicly traded company.
 			</p>
 			<FloatedQuoteStyled />
 			<p>
-				This bundles really well into my final point as well, if Twitter built a better conversational interface rather than a megaphone I think it would build better communities as well 
+				This bundles really well into my final point as well, if Twitter built a better conversational interface rather than a megaphone I think it would build better communities as well
 				as foster more interactivity.
 			</p>
 		</section>

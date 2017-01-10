@@ -1,0 +1,477 @@
+[
+  {
+    "path": "/Posts/2017/January/nine",
+    "title": "Nine",
+    "tag": "Daily"
+  },
+  {
+    "title": "Eight",
+    "path": "/Posts/2017/January/eight",
+    "tag": "Daily"
+  },
+  {
+    "title": "Seven",
+    "path": "/Posts/2017/January/seven",
+    "tag": "Daily"
+  },
+  {
+    "title": "Six",
+    "path": "/Posts/2017/January/six",
+    "tag": "Daily"
+  },
+  {
+    "title": "Social Networks",
+    "path": "/Posts/2017/January/Social_Networks",
+    "tag": "Technology"
+  },
+  {
+    "title": "Five",
+    "path": "/Posts/2017/January/five",
+    "tag": "Daily"
+  },
+  {
+    "title": "Four",
+    "path": "/Posts/2017/January/four",
+    "tag": "Daily"
+  },
+  {
+    "title": "Three",
+    "path": "/Posts/2017/January/three",
+    "tag": "Daily"
+  },
+  {
+    "title": "Two",
+    "path": "/Posts/2017/January/two",
+    "tag": "Daily"
+  },
+  {
+    "title": "One",
+    "path": "/Posts/2017/January/one",
+    "tag": "Daily"
+  },
+  {
+    "title": "2017",
+    "path": "/Posts/2016/December/2017",
+    "tag": "Recap"
+  },
+  {
+    "title": "Drained",
+    "path": "/Posts/2016/December/Drained",
+    "tag": "Burnout"
+  },
+  {
+    "title": "Paralysis",
+    "path": "/Posts/2016/December/Paralysis",
+    "tag": "Burnout"
+  },
+  {
+    "title": "The Macbook Pro",
+    "path": "/Posts/2016/December/TheMacbookPro",
+    "tag": "Technology"
+  },
+  {
+    "title": "The Limitations of CSS in JSX",
+    "path": "/Posts/2016/December/CSSinJSXLimitations",
+    "tag": "Development"
+  },
+  {
+    "title": "CSS Feature Locks",
+    "path": "/Posts/2016/December/CSSFeatureLocks",
+    "tag": "Development"
+  },
+  {
+    "title": "November Recap",
+    "path": "/Posts/2016/December/NovemberRecap",
+    "tag": "Recap"
+  },
+  {
+    "title": "Color Cards",
+    "path": "/Posts/2016/November/ColorCards",
+    "tag": "Projects"
+  },
+  {
+    "title": "Quit Complaining",
+    "path": "/Posts/2016/November/QuitComplaining",
+    "tag": "Motivation"
+  },
+  {
+    "title": "Government is Broken",
+    "path": "/Posts/2016/November/GovernmentIsBroken",
+    "tag": "Random"
+  },
+  {
+    "title": "The Future of Consumer VR",
+    "path": "/Posts/2016/November/TheFutureofConsumerVR",
+    "tag": "Technology"
+  },
+  {
+    "title": "Links",
+    "path": "/Posts/2016/November/Links",
+    "tags": ["Projects", "Random"]
+  },
+  {
+    "title": "That First Fucking Step",
+    "path": "/Posts/2016/November/ThatFirstFuckingStep",
+    "tag": "Motivation"
+  },
+  {
+    "title": "Photos v2",
+    "path": "/Posts/2016/November/Photosv2",
+    "tag": "Photos"
+  },
+  {
+    "title": "Recent Projects",
+    "path": "/Posts/2016/November/RecentProjects",
+    "tag": "Projects"
+  },
+  {
+    "title": "Don\"t Force It",
+    "path": "/Posts/2016/November/DontForceIt",
+    "tag": "Motivation"
+  },
+  {
+    "title": "The American Fall of 2016",
+    "path": "/Posts/2016/November/TheAmericanFall2016",
+    "tag": "Random"
+  },
+  {
+    "title": "I Voted",
+    "path": "/Posts/2016/November/IVoted",
+    "tag": "Random"
+  },
+  {
+    "title": "Monday Mornings",
+    "path": "/Posts/2016/November/MondayMornings",
+    "tag": "Blog"
+  },
+  {
+    "title": "Creativity",
+    "path": "/Posts/2016/November/Creativity",
+    "tag": "Motivation"
+  },
+  {
+    "title": "Don\"t Reach for React",
+    "path": "/Posts/2016/November/DontReachForReact",
+    "tag": "Development"
+  },
+  {
+    "title": "Macbook Pro",
+    "path": "/Posts/2016/November/MacbookPro",
+    "tag": "Development"
+  },
+  {
+    "title": "Refactoring Sucks",
+    "path": "/Posts/2016/November/RefactoringSucks",
+    "tag": "Development"
+  },
+  {
+    "title": "Just Ship It",
+    "path": "/Posts/2016/November/JustShipIt",
+    "tags": ["Development", "Motivation"]
+  },
+  {
+    "title": "October Recap",
+    "path": "/Posts/2016/November/OctoberRecap",
+    "tag": "Recap"
+  },
+  {
+    "title": "Sunday Morning Recap 3",
+    "path": "/Posts/2016/October/SundayMorningRecap3",
+    "tag": "Recap"
+  },
+  {
+    "title": "Weekly Recap 9",
+    "path": "/Posts/2016/October/WeeklyRecap9",
+    "tag": "Recap"
+  },
+  {
+    "title": "Photos v1",
+    "path": "/Posts/2016/October/Photosv1",
+    "tag": "Photos"
+  },
+  {
+    "title": "Weekend Projects 8",
+    "path": "/Posts/2016/October/WeekendProjects008",
+    "tags": ["Recap", "Projects"]
+  },
+  {
+    "title": "Sunday Morning Recap 2",
+    "path": "/Posts/2016/October/SundayMorningRecap02",
+    "tag": "Recap"
+  },
+  {
+    "title": "Weekly Recap 8",
+    "path": "/Posts/2016/October/WeeklyRecap008",
+    "tag": "Recap"
+  },
+  {
+    "title": "CSS Bugs: Inline-Block",
+    "path": "/Posts/2016/October/CSSBugs1",
+    "tag": "Development"
+  },
+  {
+    "title": "Weekend Projects 7",
+    "path": "/Posts/2016/October/WeekendProjects007",
+    "tags": ["Recap", "Projects"]
+  },
+  {
+    "title": "Sunday Morning Recap 1",
+    "path": "/Posts/2016/October/SundayMorningRecap01",
+    "tag": "Recap"
+  },
+  {
+    "title": "State of my Projects",
+    "path": "/Posts/2016/October/State-of-my-Projects",
+    "tag": "Projects"
+  },
+  {
+    "title": "Weekly Recap 7",
+    "path": "/Posts/2016/October/WeeklyRecap007",
+    "tag": "Recap"
+  },
+  {
+    "title": "Pseudo Elements",
+    "path": "/Posts/2016/October/PseudoPart2",
+    "tag": "Development"
+  },
+  {
+    "title": "Pseudo Classes",
+    "path": "/Posts/2016/October/PseudoPart1",
+    "tag": "Development"
+  },
+  {
+    "title": "Weekend Projects 6",
+    "path": "/Posts/2016/October/WeekendProjects006",
+    "tags": ["Recap", "Projects"]
+  },
+  {
+    "title": "The Great CSS Debate",
+    "path": "/Posts/2016/October/TheGreatDebate",
+    "tag": "Development"
+  },
+  {
+    "title": "Weekly Recap 6",
+    "path": "/Posts/2016/October/WeeklyRecap006",
+    "tag": "Recap"
+  },
+  {
+    "title": "Pixel Phones",
+    "path": "/Posts/2016/October/Pixel",
+    "tag": "Technology"
+  },
+  {
+    "title": "Weekly Recap 5",
+    "path": "/Posts/2016/October/WeeklyRecap005",
+    "tag": "Recap"
+  },
+  {
+    "title": "October 4th",
+    "path": "/Posts/2016/October/October4th",
+    "tag": "Technology"
+  },
+  {
+    "title": "September Update",
+    "path": "/Posts/2016/September/SeptemberUpdate",
+    "tag": "Recap"
+  },
+  {
+    "title": "Sick Update",
+    "path": "/Posts/2016/September/Sick",
+    "tag": "Random"
+  },
+  {
+    "title": "Weekly Recap 4",
+    "path": "/Posts/2016/September/WeeklyRecap004",
+    "tag": "Recap"
+  },
+  {
+    "title": "Preserving Aspect Ratio with CSS",
+    "path": "/Posts/2016/September/VideoAspectRatioWithCSS",
+    "tag": "Development"
+  },
+  {
+    "title": "GoPro Karma",
+    "path": "/Posts/2016/September/GoProKarma",
+    "tag": "Technology"
+  },
+  {
+    "title": "Google Event Updates",
+    "path": "/Posts/2016/September/GoogleEventUpdates",
+    "tag": "Technology"
+  },
+  {
+    "title": "Weekend Projects 3",
+    "path": "/Posts/2016/September/WeekendProjects003",
+    "tags": ["Projects", "Recap"]
+  },
+  {
+    "title": "Weekly Recap 3",
+    "path": "/Posts/2016/September/WeeklyRecap003",
+    "tag": "Recap"
+  },
+  {
+    "title": "Hyper(term) is Cool",
+    "path": "/Posts/2016/September/HyperTerm",
+    "tag": "Development"
+  },
+  {
+    "title": "RFP: Database API",
+    "path": "/Posts/2016/September/RFP1Database",
+    "tag": "Development"
+  },
+  {
+    "title": "Google Event Predictions",
+    "path": "/Posts/2016/September/GoogleEventPredictions",
+    "tag": "Technology"
+  },
+  {
+    "title": "Github is a Pain",
+    "path": "/Posts/2016/September/GithubIsAPain",
+    "tag": "Development"
+  },
+  {
+    "title": "Weekend Projects 2",
+    "path": "/Posts/2016/September/WeekendProjects002",
+    "tags": ["Projects", "Recap"]
+  },
+  {
+    "title": "Weekly Recap 2",
+    "path": "/Posts/2016/September/WeeklyRecap002",
+    "tag": "Recap"
+  },
+  {
+    "title": "YouTube is Not for You",
+    "path": "/Posts/2016/September/YouTube_Is_For_Advertisers",
+    "tag": "Random"
+  },
+  {
+    "title": "Weekend Projects 1",
+    "path": "/Posts/2016/September/BuildingAnAPIOnNow",
+    "tags": ["Projects", "Recap"]
+  },
+  {
+    "title": "Weekly Recap 1",
+    "path": "/Posts/2016/September/WeeklyRecap001",
+    "tag": "Recap"
+  },
+  {
+    "title": "My New Website",
+    "path": "/Posts/2016/August/My_New_Website",
+    "tag": "Random"
+  },
+  {
+    "title": "Pull Quotes on the Web",
+    "path": "/Posts/2016/August/pullQuotes",
+    "tag": "Random"
+  },
+  {
+    "title": "Redesign v5",
+    "path": "/Posts/2016/August/designV5",
+    "tag": "Random"
+  },
+  {
+    "title": "Attribute Selectors FTW",
+    "path": "/Posts/2016/August/attributeSelectors",
+    "tag": "Development"
+  },
+  {
+    "title": "August Updates",
+    "path": "/Posts/2016/August/august",
+    "tag": "Recap"
+  },
+  {
+    "title": "Redesign",
+    "path": "/Posts/2016/April/Redesign",
+    "tag": "Random"
+  },
+  {
+    "title": "LMS Redesign Part 1",
+    "path": "/Posts/2016/January/LMSRedesignPart1",
+    "tag": "Projects"
+  },
+  {
+    "title": "The Scariest Time of My Life",
+    "path": "/Posts/2016/January/afraid",
+    "tag": "Blog"
+  },
+  {
+    "title": "Client Side",
+    "path": "/Posts/2016/January/ClientSide",
+    "tag": "Development"
+  },
+  {
+    "title": "10,000 Characters",
+    "path": "/Posts/2016/January/WhatTwitterShouldDo",
+    "tag": "Technology"
+  },
+  {
+    "title": "My First Project of 2016",
+    "path": "/Posts/2016/January/FirstProjectof2016",
+    "tag": "Projects"
+  },
+  {
+    "title": "Building in 2016",
+    "path": "/Posts/2016/January/BuildingIn2016",
+    "tag": "Projects"
+  },
+  {
+    "title": "DJI vs GoPro",
+    "path": "/Posts/2016/January/DJIvsGoPro",
+    "tag": "Technology"
+  },
+  {
+    "title": "2016 Goals",
+    "path": "/Posts/2015/December/2016",
+    "tag": "Random"
+  },
+  {
+    "title": "2015 in Review",
+    "path": "/Posts/2015/December/2015",
+    "tag": "Recap"
+  },
+  {
+    "title": "Where is the Powerpoint Remake?",
+    "path": "/Posts/2015/December/Powerpoint",
+    "tag": "Development"
+  },
+  {
+    "title": "Blogging vs Working",
+    "path": "/Posts/2015/December/BloggingvsWorking",
+    "tag": "Development"
+  },
+  {
+    "title": "The Social Max",
+    "path": "/Posts/2015/December/TheSocialMax",
+    "tag": "Random"
+  },
+  {
+    "title": "The Message is in the Medium",
+    "path": "/Posts/2015/November/Message",
+    "tag": "Technology"
+  },
+  {
+    "title": "A New Resume",
+    "path": "/Posts/2015/November/ANewResume",
+    "tag": "Random"
+  },
+  {
+    "title": "Family Time",
+    "path": "/Posts/2015/November/FamilyTime",
+    "tag": "Random"
+  },
+  {
+    "title": "Weekend Projects",
+    "path": "/Posts/2015/November/WeekendProjects",
+    "tag": "Projects"
+  },
+  {
+    "title": "Thanksgiving",
+    "path": "/Posts/2015/November/Thanksgiving",
+    "tag": "Random"
+  },
+  {
+    "title": "A New Look",
+    "path": "/Posts/2015/November/ANewLook",
+    "tag": "Random"
+  }
+]
