@@ -2,476 +2,666 @@
   {
     "path": "/Posts/2017/January/nine",
     "title": "Nine",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Eight",
     "path": "/Posts/2017/January/eight",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Seven",
     "path": "/Posts/2017/January/seven",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Six",
     "path": "/Posts/2017/January/six",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Social Networks",
     "path": "/Posts/2017/January/Social_Networks",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Five",
     "path": "/Posts/2017/January/five",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Four",
     "path": "/Posts/2017/January/four",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Three",
     "path": "/Posts/2017/January/three",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "Two",
     "path": "/Posts/2017/January/two",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "One",
     "path": "/Posts/2017/January/one",
-    "tag": "Daily"
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017"
   },
   {
     "title": "2017",
     "path": "/Posts/2016/December/2017",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "Drained",
     "path": "/Posts/2016/December/Drained",
-    "tag": "Burnout"
+    "tag": "Burnout",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "Paralysis",
     "path": "/Posts/2016/December/Paralysis",
-    "tag": "Burnout"
+    "tag": "Burnout",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "The Macbook Pro",
     "path": "/Posts/2016/December/TheMacbookPro",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "The Limitations of CSS in JSX",
     "path": "/Posts/2016/December/CSSinJSXLimitations",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "CSS Feature Locks",
     "path": "/Posts/2016/December/CSSFeatureLocks",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "November Recap",
     "path": "/Posts/2016/December/NovemberRecap",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "December",
+    "year": "2016"
   },
   {
     "title": "Color Cards",
     "path": "/Posts/2016/November/ColorCards",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Quit Complaining",
     "path": "/Posts/2016/November/QuitComplaining",
-    "tag": "Motivation"
+    "tag": "Motivation",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Government is Broken",
     "path": "/Posts/2016/November/GovernmentIsBroken",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "The Future of Consumer VR",
     "path": "/Posts/2016/November/TheFutureofConsumerVR",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Links",
     "path": "/Posts/2016/November/Links",
-    "tags": ["Projects", "Random"]
+    "tags": ["Projects", "Random"],
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "That First Fucking Step",
     "path": "/Posts/2016/November/ThatFirstFuckingStep",
-    "tag": "Motivation"
+    "tag": "Motivation",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Photos v2",
     "path": "/Posts/2016/November/Photosv2",
-    "tag": "Photos"
+    "tag": "Photos",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Recent Projects",
     "path": "/Posts/2016/November/RecentProjects",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Don\"t Force It",
     "path": "/Posts/2016/November/DontForceIt",
-    "tag": "Motivation"
+    "tag": "Motivation",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "The American Fall of 2016",
     "path": "/Posts/2016/November/TheAmericanFall2016",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "I Voted",
     "path": "/Posts/2016/November/IVoted",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Monday Mornings",
     "path": "/Posts/2016/November/MondayMornings",
-    "tag": "Blog"
+    "tag": "Blog",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Creativity",
     "path": "/Posts/2016/November/Creativity",
-    "tag": "Motivation"
+    "tag": "Motivation",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Don\"t Reach for React",
     "path": "/Posts/2016/November/DontReachForReact",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Macbook Pro",
     "path": "/Posts/2016/November/MacbookPro",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Refactoring Sucks",
     "path": "/Posts/2016/November/RefactoringSucks",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Just Ship It",
     "path": "/Posts/2016/November/JustShipIt",
-    "tags": ["Development", "Motivation"]
+    "tags": ["Development", "Motivation"],
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "October Recap",
     "path": "/Posts/2016/November/OctoberRecap",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "November",
+    "year": "2016"
   },
   {
     "title": "Sunday Morning Recap 3",
     "path": "/Posts/2016/October/SundayMorningRecap3",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 9",
     "path": "/Posts/2016/October/WeeklyRecap9",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Photos v1",
     "path": "/Posts/2016/October/Photosv1",
-    "tag": "Photos"
+    "tag": "Photos",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekend Projects 8",
     "path": "/Posts/2016/October/WeekendProjects008",
-    "tags": ["Recap", "Projects"]
+    "tags": ["Recap", "Projects"],
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Sunday Morning Recap 2",
     "path": "/Posts/2016/October/SundayMorningRecap02",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 8",
     "path": "/Posts/2016/October/WeeklyRecap008",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "CSS Bugs: Inline-Block",
     "path": "/Posts/2016/October/CSSBugs1",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekend Projects 7",
     "path": "/Posts/2016/October/WeekendProjects007",
-    "tags": ["Recap", "Projects"]
+    "tags": ["Recap", "Projects"],
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Sunday Morning Recap 1",
     "path": "/Posts/2016/October/SundayMorningRecap01",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "State of my Projects",
     "path": "/Posts/2016/October/State-of-my-Projects",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 7",
     "path": "/Posts/2016/October/WeeklyRecap007",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Pseudo Elements",
     "path": "/Posts/2016/October/PseudoPart2",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Pseudo Classes",
     "path": "/Posts/2016/October/PseudoPart1",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekend Projects 6",
     "path": "/Posts/2016/October/WeekendProjects006",
-    "tags": ["Recap", "Projects"]
+    "tags": ["Recap", "Projects"],
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "The Great CSS Debate",
     "path": "/Posts/2016/October/TheGreatDebate",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 6",
     "path": "/Posts/2016/October/WeeklyRecap006",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Pixel Phones",
     "path": "/Posts/2016/October/Pixel",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 5",
     "path": "/Posts/2016/October/WeeklyRecap005",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "October 4th",
     "path": "/Posts/2016/October/October4th",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "October",
+    "year": "2016"
   },
   {
     "title": "September Update",
     "path": "/Posts/2016/September/SeptemberUpdate",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Sick Update",
     "path": "/Posts/2016/September/Sick",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 4",
     "path": "/Posts/2016/September/WeeklyRecap004",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Preserving Aspect Ratio with CSS",
     "path": "/Posts/2016/September/VideoAspectRatioWithCSS",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "GoPro Karma",
     "path": "/Posts/2016/September/GoProKarma",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Google Event Updates",
     "path": "/Posts/2016/September/GoogleEventUpdates",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekend Projects 3",
     "path": "/Posts/2016/September/WeekendProjects003",
-    "tags": ["Projects", "Recap"]
+    "tags": ["Projects", "Recap"],
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 3",
     "path": "/Posts/2016/September/WeeklyRecap003",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Hyper(term) is Cool",
     "path": "/Posts/2016/September/HyperTerm",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "RFP: Database API",
     "path": "/Posts/2016/September/RFP1Database",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Google Event Predictions",
     "path": "/Posts/2016/September/GoogleEventPredictions",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Github is a Pain",
     "path": "/Posts/2016/September/GithubIsAPain",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekend Projects 2",
     "path": "/Posts/2016/September/WeekendProjects002",
-    "tags": ["Projects", "Recap"]
+    "tags": ["Projects", "Recap"],
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 2",
     "path": "/Posts/2016/September/WeeklyRecap002",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "YouTube is Not for You",
     "path": "/Posts/2016/September/YouTube_Is_For_Advertisers",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekend Projects 1",
     "path": "/Posts/2016/September/BuildingAnAPIOnNow",
-    "tags": ["Projects", "Recap"]
+    "tags": ["Projects", "Recap"],
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "Weekly Recap 1",
     "path": "/Posts/2016/September/WeeklyRecap001",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "September",
+    "year": "2016"
   },
   {
     "title": "My New Website",
     "path": "/Posts/2016/August/My_New_Website",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "August",
+    "year": "2016"
   },
   {
     "title": "Pull Quotes on the Web",
     "path": "/Posts/2016/August/pullQuotes",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "August",
+    "year": "2016"
   },
   {
     "title": "Redesign v5",
     "path": "/Posts/2016/August/designV5",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "August",
+    "year": "2016"
   },
   {
     "title": "Attribute Selectors FTW",
     "path": "/Posts/2016/August/attributeSelectors",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "August",
+    "year": "2016"
   },
   {
     "title": "August Updates",
     "path": "/Posts/2016/August/august",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "August",
+    "year": "2016"
   },
   {
     "title": "Redesign",
     "path": "/Posts/2016/April/Redesign",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "April",
+    "year": "2016"
   },
   {
     "title": "LMS Redesign Part 1",
     "path": "/Posts/2016/January/LMSRedesignPart1",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "The Scariest Time of My Life",
     "path": "/Posts/2016/January/afraid",
-    "tag": "Blog"
+    "tag": "Blog",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "Client Side",
     "path": "/Posts/2016/January/ClientSide",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "10,000 Characters",
     "path": "/Posts/2016/January/WhatTwitterShouldDo",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "My First Project of 2016",
     "path": "/Posts/2016/January/FirstProjectof2016",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "Building in 2016",
     "path": "/Posts/2016/January/BuildingIn2016",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "DJI vs GoPro",
     "path": "/Posts/2016/January/DJIvsGoPro",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "January",
+    "year": "2016"
   },
   {
     "title": "2016 Goals",
     "path": "/Posts/2015/December/2016",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "December",
+    "year": "2015"
   },
   {
     "title": "2015 in Review",
     "path": "/Posts/2015/December/2015",
-    "tag": "Recap"
+    "tag": "Recap",
+    "month": "December",
+    "year": "2015"
   },
   {
     "title": "Where is the Powerpoint Remake?",
     "path": "/Posts/2015/December/Powerpoint",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "December",
+    "year": "2015"
   },
   {
     "title": "Blogging vs Working",
     "path": "/Posts/2015/December/BloggingvsWorking",
-    "tag": "Development"
+    "tag": "Development",
+    "month": "December",
+    "year": "2015"
   },
   {
     "title": "The Social Max",
     "path": "/Posts/2015/December/TheSocialMax",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "December",
+    "year": "2015"
   },
   {
     "title": "The Message is in the Medium",
     "path": "/Posts/2015/November/Message",
-    "tag": "Technology"
+    "tag": "Technology",
+    "month": "November",
+    "year": "2015"
   },
   {
     "title": "A New Resume",
     "path": "/Posts/2015/November/ANewResume",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2015"
   },
   {
     "title": "Family Time",
     "path": "/Posts/2015/November/FamilyTime",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2015"
   },
   {
     "title": "Weekend Projects",
     "path": "/Posts/2015/November/WeekendProjects",
-    "tag": "Projects"
+    "tag": "Projects",
+    "month": "November",
+    "year": "2015"
   },
   {
     "title": "Thanksgiving",
     "path": "/Posts/2015/November/Thanksgiving",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2015"
   },
   {
     "title": "A New Look",
     "path": "/Posts/2015/November/ANewLook",
-    "tag": "Random"
+    "tag": "Random",
+    "month": "November",
+    "year": "2015"
   }
 ]
