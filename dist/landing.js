@@ -19,7 +19,7 @@ webpackJsonp([1],[
 	// holidays
 	// import emojiCursor from './Assets/js/src/emojiCursor';
 	// emojiCursor();
-	var landingcss = __webpack_require__(244);
+	var landingcss = __webpack_require__(245);
 	
 	var listing = [{
 	  'month': 'January',

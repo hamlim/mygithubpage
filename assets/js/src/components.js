@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import ShareSocialLink from './SharingButtons';
+
 export const Nav = (props) => {
 	return (
 		<ul data-css-nav-links className="nav--links ul--nostyle ul--inline">

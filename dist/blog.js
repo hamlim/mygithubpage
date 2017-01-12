@@ -15,13 +15,13 @@ webpackJsonp([0],{
 	
 	var _components = __webpack_require__(172);
 	
-	var _reactlightbox = __webpack_require__(242);
+	var _reactlightbox = __webpack_require__(243);
 	
-	var _colorcards = __webpack_require__(243);
+	var _colorcards = __webpack_require__(244);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var post_css = __webpack_require__(244);
+	var post_css = __webpack_require__(245);
 	
 	var DOCID = document.body.getAttribute('data-post-id');
 	
@@ -712,7 +712,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 242:
+/***/ 243:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -778,7 +778,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 243:
+/***/ 244:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
