@@ -30185,6 +30185,8 @@
 	
 	var _styledComponents = __webpack_require__(173);
 	
+	var _styledComponents2 = _interopRequireDefault(_styledComponents);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -30247,7 +30249,7 @@
 	  );
 	};
 	
-	var ShareSocialLink = (0, _styledComponents.styled)(SocialLink)(_templateObject);
+	var ShareSocialLink = (0, _styledComponents2.default)(SocialLink)(_templateObject);
 	
 	exports.default = ShareSocialLink;
 
