@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eleven</title>
+    <!-- Generic Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/icons/favicons/memo.png" type="image/png">
+    <meta name="theme-color" content="#2ECC71">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/dist/common.css">
+  </head>
+  <body id="post" data-post-id="32">
+    <main class="🔧">
+      <article class="article">
+        <header id="headerMount"></header>
+        <section>
+          <p>
+            So I woke up a whole hour late this morning, I am actually surprised I made it into work only about 15 minutes later than
+            when I normally get in (maybe that says something about how much extra time I can sleep in normally).
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            So that thing I said a few blog posts ago about more work coming has turned out to be false. I am so bored at work now days I wish I was
+            taking on larger and larger projects that I could actually solve properly.
+          </p>
+          <p>
+            So I have basically given up on the food logging, its just too much of a hastle to keep updating the log during work hours. Its also difficult
+            to track the amount of food I am eating. I have actually been thinking about coming back to a soylent like diet. Its just so expensive though.
+          </p>
+          <p>
+            I also really need to get this blog build phase working again, I think I need to rethink the way I store the posts in JSON. I need to break
+            the posts array down into year and then month just like I have been doing before. I then need a function to run through the years and each month
+            and then each post in there to generate a list of tagged articles.
+          </p>
+          <p>
+            Seriously considering just throwing this data into something like Airtable or Fieldbook or even Firebase. I jsut want it easier to store the
+            posts and them simply query an API to get the posts.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Ok so I figured out the above problem, decided to live with two seperate json stores for the blog posts, one flat for the tags listing
+            and the other more jagged for article listing. I still need to figure out how to cut back on all the steps to build a blog page. I have to currently:
+          </p>
+          <ol>
+            <li>Make a new HTML file with my content (direct copy of the previous article)</li>
+            <li>Change the data attribute on the blog post</li>
+            <li>Add the blog post to the <code>posts.json</code> endpoint store file</li>
+            <li>Add the blog post to the <code>tags.json</code> endpoint store file</li>
+            <li>Add the post to the monthly index file</li>
+            <li>Add the post to the js that builds the headers, footers, and tags section of each blog page</li>
+          </ol>
+          <p>
+            So if you ask me thats about 6 more steps than I would like.
+          </p>
+          <p class="lead">
+            An important note: all of this is manual right now. I really need to cut back on these processes that are manual.
+          </p>
+        </section>
+        <section id="tagMount"></section>
+        <footer data-css-footer id="footerMount"></footer>
+      </article>
+    </main>
+    <script src="/dist/common.js" charset="utf-8"></script>
+    <script src="/dist/blog.js" charset="utf-8"></script>
+  </body>
+</html>

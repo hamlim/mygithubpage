@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Nav, Header, Footer, AllPosts, TagApp } from './assets/js/src/components';
+import { Nav, Header, Footer, AllPosts, TagApp, PostListing } from './assets/js/src/components';
 // holidays
 // import emojiCursor from './Assets/js/src/emojiCursor';
 // emojiCursor();
@@ -11,6 +11,11 @@ var listing = [
     'month': 'January',
     'year': '2017',
     'articles': [
+      {
+        'title': 'Eleven',
+        'link': 'eleven',
+        'tag': 'Daily'
+      },
       {
         'title': 'Ten',
         'link': 'ten',
@@ -472,15 +477,15 @@ if (document.getElementById('resume')) {
 if (document.getElementById('blog')) {
   ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
   ReactDOM.render(<Nav blog />, document.getElementById('navMount-blog'));
-  // window.fetch('/Assets/json/posts.json').then(function (response) {
-  //   return response.json().then((jsonResponse) => {
-  //     ReactDOM.render(
-  //       <AllPosts monthlyArticles={jsonResponse} />,
-  //       document.getElementById('listingMount-blog')
-  //     );
-  //   });
-  // });
-  ReactDOM.render(<AllPosts monthlyArticles={listing} />, document.getElementById('listingMount-blog'));
+  window.fetch('/Assets/json/posts.json').then(function (response) {
+    return response.json().then((jsonResponse) => {
+      ReactDOM.render(
+        <PostListing posts={jsonResponse} />,
+        document.getElementById('listingMount-blog')
+      );
+    });
+  });
+  // ReactDOM.render(<AllPosts monthlyArticles={listing} />, document.getElementById('listingMount-blog'));
   ReactDOM.render(<Footer />, document.getElementById('footerMount-blog'));
 }
 
@@ -492,7 +497,7 @@ if (document.getElementById('monthly')) {
 if (document.getElementById('tags')) {
   ReactDOM.render(<Header><h2 className="header--subtitle">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
   ReactDOM.render(<Nav tags />, document.getElementById('navMount-tags'));
-  window.fetch('/Assets/json/posts.json').then(function (response) {
+  window.fetch('/Assets/json/tags.json').then(function (response) {
     return response.json().then((jsonResponse) => {
       ReactDOM.render(
         <TagApp taggedPosts={jsonResponse} />,

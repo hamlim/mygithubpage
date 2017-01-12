@@ -53,46 +53,63 @@ const PostList = (props) => {
 };
 
 export const AllPosts = ({monthlyArticles}) => {
-	let months = new Set();
-	let years = new Set();
-	monthlyArticles.forEach(post => {
-		months.add(post.month);
-		years.add(post.year);
-	});
-	let monthArr = [...months];
-	let yearsArr = [...years];
-	for (let year of years) {
-
-	}
 	const monthLists = monthlyArticles.map(function(obj, index) { return (<PostList key={index} month={obj.month} year={obj.year} articles={obj.articles} />); });
 	return (
-		<section className="page--content">
-			<h4 className="content--header tm2">Past Blog Posts:</h4>
+		<section>
+			<h4>Past Blog Posts:</h4>
 			{monthLists}
 		</section>
 	)
 };
 
-const AllPostsNew = ({articles}) => {
-	let months = new Set();
-	let years = new Set();
-	monthlyArticles.forEach(post => {
-		months.add(post.month);
-		years.add(post.year);
-	});
-	let monthArr = [...months];
-	let yearsArr = [...years];
-	for (let year of years) {
-
-	}
-	const monthLists = monthlyArticles.map(function(obj, index) { return (<PostList key={index} month={obj.month} year={obj.year} articles={obj.articles} />); });
+const PostListContent = ({post}) => {
 	return (
-		<section className="page--content">
-			<h4 className="content--header tm2">Past Blog Posts:</h4>
-			{monthLists}
-		</section>
+		<li data-css-li>
+			{post.title} - <a href={post.path} data-css-link>Read Here</a>
+		</li>
 	)
 }
+
+const MonthListing = ({posts, month, year}) => {
+	let postList = posts.map((post, index) => {
+		return (
+			<PostListContent key={index} post={post} />
+		)
+	});
+	return (
+		<ul>
+			<h5 data-css-tac><a href={`./Posts/${year}/${month}/`}>{month} - {year}:</a></h5>
+			{postList}
+		</ul>
+	)
+}
+
+const YearListing = ({months, year}) => {
+	let monthListing = months.map((month, index) => {
+		return (
+			<MonthListing posts={month.posts} month={month.month} year={year} key={index} />
+		)
+	});
+	return (
+		<div>
+			{monthListing}
+		</div>
+	)
+};
+
+export const PostListing = ({posts}) => {
+	let yearListing = posts.map((year, index) => {
+		return (
+			<YearListing months={year.months} year={year.year} key={index} />
+		)
+	});
+	return (
+		<section>
+			<h4>Past Blog Posts:</h4>
+			{yearListing}
+		</section>
+	)
+};
 
 export const Footer = (props) => {
 	let now = new Date();
@@ -218,8 +235,7 @@ export const Tag = styled(PreStyledTag)`
 
 // Tags
 
-export const TagApp = (props) => {
-	let taggedPosts = props.taggedPosts;
+export const TagApp = ({taggedPosts}) => {
 	let tagSet = new Set();
 	taggedPosts.forEach(post => {
 		if (post.hasOwnProperty(tags)) {

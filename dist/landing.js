@@ -25,6 +25,10 @@ webpackJsonp([1],[
 	  'month': 'January',
 	  'year': '2017',
 	  'articles': [{
+	    'title': 'Eleven',
+	    'link': 'eleven',
+	    'tag': 'Daily'
+	  }, {
 	    'title': 'Ten',
 	    'link': 'ten',
 	    'tag': 'Daily'
@@ -393,15 +397,12 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { blog: true }), document.getElementById('navMount-blog'));
-	  // window.fetch('/Assets/json/posts.json').then(function (response) {
-	  //   return response.json().then((jsonResponse) => {
-	  //     ReactDOM.render(
-	  //       <AllPosts monthlyArticles={jsonResponse} />,
-	  //       document.getElementById('listingMount-blog')
-	  //     );
-	  //   });
-	  // });
-	  _reactDom2.default.render(_react2.default.createElement(_components.AllPosts, { monthlyArticles: listing }), document.getElementById('listingMount-blog'));
+	  window.fetch('/Assets/json/posts.json').then(function (response) {
+	    return response.json().then(function (jsonResponse) {
+	      _reactDom2.default.render(_react2.default.createElement(_components.PostListing, { posts: jsonResponse }), document.getElementById('listingMount-blog'));
+	    });
+	  });
+	  // ReactDOM.render(<AllPosts monthlyArticles={listing} />, document.getElementById('listingMount-blog'));
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-blog'));
 	}
 	
@@ -428,7 +429,7 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-tags')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { tags: true }), document.getElementById('navMount-tags'));
-	  window.fetch('/Assets/json/posts.json').then(function (response) {
+	  window.fetch('/Assets/json/tags.json').then(function (response) {
 	    return response.json().then(function (jsonResponse) {
 	      _reactDom2.default.render(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
 	    });
