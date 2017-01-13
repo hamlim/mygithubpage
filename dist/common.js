@@ -21470,7 +21470,7 @@
 	});
 	exports.StyledFloatedQuoteContainer = exports.TagApp = exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.PostListing = exports.AllPosts = exports.Header = exports.Nav = undefined;
 	
-	var _templateObject = _taggedTemplateLiteral(['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\talign-items: center;\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n'], ['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\talign-items: center;\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n']),
+	var _templateObject = _taggedTemplateLiteral(['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\talign-items: center;\n\n\t& .children {\n\t\tmargin-left: 10px;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n'], ['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\talign-items: center;\n\n\t& .children {\n\t\tmargin-left: 10px;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tfloat: left;\n\tmargin: .5em .5em .5em 0;\n\t& > p {\n\t\twidth: 15rem;\n\t\tpadding: .25em;\n\t\ttext-align: center;\n\t}\n'], ['\n\tfloat: left;\n\tmargin: .5em .5em .5em 0;\n\t& > p {\n\t\twidth: 15rem;\n\t\tpadding: .25em;\n\t\ttext-align: center;\n\t}\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n\t&:after {\n\t\tcontent: \'\';\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n'], ['\n\t&:after {\n\t\tcontent: \'\';\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n']);
 	
@@ -21931,7 +21931,11 @@
 				_react2.default.createElement('circle', { cx: '24', cy: '8', r: '2' }),
 				_react2.default.createElement('path', { d: 'M2 18 L18 2 30 2 30 14 14 30 Z' })
 			),
-			props.children
+			_react2.default.createElement(
+				'span',
+				{ className: 'children' },
+				props.children
+			)
 		);
 	};
 	

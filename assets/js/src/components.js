@@ -209,7 +209,9 @@ const PreStyledTag = (props) => {
 		    <circle cx="24" cy="8" r="2" />
 		    <path d="M2 18 L18 2 30 2 30 14 14 30 Z" />
 			</svg>
-			{props.children}
+			<span className="children">
+				{props.children}
+			</span>
 		</a>
 	)
 };
@@ -224,6 +226,10 @@ export const Tag = styled(PreStyledTag)`
 	transition: all .5s ease;
 	color: var(--black);
 	align-items: center;
+
+	& .children {
+		margin-left: 10px;
+	}
 
 	&:hover,
 	&:focus {

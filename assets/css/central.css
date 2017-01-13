@@ -121,14 +121,34 @@ blink {
 a:not(.escape) {
   box-sizing: border-box;
   position: relative;
-  color: var(--black);
+  color: var(--b);
   display: inline-flex;
   overflow: hidden;
   text-decoration: none;
   margin: 0;
-  border-bottom: solid 3px currentColor;
+  padding: 0 .25em;
   cursor: pointer;
+  transition: all .25s ease;
 }
+a:not(.escape):focus,
+a:not(.escape):hover {
+  background-color: var(--a);
+  color: var(--white);
+  transition: all .25s ease;
+}
+a:not(.escape):visited {
+  background-color: var(--light-gray);
+  color: var(--gray);
+  text-decoration: line-through;
+  border-bottom: none;
+  transition: all .25s ease;
+}
+a:not(.escape):visited:hover,
+a:not(.escape):visited:focus {
+  background-color: var(--gray);
+  color: var(--light-gray);
+}
+
 nav li + li {
   margin-left: .25em;
 }
@@ -141,25 +161,7 @@ a.escape:hover {
   color: var(--b);
   transition: color .5s ease;
 }
-a:not(.escape):hover,
-a:not(.escape).active {
-  animation: link-flash 2s infinite;
-}
 
-@keyframes link-flash {
-  0%, 100% {
-    color: var(--a);
-  }
-  10% { color: color(var(--a) hue(+ 36deg)); }
-  20% { color: color(var(--a) hue(+ 72deg)); }
-  30% { color: color(var(--a) hue(+ 108deg)); }
-  40% { color: color(var(--a) hue(+ 144deg)); }
-  50% { color: color(var(--a) hue(+ 180deg)); }
-  60% { color: color(var(--a) hue(+ 216deg)); }
-  70% { color: color(var(--a) hue(+ 252deg)); }
-  80% { color: color(var(--a) hue(+ 288deg)); }
-  90% { color: color(var(--a) hue(+ 324deg)); }
-}
 
 article {
   max-width: 40rem;
