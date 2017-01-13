@@ -833,40 +833,54 @@ webpackJsonp([0],{
 /***/ 244:
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	exports.ColorCards = undefined;
 	
+	var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center;\n\n  & > div {\n    width: 10em;\n    height: 10em;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n\n  & span {\n    display: inline-block;\n    padding: .1em .3em;\n    background-color: rgba(255, 255, 255, .7);\n    color: black;\n  }\n'], ['\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center;\n\n  & > div {\n    width: 10em;\n    height: 10em;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n\n  & span {\n    display: inline-block;\n    padding: .1em .3em;\n    background-color: rgba(255, 255, 255, .7);\n    color: black;\n  }\n']);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _styledComponents = __webpack_require__(173);
+	
+	var _styledComponents2 = _interopRequireDefault(_styledComponents);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var ColorCards = exports.ColorCards = function ColorCards(colors) {
-	  var cards = colors.colors.map(function (obj, index) {
+	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+	
+	var ColorCardsUnStyled = function ColorCardsUnStyled(_ref) {
+	  var colors = _ref.colors,
+	      className = _ref.className;
+	
+	  console.log(colors, className);
+	  var cards = colors.map(function (obj, index) {
 	    var styles = {
 	      backgroundColor: obj.hex
 	    };
 	    return _react2.default.createElement(
-	      "div",
-	      { key: index, style: styles, className: "ColorCards" },
+	      'div',
+	      { key: index, style: styles },
 	      _react2.default.createElement(
-	        "span",
-	        { className: "ColorCards-hex" },
+	        'span',
+	        null,
 	        obj.hex
 	      )
 	    );
 	  });
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "ColorCards-wrapper" },
+	    'div',
+	    { className: className },
 	    cards
 	  );
 	};
+	
+	var ColorCards = exports.ColorCards = (0, _styledComponents2.default)(ColorCardsUnStyled)(_templateObject);
 
 /***/ }
 

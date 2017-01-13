@@ -21470,7 +21470,7 @@
 	});
 	exports.StyledFloatedQuoteContainer = exports.TagApp = exports.Tag = exports.TagContainer = exports.PostHeader = exports.PostFooter = exports.Footer = exports.PostListing = exports.AllPosts = exports.Header = exports.Nav = undefined;
 	
-	var _templateObject = _taggedTemplateLiteral(['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\n\t&:before {\n\t\tcontent: \'#\';\n\t\tdisplay: inline-block;\n\t\tpadding-right: .25em;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n'], ['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\n\t&:before {\n\t\tcontent: \'#\';\n\t\tdisplay: inline-block;\n\t\tpadding-right: .25em;\n\t}\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n']),
+	var _templateObject = _taggedTemplateLiteral(['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\talign-items: center;\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n'], ['\n\tall: unset;\n\tdisplay: inline-flex;\n\tbackground-color: var(--a);\n\tborder-radius: .25em;\n\ttext-decoration: none;\n\tpadding: 0 .5em;\n\ttransition: all .5s ease;\n\tcolor: var(--black);\n\talign-items: center;\n\n\t&:hover,\n\t&:focus {\n\t\tbackground-color: var(--c);\n\t\ttransition: all .5s ease;\n\t}\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n\tfloat: left;\n\tmargin: .5em .5em .5em 0;\n\t& > p {\n\t\twidth: 15rem;\n\t\tpadding: .25em;\n\t\ttext-align: center;\n\t}\n'], ['\n\tfloat: left;\n\tmargin: .5em .5em .5em 0;\n\t& > p {\n\t\twidth: 15rem;\n\t\tpadding: .25em;\n\t\ttext-align: center;\n\t}\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n\t&:after {\n\t\tcontent: \'\';\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n'], ['\n\t&:after {\n\t\tcontent: \'\';\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n']);
 	
@@ -21925,6 +21925,12 @@
 		return _react2.default.createElement(
 			'a',
 			{ className: 'escape ' + props.className, href: "/tags#" + props.href },
+			_react2.default.createElement(
+				'svg',
+				{ id: 'i-tag', viewBox: '0 0 32 32', width: '24', height: '24', fill: 'none', stroke: 'currentcolor', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '6.25%', className: 'svg-reset' },
+				_react2.default.createElement('circle', { cx: '24', cy: '8', r: '2' }),
+				_react2.default.createElement('path', { d: 'M2 18 L18 2 30 2 30 14 14 30 Z' })
+			),
 			props.children
 		);
 	};

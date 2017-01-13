@@ -1111,38 +1111,6 @@ sup {
   display: block;
 }
 
-
-.ColorCards-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-  .ColorCards {
-    width: 10em;
-    height: 10em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-    .ColorCards-hex {
-      display: inline-block;
-      padding: .1em .3em;
-      background-color: rgba(255, 255, 255, .7);
-      color: black;
-    }
-
-
 /*
   svg reset
 */
@@ -1156,34 +1124,8 @@ sup {
   Tags
 */
 
-.Tag.Tag {
-  all: unset;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: springgreen;
-  border-radius: .25em;
-  text-decoration: none;
-  padding: 0 .5em;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  color: #041122;
-}
-
-.Tag.Tag::before {
-  content: '#';
-  display: inline-block;
-  padding-right: .25em;
-}
-
-.Tag.Tag:hover,
-.Tag.Tag:focus {
-  background-color: salmon;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
 .Tag-container {
   overflow-y: scroll;
 }
+
 /*# sourceMappingURL=common.css.map*/

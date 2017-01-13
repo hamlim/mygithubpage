@@ -205,6 +205,10 @@ export const TagContainer = (props) => {
 const PreStyledTag = (props) => {
 	return (
 		<a className={`escape ${props.className}`} href={"/tags#" + props.href}>
+			<svg id="i-tag" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6.25%" className="svg-reset">
+		    <circle cx="24" cy="8" r="2" />
+		    <path d="M2 18 L18 2 30 2 30 14 14 30 Z" />
+			</svg>
 			{props.children}
 		</a>
 	)
@@ -219,12 +223,7 @@ export const Tag = styled(PreStyledTag)`
 	padding: 0 .5em;
 	transition: all .5s ease;
 	color: var(--black);
-
-	&:before {
-		content: '#';
-		display: inline-block;
-		padding-right: .25em;
-	}
+	align-items: center;
 
 	&:hover,
 	&:focus {
