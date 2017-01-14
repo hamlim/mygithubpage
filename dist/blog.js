@@ -782,6 +782,11 @@ webpackJsonp([0],{
 	        _components.Tag,
 	        { href: 'daily' },
 	        'Daily'
+	      ),
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'development' },
+	        'Development'
 	      )
 	    ), document.getElementById('tagMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));

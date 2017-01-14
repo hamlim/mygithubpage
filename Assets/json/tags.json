@@ -2,7 +2,7 @@
   {
     "path": "/Posts/2017/January/fourteen",
     "title": "Fourteen",
-    "tag": "Daily",
+    "tags": ["Daily", "Development"],
     "month": "January",
     "year": "2017",
     "date_uuid": "201701"

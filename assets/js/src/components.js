@@ -236,6 +236,9 @@ export const Tag = styled(PreStyledTag)`
 		background-color: var(--c);
 		transition: all .5s ease;
 	}
+	& + & {
+		margin-left: .5em;
+	}
 `;
 
 

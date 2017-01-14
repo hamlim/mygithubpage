@@ -558,6 +558,7 @@ switch (DOCID) {
     ReactDOM.render(
       <TagContainer title="Tags:">
         <Tag href="daily">Daily</Tag>
+        <Tag href="development">Development</Tag>
       </TagContainer>,
       document.getElementById('tagMount')
     );
