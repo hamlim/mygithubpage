@@ -19,7 +19,7 @@ if (document.getElementById('resume')) {
 if (document.getElementById('blog')) {
   ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
   ReactDOM.render(<Nav blog />, document.getElementById('navMount-blog'));
-  window.fetch('/Assets/json/posts.json').then(function (response) {
+  window.fetch('/assets/json/posts.json').then(function (response) {
     return response.json().then((jsonResponse) => {
       ReactDOM.render(
         <PostListing posts={jsonResponse} />,
@@ -38,7 +38,7 @@ if (document.getElementById('monthly')) {
 if (document.getElementById('tags')) {
   ReactDOM.render(<Header><h2 className="header--subtitle">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
   ReactDOM.render(<Nav tags />, document.getElementById('navMount-tags'));
-  window.fetch('/Assets/json/tags.json').then(function (response) {
+  window.fetch('/assets/json/tags.json').then(function (response) {
     return response.json().then((jsonResponse) => {
       ReactDOM.render(
         <TagApp taggedPosts={jsonResponse} />,
