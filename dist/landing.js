@@ -19,7 +19,7 @@ webpackJsonp([1],[
 	// holidays
 	// import emojiCursor from './Assets/js/src/emojiCursor';
 	// emojiCursor();
-	var landingcss = __webpack_require__(245);
+	var landingcss = __webpack_require__(251);
 	
 	if (document.getElementById('index')) {
 	  _reactDom2.default.render(_react2.default.createElement(

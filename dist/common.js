@@ -21862,7 +21862,7 @@
 			'section',
 			null,
 			_react2.default.createElement(
-				'h2',
+				'h1',
 				{ className: '\uD83C\uDD95 \u274C' },
 				props.title
 			),
@@ -30266,7 +30266,13 @@
 /***/ },
 /* 243 */,
 /* 244 */,
-/* 245 */
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

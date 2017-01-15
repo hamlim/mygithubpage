@@ -1,8 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM, {render} from 'react-dom';
 import { PostHeader, PostFooter, TagContainer, Tag, StyledFloatedQuoteContainer } from './assets/js/src/components';
 import { Lightbox } from './assets/js/src/reactlightbox';
 import { ColorCards } from './assets/js/src/colorcards';
+
+import Post from './assets/js/src/post/post';
+
 var post_css = require('./assets/css/central.css');
 
 const DOCID = document.body.getAttribute('data-post-id');
@@ -577,6 +580,28 @@ switch (DOCID) {
     ReactDOM.render(
       <TagContainer title="Tags:">
         <Tag href="daily">Daily</Tag>
+        <Tag href="development">Development</Tag>
+      </TagContainer>,
+      document.getElementById('tagMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
+  case '37':
+    ReactDOM.render(
+      <PostHeader title="Markdown Test">
+        <time dateTime="2017-01-15"><a href="./" >January</a> 15th, 2017</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <Post year="2017" month="January" title="01-15-17-A-Markdown-Test.md" />,
+      document.getElementById('postMount')
+    );
+    ReactDOM.render(
+      <TagContainer title="Tags:">
         <Tag href="development">Development</Tag>
       </TagContainer>,
       document.getElementById('tagMount')

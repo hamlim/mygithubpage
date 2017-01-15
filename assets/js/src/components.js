@@ -182,7 +182,7 @@ export const PostFooter = (props) => {
 export const PostHeader = (props) => {
 	return (
 		<section>
-			<h2 className="🆕 ❌">{props.title}</h2>
+			<h1 className="🆕 ❌">{props.title}</h1>
 			{props.subtitle ? <h3>{props.subtitle}</h3> : ''}
 			<div className="🔧">
 				<p className="❌">
