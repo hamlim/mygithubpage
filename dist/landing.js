@@ -58,7 +58,7 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { blog: true }), document.getElementById('navMount-blog'));
-	  window.fetch('/Assets/json/posts.json').then(function (response) {
+	  window.fetch('/assets/json/posts.json').then(function (response) {
 	    return response.json().then(function (jsonResponse) {
 	      _reactDom2.default.render(_react2.default.createElement(_components.PostListing, { posts: jsonResponse }), document.getElementById('listingMount-blog'));
 	    });
@@ -89,7 +89,7 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-tags')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { tags: true }), document.getElementById('navMount-tags'));
-	  window.fetch('/Assets/json/tags.json').then(function (response) {
+	  window.fetch('/assets/json/tags.json').then(function (response) {
 	    return response.json().then(function (jsonResponse) {
 	      _reactDom2.default.render(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
 	    });

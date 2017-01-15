@@ -251,7 +251,7 @@ webpackJsonp([0],{
 	        ' 29th, 2016'
 	      )
 	    ), document.getElementById('headerMount'));
-	    window.fetch('/Assets/json/colors.json').then(function (response) {
+	    window.fetch('/assets/json/colors.json').then(function (response) {
 	      return response.json().then(function (jsonResponse) {
 	        _reactDom2.default.render(_react2.default.createElement(_colorcards.ColorCards, { colors: jsonResponse }), document.getElementById('ColorCards'));
 	      });
@@ -773,6 +773,37 @@ webpackJsonp([0],{
 	          'January'
 	        ),
 	        ' 14th, 2017'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'daily' },
+	        'Daily'
+	      ),
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'development' },
+	        'Development'
+	      )
+	    ), document.getElementById('tagMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
+	  case '36':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Fifteen' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2017-01-15' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'January'
+	        ),
+	        ' 15th, 2017'
 	      )
 	    ), document.getElementById('headerMount'));
 	    _reactDom2.default.render(_react2.default.createElement(
