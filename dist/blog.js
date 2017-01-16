@@ -853,6 +853,60 @@ webpackJsonp([0],{
 	    ), document.getElementById('tagMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '38':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Push vs Pull AIs' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2017-01-17' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'January'
+	        ),
+	        ' 17th, 2017'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_post2.default, { year: '2017', month: 'January', title: '01-15-17-AI.md' }), document.getElementById('postMount'));
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'development' },
+	        'Development'
+	      )
+	    ), document.getElementById('tagMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
+	  case '39':
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Sixteen' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2017-01-16' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'January'
+	        ),
+	        ' 16th, 2017'
+	      )
+	    ), document.getElementById('headerMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_post2.default, { year: '2017', month: 'January', title: '01-16-17-Sixteen.md' }), document.getElementById('postMount'));
+	    _reactDom2.default.render(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'daily' },
+	        'Daily'
+	      )
+	    ), document.getElementById('tagMount'));
+	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },

@@ -611,4 +611,48 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '38':
+    ReactDOM.render(
+      <PostHeader title="Push vs Pull AIs">
+        <time dateTime="2017-01-17"><a href="./" >January</a> 17th, 2017</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <Post year="2017" month="January" title="01-15-17-AI.md" />,
+      document.getElementById('postMount')
+    );
+    ReactDOM.render(
+      <TagContainer title="Tags:">
+        <Tag href="development">Development</Tag>
+      </TagContainer>,
+      document.getElementById('tagMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
+  case '39':
+    ReactDOM.render(
+      <PostHeader title="Sixteen">
+        <time dateTime="2017-01-16"><a href="./" >January</a> 16th, 2017</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <Post year="2017" month="January" title="01-16-17-Sixteen.md" />,
+      document.getElementById('postMount')
+    );
+    ReactDOM.render(
+      <TagContainer title="Tags:">
+        <Tag href="daily">Daily</Tag>
+      </TagContainer>,
+      document.getElementById('tagMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }
