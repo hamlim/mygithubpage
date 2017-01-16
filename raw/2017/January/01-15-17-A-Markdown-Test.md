@@ -49,3 +49,12 @@ export default Post;
 
 It is actually quite messy (I could probably do all of it as a stateless functional component but figured state would
   be a bit more helpful)
+
+
+Now for an interesting test, what happens when I write some html within my markdown file?
+
+<p class="lead">This is a lead</p>
+
+It works!
+
+Maybe I can do all the design-y things I do in some other posts.
