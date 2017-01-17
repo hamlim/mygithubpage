@@ -655,4 +655,26 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '40':
+    ReactDOM.render(
+      <PostHeader title="Seventeen" subtitle="The Dilemma">
+        <time dateTime="2017-01-17"><a href="./" >January</a> 17th, 2017</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    ReactDOM.render(
+      <Post year="2017" month="January" title="01-17-17-Seventeen.md" />,
+      document.getElementById('postMount')
+    );
+    ReactDOM.render(
+      <TagContainer title="Tags:">
+        <Tag href="daily">Daily</Tag>
+      </TagContainer>,
+      document.getElementById('tagMount')
+    );
+    ReactDOM.render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }
