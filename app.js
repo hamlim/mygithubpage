@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM, {render} from 'react-dom';
 import { Nav, Header, Footer, AllPosts, TagApp, PostListing } from './assets/js/src/components';
 // holidays
 // import emojiCursor from './Assets/js/src/emojiCursor';
@@ -31,7 +31,7 @@ if (document.getElementById('blog')) {
 }
 
 if (document.getElementById('monthly')) {
-  ReactDOM.render(<Header><h2 className="header--subtitle clr--green">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
+  ReactDOM.render(<Header><h2 className="header--subtitle">Blog Archive</h2></Header>, document.getElementsByClassName('headerMount-blog')[0]);
 }
 
 
@@ -40,7 +40,7 @@ if (document.getElementById('tags')) {
   ReactDOM.render(<Nav tags />, document.getElementById('navMount-tags'));
   window.fetch('/assets/json/tags.json').then(function (response) {
     return response.json().then((jsonResponse) => {
-      ReactDOM.render(
+      render(
         <TagApp taggedPosts={jsonResponse} />,
         document.getElementById('pageMount')
       );

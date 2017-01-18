@@ -21994,7 +21994,7 @@
 						tag
 					),
 					taggedPosts.map(function (post, index) {
-						if (post.hasOwnProperty('tag') && post.tag === tag || post.hasOwnProperty('tags') && tag in post.tags) {
+						if (post.hasOwnProperty('tag') && post.tag === tag || post.hasOwnProperty('tags') && post.tags.includes(tag)) {
 							return _react2.default.createElement(
 								'li',
 								{ key: index, className: 'Tag-item' },

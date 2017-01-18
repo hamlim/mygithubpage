@@ -267,7 +267,7 @@ export const TagApp = ({taggedPosts}) => {
 					<ul key={index} className="Tag-wrapper">
 						<h4 className="Tag-title" id={tag.toLowerCase()}>{tag}</h4>
 						{taggedPosts.map((post, index) => {
-							if ((post.hasOwnProperty('tag') && (post.tag === tag)) || (post.hasOwnProperty('tags') && tag in post.tags)) {
+							if ((post.hasOwnProperty('tag') && (post.tag === tag)) || (post.hasOwnProperty('tags') && post.tags.includes(tag))) {
 								return (
 									<li key={index} className="Tag-item"><a href={post.path}>{post.title}</a></li>
 								);

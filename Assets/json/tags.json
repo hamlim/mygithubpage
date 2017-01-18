@@ -1,5 +1,13 @@
 [
   {
+    "path": "/Posts/2017/January/eighteen",
+    "title": "Eighteen",
+    "tag": "Daily",
+    "month": "January",
+    "year": "2017",
+    "date_uuid": "201701"
+  },
+  {
     "path": "/Posts/2017/January/seventeen",
     "title": "Seventeen",
     "tag": "Daily",
@@ -34,7 +42,7 @@
   {
     "path": "/Posts/2017/January/fourteen",
     "title": "Fourteen",
-    "tags": "Daily",
+    "tags": ["Daily", "Development"],
     "month": "January",
     "year": "2017",
     "date_uuid": "201701"

@@ -72,7 +72,7 @@ webpackJsonp([1],[
 	    null,
 	    _react2.default.createElement(
 	      'h2',
-	      { className: 'header--subtitle clr--green' },
+	      { className: 'header--subtitle' },
 	      'Blog Archive'
 	    )
 	  ), document.getElementsByClassName('headerMount-blog')[0]);
@@ -91,7 +91,7 @@ webpackJsonp([1],[
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { tags: true }), document.getElementById('navMount-tags'));
 	  window.fetch('/assets/json/tags.json').then(function (response) {
 	    return response.json().then(function (jsonResponse) {
-	      _reactDom2.default.render(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
+	      (0, _reactDom.render)(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
 	    });
 	  });
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-tags'));
