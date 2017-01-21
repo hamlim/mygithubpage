@@ -22,10 +22,10 @@ working on.
 
 ----
 
-[x] Ok first things first, dishes need to get done.
+<input type="checkbox" disabled checked/> Ok first things first, dishes need to get done.
 
-[] Second thing is to take care of the recycling.
+<input type="checkbox" disabled /> Second thing is to take care of the recycling.
 
-[] Next thing is to go for a walk, I am going to walk down Beacon street away from Boston and see what I can find.
+<input type="checkbox" disabled /> Next thing is to go for a walk, I am going to walk down Beacon street away from Boston and see what I can find.
 
-[] Then back to work on this new blog.
+<input type="checkbox" disabled /> Then back to work on this new blog.
