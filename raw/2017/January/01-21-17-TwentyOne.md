@@ -18,3 +18,14 @@ as some motivation to get my website working properly.
 
 I am tempted to stop making content for a few weeks as I build it out. Simply to focus on building but I also have so many post ideas that I am
 working on.
+
+
+----
+
+[x] Ok first things first, dishes need to get done.
+
+[] Second thing is to take care of the recycling.
+
+[] Next thing is to go for a walk, I am going to walk down Beacon street away from Boston and see what I can find.
+
+[] Then back to work on this new blog.
