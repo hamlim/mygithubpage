@@ -1015,6 +1015,33 @@ webpackJsonp([0],{
 	    ), document.getElementById('tagMount'));
 	    _reactDom2.default.render(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
 	    break;
+	  case '44':
+	    (0, _reactDom.render)(_react2.default.createElement(
+	      _components.PostHeader,
+	      { title: 'Twenty One' },
+	      _react2.default.createElement(
+	        'time',
+	        { dateTime: '2017-01-21' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: './' },
+	          'January'
+	        ),
+	        ' 21st, 2017'
+	      )
+	    ), document.getElementById('headerMount'));
+	    (0, _reactDom.render)(_react2.default.createElement(_post2.default, { year: '2017', month: 'January', title: '01-21-17-TwentyOne.md' }), document.getElementById('postMount'));
+	    (0, _reactDom.render)(_react2.default.createElement(
+	      _components.TagContainer,
+	      { title: 'Tags:' },
+	      _react2.default.createElement(
+	        _components.Tag,
+	        { href: 'daily' },
+	        'Daily'
+	      )
+	    ), document.getElementById('tagMount'));
+	    (0, _reactDom.render)(_react2.default.createElement(_components.PostFooter, null), document.getElementById('footerMount'));
+	    break;
 	}
 
 /***/ },
