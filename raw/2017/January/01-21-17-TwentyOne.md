@@ -28,4 +28,20 @@ working on.
 
 <input type="checkbox" disabled checked/> Next thing is to go for a walk, I am going to walk down Beacon street away from Boston and see what I can find.
 
-<input type="checkbox" disabled /> Then back to work on this new blog.
+<input type="checkbox" disabled checked/> Then back to work on this new blog.
+
+---
+
+Ok so I got something on the page, it took some interesting google searches to work through about four or five errors but I have it working.
+
+I decided to shift over to Webpack 2.2 instead of 1.whatever I was using. It wasn't too bad mainly because I copied the code from My other project that I
+had already moved over to 2.2.
+
+----
+
+I took a break to make some dinner, play some video games, eat dinner and then also get some spare web browsing in.
+
+After all that time I have really realized how absolute shitty my chair is that I sit in at my desk in my apartment.
+
+For dinner I had some interesting pasta. I started with Gluten free fusilli, then added 99% lean ground turkey breast, and also added in some different pasta sauce
+than the kind I normally get.
