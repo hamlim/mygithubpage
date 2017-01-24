@@ -62,16 +62,7 @@ webpackJsonp([1],[
 	    return response.json().then(function (jsonResponse) {
 	      _reactDom2.default.render(_react2.default.createElement(_components.PostListing, { posts: jsonResponse }), document.getElementById('listingMount-blog'));
 	    });
-	  }).catch(function (error) {
-	    err = true;console.log(error);return;
 	  });
-	  if (err) {
-	    window.fetch('/Assets/json/posts.json').then(function (response) {
-	      return response.json().then(function (jsonResponse) {
-	        _reactDom2.default.render(_react2.default.createElement(_components.PostListing, { posts: jsonResponse }), document.getElementById('listingMount-blog'));
-	      });
-	    });
-	  }
 	
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-blog'));
 	}
@@ -99,21 +90,11 @@ webpackJsonp([1],[
 	    )
 	  ), document.getElementsByClassName('headerMount-tags')[0]);
 	  _reactDom2.default.render(_react2.default.createElement(_components.Nav, { tags: true }), document.getElementById('navMount-tags'));
-	  var _err = false;
 	  window.fetch('/assets/json/tags.json').then(function (response) {
 	    return response.json().then(function (jsonResponse) {
 	      (0, _reactDom.render)(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
 	    });
-	  }).catch(function (error) {
-	    _err = true;console.log(error);return;
 	  });
-	  if (_err) {
-	    window.fetch('/Assets/json/tags.json').then(function (response) {
-	      return response.json().then(function (jsonResponse) {
-	        (0, _reactDom.render)(_react2.default.createElement(_components.TagApp, { taggedPosts: jsonResponse }), document.getElementById('pageMount'));
-	      });
-	    });
-	  }
 	  _reactDom2.default.render(_react2.default.createElement(_components.Footer, null), document.getElementById('footerMount-tags'));
 	}
 

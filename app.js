@@ -26,17 +26,7 @@ if (document.getElementById('blog')) {
         document.getElementById('listingMount-blog')
       );
     });
-  }).catch(error => { err = true; console.log(error); return;});
-  if (err) {
-    window.fetch('/Assets/json/posts.json').then(function (response) {
-      return response.json().then((jsonResponse) => {
-        ReactDOM.render(
-          <PostListing posts={jsonResponse} />,
-          document.getElementById('listingMount-blog')
-        );
-      });
-    });
-  }
+  });
 
   ReactDOM.render(<Footer />, document.getElementById('footerMount-blog'));
 }
@@ -49,7 +39,6 @@ if (document.getElementById('monthly')) {
 if (document.getElementById('tags')) {
   ReactDOM.render(<Header><h2 className="header--subtitle">Blog Tags</h2></Header>, document.getElementsByClassName('headerMount-tags')[0]);
   ReactDOM.render(<Nav tags />, document.getElementById('navMount-tags'));
-  let err = false;
   window.fetch('/assets/json/tags.json').then(function (response) {
     return response.json().then((jsonResponse) => {
       render(
@@ -57,16 +46,6 @@ if (document.getElementById('tags')) {
         document.getElementById('pageMount')
       );
     });
-  }).catch(error => { err = true; console.log(error); return;});
-  if (err) {
-    window.fetch('/Assets/json/tags.json').then(function (response) {
-      return response.json().then((jsonResponse) => {
-        render(
-          <TagApp taggedPosts={jsonResponse} />,
-          document.getElementById('pageMount')
-        );
-      });
-    });
-  }
+  });
   ReactDOM.render(<Footer />, document.getElementById('footerMount-tags'));
 }
