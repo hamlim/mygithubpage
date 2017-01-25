@@ -831,4 +831,26 @@ switch (DOCID) {
       document.getElementById('footerMount')
     );
     break;
+  case '48':
+    render(
+      <PostHeader title="Twenty Five">
+        <time dateTime="2017-01-25"><a href="./" >January</a> 25th, 2017</time>
+      </PostHeader>,
+      document.getElementById('headerMount')
+    );
+    render(
+      <Post year="2017" month="January" title="01-25-17-TwentyFive.md" />,
+      document.getElementById('postMount')
+    );
+    render(
+      <TagContainer title="Tags:">
+        <Tag href="daily">Daily</Tag>
+      </TagContainer>,
+      document.getElementById('tagMount')
+    );
+    render(
+      <PostFooter />,
+      document.getElementById('footerMount')
+    );
+    break;
 }
