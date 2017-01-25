@@ -15,13 +15,11 @@ to fix it as soon as possible.
 
 2. Second off, I haven't been able to work more on my website because I am lazy but also I am
 spending too much time working on these posts/playing videos games/watching videos and content consumption in general.
-
 I need to get this in order soon as well. I also really need to narrow down what content I want on
 my website in the first place. Right now all I have is navigation which isn't great.
 
 3. Third off, this goes hand and hand with the first point and that is that my eating habits are pretty
 bad right now. I come back to my apartment after work and pig out on anything I have in my fridge.
-
 I _need_ to plan out my meals every week. Make a solid plan, only buy food that fits in that plan
 and track this as well. This will be a lot of up head cost but it will pay off in the long term.
 
@@ -29,7 +27,6 @@ and track this as well. This will be a lot of up head cost but it will pay off i
 4. Finally, writing these blog posts are kind of beginning to feel like something that I pressure myself
 into. I have written several times about not forcing yourself to make content/things but every
 single time I always try to do what I warn against.
-
 I don't want these blog posts to be forced, I also don't want them to eat up time that I should be
 using to work on bigger and better projects.
 
