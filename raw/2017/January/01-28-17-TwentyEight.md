@@ -29,4 +29,7 @@ people here but the fact of the matter is that there are more of them on the wes
 
 This is the 50th blog post using my shity hacky solution of a dynamic renderer for these blog posts. I want to make this the last blog post to use that method before switching over so that might mean that I will not be posting a blog post yet for the next week but we shall see.
 
- 
+I plan on writing everyday but I think I will be storing them in the other folder while I am working there to make it a bit
+easier to transition these blog posts.
+
+I need to go out and get soy milk now, going to jump right back on getting the website up when I get back in 10 minutes. 
