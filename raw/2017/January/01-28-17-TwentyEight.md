@@ -32,4 +32,6 @@ This is the 50th blog post using my shity hacky solution of a dynamic renderer f
 I plan on writing everyday but I think I will be storing them in the other folder while I am working there to make it a bit
 easier to transition these blog posts.
 
-I need to go out and get soy milk now, going to jump right back on getting the website up when I get back in 10 minutes. 
+I need to go out and get soy milk now, going to jump right back on getting the website up when I get back in 10 minutes.
+
+Ok it was closer to 20 minutes but I was also able to go to the bank to get some rolls of quarters too.
