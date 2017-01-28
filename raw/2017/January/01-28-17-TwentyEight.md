@@ -16,3 +16,17 @@ For lunch I ate the chicken nuggets and topped it off with my left over soy milk
 ---
 
 Not having coffee in the morning really slows down my day come 3 or 4 hours later. This is one of the reasons I have a cup of coffee at 5 and one at 10:30 on normal weekdays.
+
+
+----
+
+My grandma has decided to send me on these random trips around Boston once a month for the next year that I am here because
+she wants me to grow to love the city. I don't think I will ever really enjoy Boston, at least not the same way I do
+for cities up and down the west coast. The people and culture are the two main reasons. Sure there are a lot of cool
+people here but the fact of the matter is that there are more of them on the west coast in my opinion.
+
+----
+
+This is the 50th blog post using my shity hacky solution of a dynamic renderer for these blog posts. I want to make this the last blog post to use that method before switching over so that might mean that I will not be posting a blog post yet for the next week but we shall see.
+
+ 
