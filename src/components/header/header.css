@@ -1,0 +1,37 @@
+.header {
+  font-size: 1.8em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin: 0 3rem;
+}
+
+.projectslink,
+.bloglink {
+  text-decoration: none;
+  margin: 0 .25em;
+}
+
+.projectslink {
+  color: var(--b);
+}
+
+.bloglink {
+  color: var(--b-muted);
+}
+
+
+@media screen and (max-width: 40rem) {
+  .wrapper {
+    margin: 0 .25em;
+  }
+  .pagename {
+    display: none;
+  }
+  .header {
+    margin: 0;
+    text-align: center;
+  }
+}

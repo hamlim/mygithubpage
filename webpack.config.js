@@ -3,51 +3,57 @@ var webpack = require('webpack');
 var cssnext = require('postcss-cssnext')({
 	features: {
 		rem: {
-			html: false
+			html: false,
+			browsers: 'ie > 11'
 		},
-		customProperties: {
-			preserve: 'computed'
-		}
-	}}
-);
-var postcolor = require('postcss-color-function');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+		customProperties: false
+	}
+});
 
-// var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 
 module.exports = {
-	entry: {
-		landing: './app.js',
-		blog: './blog.js'
-	},
+	entry: './index',
 	output: {
-		path: __dirname + '/dist',
-		filename: '[name].js'
-	},
-	plugins: [
-		new webpack.optimize.CommonsChunkPlugin('common', 'common.js'),
-	  new ExtractTextPlugin("[name].css")
-	],
-	watch: true,
-	devtool: "source-map",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
 	module: {
-		loaders: [
+		rules: [
 			{
-				test: /.jsx?$/,
-				loader: 'babel-loader',
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
-				query: {
-					presets: ['es2015', 'es2016', 'es2017', 'react'],
-					plugins: ['transform-class-properties']
-				}
+				use: [{
+					loader: 'babel-loader',
+					options: {
+						presets: ['es2015', 'react'],
+						plugins: ["transform-class-properties"]
+					}
+				}]
 			},
 			{
-        test:   /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader")
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+							localIdentName: '[path][name]__[local]--[hash:base64:5]'
+            }
+          },
+					{ loader: 'postcss-loader' }
+        ]
       }
 		]
 	},
-  postcss: function () {
-    return [cssnext, postcolor];
-  }
+  plugins: [
+		new webpack.LoaderOptionsPlugin({
+			options: {
+				postcss: [
+        	require('postcss-import')(),
+        	cssnext
+    		]
+			}
+		})
+  ]
 }

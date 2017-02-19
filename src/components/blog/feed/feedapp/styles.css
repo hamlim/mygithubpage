@@ -1,0 +1,38 @@
+.link {
+  color: var(--a, #F08080);
+  text-decoration: none;
+}
+
+.link:hover > .postcard,
+.link:focus > .postcard {
+  box-shadow: 0 10px 5em -30px var(--b, #4169E1);
+}
+
+.list {
+  list-style: none;
+}
+
+.postcard {
+  margin: 0 auto;
+  max-width: 25rem;
+  padding: 1em;
+  border-radius: 5px;
+  @media screen and (min-width: 45rem) {
+    will-change: box-shadow;
+    box-shadow: 0 10px 5em -30px var(--a, #F08080);
+    margin: 0 auto 3rem;
+  }
+}
+
+.posttitle {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+.posttime {
+  color: var(--b-muted);
+}
+.postlede {
+  font-size: 1.25rem;
+  margin: .5em 0;
+}

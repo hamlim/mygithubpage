@@ -1,0 +1,20 @@
+@import './vars.css';
+
+@import './hljs-ocean.css';
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: var(--fonts);
+  font-size: var(--font-size);
+}
+
+
+:global(.b) {
+  margin: 0;
+  padding: 0;
+}

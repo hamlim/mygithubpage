@@ -1,0 +1,19 @@
+
+.wrap {
+  margin-top: 3rem;
+}
+
+:local(.link) {
+  color: var(--a, #F08080);
+}
+
+.header {
+  text-decoration: underline;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}

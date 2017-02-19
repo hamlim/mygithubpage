@@ -1,0 +1,100 @@
+
+.article {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  @media screen and (min-width: 45rem) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  & > p + p {
+    margin-top: 1rem;
+  }
+  & p:first-child {
+    margin-top: 1.5rem;
+  }
+  & hr {
+    margin: 1rem auto;
+    max-width: 45vw;
+    @media screen and (max-width: 40rem) {
+      width: 95vw;
+    }
+  }
+  & a {
+    color: var(--a);
+    text-decoration: none;
+  }
+  & figure {
+    text-align: center;
+  }
+  & img {
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+  & blockquote {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--gray-muted);
+    & p {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  & blockquote::before {
+    color: var(--a);
+    content: open-quote;
+  }
+  & blockquote::after {
+    color: var(--a);
+    content: close-quote;
+  }
+  & ul,
+  & ol {
+    list-style-position: inside;
+    @media screen and (min-width: 40rem) {
+      list-style-position: outside;
+    }
+  }
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+}
+:global(.has-video),
+:global(.has-image) {
+  text-align: center;
+  margin: 1em 0;
+}
+:global(.example) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(iframe) {
+  width: calc(100vw - 2rem);
+  height: calc(.6 * (100vw - 2rem));
+  @media screen and (min-width: 50rem) {
+    width: 50rem;
+    margin-left: -2.5rem;
+    height: calc(.6 * 50rem);
+  }
+}
+
+:global(.task-list-item) {
+  list-style: none;
+}
+
+.error {
+  text-align: center;
+  padding: 1em;
+  color: #e74c3c;
+  background-color: #F19990;
+}
