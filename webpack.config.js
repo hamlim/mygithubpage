@@ -10,6 +10,9 @@ var cssnext = require('postcss-cssnext')({
 	}
 });
 
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractCss = 
+
 
 module.exports = {
 	entry: './index',
@@ -32,17 +35,19 @@ module.exports = {
 			},
 			{
         test: /\.css$/,
-        use: [
-          { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-							localIdentName: '[path][name]__[local]--[hash:base64:5]'
-            }
-          },
-					{ loader: 'postcss-loader' }
-        ]
+        use: ExtractTextPlugin.extract({
+					use: [
+						{
+							loader: 'css-loader',
+							options: {
+								modules: true,
+								localIdentName: '[path][name]__[local]--[hash:base64:5]'
+							}
+						},
+						{ loader: 'postcss-loader' }
+					],
+					fallback: 'style-loader'
+				})
       }
 		]
 	},
@@ -54,6 +59,7 @@ module.exports = {
         	cssnext
     		]
 			}
-		})
+		}),
+		new ExtractTextPlugin("styles.css")
   ]
 }
