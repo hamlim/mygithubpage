@@ -11,6 +11,7 @@ const Header = (props) => (
       <Logo />
       <Anchor to="/projects" className={styles.projectslink}>Projects</Anchor>
       <Anchor to="/blog" className={styles.bloglink}>Blog</Anchor>
+      <Anchor to="/travel/" className={styles.travellink}>Travel</Anchor>
     </span>
     <span className={styles.pagename}>
       {props.page}

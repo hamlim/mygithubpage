@@ -9,6 +9,7 @@ import BlogChildren from './components/blog/children';
 import Tags from './components/blog/tags';
 import Feed from './components/blog/feed';
 import Post from './components/blog/post';
+import Travel from './components/travel';
 
 import './start.css';
 
@@ -23,6 +24,8 @@ const Website = () => {
         <Route path="/blog/feed" component={Feed} />
       </Route>
       <Route path="/post/:slug" component={Post}/>
+      <Route path="/travel" component={Travel}/>
+      <Route path="/travel/:location" component={Travel}/>
     </Router>
   )
 };

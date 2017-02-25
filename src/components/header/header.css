@@ -9,7 +9,8 @@
 }
 
 .projectslink,
-.bloglink {
+.bloglink,
+.travellink {
   text-decoration: none;
   margin: 0 .25em;
 }
@@ -20,6 +21,10 @@
 
 .bloglink {
   color: var(--b-muted);
+}
+
+.travellink {
+  color: var(--c-muted);
 }
 
 
