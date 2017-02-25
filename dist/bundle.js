@@ -15926,6 +15926,10 @@ var _travel = __webpack_require__(538);
 
 var _travel2 = _interopRequireDefault(_travel);
 
+var _anchor = __webpack_require__(14);
+
+var _anchor2 = _interopRequireDefault(_anchor);
+
 var _usa = __webpack_require__(539);
 
 var _usa2 = _interopRequireDefault(_usa);
@@ -15982,7 +15986,7 @@ var Travel = function (_Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                'The United States is my home country and one that I have spent a large amount of time travelling to many different states.'
+                'The United States is my home country and one that I have spent a large amount of time traveling to many different states.'
               ),
               _react2.default.createElement(
                 'h5',
@@ -16004,6 +16008,11 @@ var Travel = function (_Component) {
                 'h2',
                 null,
                 'New Zealand'
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'big' },
+                'More coming soon!'
               )
             ),
             _react2.default.createElement(_nz2.default, null)
@@ -16014,9 +16023,24 @@ var Travel = function (_Component) {
             { className: _travel2.default.wrapper },
             _react2.default.createElement(_header2.default, { page: 'Travel' }),
             _react2.default.createElement(
-              'h2',
-              null,
-              'any'
+              'section',
+              { className: _travel2.default.section },
+              _react2.default.createElement(
+                'p',
+                { className: 'big' },
+                'Welcome to a small experiment on my website. I really want a cool way to share some of my stories and experiences while traveling around the world.'
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'big' },
+                'I have decided to start this off with a simple map of the USA, that you can reach by going to ',
+                _react2.default.createElement(
+                  _anchor2.default,
+                  { className: _travel2.default.link, to: '/travel/USA' },
+                  'here'
+                ),
+                '. This is still early on in this experiment so don\'t expect too much.'
+              )
             )
           );
       }
@@ -60450,11 +60474,12 @@ exports = module.exports = __webpack_require__(9)();
 
 
 // module
-exports.push([module.i, "\n.travel__wrapper--vOVX5 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n\n.travel__section--3F2zY {\n  max-width: 35rem;\n  margin: 1rem auto;\n}\n\n.land {\n  fill: #CCCCCC;\n  fill-opacity: 1;\n  stroke:white;\n  stroke-opacity: 1;\n  stroke-width:0.5;\n}\n\n[title=\"Washington\"],\n[title=\"New York\"],\n[title=\"Massachusetts\"],\n[title=\"Florida\"],\n[title=\"California\"],\n[title=\"Oregon\"],\n[title=\"Montana\"],\n[title=\"Idaho\"],\n[title=\"Nevada\"],\n[title=\"Colorado\"],\n[title=\"Arizona\"],\n[title=\"Utah\"],\n[title=\"Wyoming\"],\n[title=\"Rhode Island\"] {\n  fill: var(--c);\n}\n\n.travel__svg--4UOlA {\n  max-width: 50rem;\n  margin: 0 auto;\n  height: auto;\n  max-height: 90vh;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.travel__wrapper--vOVX5 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n.travel__link--Hx_J8 {\n  color: var(--b-muted);\n  text-decoration: none;\n}\n.travel__section--3F2zY {\n  max-width: 35rem;\n  margin: 1rem auto;\n}\n.travel__svg--4UOlA {\n  max-width: 75rem;\n  margin: 0 auto;\n  height: auto;\n  max-height: 90vh;\n}\n[class=\"land\"] {\n  fill: #CCCCCC;\n  fill-opacity: 1;\n  stroke:white;\n  stroke-opacity: 1;\n  stroke-width:0.5;\n}\n[title=\"Washington\"],\n[title=\"New York\"],\n[title=\"Massachusetts\"],\n[title=\"Florida\"],\n[title=\"California\"],\n[title=\"Oregon\"],\n[title=\"Montana\"],\n[title=\"Idaho\"],\n[title=\"Nevada\"],\n[title=\"Colorado\"],\n[title=\"Arizona\"],\n[title=\"Utah\"],\n[title=\"Wyoming\"],\n[title=\"Rhode Island\"] {\n  fill: var(--c);\n}\n[class=\"big\"] {\n  font-size: 2rem;\n  margin: .5rem 0;\n}", ""]);
 
 // exports
 exports.locals = {
 	"wrapper": "travel__wrapper--vOVX5",
+	"link": "travel__link--Hx_J8",
 	"section": "travel__section--3F2zY",
 	"svg": "travel__svg--4UOlA"
 };
