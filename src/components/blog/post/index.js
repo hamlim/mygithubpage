@@ -6,6 +6,24 @@ import Anchor from '../../anchor';
 import Header from '../../header/header';
 import PostRenderer from './postrenderer';
 
+import Photosv1 from '../posts/photosv1';
+import Photosv2 from '../posts/photosv2';
+
+
+// Specai posts:
+const SpecialPosts = [
+  {
+    slug: 'Photos-v1',
+    component: Photosv1,
+    title: 'Photos v1'
+  },
+  {
+    slug: 'Photos-v2',
+    component: Photosv2,
+    title: 'Photos v2'
+  }
+];
+
 import styles from './post.css';
 
 const Link = ({to, children}) => (
@@ -17,7 +35,9 @@ class Post extends Component {
     this.super(props);
     state = {
       feed: [],
-      post: {}
+      post: {},
+      title: null,
+      specialPost: {}
     }
     this.setState = this.setState.bind(this);
   }
@@ -27,15 +47,34 @@ class Post extends Component {
       return r.json();
     }).then(feed => {
       this.setState({feed});
-      let post = feed.find(p => p.slug === this.props.params.slug);
-      post && this.setState({post});
+      SpecialPosts.forEach(post => {
+        if (post.slug === this.props.params.slug) {
+          this.setState({
+            specialPost: post.component,
+            title: post.title
+          });
+        }
+      });
+      if (!this.state.specialPost) {
+        let post = feed.find(p => p.slug === this.props.params.slug);
+        post && this.setState({post});
+      }
     }).catch(err => console.warn(err));
+  }
+
+  chooseRenderMethod = () => {
+    if (this.state.specialPost) {
+      const StoryComponent = this.state.specialPost;
+      return (<StoryComponent />)
+    } else {
+      return (<PostRenderer post={this.state.post} />)
+    }
   }
 
   render = () => (
     <section className="Post">
       <Header page="Post" />
-      {(this.state && this.state.post) ? (
+      {(this.state && this.state.post) && (
         <div className={styles.wrapper}>
           <Helmet title={this.state.post.title} />
           <header className={styles.header}>
@@ -48,10 +87,17 @@ class Post extends Component {
               <span className={styles.tag} key={index}><Link to={`/blog/tags/#${tag}`}>{tag}</Link></span>
             ))}
           </section>
-          <PostRenderer post={this.state.post} />
+          {this.chooseRenderMethod()}
         </div>
-      ) : (
-        <div className={styles.loading}></div>
+      )}
+      {(this.state && this.state.specialPost) && (
+        <div className={styles.wrapper}>
+          <Helmet title={this.state.title} />
+          {this.chooseRenderMethod()}
+        </div>
+      )}
+      { !this.state && (
+        <div className={styles.loading}>🕐</div>
       )}
     </section>
   )

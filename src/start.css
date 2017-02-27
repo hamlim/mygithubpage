@@ -11,6 +11,7 @@ html {
   box-sizing: border-box;
   font-family: var(--fonts);
   font-size: var(--font-size);
+  transition: background-color 1s, color 1s;
 }
 
 

@@ -14843,6 +14843,14 @@ var _postrenderer = __webpack_require__(135);
 
 var _postrenderer2 = _interopRequireDefault(_postrenderer);
 
+var _photosv = __webpack_require__(566);
+
+var _photosv2 = _interopRequireDefault(_photosv);
+
+var _photosv3 = __webpack_require__(567);
+
+var _photosv4 = _interopRequireDefault(_photosv3);
+
 var _post = __webpack_require__(153);
 
 var _post2 = _interopRequireDefault(_post);
@@ -14854,6 +14862,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// Specai posts:
+var SpecialPosts = [{
+  slug: 'Photos-v1',
+  component: _photosv2.default,
+  title: 'Photos v1'
+}, {
+  slug: 'Photos-v2',
+  component: _photosv4.default,
+  title: 'Photos v2'
+}];
 
 var Link = function Link(_ref) {
   var to = _ref.to,
@@ -14883,7 +14902,9 @@ var Post = function (_Component) {
       _this.super(props);
       state = {
         feed: [],
-        post: {}
+        post: {},
+        title: null,
+        specialPost: {}
       };
       _this.setState = _this.setState.bind(_this);
     }, _this.componentDidMount = function () {
@@ -14891,19 +14912,36 @@ var Post = function (_Component) {
         return r.json();
       }).then(function (feed) {
         _this.setState({ feed: feed });
-        var post = feed.find(function (p) {
-          return p.slug === _this.props.params.slug;
+        SpecialPosts.forEach(function (post) {
+          if (post.slug === _this.props.params.slug) {
+            _this.setState({
+              specialPost: post.component,
+              title: post.title
+            });
+          }
         });
-        post && _this.setState({ post: post });
+        if (!_this.state.specialPost) {
+          var post = feed.find(function (p) {
+            return p.slug === _this.props.params.slug;
+          });
+          post && _this.setState({ post: post });
+        }
       }).catch(function (err) {
         return console.warn(err);
       });
+    }, _this.chooseRenderMethod = function () {
+      if (_this.state.specialPost) {
+        var StoryComponent = _this.state.specialPost;
+        return _react2.default.createElement(StoryComponent, null);
+      } else {
+        return _react2.default.createElement(_postrenderer2.default, { post: _this.state.post });
+      }
     }, _this.render = function () {
       return _react2.default.createElement(
         'section',
         { className: 'Post' },
         _react2.default.createElement(_header2.default, { page: 'Post' }),
-        _this.state && _this.state.post ? _react2.default.createElement(
+        _this.state && _this.state.post && _react2.default.createElement(
           'div',
           { className: _post2.default.wrapper },
           _react2.default.createElement(_reactHelmet2.default, { title: _this.state.post.title }),
@@ -14944,8 +14982,19 @@ var Post = function (_Component) {
               );
             })
           ),
-          _react2.default.createElement(_postrenderer2.default, { post: _this.state.post })
-        ) : _react2.default.createElement('div', { className: _post2.default.loading })
+          _this.chooseRenderMethod()
+        ),
+        _this.state && _this.state.specialPost && _react2.default.createElement(
+          'div',
+          { className: _post2.default.wrapper },
+          _react2.default.createElement(_reactHelmet2.default, { title: _this.state.title }),
+          _this.chooseRenderMethod()
+        ),
+        !_this.state && _react2.default.createElement(
+          'div',
+          { className: _post2.default.loading },
+          '\uD83D\uDD50'
+        )
       );
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
@@ -18277,7 +18326,7 @@ module.exports = {"link":"styles__link--3_jcK","postcard":"styles__postcard--GXj
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"post__wrapper--2vgCk","header":"post__header--pTJ18","section":"post__section--18xZP","link":"post__link--2DUC5","postTitle":"post__postTitle--15leY","postDate":"post__postDate--1B3Gu","postTags":"post__postTags--2uY4l","tag":"post__tag--2xGQK"};
+module.exports = {"wrapper":"post__wrapper--2vgCk","header":"post__header--pTJ18","section":"post__section--18xZP","link":"post__link--2DUC5","postTitle":"post__postTitle--15leY","postDate":"post__postDate--1B3Gu","postTags":"post__postTags--2uY4l","tag":"post__tag--2xGQK","loading":"post__loading--3slAV","spin":"post__spin--3TSru"};
 
 /***/ }),
 /* 154 */
@@ -59765,6 +59814,153 @@ var _start2 = _interopRequireDefault(_start);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)(_react2.default.createElement(_start2.default, null), document.getElementById('mount'));
+
+/***/ }),
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _photosv = __webpack_require__(568);
+
+var _photosv2 = _interopRequireDefault(_photosv);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Photosv1 = function (_Component) {
+  _inherits(Photosv1, _Component);
+
+  function Photosv1() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Photosv1);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Photosv1.__proto__ || Object.getPrototypeOf(Photosv1)).call.apply(_ref, [this].concat(args))), _this), _this.constructor = function (props) {
+      _this.super(props);
+      _this.setState = _this.setState.bind(_this);
+    }, _this.componentDidMount = function () {
+      window.document.querySelector('html').classList.add('setting');
+    }, _this.componentWillUnmount = function () {
+      window.document.querySelector('html').classList.remove('setting');
+    }, _this.render = function () {
+      return _react2.default.createElement(
+        'article',
+        { className: 'post' },
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Photos v1'
+        )
+      );
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  return Photosv1;
+}(_react.Component);
+
+;
+
+exports.default = Photosv1;
+
+/***/ }),
+/* 567 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Photosv2 = function Photosv2(_) {
+  return _react2.default.createElement(
+    "article",
+    { className: "Post" },
+    _react2.default.createElement(
+      "h3",
+      null,
+      "Photos v2"
+    )
+  );
+};
+
+exports.default = Photosv2;
+
+/***/ }),
+/* 568 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
