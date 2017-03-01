@@ -15219,7 +15219,7 @@ var Photosv1 = function (_Component) {
           null,
           _react2.default.createElement(
             'h3',
-            null,
+            { className: _photosv2.default.h3 },
             'Photos v1'
           ),
           _react2.default.createElement(
@@ -15339,7 +15339,7 @@ var Photosv2 = function (_Component) {
           null,
           _react2.default.createElement(
             'h3',
-            null,
+            { className: _photosv2.default.h3 },
             'Photos v1'
           ),
           _react2.default.createElement(
@@ -18580,6 +18580,7 @@ module.exports = {"article":"styles__article--1rRIN","error":"styles__error--2Ej
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+module.exports = {"h3":"photosv1__h3--1C8Xg"};
 
 /***/ }),
 /* 158 */
@@ -60140,7 +60141,7 @@ var Lightbox = function (_Component) {
           { className: _lightbox2.default.lightboxcontent, key: index },
           _react2.default.createElement(
             'h4',
-            null,
+            { className: _lightbox2.default.h4 },
             image.title
           ),
           _react2.default.createElement(
@@ -60202,7 +60203,7 @@ exports.default = Lightbox;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"lightboxwrapper":"lightbox__lightboxwrapper--1kEuJ","lightboximage":"lightbox__lightboximage--34BWy","lightboxtargetWrapper":"lightbox__lightboxtargetWrapper--3SNRV","lightboxtarget":"lightbox__lightboxtarget--3YZZu","lightboxtargetImg":"lightbox__lightboxtargetImg--2QRzt","lightboxcaption":"lightbox__lightboxcaption--3r0fY","lightboxtargetCaption":"lightbox__lightboxtargetCaption--2Xqq6","lightboxcontent":"lightbox__lightboxcontent--1PNTj","escape":"lightbox__escape--3tUvo"};
+module.exports = {"h4":"lightbox__h4--14gYo","lightboxwrapper":"lightbox__lightboxwrapper--1kEuJ","lightboximage":"lightbox__lightboximage--34BWy","lightboxtargetWrapper":"lightbox__lightboxtargetWrapper--3SNRV","lightboxtarget":"lightbox__lightboxtarget--3YZZu","lightboxtargetImg":"lightbox__lightboxtargetImg--2QRzt","lightboxcaption":"lightbox__lightboxcaption--3r0fY","lightboxtargetCaption":"lightbox__lightboxtargetCaption--2Xqq6","lightboxcontent":"lightbox__lightboxcontent--1PNTj","escape":"lightbox__escape--3tUvo"};
 
 /***/ }),
 /* 548 */,
@@ -60210,6 +60211,7 @@ module.exports = {"lightboxwrapper":"lightbox__lightboxwrapper--1kEuJ","lightbox
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+module.exports = {"h3":"photosv2__h3--y9he7"};
 
 /***/ })
 /******/ ]);

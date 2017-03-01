@@ -1,5 +1,15 @@
 [
   {
+    "slug": "Some-Quick-Thoughts",
+    "title": "Some Quick Thoughts",
+    "tags": ["Daily", "Development"],
+    "month": "March",
+    "year": "2017",
+    "day": "1st",
+    "content": "Somequicknotes",
+    "lede": ""
+  },
+  {
     "slug": "Twenty-Eight",
     "title": "Twenty Eight",
     "tags": ["Daily"],

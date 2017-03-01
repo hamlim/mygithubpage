@@ -66,7 +66,7 @@ class Photosv1 extends Component {
   render = () => (
     <article className="post">
       <header>
-        <h3>Photos v1</h3>
+        <h3 className={styles.h3}>Photos v1</h3>
         <p>
           The below photos were all taken on my Google Pixel XL with HDR+ mode on auto. I really love the camera on this phone so far, and I am really excited about
           the photos and videos I will be able to take with it!

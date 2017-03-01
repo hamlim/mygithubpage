@@ -2,6 +2,16 @@
   --light-gray: color(#FFFFFF shade(8%));
 }
 
+.h4 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--c);
+  text-underline-position: under;
+  padding-bottom: .5em;
+  font-size: 2.5rem;
+}
+
+
 .lightboxwrapper {
   margin: 1rem 0;
 }

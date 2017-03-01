@@ -22,7 +22,7 @@ class Lightbox extends Component {
     console.log(images);
     let thumbnails = images.map((image, index) => (
       <div className={styles.lightboxcontent} key={index}>
-        <h4>{image.title}</h4>
+        <h4 className={styles.h4}>{image.title}</h4>
         <p>{image.text}</p>
         <figure className={styles.lightboxwrapper}>
           <a href={"#LB_target_" + index} className={styles.escape}>
