@@ -15255,19 +15255,108 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _lightbox = __webpack_require__(546);
+
+var _lightbox2 = _interopRequireDefault(_lightbox);
+
+var _photosv = __webpack_require__(549);
+
+var _photosv2 = _interopRequireDefault(_photosv);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Photosv2 = function Photosv2(_) {
-  return _react2.default.createElement(
-    "article",
-    { className: "Post" },
-    _react2.default.createElement(
-      "h3",
-      null,
-      "Photos v2"
-    )
-  );
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var images = [{
+  img: '/assets/images/posts/photosv2/foggy_morning.jpg',
+  lowres: '/assets/images/posts/photosv2/foggy_morning lowres.jpg',
+  caption: 'Foggy Morning',
+  title: 'Foggy Morning',
+  text: 'Taken while walking to work in the morning right off of Boylston Street. The fog was still covering over the top third of the taller buildings down near Copley Square.'
+}, {
+  img: '/assets/images/posts/photosv2/sunny_roadway.jpg',
+  lowres: '/assets/images/posts/photosv2/sunny_roadway lowres.jpg',
+  caption: 'Sunny Roadway',
+  title: 'Sunny Roadway',
+  text: 'This was taken Sunday afternoon walking down Beacon Street towards Fenway. I really love this small corner and it would be really cool to live in the building to the left.'
+}, {
+  img: '/assets/images/posts/photosv2/green_sidewalks.jpg',
+  lowres: '/assets/images/posts/photosv2/green_sidewalks lowres.jpg',
+  caption: 'Green Sidewalks',
+  title: 'Green Sidewalks',
+  text: 'This photo was also taken walking down Beacon Street between Coolidge Corner and Hawes Street Green line stops.'
+}, {
+  img: '/assets/images/posts/photosv2/classic_apartment_buildings.jpg',
+  lowres: '/assets/images/posts/photosv2/classic_apartment_buildings lowres.jpg',
+  caption: 'Classic Apartment Facades',
+  title: 'Classic Apartment Facades',
+  text: 'Some of the apartment buildings along Beacon Street are really cool, most are also very old as well and really only the interiors have been rebuilt recently.'
+}, {
+  img: '/assets/images/posts/photosv2/beacon_street_buildings.jpg',
+  lowres: '/assets/images/posts/photosv2/beacon_street_buildings lowres.jpg',
+  caption: 'Beacon Street Buildings',
+  title: 'Beacon Street Buildings',
+  text: 'There also happen to be quite a few churches along Beacon Street in all kinds and forms representing a lot of different religions and architectural patterns as well.'
+}, {
+  img: '/assets/images/posts/photosv2/sunday_afternoon_breeze.jpg',
+  lowres: '/assets/images/posts/photosv2/sunday_afternoon_breeze lowres.jpg',
+  caption: 'Sunday Afternoon Breeze',
+  title: 'Sunday Afternoon Breeze',
+  text: 'This was simply a photo taken from my desk chair looking out behind my apartment building while the warm Sunday breeze blows through the window.'
+}];
+
+var Photosv2 = function (_Component) {
+  _inherits(Photosv2, _Component);
+
+  function Photosv2() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Photosv2);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Photosv2.__proto__ || Object.getPrototypeOf(Photosv2)).call.apply(_ref, [this].concat(args))), _this), _this.constructor = function (props) {
+      _this.super(props);
+      _this.setState = _this.setState.bind(_this);
+    }, _this.componentDidMount = function () {
+      window.document.querySelector('html').classList.add('setting');
+    }, _this.componentWillUnmount = function () {
+      window.document.querySelector('html').classList.remove('setting');
+    }, _this.render = function () {
+      return _react2.default.createElement(
+        'article',
+        { className: 'post' },
+        _react2.default.createElement(
+          'header',
+          null,
+          _react2.default.createElement(
+            'h3',
+            null,
+            'Photos v1'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'The below photos were all taken on my Google Pixel XL with HDR+ mode on auto. I really love the camera on this phone so far, and I am really excited about the photos and videos I will be able to take with it!'
+          )
+        ),
+        _react2.default.createElement(_lightbox2.default, { images: images })
+      );
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  return Photosv2;
+}(_react.Component);
+
+;
 
 exports.default = Photosv2;
 
@@ -60114,6 +60203,13 @@ exports.default = Lightbox;
 
 // removed by extract-text-webpack-plugin
 module.exports = {"lightboxwrapper":"lightbox__lightboxwrapper--1kEuJ","lightboximage":"lightbox__lightboximage--34BWy","lightboxtargetWrapper":"lightbox__lightboxtargetWrapper--3SNRV","lightboxtarget":"lightbox__lightboxtarget--3YZZu","lightboxtargetImg":"lightbox__lightboxtargetImg--2QRzt","lightboxcaption":"lightbox__lightboxcaption--3r0fY","lightboxtargetCaption":"lightbox__lightboxtargetCaption--2Xqq6","lightboxcontent":"lightbox__lightboxcontent--1PNTj","escape":"lightbox__escape--3tUvo"};
+
+/***/ }),
+/* 548 */,
+/* 549 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
