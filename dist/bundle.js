@@ -15272,41 +15272,77 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var images = [{
-  img: '/assets/images/posts/photosv2/foggy_morning.jpg',
-  lowres: '/assets/images/posts/photosv2/foggy_morning lowres.jpg',
-  caption: 'Foggy Morning',
-  title: 'Foggy Morning',
-  text: 'Taken while walking to work in the morning right off of Boylston Street. The fog was still covering over the top third of the taller buildings down near Copley Square.'
+  img: '/assets/images/posts/photosv2/1drive.jpg',
+  lowres: '/assets/images/posts/photosv2/1drive lowres.jpg',
+  caption: 'Drive',
+  title: 'Drive',
+  text: 'The day started with breakfast, then after that we started the drive down to Rhode Island.'
 }, {
-  img: '/assets/images/posts/photosv2/sunny_roadway.jpg',
-  lowres: '/assets/images/posts/photosv2/sunny_roadway lowres.jpg',
-  caption: 'Sunny Roadway',
-  title: 'Sunny Roadway',
-  text: 'This was taken Sunday afternoon walking down Beacon Street towards Fenway. I really love this small corner and it would be really cool to live in the building to the left.'
+  img: '/assets/images/posts/photosv2/2harborview.jpg',
+  lowres: '/assets/images/posts/photosv2/2harborview lowres.jpg',
+  caption: 'Harbor View',
+  title: 'Harbor View',
+  text: 'After the drive back, we grabbed a quick bite to eat at Anna\'s Taqueria. Once we finished lunch we dropped off the rental car just North of Alston, and walked to the nearest green line stop on the B branch. We took the green line all the way to Copley place and walked around the Prudential center and Copley mall a bit. We grabbed a cup of cold brew from starbucks, and then hopped back on the T to head down to Government Center. From there we walked straight down to the harbor.'
 }, {
-  img: '/assets/images/posts/photosv2/green_sidewalks.jpg',
-  lowres: '/assets/images/posts/photosv2/green_sidewalks lowres.jpg',
-  caption: 'Green Sidewalks',
-  title: 'Green Sidewalks',
+  img: '/assets/images/posts/photosv2/3harbor.jpg',
+  lowres: '/assets/images/posts/photosv2/3harbor lowres.jpg',
+  caption: 'Harbor',
+  title: 'Harbor',
   text: 'This photo was also taken walking down Beacon Street between Coolidge Corner and Hawes Street Green line stops.'
 }, {
-  img: '/assets/images/posts/photosv2/classic_apartment_buildings.jpg',
-  lowres: '/assets/images/posts/photosv2/classic_apartment_buildings lowres.jpg',
-  caption: 'Classic Apartment Facades',
-  title: 'Classic Apartment Facades',
-  text: 'Some of the apartment buildings along Beacon Street are really cool, most are also very old as well and really only the interiors have been rebuilt recently.'
+  img: '/assets/images/posts/photosv2/4viewofthecity.jpg',
+  lowres: '/assets/images/posts/photosv2/4viewofthecity lowres.jpg',
+  caption: 'View of the City',
+  title: 'View of the City',
+  text: 'We walked down the long wharf and a little bit down along the water, then doubled back through a small alley getting back to where we first hit the harbor.'
 }, {
-  img: '/assets/images/posts/photosv2/beacon_street_buildings.jpg',
-  lowres: '/assets/images/posts/photosv2/beacon_street_buildings lowres.jpg',
-  caption: 'Beacon Street Buildings',
-  title: 'Beacon Street Buildings',
-  text: 'There also happen to be quite a few churches along Beacon Street in all kinds and forms representing a lot of different religions and architectural patterns as well.'
+  img: '/assets/images/posts/photosv2/5downtown2.jpg',
+  lowres: '/assets/images/posts/photosv2/5downtown2 lowres.jpg',
+  caption: 'Downtown',
+  title: 'Downtown',
+  text: ''
 }, {
-  img: '/assets/images/posts/photosv2/sunday_afternoon_breeze.jpg',
-  lowres: '/assets/images/posts/photosv2/sunday_afternoon_breeze lowres.jpg',
-  caption: 'Sunday Afternoon Breeze',
-  title: 'Sunday Afternoon Breeze',
-  text: 'This was simply a photo taken from my desk chair looking out behind my apartment building while the warm Sunday breeze blows through the window.'
+  img: '/assets/images/posts/photosv2/7quincymarket.jpg',
+  lowres: '/assets/images/posts/photosv2/7quincymarket lowres.jpg',
+  caption: 'Quincy Market',
+  title: 'Quincy Market',
+  text: ''
+}, {
+  img: '/assets/images/posts/photosv2/8tallbuilding.jpg',
+  lowres: '/assets/images/posts/photosv2/8tallbuilding lowres.jpg',
+  caption: 'Downtown Views',
+  title: 'Downtown Views',
+  text: ''
+}, {
+  img: '/assets/images/posts/photosv2/10common.jpg',
+  lowres: '/assets/images/posts/photosv2/10common lowres.jpg',
+  caption: 'The Common',
+  title: 'The Common',
+  text: ''
+}, {
+  img: '/assets/images/posts/photosv2/11lake.jpg',
+  lowres: '/assets/images/posts/photosv2/11lake lowres.jpg',
+  caption: 'The Lake',
+  title: 'The Lake',
+  text: ''
+}, {
+  img: '/assets/images/posts/photosv2/12fireescape.jpg',
+  lowres: '/assets/images/posts/photosv2/12fireescape lowres.jpg',
+  caption: 'Fire Escape',
+  title: 'Fire Escape',
+  text: ''
+}, {
+  img: '/assets/images/posts/photosv2/13sushi.jpg',
+  lowres: '/assets/images/posts/photosv2/13sushi lowres.jpg',
+  caption: 'Sushi',
+  title: 'Sushi',
+  text: ''
+}, {
+  img: '/assets/images/posts/photosv2/14sushiwithdad.jpg',
+  lowres: '/assets/images/posts/photosv2/14sushiwithdad lowres.jpg',
+  caption: 'Sushi with Dad',
+  title: 'Sushi with Dad',
+  text: ''
 }];
 
 var Photosv2 = function (_Component) {
@@ -15340,12 +15376,12 @@ var Photosv2 = function (_Component) {
           _react2.default.createElement(
             'h3',
             { className: _photosv2.default.h3 },
-            'Photos v1'
+            'Photos v2'
           ),
           _react2.default.createElement(
             'p',
             null,
-            'The below photos were all taken on my Google Pixel XL with HDR+ mode on auto. I really love the camera on this phone so far, and I am really excited about the photos and videos I will be able to take with it!'
+            'This weekend my dad came out to visit me after a business trip to Rhode Island, we decided to take the T in to the heart of the city and walk down to the harbor and back through the Common.'
           )
         ),
         _react2.default.createElement(_lightbox2.default, { images: images })
