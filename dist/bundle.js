@@ -15495,7 +15495,6 @@ var Tags = function (_Component) {
       fetch('/assets/json/posts.json').then(function (r) {
         return r.json();
       }).then(function (feed) {
-        console.log(feed);
         _this.setState({ feed: feed });
       }).catch(function (err) {
         return console.warn(err);
@@ -60187,7 +60186,6 @@ var Lightbox = function (_Component) {
     }, _this.render = function () {
       var images = _this.props.images;
 
-      console.log(images);
       var thumbnails = images.map(function (image, index) {
         return _react2.default.createElement(
           'div',

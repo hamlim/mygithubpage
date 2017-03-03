@@ -19,7 +19,6 @@ class Lightbox extends Component {
 
   render = () => {
     let {images} = this.props;
-    console.log(images);
     let thumbnails = images.map((image, index) => (
       <div className={styles.lightboxcontent} key={index}>
         <h4 className={styles.h4}>{image.title}</h4>
