@@ -14940,6 +14940,9 @@ var Post = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'Post' },
+        _react2.default.createElement(_reactHelmet2.default, {
+          link: [{ "rel": "icon", "href": "/assets/memo.png" }]
+        }),
         _react2.default.createElement(_header2.default, { page: 'Post' }),
         _this.state && _this.state.post && _react2.default.createElement(
           'div',
@@ -15135,6 +15138,10 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactHelmet = __webpack_require__(28);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
 var _lightbox = __webpack_require__(546);
 
 var _lightbox2 = _interopRequireDefault(_lightbox);
@@ -15214,6 +15221,9 @@ var Photosv1 = function (_Component) {
       return _react2.default.createElement(
         'article',
         { className: 'post' },
+        _react2.default.createElement(_reactHelmet2.default, {
+          link: [{ "rel": "icon", "href": "/assets/camera.png" }]
+        }),
         _react2.default.createElement(
           'header',
           null,
@@ -15254,6 +15264,10 @@ Object.defineProperty(exports, "__esModule", {
 var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _reactHelmet = __webpack_require__(28);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
 var _lightbox = __webpack_require__(546);
 
@@ -15370,6 +15384,9 @@ var Photosv2 = function (_Component) {
       return _react2.default.createElement(
         'article',
         { className: 'post' },
+        _react2.default.createElement(_reactHelmet2.default, {
+          link: [{ "rel": "icon", "href": "/assets/camera.png" }]
+        }),
         _react2.default.createElement(
           'header',
           null,
@@ -15718,7 +15735,7 @@ var Home = function Home() {
         _react2.default.createElement(
           'h2',
           { className: _home2.default.lead },
-          'Hello. I am Matt Hamlin, a developer, designer (kinda), and also a pretty terrible writer.'
+          'Hello \uD83D\uDC4B\uD83C\uDFFC. I am Matt Hamlin, a developer \uD83D\uDCBB, designer \u270F\uFE0F (kinda), and also a pretty terrible writer \uD83D\uDCD3.'
         ),
         _react2.default.createElement(
           'div',

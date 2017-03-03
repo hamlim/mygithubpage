@@ -73,6 +73,11 @@ class Post extends Component {
 
   render = () => (
     <section className="Post">
+      <Helmet
+        link={[
+          {"rel": "icon", "href": "/assets/memo.png"}
+        ]}
+      />
       <Header page="Post" />
       {(this.state && this.state.post) && (
         <div className={styles.wrapper}>

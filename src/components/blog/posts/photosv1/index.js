@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Helmet from "react-helmet";
 
 import Lightbox from '../lightbox';
 
@@ -65,6 +66,11 @@ class Photosv1 extends Component {
 
   render = () => (
     <article className="post">
+      <Helmet
+        link={[
+          {"rel": "icon", "href": "/assets/camera.png"}
+        ]}
+      />
       <header>
         <h3 className={styles.h3}>Photos v1</h3>
         <p>

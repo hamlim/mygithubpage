@@ -16,7 +16,8 @@ const Home = () => (
     <article className={styles.wrapper}>
       <section>
         <h2 className={styles.lead}>
-          Hello. I am Matt Hamlin, a developer, designer (kinda), and also a pretty terrible writer.
+          Hello 👋🏼.
+          I am Matt Hamlin, a developer 💻, designer ✏️ (kinda), and also a pretty terrible writer 📓.
         </h2>
         <div className={`${styles.lead} ${styles.body}`}>
           <p>
