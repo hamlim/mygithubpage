@@ -60114,6 +60114,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _reactDom.render)(_react2.default.createElement(_start2.default, null), document.getElementById('mount'));
 
+console.log("👋🏼 Hey thanks for dropping by and checking out my website. Feel free to reach out if you find any bugs or are interested in how it works!");
+
 /***/ }),
 /* 527 */,
 /* 528 */,
