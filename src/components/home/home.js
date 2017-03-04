@@ -28,6 +28,10 @@ const Home = () => (
             I also write quite a bit about a ton of things like <Link to="/blog/tags/#development">Development</Link>
           , <Link to="/blog/tags/#daily">Daily</Link> content, as well as a lot of <Link to="/blog/tags/#random">Random</Link> things.
           </p>
+          <p className={styles.new}>
+            I recently worked on a new and exciting project called <a className={styles.link} href="https://goexploring.today/Future-Grid">Future-Grid</a>. Check it out 
+            if you are interested in CSS grid frameworks!
+          </p>
         </div>
       </section>
     </article>

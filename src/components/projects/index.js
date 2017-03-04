@@ -23,6 +23,14 @@ const Projects = (props) => (
           </p>
         </li>
         <li className={styles.project} >
+          <h4><OutLink href="https://goexploring.today/Future-Grid/">Future-Grid</OutLink></h4>
+          <p className={styles.description}>
+            Future-Grid is a complete forward facing css grid system. It is built to support IE8 and up, and uses flexbox, and is also the first and 
+            only CSS Grid grid framework. I built this in the span of a short weekend as a test for myself and also as a way to learn more about 
+            CSS Grid.
+          </p>
+        </li>
+        <li className={styles.project} >
           <h4><OutLink href="https://goexploring.today">Goexploring.today</OutLink></h4>
           <p className={styles.description}>
             Goexploring.today is like my garage, its where I store all my side projects that I have worked on,

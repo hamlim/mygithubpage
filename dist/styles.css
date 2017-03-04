@@ -104,6 +104,13 @@
     margin: 3rem .25em;
   }
 }
+
+.home__new--OyWmO {
+  border: dashed 4px var(--c);
+  background-color: #F7DD76;
+  border-radius: 4px;
+  padding: 1rem;
+}
 .styles__wrapper--2Y-KI {
   margin: 1rem;
   max-width: var(--width, 45rem)
