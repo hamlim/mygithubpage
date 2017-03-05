@@ -15825,86 +15825,191 @@ var _home2 = _interopRequireDefault(_home);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var Link = function Link(_ref) {
   var to = _ref.to,
+      className = _ref.className,
       children = _ref.children;
   return _react2.default.createElement(
     _anchor2.default,
-    { to: to, className: _home2.default.link },
+    { to: to, className: className ? className : _home2.default.link },
     children
   );
 };
 
-var Home = function Home() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'Home' },
-    _react2.default.createElement(_reactHelmet2.default, { title: 'Home' }),
-    _react2.default.createElement(_header2.default, { page: 'Home' }),
-    _react2.default.createElement(
-      'article',
-      { className: _home2.default.wrapper },
-      _react2.default.createElement(
-        'section',
-        null,
+var Home = function (_React$Component) {
+  _inherits(Home, _React$Component);
+
+  function Home() {
+    var _ref2;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Home);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref2 = Home.__proto__ || Object.getPrototypeOf(Home)).call.apply(_ref2, [this].concat(args))), _this), _this.componentDidMount = function () {
+      document.getElementsByTagName('html')[0].classList.add('home-html');
+    }, _this.componentWillUnmount = function () {
+      document.getElementsByTagName('html')[0].classList.remove('home-html');
+    }, _this.render = function () {
+      return _react2.default.createElement(
+        'div',
+        { className: 'Home' },
+        _react2.default.createElement(_reactHelmet2.default, { title: 'Home' }),
+        _react2.default.createElement('div', { className: _home2.default.hibar }),
         _react2.default.createElement(
-          'h2',
-          { className: _home2.default.lead },
-          'Hello \uD83D\uDC4B\uD83C\uDFFC. I am Matt Hamlin, a developer \uD83D\uDCBB, designer \u270F\uFE0F (kinda), and also a pretty terrible writer \uD83D\uDCD3.'
+          'header',
+          { className: _home2.default.header },
+          _react2.default.createElement(
+            'h1',
+            null,
+            _react2.default.createElement(
+              _anchor2.default,
+              { to: '/', className: _home2.default.name },
+              'Matt Hamlin'
+            )
+          ),
+          _react2.default.createElement(
+            'nav',
+            { className: _home2.default.headerNav },
+            _react2.default.createElement(
+              'ul',
+              { className: _home2.default.headerList },
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _anchor2.default,
+                  { to: '/blog', className: _home2.default.headerLink },
+                  'Blog'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _anchor2.default,
+                  { to: '/stores', className: _home2.default.headerLink },
+                  'Stories'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _anchor2.default,
+                  { to: '/projects', className: _home2.default.headerLink },
+                  'Projects'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _anchor2.default,
+                  { to: '/travel', className: _home2.default.headerLink },
+                  'Travel'
+                )
+              )
+            )
+          )
         ),
         _react2.default.createElement(
-          'div',
-          { className: _home2.default.lead + ' ' + _home2.default.body },
+          'article',
+          { className: _home2.default.wrapper },
+          _react2.default.createElement(
+            'section',
+            { className: _home2.default.content },
+            _react2.default.createElement(
+              'h2',
+              { className: _home2.default.lead },
+              'Hello \uD83D\uDC4B\uD83C\uDFFC.',
+              _react2.default.createElement('br', null),
+              'I am Matt Hamlin, a web developer, web designer, and I also tend to write a bit as well.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: _home2.default.second },
+              'I make small ',
+              _react2.default.createElement(
+                Link,
+                { to: '/projects' },
+                'side projects'
+              ),
+              ' of all kinds in my free time, and work with some pretty smart people at Wayfair currently.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: _home2.default.third },
+              'I also write quite a bit about a ton of things like ',
+              _react2.default.createElement(
+                Link,
+                { to: '/blog/tags/#development' },
+                'Development'
+              ),
+              ', ',
+              _react2.default.createElement(
+                Link,
+                { to: '/blog/tags/#daily' },
+                'Daily'
+              ),
+              ' content, as well as a lot of ',
+              _react2.default.createElement(
+                Link,
+                { to: '/blog/tags/#random' },
+                'Random'
+              ),
+              ' things.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: _home2.default.fourth },
+              'I recently worked on a new and exciting project called ',
+              _react2.default.createElement(
+                'a',
+                { className: _home2.default.link, href: 'https://goexploring.today/Future-Grid' },
+                'Future-Grid'
+              ),
+              '. Check it out if you are interested in CSS grid frameworks!'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'footer',
+          { className: _home2.default.footer },
           _react2.default.createElement(
             'p',
-            null,
-            'I make small ',
-            _react2.default.createElement(
-              Link,
-              { to: '/projects' },
-              'side projects'
-            ),
-            ' of all kinds in my free time, and work with some pretty smart people at Wayfair currently.'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'I also write quite a bit about a ton of things like ',
-            _react2.default.createElement(
-              Link,
-              { to: '/blog/tags/#development' },
-              'Development'
-            ),
-            ', ',
-            _react2.default.createElement(
-              Link,
-              { to: '/blog/tags/#daily' },
-              'Daily'
-            ),
-            ' content, as well as a lot of ',
-            _react2.default.createElement(
-              Link,
-              { to: '/blog/tags/#random' },
-              'Random'
-            ),
-            ' things.'
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: _home2.default.new },
-            'I recently worked on a new and exciting project called ',
+            { className: _home2.default.footerText },
+            'Find me on: ',
             _react2.default.createElement(
               'a',
-              { className: _home2.default.link, href: 'https://goexploring.today/Future-Grid' },
-              'Future-Grid'
+              { href: 'https://twitter.com/immatthamlin', className: _home2.default.footerLink },
+              'Twitter'
             ),
-            '. Check it out if you are interested in CSS grid frameworks!'
+            ' or on ',
+            _react2.default.createElement(
+              'a',
+              { href: 'https://snapchat.com/add/immatthamlin', className: _home2.default.footerLink },
+              'Snapchat'
+            )
           )
-        )
-      )
-    )
-  );
-};
+        ),
+        _react2.default.createElement('div', { className: _home2.default.lowbar })
+      );
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  return Home;
+}(_react2.default.Component);
 
 exports.default = Home;
 
@@ -18833,7 +18938,7 @@ module.exports = {"link":"logo__link--3_fEk","wrapper":"logo__wrapper--xtxn5","m
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"home__wrapper--iCd0U","container":"home__container--2s1n1","lead":"home__lead--2e5Wo","body":"home__body--2od3w","link":"home__link--37dd5","new":"home__new--OyWmO"};
+module.exports = {"hibar":"home__hibar--1odfU","lowbar":"home__lowbar--VAcNm","header":"home__header--1YW--","name":"home__name--15wpS","headerLink":"home__headerLink--2gjBS","headerList":"home__headerList--16FWk","wrapper":"home__wrapper--iCd0U","footer":"home__footer--2Iq9x","lead":"home__lead--2e5Wo","content":"home__content--3E5m1","link":"home__link--37dd5","footerText":"home__footerText--1opet","footerLink":"home__footerLink--1QJMq","second":"home__second--2s4m8","third":"home__third--LvBy5","fourth":"home__fourth--1vTYG"};
 
 /***/ }),
 /* 167 */

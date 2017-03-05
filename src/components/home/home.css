@@ -1,37 +1,126 @@
-.wrapper {
-  margin-top: 3rem;
+.hibar {
+  background-color: #7ee59e;
+  height: 8rem;
+  margin-bottom: 6rem;
+  width: 100vw;
 }
 
-.container {
-  max-width: 30rem;
-  margin: 0 auto;
+.lowbar {
+  background-color: #7ee59e;
+  height: 8rem;
+  margin-top: 6rem;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: var(--width);
+  margin: auto;
+}
+.name {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  @media screen and (min-width: 27rem) {
+    padding: 0 .5em;
+  }
+}
+
+.headerLink,
+.name {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: var(--a);
+  }
+}
+
+.headerList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerList > li {
+  display: inline-block;
+}
+
+.wrapper, 
+.footer {
+  margin-top: 3rem;
+  max-width: var(--width);
+  margin: auto;
 }
 
 .lead {
   font-size: 2.4rem;
-  max-width: 45rem;
-  margin: 0 auto;
+}
+.content > p {
+  font-size: 1.5rem;
 }
 
-.body > p {
-  margin: 1em 0;
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
+
 
 .link {
   color: var(--a);
   text-decoration: none;
 }
 
-@media screen and (max-width: 40rem) {
-  .wrapper {
-    margin: 3rem .25em;
-  }
+.footer {
+  margin: 5rem auto;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+.footerText {
+  font-size: 1.8rem;
+}
+.footerLink {
+  text-decoration: none;
+  color: black;
+}
+.footerLink:hover, 
+.footerLink:focus {
+  text-decoration: underline;
+  color: var(--c);
 }
 
-
-.new {
-  border: dashed 4px var(--c);
-  background-color: #F7DD76;
-  border-radius: 4px;
-  padding: 1rem;
+@media screen and (min-width: 45rem) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .second {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
+  .third {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .fourth {
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+  }
+  .content {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
 }
