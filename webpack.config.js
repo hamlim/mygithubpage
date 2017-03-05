@@ -6,7 +6,10 @@ var cssnext = require('postcss-cssnext')({
 			html: false,
 			browsers: 'ie > 11'
 		},
-		customProperties: false
+		customProperties: false,
+		autoprefixer: {
+			grid: false
+		}
 	}
 });
 
