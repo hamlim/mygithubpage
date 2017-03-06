@@ -14591,6 +14591,10 @@ var _travel = __webpack_require__(144);
 
 var _travel2 = _interopRequireDefault(_travel);
 
+var _stories = __webpack_require__(550);
+
+var _stories2 = _interopRequireDefault(_stories);
+
 __webpack_require__(168);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -14898,10 +14902,76 @@ var Link = function Link(_ref) {
 var Blog = function Blog(props) {
   return _react2.default.createElement(
     'div',
-    { className: 'Blog' },
+    { className: _blog2.default.blog },
+    _react2.default.createElement('div', { className: _blog2.default.hibar }),
     _react2.default.createElement(_reactHelmet2.default, { title: 'Blog' }),
-    _react2.default.createElement(_header2.default, { page: 'Blog' }),
-    _react2.default.createElement(_subnav2.default, { variation: 'Blog' }),
+    _react2.default.createElement(
+      'header',
+      { className: _blog2.default.header },
+      _react2.default.createElement(
+        'h1',
+        null,
+        _react2.default.createElement(
+          _anchor2.default,
+          { to: '/', className: _blog2.default.name },
+          'Matt Hamlin'
+        )
+      ),
+      _react2.default.createElement(
+        'nav',
+        { className: _blog2.default.headerNav },
+        _react2.default.createElement(
+          'ul',
+          { className: _blog2.default.headerList },
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              _anchor2.default,
+              { to: '/blog', className: _blog2.default.headerLinkActive },
+              'Blog'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              _anchor2.default,
+              { to: '/projects', className: _blog2.default.headerLink },
+              'Projects'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              _anchor2.default,
+              { to: '/travel', className: _blog2.default.headerLink },
+              'Travel'
+            )
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'nav',
+      { className: _blog2.default.nav },
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog', className: _blog2.default.subnavlinkactive },
+        'Blog'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/feed', className: _blog2.default.subnavLink },
+        'Feed'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/tags', className: _blog2.default.subnavLink },
+        'Tags'
+      )
+    ),
     _react2.default.createElement(
       'article',
       { className: _blog2.default.wrapper },
@@ -14910,7 +14980,7 @@ var Blog = function Blog(props) {
         null,
         _react2.default.createElement(
           'h2',
-          { className: _blog2.default.lead },
+          null,
           'Welcome to my blog. I write about a lot of different things, I suggest checking out my ',
           _react2.default.createElement(
             Link,
@@ -15811,10 +15881,6 @@ var _reactHelmet = __webpack_require__(19);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _header = __webpack_require__(22);
-
-var _header2 = _interopRequireDefault(_header);
-
 var _anchor = __webpack_require__(11);
 
 var _anchor2 = _interopRequireDefault(_anchor);
@@ -15891,15 +15957,6 @@ var Home = function (_React$Component) {
                   _anchor2.default,
                   { to: '/blog', className: _home2.default.headerLink },
                   'Blog'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  _anchor2.default,
-                  { to: '/stores', className: _home2.default.headerLink },
-                  'Stories'
                 )
               ),
               _react2.default.createElement(
@@ -18847,7 +18904,7 @@ module.exports = {"active":"anchor__active--ZmCR1"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"blog__wrapper--XYeIC","container":"blog__container--1vtEa","lead":"blog__lead--1LsNa","body":"blog__body--N3agF","link":"blog__link--cwkSa"};
+module.exports = {"wrapper":"blog__wrapper--XYeIC","hibar":"blog__hibar--27knl","header":"blog__header--3s-Ij","name":"blog__name--tS9Uc","headerLink":"blog__headerLink--3l_ce","headerLinkActive":"blog__headerLinkActive--2EVH6 blog__headerLink--3l_ce","headerList":"blog__headerList--1p3_a","nav":"blog__nav--3x_f2","subnavLink":"blog__subnavLink--3fEAO","subnavlinkactive":"blog__subnavlinkactive--2OqdU","container":"blog__container--1vtEa","body":"blog__body--N3agF","link":"blog__link--cwkSa","second":"blog__second--3uVl9","third":"blog__third--rCtDk","fourth":"blog__fourth--m6RpT","content":"blog__content--1-_Sp"};
 
 /***/ }),
 /* 154 */
@@ -60379,6 +60436,63 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _reactDom.render)(_react2.default.createElement(_start2.default, null), document.getElementById('mount'));
 
 console.log("👋🏼 Hey thanks for dropping by and checking out my website. Feel free to reach out if you find any bugs or are interested in how it works!");
+
+/***/ }),
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactHelmet = __webpack_require__(19);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _anchor = __webpack_require__(11);
+
+var _anchor2 = _interopRequireDefault(_anchor);
+
+var _stories = __webpack_require__(551);
+
+var _stories2 = _interopRequireDefault(_stories);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {};
+
+/***/ }),
+/* 551 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

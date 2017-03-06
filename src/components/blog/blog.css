@@ -1,15 +1,103 @@
 .wrapper {
-  margin-top: 3rem;
+  margin: 3rem auto 6rem;
+  max-width: var(--width);
+}
+.hibar {
+  background-color: #7ee59e;
+  height: 8rem;
+  margin-bottom: 6rem;
+  width: 100vw;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: var(--width);
+  margin: auto;
+}
+.name {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  @media screen and (min-width: 27rem) {
+    padding: 0 .5em;
+  }
+}
+.headerLinkActive {
+  composes: headerLink;
+  color: var(--c);
+}
+.headerLinkActive:hover,
+.headerLinkActive:focus {
+  text-decoration: underline;
+  color: var(--a);
+}
+
+.headerLink,
+.name {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: var(--a);
+  }
+}
+
+.headerList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerList > li {
+  display: inline-block;
+}
+
+.nav {
+  max-width: var(--width);
+  margin: 0 auto 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.subnavLink {
+  color: var(--b);
+  text-decoration: none;
+}
+.subnavlinkactive {
+  color: var(--a);
+  text-decoration: none;
+}
+
+.subnavLink:hover,
+.subnavLink:focus,
+.subnavlinkactive:hover,
+.subnavlinkactive:focus {
+  text-decoration: underline;
+  color: var(--c);
 }
 
 .container {
   max-width: var(--width-s, 35rem);
-  margin: 0 auto;
-}
-
-.lead {
-  font-size: 2.4rem;
-  max-width: var(--width, 45rem);
   margin: 0 auto;
 }
 
@@ -22,8 +110,24 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 40rem) {
-  .wrapper {
-    margin: 3rem .25em;
+@media screen and (min-width: 45rem) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .second {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
+  .third {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .fourth {
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+  }
+  .content {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   }
 }

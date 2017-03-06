@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from "react-helmet";
-import Header from '../header/header';
 import Anchor from '../anchor';
 
 import styles from './home.css';
@@ -25,7 +24,7 @@ class Home extends React.Component {
         <nav className={styles.headerNav}>
           <ul className={styles.headerList}>
             <li><Anchor to="/blog" className={styles.headerLink}>Blog</Anchor></li>
-            <li><Anchor to="/stores" className={styles.headerLink}>Stories</Anchor></li>
+            {/*<li><Anchor to="/stores" className={styles.headerLink}>Stories</Anchor></li>*/}
             <li><Anchor to="/projects" className={styles.headerLink}>Projects</Anchor></li>
             <li><Anchor to="/travel" className={styles.headerLink}>Travel</Anchor></li>
           </ul>
