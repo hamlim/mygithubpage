@@ -1,21 +1,19 @@
 import React from 'react';
 import Anchor from '../anchor';
 
-import Logo from './logo/logo';
-
 import styles from './header.css';
 
-const Header = (props) => (
+const Header = ({activePage}) => (
   <header className={styles.header}>
-    <span className={styles.wrapper}>
-      <Logo />
-      <Anchor to="/projects" className={styles.projectslink}>Projects</Anchor>
-      <Anchor to="/blog" className={styles.bloglink}>Blog</Anchor>
-      <Anchor to="/travel/" className={styles.travellink}>Travel</Anchor>
-    </span>
-    <span className={styles.pagename}>
-      {props.page}
-    </span>
+    <h1><Anchor to="/" className={styles.name}>Matt Hamlin</Anchor></h1>
+    <nav className={styles.headerNav}>
+      <ul className={styles.headerList}>
+        <li><Anchor to="/blog" className={activePage === "blog" ? styles.headerLinkActive : styles.headerLink}>Blog</Anchor></li>
+        {/*<li><Anchor to="/stores" className={activePage === "stories" ? styles.headerLinkActive : styles.headerLink}>Stories</Anchor></li>*/}
+        <li><Anchor to="/projects" className={activePage === "projects" ? styles.headerLinkActive : styles.headerLink}>Projects</Anchor></li>
+        <li><Anchor to="/travel" className={activePage === "travel" ? styles.headerLinkActive : styles.headerLink}>Travel</Anchor></li>
+      </ul>
+    </nav>
   </header>
 );
 

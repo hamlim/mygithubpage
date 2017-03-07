@@ -839,7 +839,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(5);
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var ReactDOMComponentFlags = __webpack_require__(96);
 
 var invariant = __webpack_require__(1);
@@ -2137,330 +2137,6 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-exports.__esModule = true;
-exports.createPath = exports.parsePath = exports.getQueryStringValueFromPath = exports.stripQueryStringValueFromPath = exports.addQueryStringValueToPath = undefined;
-
-var _warning = __webpack_require__(21);
-
-var _warning2 = _interopRequireDefault(_warning);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var addQueryStringValueToPath = exports.addQueryStringValueToPath = function addQueryStringValueToPath(path, key, value) {
-  var _parsePath = parsePath(path);
-
-  var pathname = _parsePath.pathname;
-  var search = _parsePath.search;
-  var hash = _parsePath.hash;
-
-
-  return createPath({
-    pathname: pathname,
-    search: search + (search.indexOf('?') === -1 ? '?' : '&') + key + '=' + value,
-    hash: hash
-  });
-};
-
-var stripQueryStringValueFromPath = exports.stripQueryStringValueFromPath = function stripQueryStringValueFromPath(path, key) {
-  var _parsePath2 = parsePath(path);
-
-  var pathname = _parsePath2.pathname;
-  var search = _parsePath2.search;
-  var hash = _parsePath2.hash;
-
-
-  return createPath({
-    pathname: pathname,
-    search: search.replace(new RegExp('([?&])' + key + '=[a-zA-Z0-9]+(&?)'), function (match, prefix, suffix) {
-      return prefix === '?' ? prefix : suffix;
-    }),
-    hash: hash
-  });
-};
-
-var getQueryStringValueFromPath = exports.getQueryStringValueFromPath = function getQueryStringValueFromPath(path, key) {
-  var _parsePath3 = parsePath(path);
-
-  var search = _parsePath3.search;
-
-  var match = search.match(new RegExp('[?&]' + key + '=([a-zA-Z0-9]+)'));
-  return match && match[1];
-};
-
-var extractPath = function extractPath(string) {
-  var match = string.match(/^(https?:)?\/\/[^\/]*/);
-  return match == null ? string : string.substring(match[0].length);
-};
-
-var parsePath = exports.parsePath = function parsePath(path) {
-  var pathname = extractPath(path);
-  var search = '';
-  var hash = '';
-
-  process.env.NODE_ENV !== 'production' ? (0, _warning2.default)(path === pathname, 'A path must be pathname + search + hash only, not a full URL like "%s"', path) : void 0;
-
-  var hashIndex = pathname.indexOf('#');
-  if (hashIndex !== -1) {
-    hash = pathname.substring(hashIndex);
-    pathname = pathname.substring(0, hashIndex);
-  }
-
-  var searchIndex = pathname.indexOf('?');
-  if (searchIndex !== -1) {
-    search = pathname.substring(searchIndex);
-    pathname = pathname.substring(0, searchIndex);
-  }
-
-  if (pathname === '') pathname = '/';
-
-  return {
-    pathname: pathname,
-    search: search,
-    hash: hash
-  };
-};
-
-var createPath = exports.createPath = function createPath(location) {
-  if (location == null || typeof location === 'string') return location;
-
-  var basename = location.basename;
-  var pathname = location.pathname;
-  var search = location.search;
-  var hash = location.hash;
-
-  var path = (basename || '') + pathname;
-
-  if (search && search !== '?') path += search;
-
-  if (hash) path += hash;
-
-  return path;
-};
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var _prodInvariant = __webpack_require__(5);
-
-var invariant = __webpack_require__(1);
-
-function checkMask(value, bitmask) {
-  return (value & bitmask) === bitmask;
-}
-
-var DOMPropertyInjection = {
-  /**
-   * Mapping from normalized, camelcased property names to a configuration that
-   * specifies how the associated DOM property should be accessed or rendered.
-   */
-  MUST_USE_PROPERTY: 0x1,
-  HAS_BOOLEAN_VALUE: 0x4,
-  HAS_NUMERIC_VALUE: 0x8,
-  HAS_POSITIVE_NUMERIC_VALUE: 0x10 | 0x8,
-  HAS_OVERLOADED_BOOLEAN_VALUE: 0x20,
-
-  /**
-   * Inject some specialized knowledge about the DOM. This takes a config object
-   * with the following properties:
-   *
-   * isCustomAttribute: function that given an attribute name will return true
-   * if it can be inserted into the DOM verbatim. Useful for data-* or aria-*
-   * attributes where it's impossible to enumerate all of the possible
-   * attribute names,
-   *
-   * Properties: object mapping DOM property name to one of the
-   * DOMPropertyInjection constants or null. If your attribute isn't in here,
-   * it won't get written to the DOM.
-   *
-   * DOMAttributeNames: object mapping React attribute name to the DOM
-   * attribute name. Attribute names not specified use the **lowercase**
-   * normalized name.
-   *
-   * DOMAttributeNamespaces: object mapping React attribute name to the DOM
-   * attribute namespace URL. (Attribute names not specified use no namespace.)
-   *
-   * DOMPropertyNames: similar to DOMAttributeNames but for DOM properties.
-   * Property names not specified use the normalized name.
-   *
-   * DOMMutationMethods: Properties that require special mutation methods. If
-   * `value` is undefined, the mutation method should unset the property.
-   *
-   * @param {object} domPropertyConfig the config as described above.
-   */
-  injectDOMPropertyConfig: function (domPropertyConfig) {
-    var Injection = DOMPropertyInjection;
-    var Properties = domPropertyConfig.Properties || {};
-    var DOMAttributeNamespaces = domPropertyConfig.DOMAttributeNamespaces || {};
-    var DOMAttributeNames = domPropertyConfig.DOMAttributeNames || {};
-    var DOMPropertyNames = domPropertyConfig.DOMPropertyNames || {};
-    var DOMMutationMethods = domPropertyConfig.DOMMutationMethods || {};
-
-    if (domPropertyConfig.isCustomAttribute) {
-      DOMProperty._isCustomAttributeFunctions.push(domPropertyConfig.isCustomAttribute);
-    }
-
-    for (var propName in Properties) {
-      !!DOMProperty.properties.hasOwnProperty(propName) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'injectDOMPropertyConfig(...): You\'re trying to inject DOM property \'%s\' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.', propName) : _prodInvariant('48', propName) : void 0;
-
-      var lowerCased = propName.toLowerCase();
-      var propConfig = Properties[propName];
-
-      var propertyInfo = {
-        attributeName: lowerCased,
-        attributeNamespace: null,
-        propertyName: propName,
-        mutationMethod: null,
-
-        mustUseProperty: checkMask(propConfig, Injection.MUST_USE_PROPERTY),
-        hasBooleanValue: checkMask(propConfig, Injection.HAS_BOOLEAN_VALUE),
-        hasNumericValue: checkMask(propConfig, Injection.HAS_NUMERIC_VALUE),
-        hasPositiveNumericValue: checkMask(propConfig, Injection.HAS_POSITIVE_NUMERIC_VALUE),
-        hasOverloadedBooleanValue: checkMask(propConfig, Injection.HAS_OVERLOADED_BOOLEAN_VALUE)
-      };
-      !(propertyInfo.hasBooleanValue + propertyInfo.hasNumericValue + propertyInfo.hasOverloadedBooleanValue <= 1) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s', propName) : _prodInvariant('50', propName) : void 0;
-
-      if (process.env.NODE_ENV !== 'production') {
-        DOMProperty.getPossibleStandardName[lowerCased] = propName;
-      }
-
-      if (DOMAttributeNames.hasOwnProperty(propName)) {
-        var attributeName = DOMAttributeNames[propName];
-        propertyInfo.attributeName = attributeName;
-        if (process.env.NODE_ENV !== 'production') {
-          DOMProperty.getPossibleStandardName[attributeName] = propName;
-        }
-      }
-
-      if (DOMAttributeNamespaces.hasOwnProperty(propName)) {
-        propertyInfo.attributeNamespace = DOMAttributeNamespaces[propName];
-      }
-
-      if (DOMPropertyNames.hasOwnProperty(propName)) {
-        propertyInfo.propertyName = DOMPropertyNames[propName];
-      }
-
-      if (DOMMutationMethods.hasOwnProperty(propName)) {
-        propertyInfo.mutationMethod = DOMMutationMethods[propName];
-      }
-
-      DOMProperty.properties[propName] = propertyInfo;
-    }
-  }
-};
-
-/* eslint-disable max-len */
-var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
-/* eslint-enable max-len */
-
-/**
- * DOMProperty exports lookup objects that can be used like functions:
- *
- *   > DOMProperty.isValid['id']
- *   true
- *   > DOMProperty.isValid['foobar']
- *   undefined
- *
- * Although this may be confusing, it performs better in general.
- *
- * @see http://jsperf.com/key-exists
- * @see http://jsperf.com/key-missing
- */
-var DOMProperty = {
-
-  ID_ATTRIBUTE_NAME: 'data-reactid',
-  ROOT_ATTRIBUTE_NAME: 'data-reactroot',
-
-  ATTRIBUTE_NAME_START_CHAR: ATTRIBUTE_NAME_START_CHAR,
-  ATTRIBUTE_NAME_CHAR: ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040',
-
-  /**
-   * Map from property "standard name" to an object with info about how to set
-   * the property in the DOM. Each object contains:
-   *
-   * attributeName:
-   *   Used when rendering markup or with `*Attribute()`.
-   * attributeNamespace
-   * propertyName:
-   *   Used on DOM node instances. (This includes properties that mutate due to
-   *   external factors.)
-   * mutationMethod:
-   *   If non-null, used instead of the property or `setAttribute()` after
-   *   initial render.
-   * mustUseProperty:
-   *   Whether the property must be accessed and mutated as an object property.
-   * hasBooleanValue:
-   *   Whether the property should be removed when set to a falsey value.
-   * hasNumericValue:
-   *   Whether the property must be numeric or parse as a numeric and should be
-   *   removed when set to a falsey value.
-   * hasPositiveNumericValue:
-   *   Whether the property must be positive numeric or parse as a positive
-   *   numeric and should be removed when set to a falsey value.
-   * hasOverloadedBooleanValue:
-   *   Whether the property can be used as a flag as well as with a value.
-   *   Removed when strictly equal to false; present without a value when
-   *   strictly equal to true; present with a value otherwise.
-   */
-  properties: {},
-
-  /**
-   * Mapping from lowercase property names to the properly cased version, used
-   * to warn in the case of missing properties. Available only in __DEV__.
-   *
-   * autofocus is predefined, because adding it to the property whitelist
-   * causes unintended side effects.
-   *
-   * @type {Object}
-   */
-  getPossibleStandardName: process.env.NODE_ENV !== 'production' ? { autofocus: 'autoFocus' } : null,
-
-  /**
-   * All of the isCustomAttribute() functions that have been injected.
-   */
-  _isCustomAttributeFunctions: [],
-
-  /**
-   * Checks whether a property name is a custom attribute.
-   * @method
-   */
-  isCustomAttribute: function (attributeName) {
-    for (var i = 0; i < DOMProperty._isCustomAttributeFunctions.length; i++) {
-      var isCustomAttributeFn = DOMProperty._isCustomAttributeFunctions[i];
-      if (isCustomAttributeFn(attributeName)) {
-        return true;
-      }
-    }
-    return false;
-  },
-
-  injection: DOMPropertyInjection
-};
-
-module.exports = DOMProperty;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
 exports.__esModule = true;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2996,6 +2672,330 @@ exports.default = Helmet(HelmetSideEffects);
 module.exports = exports["default"];
 
 /***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+exports.__esModule = true;
+exports.createPath = exports.parsePath = exports.getQueryStringValueFromPath = exports.stripQueryStringValueFromPath = exports.addQueryStringValueToPath = undefined;
+
+var _warning = __webpack_require__(21);
+
+var _warning2 = _interopRequireDefault(_warning);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var addQueryStringValueToPath = exports.addQueryStringValueToPath = function addQueryStringValueToPath(path, key, value) {
+  var _parsePath = parsePath(path);
+
+  var pathname = _parsePath.pathname;
+  var search = _parsePath.search;
+  var hash = _parsePath.hash;
+
+
+  return createPath({
+    pathname: pathname,
+    search: search + (search.indexOf('?') === -1 ? '?' : '&') + key + '=' + value,
+    hash: hash
+  });
+};
+
+var stripQueryStringValueFromPath = exports.stripQueryStringValueFromPath = function stripQueryStringValueFromPath(path, key) {
+  var _parsePath2 = parsePath(path);
+
+  var pathname = _parsePath2.pathname;
+  var search = _parsePath2.search;
+  var hash = _parsePath2.hash;
+
+
+  return createPath({
+    pathname: pathname,
+    search: search.replace(new RegExp('([?&])' + key + '=[a-zA-Z0-9]+(&?)'), function (match, prefix, suffix) {
+      return prefix === '?' ? prefix : suffix;
+    }),
+    hash: hash
+  });
+};
+
+var getQueryStringValueFromPath = exports.getQueryStringValueFromPath = function getQueryStringValueFromPath(path, key) {
+  var _parsePath3 = parsePath(path);
+
+  var search = _parsePath3.search;
+
+  var match = search.match(new RegExp('[?&]' + key + '=([a-zA-Z0-9]+)'));
+  return match && match[1];
+};
+
+var extractPath = function extractPath(string) {
+  var match = string.match(/^(https?:)?\/\/[^\/]*/);
+  return match == null ? string : string.substring(match[0].length);
+};
+
+var parsePath = exports.parsePath = function parsePath(path) {
+  var pathname = extractPath(path);
+  var search = '';
+  var hash = '';
+
+  process.env.NODE_ENV !== 'production' ? (0, _warning2.default)(path === pathname, 'A path must be pathname + search + hash only, not a full URL like "%s"', path) : void 0;
+
+  var hashIndex = pathname.indexOf('#');
+  if (hashIndex !== -1) {
+    hash = pathname.substring(hashIndex);
+    pathname = pathname.substring(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+  if (searchIndex !== -1) {
+    search = pathname.substring(searchIndex);
+    pathname = pathname.substring(0, searchIndex);
+  }
+
+  if (pathname === '') pathname = '/';
+
+  return {
+    pathname: pathname,
+    search: search,
+    hash: hash
+  };
+};
+
+var createPath = exports.createPath = function createPath(location) {
+  if (location == null || typeof location === 'string') return location;
+
+  var basename = location.basename;
+  var pathname = location.pathname;
+  var search = location.search;
+  var hash = location.hash;
+
+  var path = (basename || '') + pathname;
+
+  if (search && search !== '?') path += search;
+
+  if (hash) path += hash;
+
+  return path;
+};
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+
+
+var _prodInvariant = __webpack_require__(5);
+
+var invariant = __webpack_require__(1);
+
+function checkMask(value, bitmask) {
+  return (value & bitmask) === bitmask;
+}
+
+var DOMPropertyInjection = {
+  /**
+   * Mapping from normalized, camelcased property names to a configuration that
+   * specifies how the associated DOM property should be accessed or rendered.
+   */
+  MUST_USE_PROPERTY: 0x1,
+  HAS_BOOLEAN_VALUE: 0x4,
+  HAS_NUMERIC_VALUE: 0x8,
+  HAS_POSITIVE_NUMERIC_VALUE: 0x10 | 0x8,
+  HAS_OVERLOADED_BOOLEAN_VALUE: 0x20,
+
+  /**
+   * Inject some specialized knowledge about the DOM. This takes a config object
+   * with the following properties:
+   *
+   * isCustomAttribute: function that given an attribute name will return true
+   * if it can be inserted into the DOM verbatim. Useful for data-* or aria-*
+   * attributes where it's impossible to enumerate all of the possible
+   * attribute names,
+   *
+   * Properties: object mapping DOM property name to one of the
+   * DOMPropertyInjection constants or null. If your attribute isn't in here,
+   * it won't get written to the DOM.
+   *
+   * DOMAttributeNames: object mapping React attribute name to the DOM
+   * attribute name. Attribute names not specified use the **lowercase**
+   * normalized name.
+   *
+   * DOMAttributeNamespaces: object mapping React attribute name to the DOM
+   * attribute namespace URL. (Attribute names not specified use no namespace.)
+   *
+   * DOMPropertyNames: similar to DOMAttributeNames but for DOM properties.
+   * Property names not specified use the normalized name.
+   *
+   * DOMMutationMethods: Properties that require special mutation methods. If
+   * `value` is undefined, the mutation method should unset the property.
+   *
+   * @param {object} domPropertyConfig the config as described above.
+   */
+  injectDOMPropertyConfig: function (domPropertyConfig) {
+    var Injection = DOMPropertyInjection;
+    var Properties = domPropertyConfig.Properties || {};
+    var DOMAttributeNamespaces = domPropertyConfig.DOMAttributeNamespaces || {};
+    var DOMAttributeNames = domPropertyConfig.DOMAttributeNames || {};
+    var DOMPropertyNames = domPropertyConfig.DOMPropertyNames || {};
+    var DOMMutationMethods = domPropertyConfig.DOMMutationMethods || {};
+
+    if (domPropertyConfig.isCustomAttribute) {
+      DOMProperty._isCustomAttributeFunctions.push(domPropertyConfig.isCustomAttribute);
+    }
+
+    for (var propName in Properties) {
+      !!DOMProperty.properties.hasOwnProperty(propName) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'injectDOMPropertyConfig(...): You\'re trying to inject DOM property \'%s\' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.', propName) : _prodInvariant('48', propName) : void 0;
+
+      var lowerCased = propName.toLowerCase();
+      var propConfig = Properties[propName];
+
+      var propertyInfo = {
+        attributeName: lowerCased,
+        attributeNamespace: null,
+        propertyName: propName,
+        mutationMethod: null,
+
+        mustUseProperty: checkMask(propConfig, Injection.MUST_USE_PROPERTY),
+        hasBooleanValue: checkMask(propConfig, Injection.HAS_BOOLEAN_VALUE),
+        hasNumericValue: checkMask(propConfig, Injection.HAS_NUMERIC_VALUE),
+        hasPositiveNumericValue: checkMask(propConfig, Injection.HAS_POSITIVE_NUMERIC_VALUE),
+        hasOverloadedBooleanValue: checkMask(propConfig, Injection.HAS_OVERLOADED_BOOLEAN_VALUE)
+      };
+      !(propertyInfo.hasBooleanValue + propertyInfo.hasNumericValue + propertyInfo.hasOverloadedBooleanValue <= 1) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s', propName) : _prodInvariant('50', propName) : void 0;
+
+      if (process.env.NODE_ENV !== 'production') {
+        DOMProperty.getPossibleStandardName[lowerCased] = propName;
+      }
+
+      if (DOMAttributeNames.hasOwnProperty(propName)) {
+        var attributeName = DOMAttributeNames[propName];
+        propertyInfo.attributeName = attributeName;
+        if (process.env.NODE_ENV !== 'production') {
+          DOMProperty.getPossibleStandardName[attributeName] = propName;
+        }
+      }
+
+      if (DOMAttributeNamespaces.hasOwnProperty(propName)) {
+        propertyInfo.attributeNamespace = DOMAttributeNamespaces[propName];
+      }
+
+      if (DOMPropertyNames.hasOwnProperty(propName)) {
+        propertyInfo.propertyName = DOMPropertyNames[propName];
+      }
+
+      if (DOMMutationMethods.hasOwnProperty(propName)) {
+        propertyInfo.mutationMethod = DOMMutationMethods[propName];
+      }
+
+      DOMProperty.properties[propName] = propertyInfo;
+    }
+  }
+};
+
+/* eslint-disable max-len */
+var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
+/* eslint-enable max-len */
+
+/**
+ * DOMProperty exports lookup objects that can be used like functions:
+ *
+ *   > DOMProperty.isValid['id']
+ *   true
+ *   > DOMProperty.isValid['foobar']
+ *   undefined
+ *
+ * Although this may be confusing, it performs better in general.
+ *
+ * @see http://jsperf.com/key-exists
+ * @see http://jsperf.com/key-missing
+ */
+var DOMProperty = {
+
+  ID_ATTRIBUTE_NAME: 'data-reactid',
+  ROOT_ATTRIBUTE_NAME: 'data-reactroot',
+
+  ATTRIBUTE_NAME_START_CHAR: ATTRIBUTE_NAME_START_CHAR,
+  ATTRIBUTE_NAME_CHAR: ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040',
+
+  /**
+   * Map from property "standard name" to an object with info about how to set
+   * the property in the DOM. Each object contains:
+   *
+   * attributeName:
+   *   Used when rendering markup or with `*Attribute()`.
+   * attributeNamespace
+   * propertyName:
+   *   Used on DOM node instances. (This includes properties that mutate due to
+   *   external factors.)
+   * mutationMethod:
+   *   If non-null, used instead of the property or `setAttribute()` after
+   *   initial render.
+   * mustUseProperty:
+   *   Whether the property must be accessed and mutated as an object property.
+   * hasBooleanValue:
+   *   Whether the property should be removed when set to a falsey value.
+   * hasNumericValue:
+   *   Whether the property must be numeric or parse as a numeric and should be
+   *   removed when set to a falsey value.
+   * hasPositiveNumericValue:
+   *   Whether the property must be positive numeric or parse as a positive
+   *   numeric and should be removed when set to a falsey value.
+   * hasOverloadedBooleanValue:
+   *   Whether the property can be used as a flag as well as with a value.
+   *   Removed when strictly equal to false; present without a value when
+   *   strictly equal to true; present with a value otherwise.
+   */
+  properties: {},
+
+  /**
+   * Mapping from lowercase property names to the properly cased version, used
+   * to warn in the case of missing properties. Available only in __DEV__.
+   *
+   * autofocus is predefined, because adding it to the property whitelist
+   * causes unintended side effects.
+   *
+   * @type {Object}
+   */
+  getPossibleStandardName: process.env.NODE_ENV !== 'production' ? { autofocus: 'autoFocus' } : null,
+
+  /**
+   * All of the isCustomAttribute() functions that have been injected.
+   */
+  _isCustomAttributeFunctions: [],
+
+  /**
+   * Checks whether a property name is a custom attribute.
+   * @method
+   */
+  isCustomAttribute: function (attributeName) {
+    for (var i = 0; i < DOMProperty._isCustomAttributeFunctions.length; i++) {
+      var isCustomAttributeFn = DOMProperty._isCustomAttributeFunctions[i];
+      if (isCustomAttributeFn(attributeName)) {
+        return true;
+      }
+    }
+    return false;
+  },
+
+  injection: DOMPropertyInjection
+};
+
+module.exports = DOMProperty;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
 /* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3174,44 +3174,60 @@ var _anchor = __webpack_require__(11);
 
 var _anchor2 = _interopRequireDefault(_anchor);
 
-var _logo = __webpack_require__(141);
-
-var _logo2 = _interopRequireDefault(_logo);
-
 var _header = __webpack_require__(164);
 
 var _header2 = _interopRequireDefault(_header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Header = function Header(props) {
+var Header = function Header(_ref) {
+  var activePage = _ref.activePage;
   return _react2.default.createElement(
     'header',
     { className: _header2.default.header },
     _react2.default.createElement(
-      'span',
-      { className: _header2.default.wrapper },
-      _react2.default.createElement(_logo2.default, null),
+      'h1',
+      null,
       _react2.default.createElement(
         _anchor2.default,
-        { to: '/projects', className: _header2.default.projectslink },
-        'Projects'
-      ),
-      _react2.default.createElement(
-        _anchor2.default,
-        { to: '/blog', className: _header2.default.bloglink },
-        'Blog'
-      ),
-      _react2.default.createElement(
-        _anchor2.default,
-        { to: '/travel/', className: _header2.default.travellink },
-        'Travel'
+        { to: '/', className: _header2.default.name },
+        'Matt Hamlin'
       )
     ),
     _react2.default.createElement(
-      'span',
-      { className: _header2.default.pagename },
-      props.page
+      'nav',
+      { className: _header2.default.headerNav },
+      _react2.default.createElement(
+        'ul',
+        { className: _header2.default.headerList },
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _anchor2.default,
+            { to: '/blog', className: activePage === "blog" ? _header2.default.headerLinkActive : _header2.default.headerLink },
+            'Blog'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _anchor2.default,
+            { to: '/projects', className: activePage === "projects" ? _header2.default.headerLinkActive : _header2.default.headerLink },
+            'Projects'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _anchor2.default,
+            { to: '/travel', className: activePage === "travel" ? _header2.default.headerLinkActive : _header2.default.headerLink },
+            'Travel'
+          )
+        )
+      )
     )
   );
 };
@@ -3749,7 +3765,7 @@ var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _Actions = __webpack_require__(38);
 
@@ -6804,90 +6820,67 @@ var _anchor2 = _interopRequireDefault(_anchor);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Link = function Link(_ref) {
-  var to = _ref.to,
-      children = _ref.children,
-      active = _ref.active;
-  return _react2.default.createElement(
-    _anchor2.default,
-    { to: to, className: active ? _styles2.default.activelink : _styles2.default.link },
-    children
-  );
-};
+var Subnav = function Subnav(_ref) {
+  var page = _ref.page;
 
-var Subnav = function Subnav(_ref2) {
-  var variation = _ref2.variation;
-
-  if (variation === "Blog") {
+  if (page === "Blog") {
     return _react2.default.createElement(
       'nav',
       { className: _styles2.default.nav },
       _react2.default.createElement(
-        'div',
-        { className: _styles2.default.wrapper },
-        _react2.default.createElement(
-          Link,
-          { to: '/blog', active: true },
-          'Blog'
-        ),
-        _react2.default.createElement(
-          Link,
-          { to: '/blog/feed' },
-          'Feed'
-        ),
-        _react2.default.createElement(
-          Link,
-          { to: '/blog/tags' },
-          'Tags'
-        )
+        _anchor2.default,
+        { to: '/blog', className: _styles2.default.subnavlinkactive },
+        'Blog'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/feed', className: _styles2.default.subnavLink },
+        'Feed'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/tags', className: _styles2.default.subnavLink },
+        'Tags'
       )
     );
-  } else if (variation === "Feed") {
+  } else if (page === "Feed") {
     return _react2.default.createElement(
       'nav',
       { className: _styles2.default.nav },
       _react2.default.createElement(
-        'div',
-        { className: _styles2.default.wrapper },
-        _react2.default.createElement(
-          Link,
-          { to: '/blog' },
-          'Blog'
-        ),
-        _react2.default.createElement(
-          Link,
-          { to: '/blog/feed', active: true },
-          'Feed'
-        ),
-        _react2.default.createElement(
-          Link,
-          { to: '/blog/tags' },
-          'Tags'
-        )
+        _anchor2.default,
+        { to: '/blog', className: _styles2.default.subnavLink },
+        'Blog'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/feed', className: _styles2.default.subnavlinkactive },
+        'Feed'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/tags', className: _styles2.default.subnavLink },
+        'Tags'
       )
     );
-  } else if (variation === "Tags") {
+  } else if (page === "Tags") {
     return _react2.default.createElement(
       'nav',
       { className: _styles2.default.nav },
       _react2.default.createElement(
-        'div',
-        { className: _styles2.default.wrapper },
-        _react2.default.createElement(
-          Link,
-          { to: '/blog' },
-          'Blog'
-        ),
-        _react2.default.createElement(
-          Link,
-          { to: '/blog/feed' },
-          'Feed'
-        ),
-        _react2.default.createElement(
-          Link,
-          { to: '/blog/tags', active: true },
-          'Tags'
-        )
+        _anchor2.default,
+        { to: '/blog', className: _styles2.default.subnavLink },
+        'Blog'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/feed', className: _styles2.default.subnavLink },
+        'Feed'
+      ),
+      _react2.default.createElement(
+        _anchor2.default,
+        { to: '/blog/tags', className: _styles2.default.subnavlinkactive },
+        'Tags'
       )
     );
   }
@@ -6991,7 +6984,7 @@ var _DOMUtils = __webpack_require__(39);
 
 var _DOMStateStorage = __webpack_require__(85);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _ExecutionEnvironment = __webpack_require__(51);
 
@@ -7100,7 +7093,7 @@ exports.__esModule = true;
 
 var _AsyncUtils = __webpack_require__(354);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _runTransitionHook = __webpack_require__(53);
 
@@ -10712,7 +10705,7 @@ var _runTransitionHook = __webpack_require__(53);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10831,7 +10824,7 @@ var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
 var _LocationUtils = __webpack_require__(26);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11554,7 +11547,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(12);
 
@@ -12294,7 +12287,7 @@ module.exports = ReactInputSelection;
 var _prodInvariant = __webpack_require__(5);
 
 var DOMLazyTree = __webpack_require__(27);
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var React = __webpack_require__(31);
 var ReactBrowserEventEmitter = __webpack_require__(41);
 var ReactCurrentOwner = __webpack_require__(15);
@@ -14559,11 +14552,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(121);
 
-var _home = __webpack_require__(142);
+var _home = __webpack_require__(141);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _projects = __webpack_require__(143);
+var _projects = __webpack_require__(142);
 
 var _projects2 = _interopRequireDefault(_projects);
 
@@ -14591,7 +14584,7 @@ var _travel = __webpack_require__(144);
 
 var _travel2 = _interopRequireDefault(_travel);
 
-var _stories = __webpack_require__(550);
+var _stories = __webpack_require__(143);
 
 var _stories2 = _interopRequireDefault(_stories);
 
@@ -14752,7 +14745,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -14766,10 +14759,6 @@ var _header = __webpack_require__(22);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _subnav = __webpack_require__(47);
-
-var _subnav2 = _interopRequireDefault(_subnav);
-
 var _feedapp = __webpack_require__(132);
 
 var _feedapp2 = _interopRequireDefault(_feedapp);
@@ -14777,6 +14766,10 @@ var _feedapp2 = _interopRequireDefault(_feedapp);
 var _feed = __webpack_require__(154);
 
 var _feed2 = _interopRequireDefault(_feed);
+
+var _index = __webpack_require__(47);
+
+var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14828,9 +14821,10 @@ var Feed = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'Feed' },
+        _react2.default.createElement('div', { className: _feed2.default.hibar }),
         _react2.default.createElement(_reactHelmet2.default, { title: 'Feed' }),
-        _react2.default.createElement(_header2.default, { page: 'Feed' }),
-        _react2.default.createElement(_subnav2.default, { variation: 'Feed' }),
+        _react2.default.createElement(_header2.default, null),
+        _react2.default.createElement(_index2.default, { page: 'Feed' }),
         _react2.default.createElement(
           'div',
           { className: _feed2.default.wrapper },
@@ -14867,7 +14861,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -14905,73 +14899,8 @@ var Blog = function Blog(props) {
     { className: _blog2.default.blog },
     _react2.default.createElement('div', { className: _blog2.default.hibar }),
     _react2.default.createElement(_reactHelmet2.default, { title: 'Blog' }),
-    _react2.default.createElement(
-      'header',
-      { className: _blog2.default.header },
-      _react2.default.createElement(
-        'h1',
-        null,
-        _react2.default.createElement(
-          _anchor2.default,
-          { to: '/', className: _blog2.default.name },
-          'Matt Hamlin'
-        )
-      ),
-      _react2.default.createElement(
-        'nav',
-        { className: _blog2.default.headerNav },
-        _react2.default.createElement(
-          'ul',
-          { className: _blog2.default.headerList },
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _anchor2.default,
-              { to: '/blog', className: _blog2.default.headerLinkActive },
-              'Blog'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _anchor2.default,
-              { to: '/projects', className: _blog2.default.headerLink },
-              'Projects'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _anchor2.default,
-              { to: '/travel', className: _blog2.default.headerLink },
-              'Travel'
-            )
-          )
-        )
-      )
-    ),
-    _react2.default.createElement(
-      'nav',
-      { className: _blog2.default.nav },
-      _react2.default.createElement(
-        _anchor2.default,
-        { to: '/blog', className: _blog2.default.subnavlinkactive },
-        'Blog'
-      ),
-      _react2.default.createElement(
-        _anchor2.default,
-        { to: '/blog/feed', className: _blog2.default.subnavLink },
-        'Feed'
-      ),
-      _react2.default.createElement(
-        _anchor2.default,
-        { to: '/blog/tags', className: _blog2.default.subnavLink },
-        'Tags'
-      )
-    ),
+    _react2.default.createElement(_header2.default, { activePage: 'blog' }),
+    _react2.default.createElement(_subnav2.default, { page: 'Blog' }),
     _react2.default.createElement(
       'article',
       { className: _blog2.default.wrapper },
@@ -15011,7 +14940,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -15324,7 +15253,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -15451,7 +15380,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -15614,7 +15543,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -15628,10 +15557,6 @@ var _header = __webpack_require__(22);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _subnav = __webpack_require__(47);
-
-var _subnav2 = _interopRequireDefault(_subnav);
-
 var _tagapp = __webpack_require__(140);
 
 var _tagapp2 = _interopRequireDefault(_tagapp);
@@ -15639,6 +15564,10 @@ var _tagapp2 = _interopRequireDefault(_tagapp);
 var _tags = __webpack_require__(163);
 
 var _tags2 = _interopRequireDefault(_tags);
+
+var _subnav = __webpack_require__(47);
+
+var _subnav2 = _interopRequireDefault(_subnav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15690,9 +15619,10 @@ var Tags = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'Tags' },
+        _react2.default.createElement('div', { className: _tags2.default.hibar }),
         _react2.default.createElement(_reactHelmet2.default, { title: 'Tags' }),
-        _react2.default.createElement(_header2.default, { page: 'Tags' }),
-        _react2.default.createElement(_subnav2.default, { variation: 'Tags' }),
+        _react2.default.createElement(_header2.default, null),
+        _react2.default.createElement(_subnav2.default, { page: 'Tags' }),
         _react2.default.createElement(
           'div',
           { className: _tags2.default.wrapper },
@@ -15833,51 +15763,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _anchor = __webpack_require__(11);
-
-var _anchor2 = _interopRequireDefault(_anchor);
-
-var _logo = __webpack_require__(165);
-
-var _logo2 = _interopRequireDefault(_logo);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Logo = function Logo(props) {
-  return _react2.default.createElement(
-    _anchor2.default,
-    { to: '/', className: _logo2.default.link },
-    _react2.default.createElement(
-      'h1',
-      { className: _logo2.default.header },
-      'Matt ',
-      _react2.default.createElement(
-        'span',
-        { className: _logo2.default.second },
-        'Hamlin'
-      )
-    )
-  );
-};
-
-exports.default = Logo;
-
-/***/ }),
-/* 142 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -15885,7 +15771,11 @@ var _anchor = __webpack_require__(11);
 
 var _anchor2 = _interopRequireDefault(_anchor);
 
-var _home = __webpack_require__(166);
+var _header = __webpack_require__(22);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _home = __webpack_require__(165);
 
 var _home2 = _interopRequireDefault(_home);
 
@@ -15932,54 +15822,7 @@ var Home = function (_React$Component) {
         { className: 'Home' },
         _react2.default.createElement(_reactHelmet2.default, { title: 'Home' }),
         _react2.default.createElement('div', { className: _home2.default.hibar }),
-        _react2.default.createElement(
-          'header',
-          { className: _home2.default.header },
-          _react2.default.createElement(
-            'h1',
-            null,
-            _react2.default.createElement(
-              _anchor2.default,
-              { to: '/', className: _home2.default.name },
-              'Matt Hamlin'
-            )
-          ),
-          _react2.default.createElement(
-            'nav',
-            { className: _home2.default.headerNav },
-            _react2.default.createElement(
-              'ul',
-              { className: _home2.default.headerList },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  _anchor2.default,
-                  { to: '/blog', className: _home2.default.headerLink },
-                  'Blog'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  _anchor2.default,
-                  { to: '/projects', className: _home2.default.headerLink },
-                  'Projects'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  _anchor2.default,
-                  { to: '/travel', className: _home2.default.headerLink },
-                  'Travel'
-                )
-              )
-            )
-          )
-        ),
+        _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(
           'article',
           { className: _home2.default.wrapper },
@@ -16071,7 +15914,7 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16087,7 +15930,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactHelmet = __webpack_require__(19);
+var _reactHelmet = __webpack_require__(17);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
@@ -16099,7 +15942,7 @@ var _header = __webpack_require__(22);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _styles = __webpack_require__(167);
+var _styles = __webpack_require__(166);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -16249,6 +16092,37 @@ var Projects = function Projects(props) {
 };
 
 exports.default = Projects;
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactHelmet = __webpack_require__(17);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _anchor = __webpack_require__(11);
+
+var _anchor2 = _interopRequireDefault(_anchor);
+
+var _stories = __webpack_require__(167);
+
+var _stories2 = _interopRequireDefault(_stories);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {};
 
 /***/ }),
 /* 144 */
@@ -18904,14 +18778,14 @@ module.exports = {"active":"anchor__active--ZmCR1"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"blog__wrapper--XYeIC","hibar":"blog__hibar--27knl","header":"blog__header--3s-Ij","name":"blog__name--tS9Uc","headerLink":"blog__headerLink--3l_ce","headerLinkActive":"blog__headerLinkActive--2EVH6 blog__headerLink--3l_ce","headerList":"blog__headerList--1p3_a","nav":"blog__nav--3x_f2","subnavLink":"blog__subnavLink--3fEAO","subnavlinkactive":"blog__subnavlinkactive--2OqdU","container":"blog__container--1vtEa","body":"blog__body--N3agF","link":"blog__link--cwkSa","second":"blog__second--3uVl9","third":"blog__third--rCtDk","fourth":"blog__fourth--m6RpT","content":"blog__content--1-_Sp"};
+module.exports = {"wrapper":"blog__wrapper--XYeIC","hibar":"blog__hibar--27knl","container":"blog__container--1vtEa","body":"blog__body--N3agF","link":"blog__link--cwkSa","header":"blog__header--3s-Ij","second":"blog__second--3uVl9","third":"blog__third--rCtDk","fourth":"blog__fourth--m6RpT","content":"blog__content--1-_Sp"};
 
 /***/ }),
 /* 154 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"feed__wrapper--2hsnN","container":"feed__container--2inwy","lead":"feed__lead--1P2EA","body":"feed__body--3K6ST","link":"feed__link--212Pi"};
+module.exports = {"wrapper":"feed__wrapper--2hsnN","hibar":"feed__hibar--3Nog-","lowbar":"feed__lowbar--2GGC0 feed__hibar--3Nog-","container":"feed__container--2inwy","lead":"feed__lead--1P2EA","body":"feed__body--3K6ST","link":"feed__link--212Pi"};
 
 /***/ }),
 /* 155 */
@@ -18960,7 +18834,7 @@ module.exports = {"h3":"photosv2__h3--y9he7"};
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"nav":"styles__nav--1cbWK","wrapper":"styles__wrapper--2Y-KI","link":"styles__link--3_jcK","activelink":"styles__activelink--2mag7"};
+module.exports = {"nav":"styles__nav--1cbWK","subnavLink":"styles__subnavLink--18DIg","subnavlinkactive":"styles__subnavlinkactive--qV5r6"};
 
 /***/ }),
 /* 162 */
@@ -18974,35 +18848,34 @@ module.exports = {"wrap":"styles__wrap--9Ndro","link":"styles__link--3_jcK","hea
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"tags__wrapper--1a11x","link":"tags__link--2PqJE"};
+module.exports = {"wrapper":"tags__wrapper--1a11x","link":"tags__link--2PqJE","hibar":"tags__hibar--3iOr6","lowbar":"tags__lowbar--2sXId tags__hibar--3iOr6","nav":"tags__nav--2qDxH","subnavLink":"tags__subnavLink--1CDbw","subnavlinkactive":"tags__subnavlinkactive--1AGon"};
 
 /***/ }),
 /* 164 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"header":"header__header--1-4Ly","projectslink":"header__projectslink--1Uw5t","bloglink":"header__bloglink--1rizP","travellink":"header__travellink--tVlhN","wrapper":"header__wrapper--2NfEW","pagename":"header__pagename--3Uqh1"};
+module.exports = {"header":"header__header--1-4Ly","name":"header__name--1NeIR","headerLink":"header__headerLink--1aB2L","headerLinkActive":"header__headerLinkActive--20aBW header__headerLink--1aB2L","headerList":"header__headerList--3l9do"};
 
 /***/ }),
 /* 165 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"link":"logo__link--3_fEk","wrapper":"logo__wrapper--xtxn5","mFront":"logo__mFront--3vRgZ","hFront":"logo__hFront--2uGKk","mBack":"logo__mBack--3mZnW","hBack":"logo__hBack--kTt2o","header":"logo__header--3CP9Z","second":"logo__second--2Wgn6"};
+module.exports = {"hibar":"home__hibar--1odfU","lowbar":"home__lowbar--VAcNm","wrapper":"home__wrapper--iCd0U","footer":"home__footer--2Iq9x","lead":"home__lead--2e5Wo","content":"home__content--3E5m1","link":"home__link--37dd5","footerText":"home__footerText--1opet","footerLink":"home__footerLink--1QJMq","header":"home__header--1YW--","second":"home__second--2s4m8","third":"home__third--LvBy5","fourth":"home__fourth--1vTYG"};
 
 /***/ }),
 /* 166 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"hibar":"home__hibar--1odfU","lowbar":"home__lowbar--VAcNm","header":"home__header--1YW--","name":"home__name--15wpS","headerLink":"home__headerLink--2gjBS","headerList":"home__headerList--16FWk","wrapper":"home__wrapper--iCd0U","footer":"home__footer--2Iq9x","lead":"home__lead--2e5Wo","content":"home__content--3E5m1","link":"home__link--37dd5","footerText":"home__footerText--1opet","footerLink":"home__footerLink--1QJMq","second":"home__second--2s4m8","third":"home__third--LvBy5","fourth":"home__fourth--1vTYG"};
+module.exports = {"wrapper":"styles__wrapper--2Y-KI","title":"styles__title--1uPz2","anchor":"styles__anchor--34aT2","description":"styles__description--1bq3S","projects":"styles__projects--1Xq7C","project":"styles__project--8oVTI"};
 
 /***/ }),
 /* 167 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"wrapper":"styles__wrapper--2Y-KI","title":"styles__title--1uPz2","anchor":"styles__anchor--34aT2","description":"styles__description--1bq3S","projects":"styles__projects--1Xq7C","project":"styles__project--8oVTI"};
 
 /***/ }),
 /* 168 */
@@ -36322,7 +36195,7 @@ var _DOMUtils = __webpack_require__(39);
 
 var _DOMStateStorage = __webpack_require__(85);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36457,7 +36330,7 @@ Object.defineProperty(exports, 'go', {
 
 var _LocationUtils = __webpack_require__(26);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var getCurrentLocation = exports.getCurrentLocation = function getCurrentLocation() {
   return (0, _LocationUtils.createLocation)(window.location);
@@ -36748,7 +36621,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(26);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _createHistory = __webpack_require__(52);
 
@@ -47096,7 +46969,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -48542,7 +48415,7 @@ var AutoFocusUtils = __webpack_require__(423);
 var CSSPropertyOperations = __webpack_require__(425);
 var DOMLazyTree = __webpack_require__(27);
 var DOMNamespaces = __webpack_require__(57);
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var DOMPropertyOperations = __webpack_require__(95);
 var EventPluginHub = __webpack_require__(33);
 var EventPluginRegistry = __webpack_require__(40);
@@ -49991,7 +49864,7 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var ReactComponentTreeHook = __webpack_require__(10);
 
 var warning = __webpack_require__(2);
@@ -50963,7 +50836,7 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var EventPluginRegistry = __webpack_require__(40);
 var ReactComponentTreeHook = __webpack_require__(10);
 
@@ -51874,7 +51747,7 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var EventPluginHub = __webpack_require__(33);
 var EventPluginUtils = __webpack_require__(58);
 var ReactComponentEnvironment = __webpack_require__(61);
@@ -60436,63 +60309,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _reactDom.render)(_react2.default.createElement(_start2.default, null), document.getElementById('mount'));
 
 console.log("👋🏼 Hey thanks for dropping by and checking out my website. Feel free to reach out if you find any bugs or are interested in how it works!");
-
-/***/ }),
-/* 530 */,
-/* 531 */,
-/* 532 */,
-/* 533 */,
-/* 534 */,
-/* 535 */,
-/* 536 */,
-/* 537 */,
-/* 538 */,
-/* 539 */,
-/* 540 */,
-/* 541 */,
-/* 542 */,
-/* 543 */,
-/* 544 */,
-/* 545 */,
-/* 546 */,
-/* 547 */,
-/* 548 */,
-/* 549 */,
-/* 550 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactHelmet = __webpack_require__(19);
-
-var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
-
-var _anchor = __webpack_require__(11);
-
-var _anchor2 = _interopRequireDefault(_anchor);
-
-var _stories = __webpack_require__(551);
-
-var _stories2 = _interopRequireDefault(_stories);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {};
-
-/***/ }),
-/* 551 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

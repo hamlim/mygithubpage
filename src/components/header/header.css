@@ -1,42 +1,62 @@
+
 .header {
-  font-size: 1.8em;
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
-  margin: 0 3rem;
-}
+  height: 10rem;
 
-.projectslink,
-.bloglink,
-.travellink {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: var(--width);
+  margin: auto;
+}
+.name {
+  font-size: 3rem;
   text-decoration: none;
-  margin: 0 .25em;
+  color: var(--black);
 }
 
-.projectslink {
-  color: var(--b);
-}
-
-.bloglink {
-  color: var(--b-muted);
-}
-
-.travellink {
-  color: var(--c-muted);
-}
-
-
-@media screen and (max-width: 40rem) {
-  .wrapper {
-    margin: 0 .25em;
+.headerLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  @media screen and (min-width: 27rem) {
+    padding: 0 .5em;
   }
-  .pagename {
-    display: none;
+}
+.headerLinkActive {
+  composes: headerLink;
+  color: var(--c);
+}
+.headerLinkActive:hover,
+.headerLinkActive:focus {
+  text-decoration: underline;
+  color: var(--a);
+}
+
+.headerLink,
+.name {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: var(--a);
   }
+}
+
+.headerList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerList > li {
+  display: inline-block;
+}
+
+
+@media screen and (min-width: 45rem) {
   .header {
-    margin: 0;
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
   }
 }

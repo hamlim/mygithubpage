@@ -4,10 +4,10 @@ import 'whatwg-fetch';
 
 import Anchor from '../../anchor';
 import Header from '../../header/header';
-import Subnav from '../subnav';
 import TagApp from './tagapp';
 
 import styles from './tags.css';
+import Subnav from '../subnav';
 
 const Link = ({to, children}) => (
   <Anchor to={to} className={styles.link}>{children}</Anchor>
@@ -18,11 +18,9 @@ class Tags extends Component {
     this.super(props);
     this.setState = this.setState.bind(this);
   }
-
   state = {
     feed: []
   }
-
   componentDidMount = () => {
     fetch('/assets/json/posts.json').then(r => {
       return r.json();
@@ -35,9 +33,10 @@ class Tags extends Component {
     let feedLengthBool = this.state.feed.length > 0;
     return (
       <section className="Tags">
+        <div className={styles.hibar}></div>
         <Helmet title="Tags" />
-        <Header page="Tags" />
-        <Subnav variation="Tags"/>
+        <Header />
+        <Subnav page="Tags"/>
         <div className={styles.wrapper}>
           <h2>Tags:</h2>
           {feedLengthBool ? (

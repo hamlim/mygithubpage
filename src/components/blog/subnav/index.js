@@ -4,41 +4,29 @@ import styles from './styles.css';
 
 import Anchor from '../../anchor';
 
-const Link = ({to, children, active}) => (
-  <Anchor to={to} className={active ? styles.activelink : styles.link }>
-    {children}
-  </Anchor>
-);
-
-const Subnav = ({variation}) => {
-  if (variation === "Blog") {
+const Subnav = ({page}) => {
+  if (page === "Blog") {
     return (
       <nav className={styles.nav}>
-        <div className={styles.wrapper}>
-          <Link to="/blog" active>Blog</Link>
-          <Link to="/blog/feed">Feed</Link>
-          <Link to="/blog/tags">Tags</Link>
-        </div>
+        <Anchor to="/blog" className={styles.subnavlinkactive}>Blog</Anchor>
+        <Anchor to="/blog/feed" className={styles.subnavLink}>Feed</Anchor>
+        <Anchor to="/blog/tags" className={styles.subnavLink}>Tags</Anchor>
       </nav>
     )
-  } else if (variation === "Feed") {
+  } else if (page === "Feed") {
     return (
       <nav className={styles.nav}>
-        <div className={styles.wrapper}>
-          <Link to="/blog">Blog</Link>
-          <Link to="/blog/feed" active>Feed</Link>
-          <Link to="/blog/tags">Tags</Link>
-        </div>
+        <Anchor to="/blog" className={styles.subnavLink}>Blog</Anchor>
+        <Anchor to="/blog/feed" className={styles.subnavlinkactive}>Feed</Anchor>
+        <Anchor to="/blog/tags" className={styles.subnavLink}>Tags</Anchor>
       </nav>
     )
-  } else if (variation === "Tags") {
+  } else if (page === "Tags") {
     return (
       <nav className={styles.nav}>
-        <div className={styles.wrapper}>
-          <Link to="/blog">Blog</Link>
-          <Link to="/blog/feed">Feed</Link>
-          <Link to="/blog/tags" active>Tags</Link>
-        </div>
+        <Anchor to="/blog" className={styles.subnavLink}>Blog</Anchor>
+        <Anchor to="/blog/feed" className={styles.subnavLink}>Feed</Anchor>
+        <Anchor to="/blog/tags" className={styles.subnavlinkactive}>Tags</Anchor>
       </nav>
     )
   }

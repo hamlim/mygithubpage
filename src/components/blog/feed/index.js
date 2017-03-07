@@ -4,10 +4,10 @@ import 'whatwg-fetch';
 
 import Anchor from '../../anchor';
 import Header from '../../header/header';
-import Subnav from '../subnav';
 import FeedApp from './feedapp';
 
 import styles from './feed.css';
+import Subnav from '../subnav/index';
 
 const Link = ({to, children}) => (
   <Anchor to={to} className={styles.link}>{children}</Anchor>
@@ -35,9 +35,10 @@ class Feed extends Component {
     let feedLengthBool = this.state.feed.length > 0;
     return (
       <section className="Feed">
+        <div className={styles.hibar}></div>
         <Helmet title="Feed" />
-        <Header page="Feed" />
-        <Subnav variation="Feed" />
+        <Header />
+        <Subnav page="Feed"/>
         <div className={styles.wrapper}>
           <h2>Feed:</h2>
           {feedLengthBool ? (
