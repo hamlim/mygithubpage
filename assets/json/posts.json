@@ -1,5 +1,15 @@
 [
   {
+    "slug": "Making-Mustache-in-seven-lines",
+    "title": "Remaking Mustache.js with Template Literals",
+    "tags": ["Development"],
+    "month": "March",
+    "year": "2017",
+    "day": "8th",
+    "content": "rebuildingMustache",
+    "lede": ""
+  },
+  {
     "slug": "Some-Quick-Thoughts",
     "title": "Some Quick Thoughts",
     "tags": ["Daily", "Development"],
