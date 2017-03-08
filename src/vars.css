@@ -6,6 +6,9 @@
   --c: springgreen;
   --c-muted: color(springgreen lightness(+ 25%));
 
+  --d: #1abc9c;
+  --d-muted: #9DE2D5;
+
 
   --gray: #566573;
   --gray-muted: #D5D8DC;

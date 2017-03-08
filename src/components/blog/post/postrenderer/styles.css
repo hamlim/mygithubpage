@@ -23,8 +23,16 @@
     }
   }
   & a {
-    color: var(--a);
+    color: var(--b);
     text-decoration: none;
+    border-bottom: solid 2px var(--d-muted);
+  }
+  & a:hover,
+  & a:focus {
+    border-bottom-color: var(--d);
+  }
+  & a:active {
+    background-color: var(--d-muted);
   }
   & figure {
     text-align: center;

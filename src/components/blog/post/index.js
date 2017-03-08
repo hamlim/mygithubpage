@@ -26,8 +26,8 @@ const SpecialPosts = [
 
 import styles from './post.css';
 
-const Link = ({to, children}) => (
-  <Anchor to={to} className={styles.link}>{children}</Anchor>
+const Link = ({to, className, children}) => (
+  <Anchor to={to} className={className ? className : styles.link}>{children}</Anchor>
 );
 
 class Post extends Component {
@@ -89,7 +89,7 @@ class Post extends Component {
           <section className={styles.section}>
             <h4 className={styles.postTags}>Tags:</h4><br/>
             {this.state.post.tags.map((tag, index) => (
-              <span className={styles.tag} key={index}><Link to={`/blog/tags/#${tag}`}>{tag}</Link></span>
+              <Link className={styles.tag} key={index} to={`/blog/tags/#${tag}`}>{tag}</Link>
             ))}
           </section>
           {this.chooseRenderMethod()}

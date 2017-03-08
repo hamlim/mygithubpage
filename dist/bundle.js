@@ -14991,10 +14991,11 @@ var SpecialPosts = [{
 
 var Link = function Link(_ref) {
   var to = _ref.to,
+      className = _ref.className,
       children = _ref.children;
   return _react2.default.createElement(
     _anchor2.default,
-    { to: to, className: _post2.default.link },
+    { to: to, className: className ? className : _post2.default.link },
     children
   );
 };
@@ -15090,13 +15091,9 @@ var Post = function (_Component) {
             _react2.default.createElement('br', null),
             _this.state.post.tags.map(function (tag, index) {
               return _react2.default.createElement(
-                'span',
-                { className: _post2.default.tag, key: index },
-                _react2.default.createElement(
-                  Link,
-                  { to: '/blog/tags/#' + tag },
-                  tag
-                )
+                Link,
+                { className: _post2.default.tag, key: index, to: '/blog/tags/#' + tag },
+                tag
               );
             })
           ),
