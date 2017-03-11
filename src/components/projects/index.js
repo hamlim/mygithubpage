@@ -10,7 +10,7 @@ const OutLink = props => <a className={styles.anchor} {...props}/>;
 const Projects = (props) => (
   <div className="Projects">
     <Helmet title="Matt Hamlin's Projects" />
-    <Header page="Projects" />
+    <Header activePage="projects" />
     <article className={styles.wrapper}>
       <h3 className={styles.title}>My Projects</h3>
       <ul className={styles.projects}>

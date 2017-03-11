@@ -19,7 +19,6 @@ class Home extends React.Component {
   render = () => (
     <div className="Home">
       <Helmet title="Home" />
-      <div className={styles.hibar}></div>
       <Header />
       <article className={styles.wrapper}>
         <section className={styles.content}>

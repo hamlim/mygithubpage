@@ -10,7 +10,7 @@ import Tags from './components/blog/tags';
 import Feed from './components/blog/feed';
 import Post from './components/blog/post';
 import Travel from './components/travel';
-import Stories from './components/stories';
+// import Stories from './components/stories';
 
 import './start.css';
 

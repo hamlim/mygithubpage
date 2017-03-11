@@ -14584,10 +14584,6 @@ var _travel = __webpack_require__(144);
 
 var _travel2 = _interopRequireDefault(_travel);
 
-var _stories = __webpack_require__(143);
-
-var _stories2 = _interopRequireDefault(_stories);
-
 __webpack_require__(168);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -14610,6 +14606,7 @@ var Website = function Website() {
     _react2.default.createElement(_reactRouter.Route, { path: '/travel/:location', component: _travel2.default })
   );
 };
+// import Stories from './components/stories';
 
 exports.default = Website;
 
@@ -14897,7 +14894,6 @@ var Blog = function Blog(props) {
   return _react2.default.createElement(
     'div',
     { className: _blog2.default.blog },
-    _react2.default.createElement('div', { className: _blog2.default.hibar }),
     _react2.default.createElement(_reactHelmet2.default, { title: 'Blog' }),
     _react2.default.createElement(_header2.default, { activePage: 'blog' }),
     _react2.default.createElement(_subnav2.default, { page: 'Blog' }),
@@ -15818,7 +15814,6 @@ var Home = function (_React$Component) {
         'div',
         { className: 'Home' },
         _react2.default.createElement(_reactHelmet2.default, { title: 'Home' }),
-        _react2.default.createElement('div', { className: _home2.default.hibar }),
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(
           'article',
@@ -15957,7 +15952,7 @@ var Projects = function Projects(props) {
     'div',
     { className: 'Projects' },
     _react2.default.createElement(_reactHelmet2.default, { title: 'Matt Hamlin\'s Projects' }),
-    _react2.default.createElement(_header2.default, { page: 'Projects' }),
+    _react2.default.createElement(_header2.default, { activePage: 'projects' }),
     _react2.default.createElement(
       'article',
       { className: _styles2.default.wrapper },
@@ -16091,37 +16086,7 @@ var Projects = function Projects(props) {
 exports.default = Projects;
 
 /***/ }),
-/* 143 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactHelmet = __webpack_require__(17);
-
-var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
-
-var _anchor = __webpack_require__(11);
-
-var _anchor2 = _interopRequireDefault(_anchor);
-
-var _stories = __webpack_require__(167);
-
-var _stories2 = _interopRequireDefault(_stories);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {};
-
-/***/ }),
+/* 143 */,
 /* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16192,7 +16157,7 @@ var Travel = function (_Component) {
           return _react2.default.createElement(
             'article',
             { className: _travel2.default.wrapper },
-            _react2.default.createElement(_header2.default, { page: 'Travel' }),
+            _react2.default.createElement(_header2.default, { activePage: 'travel' }),
             _react2.default.createElement(
               'section',
               { className: _travel2.default.section },
@@ -16218,7 +16183,7 @@ var Travel = function (_Component) {
           return _react2.default.createElement(
             'article',
             { className: _travel2.default.wrapper },
-            _react2.default.createElement(_header2.default, { page: 'Travel' }),
+            _react2.default.createElement(_header2.default, { activePage: 'travel' }),
             _react2.default.createElement(
               'section',
               { className: _travel2.default.section },
@@ -16239,7 +16204,7 @@ var Travel = function (_Component) {
           return _react2.default.createElement(
             'article',
             { className: _travel2.default.wrapper },
-            _react2.default.createElement(_header2.default, { page: 'Travel' }),
+            _react2.default.createElement(_header2.default, { activePage: 'travel' }),
             _react2.default.createElement(
               'section',
               { className: _travel2.default.section },
@@ -18869,12 +18834,7 @@ module.exports = {"hibar":"home__hibar--1odfU","lowbar":"home__lowbar--VAcNm","w
 module.exports = {"wrapper":"styles__wrapper--2Y-KI","title":"styles__title--1uPz2","anchor":"styles__anchor--34aT2","description":"styles__description--1bq3S","projects":"styles__projects--1Xq7C","project":"styles__project--8oVTI"};
 
 /***/ }),
-/* 167 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 167 */,
 /* 168 */
 /***/ (function(module, exports) {
 

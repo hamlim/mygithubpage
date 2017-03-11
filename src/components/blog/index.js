@@ -12,7 +12,6 @@ const Link = ({to, children}) => (
 
 const Blog = (props) => (
   <div className={styles.blog}>
-    <div className={styles.hibar}></div>
     <Helmet title="Blog" />
     <Header activePage="blog" />
     <Subnav page="Blog" />

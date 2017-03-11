@@ -9,7 +9,7 @@ const Header = ({activePage}) => (
     <nav className={styles.headerNav}>
       <ul className={styles.headerList}>
         <li><Anchor to="/blog" className={activePage === "blog" ? styles.headerLinkActive : styles.headerLink}>Blog</Anchor></li>
-        {/*<li><Anchor to="/stores" className={activePage === "stories" ? styles.headerLinkActive : styles.headerLink}>Stories</Anchor></li>*/}
+        {/*<li><Anchor to="/stories" className={activePage === "stories" ? styles.headerLinkActive : styles.headerLink}>Stories</Anchor></li>*/}
         <li><Anchor to="/projects" className={activePage === "projects" ? styles.headerLinkActive : styles.headerLink}>Projects</Anchor></li>
         <li><Anchor to="/travel" className={activePage === "travel" ? styles.headerLinkActive : styles.headerLink}>Travel</Anchor></li>
       </ul>
