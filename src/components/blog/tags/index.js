@@ -33,7 +33,6 @@ class Tags extends Component {
     let feedLengthBool = this.state.feed.length > 0;
     return (
       <section className="Tags">
-        <div className={styles.hibar}></div>
         <Helmet title="Tags" />
         <Header />
         <Subnav page="Tags"/>

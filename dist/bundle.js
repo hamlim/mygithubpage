@@ -14818,7 +14818,6 @@ var Feed = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'Feed' },
-        _react2.default.createElement('div', { className: _feed2.default.hibar }),
         _react2.default.createElement(_reactHelmet2.default, { title: 'Feed' }),
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_index2.default, { page: 'Feed' }),
@@ -15612,7 +15611,6 @@ var Tags = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'Tags' },
-        _react2.default.createElement('div', { className: _tags2.default.hibar }),
         _react2.default.createElement(_reactHelmet2.default, { title: 'Tags' }),
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_subnav2.default, { page: 'Tags' }),

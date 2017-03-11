@@ -35,7 +35,6 @@ class Feed extends Component {
     let feedLengthBool = this.state.feed.length > 0;
     return (
       <section className="Feed">
-        <div className={styles.hibar}></div>
         <Helmet title="Feed" />
         <Header />
         <Subnav page="Feed"/>
