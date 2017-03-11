@@ -83,16 +83,16 @@ class Post extends Component {
         <div className={styles.wrapper}>
           <Helmet title={this.state.post.title} />
           <header className={styles.header}>
-            <h2 className={styles.postTitle}>{this.state.post.title}</h2>
             <h4 className={styles.postDate}>Published: {`${this.state.post.day} of ${this.state.post.month}, ${this.state.post.year}`}.</h4>
+            <h2 className={styles.postTitle}>{this.state.post.title}</h2>
           </header>
+          {this.chooseRenderMethod()}
           <section className={styles.section}>
             <h4 className={styles.postTags}>Tags:</h4><br/>
             {this.state.post.tags.map((tag, index) => (
               <Link className={styles.tag} key={index} to={`/blog/tags/#${tag}`}>{tag}</Link>
             ))}
           </section>
-          {this.chooseRenderMethod()}
         </div>
       )}
       {(this.state && this.state.specialPost) && (

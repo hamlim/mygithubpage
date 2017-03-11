@@ -15068,18 +15068,19 @@ var Post = function (_Component) {
             'header',
             { className: _post2.default.header },
             _react2.default.createElement(
-              'h2',
-              { className: _post2.default.postTitle },
-              _this.state.post.title
-            ),
-            _react2.default.createElement(
               'h4',
               { className: _post2.default.postDate },
               'Published: ',
               _this.state.post.day + ' of ' + _this.state.post.month + ', ' + _this.state.post.year,
               '.'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { className: _post2.default.postTitle },
+              _this.state.post.title
             )
           ),
+          _this.chooseRenderMethod(),
           _react2.default.createElement(
             'section',
             { className: _post2.default.section },
@@ -15096,8 +15097,7 @@ var Post = function (_Component) {
                 tag
               );
             })
-          ),
-          _this.chooseRenderMethod()
+          )
         ),
         _this.state && _this.state.specialPost && _react2.default.createElement(
           'div',

@@ -509,6 +509,14 @@
   color: var(--a);
   content: close-quote
 }
+  .styles__article--1rRIN pre {
+  margin: 1rem 0rem
+}
+  @media screen and (min-width: 52rem) {
+  .styles__article--1rRIN pre {
+    margin: 2rem -2rem
+  }
+}
   .styles__article--1rRIN ul,
   .styles__article--1rRIN ol {
   list-style-position: inside
@@ -751,16 +759,16 @@ iframe {
 }
 
 .post__tag--2xGQK {
-  background-color: var(--d-muted);
+  background-color: var(--d);
   padding: .25em;
-  color: var(--white);
   border-radius: 4px;
   margin: 0 1em;
+  color: var(--white);
   text-decoration: none;
 }
 
 .post__tag--2xGQK:hover {
-  background-color: var(--d);
+  background-color: var(--d-muted);
 }
 
 .post__loading--3slAV {

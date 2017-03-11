@@ -59,6 +59,12 @@
     color: var(--a);
     content: close-quote;
   }
+  & pre {
+    margin: 1rem 0rem;
+    @media screen and (min-width: 52rem) {
+      margin: 2rem -2rem;
+    }
+  }
   & ul,
   & ol {
     list-style-position: inside;
