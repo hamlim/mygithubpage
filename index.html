@@ -1,116 +1,45 @@
-<!doctype html>
-<html class="" lang="en">
-    <head>
-        <title>Matt Hamlin</title>
-        <!-- <base href="https://matthamlin.me/index.html"> -->
-
-        <!-- Generic Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="portfolio,Matt_Hamlin,@immatthamlin">
-        <meta name="description" content="A simple portfolio website for Matt Hamlin.">
-        <meta name="subject" content="Matt Hamlin's Portfolio site">
-        <meta name="language" content="en">
-        <meta name="robots" content="index,follow">
-        <meta name="revised" content="Thursday, June 9th, 2016, 2:21 pm"> <!-- Last Revised Date -->
-        <meta name="classification" content="individual">
-        <meta name="author" content="Matt Hamlin, hamlim@outlook.com">
-        <meta name="designer" content="Matt Hamlin, hamlim@outlook.com">
-        <meta name="reply-to" content="hamlim@outlook.com">
-        <meta name="owner" content="Matt Hamlin, hamlim@outlook.com">
-        <meta name="url" content="https://matthamlin.me/">
-        <meta name="identifier-URL" content="https://matthamlin.me/">
-        <meta name="coverage" content="Worldwide">
-        <meta name="distribution" content="Global">
-        <meta name="rating" content="General">
-
-
-        <!-- Generic Link Tags -->
-        <link rel="manifest" href="manifest.json">
-        <link rel="author" href="humans.txt">
-
-        <!-- Favicons -->
-        <link rel="icon" href="./Assets/icons/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="icon" href="./Assets/icons/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="./Assets/icons/favicons/favicon-96x96.png" sizes="96x96" type="image/png">
-
-
-        <!-- Android -->
-        <meta name="theme-color" content="#2ECC71">
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="Assets/css/prod/main.css">
-    </head>
-    <body class="body">
-        <header class="header center">
-            <span class="header--siblings">
-                <h1 class="header--title clr--blue">Matt Hamlin</h1>
-            </span>
-        </header>
-        <main class="page">
-            <nav class="page--nav horizontal--center">
-                <ul class="nav--links ul--nostyle ul--inline">
-                    <li class="li--inline">
-                        <a href="./index.html" class="link--active">Portfolio</a>
-                    </li>
-                    <li class="li--inline">
-                        <a href="./resume.html" class="link">Resume</a>
-                    </li>
-                    <li class="li--inline">
-                        <a href="./archive.html" class="link">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-            <article class="page--content">
-                <header class="page--lead">
-                    <h2 class="">Matt Hamlin is a full stack web developer, designer and sometimes writer.</h2>
-                </header>
-                <h3 class="article--title">Projects:</h3>
-                <section class="grid grid-row grid-wrap">
-                    <section class="project--card">
-                        <h4 class="project--name">Dollar</h4>
-                        <a href="https://goexploring.today/Dollar" class="link">Dollar</a>
-                        <p class="project--description small">
-                            A simple financial management tool.
-                        </p>
-                    </section>
-                    <section class="flex--cell project--card">
-                        <h4 class="project--name">Bundles</h4>
-                        <a href="https://goexploring.today" class="link">Bundles</a>
-                        <p class="project--description small">
-                            Share collections of content with one link.
-                        </p>
-                    </section>
-                    <section class="flex--cell project--card">
-                        <h4 class="project--name">KYMA International Landing Page</h4>
-                        <a href="http://kymainternational.com" class="link">KYMA International</a>
-                        <p class="project--description small">
-                            Launched landing page and designed brand assets.
-                        </p>
-                    </section>
-                </section>
-                <h3 class="article--title">Social:</h3>
-                <section class="grid grid-row grid-wrap grid-justify-center">
-                    <section class="project--card">
-                        <h4 class="project--name">Email</h4> - <a href="mailto:hamlim@outlook.com" class="link">hamlim@outlook.com</a>
-                    </section>
-                    <section class="project--card">
-                        <h4 class="project--name">Twitter</h4> - <a href="https://twitter.com/immatthamlin" class="link">@immatthamlin</a>
-                    </section>
-                    <section class="project--card">
-                        <h4 class="project--name">LinkedIn</h4> - <a href="https://linkedin.com/in/hamlim" class="link">Matt Hamlin</a>
-                    </section>
-                    <section class="project--card">
-                        <h4 class="project--name">Snapchat</h4> - <a href="https://snapchat.com/add/immatthamlin" class="link">@immatthamlin</a>
-                    </section>
-                    <section class="project--card">
-                        <h4 class="project--name">Github</h4> - <a href="https://github.com/hamlim" class="link">Matt Hamlin</a>
-                    </section>
-                </section>
-            </article>
-        </main>
-        <footer class="footer">
-
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/hljs-ocean.css" />
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matt Hamlin</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
+  </head>
+  <body>
+    <main id="mount"></main>
+    <noscript>Sorry my website currently only supports browsers with JS enabled. :(</noscript>
+    <script src="/dist/bundle.js"></script>
+  </body>
 </html>

@@ -1,0 +1,53 @@
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  color: var(--b-muted);
+  text-decoration: none;
+}
+.section {
+  max-width: 35rem;
+  margin: 1rem auto;
+}
+.svg {
+  max-width: 75rem;
+  margin: 0 auto;
+  height: auto;
+  max-height: 90vh;
+}
+
+
+[class="land"] {
+  fill: #CCCCCC;
+  fill-opacity: 1;
+  stroke:white;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}
+
+
+[title="Washington"],
+[title="New York"],
+[title="Massachusetts"],
+[title="Florida"],
+[title="California"],
+[title="Oregon"],
+[title="Montana"],
+[title="Idaho"],
+[title="Nevada"],
+[title="Colorado"],
+[title="Arizona"],
+[title="Utah"],
+[title="Wyoming"],
+[title="Rhode Island"] {
+  fill: var(--c);
+}
+
+
+
+[class="big"] {
+  font-size: 2rem;
+  margin: .5rem 0;
+}

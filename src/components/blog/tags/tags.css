@@ -1,0 +1,60 @@
+.wrapper {
+  margin-top: 3rem;
+  max-width: var(--width, 45rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  color: var(--a, #F08080);
+  text-decoration: none;
+}
+
+.hibar {
+  background-color: #7ee59e;
+  height: 8rem;
+  margin-bottom: 6rem;
+  width: 100vw;
+}
+
+.lowbar {
+  composes: hibar;
+  margin-bottom: 0;
+  margin-top: 5rem;
+}
+
+.nav {
+  max-width: var(--width);
+  margin: 0 auto 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.subnavLink {
+  color: var(--b);
+  text-decoration: none;
+}
+.subnavlinkactive {
+  color: var(--a);
+  text-decoration: none;
+}
+
+.subnavLink:hover,
+.subnavLink:focus,
+.subnavlinkactive:hover,
+.subnavlinkactive:focus {
+  text-decoration: underline;
+  color: var(--c);
+}
+
+@media screen and (max-width: 40rem) {
+  .wrapper {
+    margin: 3rem .25em;
+  }
+}

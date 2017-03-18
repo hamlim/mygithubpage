@@ -1,0 +1,29 @@
+.nav {
+  max-width: var(--width);
+  margin: 0 auto 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.subnavLink {
+  color: var(--b);
+  text-decoration: none;
+}
+.subnavlinkactive {
+  color: var(--a);
+  text-decoration: none;
+}
+
+.subnavLink:hover,
+.subnavLink:focus,
+.subnavlinkactive:hover,
+.subnavlinkactive:focus {
+  text-decoration: underline;
+  color: var(--c);
+}

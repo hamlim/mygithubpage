@@ -1,0 +1,28 @@
+.link {
+  text-decoration: none;
+}
+.wrapper {
+  margin: .5em 0em .5em .5em;
+}
+.wrapper + .wrapper {
+  margin-left: .25em;
+  margin-right: .5em;
+}
+
+.mFront,
+.hFront {
+  fill: var(--a, #F08080);
+}
+.mBack,
+.hBack {
+  fill: var(--a-muted, #FFA07A);
+}
+
+.header {
+  display: inline-block;
+  font-size: inherit;
+  color: var(--a, #F08080);
+}
+.second {
+  color: var(--a-muted);
+}

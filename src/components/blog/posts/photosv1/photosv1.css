@@ -1,0 +1,9 @@
+:global(.setting) {
+  transition: background-color 1s, color 1s;
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.h3 {
+  font-size: 4rem;
+}
